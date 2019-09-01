@@ -6,9 +6,9 @@ import SEO from '../components/seo';
 
 const StartupPage = () => (
   <Layout>
-    <SEO title="Contact Us" />
-    <h1>Contact Us</h1>
-    <p>You can contact us here:</p>
+    <SEO title="Success Stories" />
+    <h1>Success Stories</h1>
+    <p>We have many success stories.</p>
     <Link to="/">home</Link>
     <br/>
     {/* <Link to="/page-p/">Page P</Link> */}

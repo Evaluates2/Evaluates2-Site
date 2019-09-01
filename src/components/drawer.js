@@ -37,10 +37,13 @@ const Item = styled(Link)`
 
 const items = [
   { url: '/', name: 'Home' }, 
-  { url: '/about', name: 'About' }, 
-  { url: '/services', name: `'Services'` }, 
-  { url: '/contact', name: 'Contact' }, 
-  { url: '/page-2/', name: 'Page 2' }
+  { url: '/about/', name: 'About' }, 
+  { url: '/engineering/', name: `Engineering` }, 
+  { url: '/product-management/', name: 'Product Management' }, 
+  { url: '/product-discovery/', name: 'Product Discovery' },
+  { url: '/our-values/', name: 'Our Values' },
+  { url: '/success-stories/', name: 'Success Stories' },
+  { url: '/contact/', name: 'Contact' }
 ];
 
 const Drawer = ({ isDrawerOpen, toggleDrawer }) => (
