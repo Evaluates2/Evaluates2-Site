@@ -1,6 +1,9 @@
 # Evaluates2 Site
 Frontend React Site For Evaluates2.com
 
+## Node Verison
+
+use node v11.15.0
 
 ## Usage
 

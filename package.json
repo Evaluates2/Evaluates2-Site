@@ -3,9 +3,7 @@
   "description": "website for evalutes2",
   "version": "0.0.1",
   "author": "Jim Lynch <jim@wisdomofjim.com>s",
-  "contributors": [
-
-  ],
+  "contributors": [],
   "dependencies": {
     "@emotion/core": "^10.0.7",
     "@emotion/styled": "^10.0.7",

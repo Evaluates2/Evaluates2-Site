@@ -209,6 +209,10 @@ Database Choices:
 
 </ul>
 
+<Link to="/our-values/">Learn More about our core agile engineering values -></Link>
+
+<br/>
+<br/>
   </Layout>
 );
 
