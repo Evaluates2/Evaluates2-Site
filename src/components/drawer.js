@@ -18,7 +18,7 @@ const Paper = styled.aside`
   transform: translateX(${p => (p.isDrawerOpen ? 0 : `-${p.theme.size(16)}`)});
 `;
 
-const Header = styled.header`
+const MobileHeader = styled.header`
   display: flex;
   align-items: center;
   height: ${p => p.theme.size(4)};
@@ -48,7 +48,7 @@ const items = [
 
 const Drawer = ({ isDrawerOpen, toggleDrawer }) => (
   <Paper isDrawerOpen={isDrawerOpen}>
-    <Header />
+    <MobileHeader />
     {items.map(item => (
       <Item key={item.url} to={item.url} onClick={() => toggleDrawer(false)}>
         {item.name}

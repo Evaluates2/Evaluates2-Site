@@ -26,6 +26,27 @@ const Navbar = styled.header`
   left: 0;
   padding-left: ${p => p.theme.size(0.5)};
   background: ${p => p.theme.palette.primary.main};
+
+  @media only screen and (min-width: 600px) {
+    display: none;
+  }
+`;
+
+const DesktopNavbar = styled.header`
+  height: ${p => p.theme.size(4)};
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: ${p => p.theme.zIndex.header};
+  top: 0;
+  left: 0;
+  padding-left: ${p => p.theme.size(0.5)};
+  background: ${p => p.theme.palette.primary.main};
+
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
 `;
 
 const Top = styled.div`
@@ -37,10 +58,14 @@ const Top = styled.div`
   top: 0;
   left: 0;
 
+  @media only screen and (min-width: 600px) {
+    display: none;
+  }
+
   .navbar-links {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    flex: 1;
     justify-content: flex-end;
     margin: 20px;
   }
@@ -58,7 +83,7 @@ const Title = styled.h2`
   }
   `;
 
-  import { Dropdown } from 'semantic-ui-react'
+import { Dropdown } from 'semantic-ui-react'
 
 const friendOptions = [
   {
@@ -110,7 +135,7 @@ const DropdownExampleSelection = () => (
 
 // export default DropdownExampleSelection
 
-const Header = ({ isDrawerOpen, toggleDrawer, siteTitle }) => (
+const MobileHeader = ({ isDrawerOpen, toggleDrawer, siteTitle }) => (
   <div>
     <Top>
       <MenuIcon
@@ -123,26 +148,33 @@ const Header = ({ isDrawerOpen, toggleDrawer, siteTitle }) => (
       </MenuIcon>
 
 
-      <div className="navbar-links">
+      {/* <div className="navbar-links">
         <div>
           Hey
         </div>
         <div>
           Hi
         </div>
-      </div>
-  <DropdownExampleSelection/>
-      
+
+        <DropdownExampleSelection />
+      </div> */}
+
+
     </Top>
     <Navbar isDrawerOpen={isDrawerOpen}>
       <Link to="/" css={{ textDecoration: 'none' }}>
         <Title>{siteTitle}</Title>
       </Link>
     </Navbar>
+
+    <DesktopNavbar>
+
+    </DesktopNavbar>
+
   </div>
 );
 
 export default connect(
   state => ({ isDrawerOpen: state.app.isDrawerOpen }),
   dispatch => ({ toggleDrawer: open => dispatch(toggleDrawerAction(open)) }),
-)(Header);
+)(MobileHeader);

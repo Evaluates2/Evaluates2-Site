@@ -9,6 +9,8 @@ const StartupPage = () => (
     <SEO title="Our Values" />
     <h1>Our Values</h1>
     <p>We value things</p>
+
+    
     <Link to="/">home</Link>
     <br/>
     {/* <Link to="/page-p/">Page P</Link> */}
