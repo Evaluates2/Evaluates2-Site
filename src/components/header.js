@@ -12,7 +12,11 @@ const MenuIcon = styled.a`
   padding: 0 ${p => p.theme.size(1)};
   align-self: stretch;
   transition: right 0.3s ease-in-out;
-  left: ${p => (p.isDrawerOpen ? p.theme.size(1) : `-${p.theme.size(4)}`)};
+  right: ${p => (p.isDrawerOpen ? p.theme.size(1) : `-${p.theme.size(4)}`)};
+
+  @media only screen and (min-width: 600px) {
+    display: none;
+  }
 `;
 
 const Navbar = styled.header`
@@ -24,12 +28,13 @@ const Navbar = styled.header`
   z-index: ${p => p.theme.zIndex.header};
   top: 0;
   left: 0;
-  padding-left: ${p => p.theme.size(0.5)};
+  /* padding-left: ${p => p.theme.size(0.5)}; */
+  padding-left: 10px;
   background: ${p => p.theme.palette.primary.main};
 
-  @media only screen and (min-width: 600px) {
+  /* @media only screen and (min-width: 600px) {
     display: none;
-  }
+  } */
 `;
 
 const DesktopNavbar = styled.header`
@@ -44,6 +49,16 @@ const DesktopNavbar = styled.header`
   padding-left: ${p => p.theme.size(0.5)};
   background: ${p => p.theme.palette.primary.main};
 
+  /* @media only screen and (max-width: 600px) {
+    display: none;
+  } */
+`;
+
+const DesktopLinks = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  right: 0;
+
   @media only screen and (max-width: 600px) {
     display: none;
   }
@@ -52,15 +67,18 @@ const DesktopNavbar = styled.header`
 const Top = styled.div`
   display: flex;
   align-items: center;
+  /* justify-content: flex-start; */
   height: ${p => p.theme.size(4)};
   position: fixed;
   z-index: ${p => p.theme.zIndex.header + 25};
   top: 0;
-  left: 0;
+  right: 0;
+  flex: 1;
+  width: 100%;
 
-  @media only screen and (min-width: 600px) {
+  /* @media only screen and (max-width: 600px) {
     display: none;
-  }
+  } */
 
   .navbar-links {
     display: flex;
@@ -69,6 +87,11 @@ const Top = styled.div`
     justify-content: flex-end;
     margin: 20px;
   }
+
+  .header-logo {
+    flex: 1;
+  }
+
 `;
 
 const Title = styled.h2`
@@ -81,9 +104,9 @@ const Title = styled.h2`
   @media (min-width: 420px) {
     font-size: ${p => p.theme.size(2)};
   }
-  `;
+`;
 
-import { Dropdown } from 'semantic-ui-react'
+import { Dropdown } from 'semantic-ui-react';
 
 const friendOptions = [
   {
@@ -122,55 +145,49 @@ const friendOptions = [
     value: 'Justen Kitsune',
     image: { avatar: true, src: '/images/avatar/small/justen.jpg' },
   },
-]
+];
 
 const DropdownExampleSelection = () => (
   <Dropdown
-    placeholder='Select Friend'
+    placeholder="Select Friend"
     fluid
     selection
     options={friendOptions}
   />
-)
+);
 
 // export default DropdownExampleSelection
 
 const MobileHeader = ({ isDrawerOpen, toggleDrawer, siteTitle }) => (
   <div>
     <Top>
+      {/* <Navbar isDrawerOpen={isDrawerOpen}> */}
+      <div className="header-logo">
+        <Link to="/" css={{ textDecoration: 'none' }}>
+          <Title>{siteTitle}</Title>
+        </Link>
+        </div>
+      {/* </Navbar> */}
+
+      <DesktopLinks>
+        {/* <div className="navbar-links"> */}
+          <div>Hey</div>
+          <div>Hi</div>
+
+          <DropdownExampleSelection />
+        {/* </div> */}
+      </DesktopLinks>
+
       <MenuIcon
         isDrawerOpen={isDrawerOpen}
         href="#"
         onClick={() => toggleDrawer(!isDrawerOpen)}
       >
         <Hamburger />
-
       </MenuIcon>
-
-
-      {/* <div className="navbar-links">
-        <div>
-          Hey
-        </div>
-        <div>
-          Hi
-        </div>
-
-        <DropdownExampleSelection />
-      </div> */}
-
-
     </Top>
-    <Navbar isDrawerOpen={isDrawerOpen}>
-      <Link to="/" css={{ textDecoration: 'none' }}>
-        <Title>{siteTitle}</Title>
-      </Link>
-    </Navbar>
 
-    <DesktopNavbar>
-
-    </DesktopNavbar>
-
+    <DesktopNavbar />
   </div>
 );
 
