@@ -6,10 +6,8 @@ import { connect } from 'react-redux';
 import { ThemeProvider } from 'emotion-theming';
 import theme from '../style/theme';
 import { toggleDrawer as toggleDrawerAction } from '../state/app';
-import Footer from './footer';
-import TheDImage from './img-components/the-d.img';
-import Link from 'gatsby-link';
-import MobileHeader from './header';
+
+// import MobileHeader from './header';
 import Drawer from './drawer';
 import './layout.css';
 
@@ -98,49 +96,7 @@ const Layout = ({ children, isDrawerOpen, toggleDrawer }) => (
           onClick={() => toggleDrawer(false)}
         />
         <Drawer />
-        <MobileHeader siteTitle={data.site.siteMetadata.title} />
-
-        <div />
-        <Footer>
-          <div className="img-container">
-            <div className="footer-img">
-              <TheDImage></TheDImage>
-            </div>
-            <h1>(evaluates2)</h1>
-          </div>
-          <div className="footer-grid-block">
-            <h1>About</h1>
-            <a>Team</a>
-          </div>
-          <div className="footer-grid-block">
-            <h1>Services</h1>
-            <a>Engineering</a>
-            <br />
-            <a>Product Management</a>
-            <br />
-            <a>MVP Development</a>
-          </div>
-          <div className="footer-grid-block">
-            <h1>Resources</h1>
-            <a>Articles</a>
-            <br />
-            <a>Blogs</a>
-            <br />
-            <a>MVP Development</a>
-          </div>
-          <div className="footer-grid-block">
-            <h1>Contact</h1>
-            <a>Contact Us</a>
-          </div>
-        </Footer>
-
-        <VeryBottomFooter>
-          <Link to="/" className="very-bottom-footer-item orange-link">Careers</Link>
-          <a className="very-bottom-footer-item">Terms of Service</a>
-          <a className="very-bottom-footer-item">
-            ©&nbsp;&nbsp;(Evaluates2)&nbsp;&nbsp;{new Date().getFullYear()}
-          </a>
-        </VeryBottomFooter>
+        {/* <MobileHeader siteTitle={data.site.siteMetadata.title} /> */}
       </ThemeProvider>
     )}
   />
