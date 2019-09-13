@@ -6,6 +6,7 @@ import { connect } from 'react-redux';
 import { ThemeProvider } from 'emotion-theming';
 import theme from '../style/theme';
 import { toggleDrawer as toggleDrawerAction } from '../state/app';
+import Footer from './footer';
 
 import MobileHeader from './header';
 import Drawer from './drawer';
@@ -20,9 +21,9 @@ const Content = styled.section`
   transition: transform 0.3s ease-in-out;
   transform: perspective(200px)
     ${p =>
-      p.isDrawerOpen
-        ? `translateX(${p.theme.size(8)}) translateZ(-20px)`
-        : 'none'};
+    p.isDrawerOpen
+      ? `translateX(${p.theme.size(8)}) translateZ(-20px)`
+      : 'none'};
   padding-top: ${p => p.theme.size(5)};
   padding-left: ${p => p.theme.size(1)};
   padding-right: ${p => p.theme.size(1)};
@@ -70,6 +71,58 @@ const Layout = ({ children, isDrawerOpen, toggleDrawer }) => (
         />
         <Drawer />
         <MobileHeader siteTitle={data.site.siteMetadata.title} />
+
+        <div ></div>
+        <Footer>
+
+          {/* <div className="img-container"> */}
+            <div className="footer-img">
+              img!
+          {/* </div> */}
+          </div>
+          <div clasSName="footer-about">
+            <h1>
+              About
+            </h1>
+            <a>
+              Team
+            </a>
+          </div>
+          <div clasSName="footer-services">
+            <h1>
+              Services
+            </h1>
+            <a>
+              Engineering
+            </a>
+            <a>
+              Product Management
+            </a>
+            <a>
+              MVP Development
+            </a>
+          </div>
+          <div clasSName="footer-resources">
+            <h1>
+              Resources
+            </h1>
+            <a>
+              Articles
+            </a>
+            <a>
+              Blogs
+            </a>
+            <a>
+              MVP Development
+            </a>
+          </div>
+          <div clasSName="footer-contact">
+            <h1>
+              Contact
+            </h1>
+          </div>
+
+        </Footer>
       </ThemeProvider>
     )}
   />
