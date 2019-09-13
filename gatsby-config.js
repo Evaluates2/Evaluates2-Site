@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `(Evaluates2)`,
+    title: `Def Method`,
     description: `German student-run nonprofit initiative`,
     author: `Janosh Riebesell`,
     url: `https://studenten-bilden-schueler.de`,
@@ -10,16 +10,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `json`,
         path: `${__dirname}/src/data`
       }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,

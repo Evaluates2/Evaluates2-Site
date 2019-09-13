@@ -14,22 +14,9 @@ export const Img = styled(Image)`
   :hover {
     transform: scale(1.05);
   }
-  ${mediaQuery.maxNetbook} {
-    width: 40px !important;
-    height: 40px !important;
-  }
-`
-export const Label = styled.div`
-  ${mediaQuery.maxNetbook} {
-    font-size: 20px !important;
-  }
 `
 
-export const HeaderContainer = styled.header`  
-  transition: all 0.5s linear;
-  padding: 20px;
-  position: fixed;
-  width: 100vw;
+export const HeaderContainer = styled.header`
   background: ${props => props.theme.darkBlue};
   display: grid;
   grid-gap: calc(1em + 1vw);
@@ -37,13 +24,10 @@ export const HeaderContainer = styled.header`
   justify-items: center;
   grid-template-areas: "nav title social search";
   grid-template-columns: auto 1fr auto auto;
+  padding: calc(0.25em + 1vh) calc(1em + 1vw);
   font-weight: bold;
-  background-color: rgba(0, 0, 0, 0);
   ${mediaQuery.minNetbook} {
     grid-template-areas: "title nav social search";
-  }
-  ${mediaQuery.maxNetbook} {
-    padding: 10px;
   }
 `
 
@@ -53,8 +37,7 @@ export const SiteTitle = styled(Link)`
   align-items: center;
   grid-auto-flow: column;
   grid-gap: 1em;
-  color: white;
-  transition: ${props => props.theme.shortTrans};
+  ${navLinkStyle};
   ${mediaQuery.minTablet} {
     grid-auto-flow: column;
   }

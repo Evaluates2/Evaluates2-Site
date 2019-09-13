@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components"
-require('typeface-raleway')
+
 import mediaQuery from "../../utils/mediaQuery"
 import typography from "../../utils/typography"
 
@@ -15,7 +15,7 @@ const {
 export const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
-    font-family: Raleway;
+    font-family: ${fonts};
     font-size: ${minFontSize}em;
     line-height: ${minLineHeight}em;
     ${mediaQuery.minPhone} {

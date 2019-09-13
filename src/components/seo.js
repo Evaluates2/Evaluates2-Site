@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 
-export default function SEO({ site, pageTitle, path = ``, ...rest }) {
+export default function Seo({ site, pageTitle, path = ``, ...rest }) {
   const { description, children } = rest
   const title = pageTitle ? `${pageTitle} | ${site.title}` : site.title
   const pageUrl = site.url + path
@@ -21,3 +21,13 @@ export default function SEO({ site, pageTitle, path = ``, ...rest }) {
   )
 }
 
+Seo.propTypes = {
+  site: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+  }),
+  pageTitle: PropTypes.string,
+  path: PropTypes.string,
+  description: PropTypes.string,
+}

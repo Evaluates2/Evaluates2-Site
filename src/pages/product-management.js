@@ -2,9 +2,6 @@ import React from 'react';
 import { Link } from 'gatsby';
 import Global from "../components/Global"
 import Layout from '../components/layout';
-import styled from '@emotion/styled';
-import SEO from '../components/seo';
-import ServicePageHero from '../components/generic-reusable-components/service-page-hero';
 
 const stringWithBrackets = `We write requirements in the form of user stories using the format:
 As a <user>, when <action>, I want <a feature> so that <user goals>`;
@@ -21,11 +18,7 @@ const ProjectManagementPageContainer = styled.div`
 `;
 
 const ProductManagementPage = () => (
-  <Layout>
-    <SEO title="Product Management" />
-
-    <ServicePageHero title="Project Management" description="uyoo"></ServicePageHero>
-
+  <Global pageTitle={''} path={''} description={''}>
     <h1>Product Management</h1>
     <h3>Leadership that guides successful product development</h3>
     <h1>Our process</h1>
@@ -155,7 +148,7 @@ const ProductManagementPage = () => (
       of work being conducted.
     </p>
     {/* <Link to="/page-p/">Page P</Link> */}
-  </Layout>
+  </Global>
 );
 
 export default ProductManagementPage;
