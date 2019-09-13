@@ -1,12 +1,10 @@
 import React from 'react';
 import { Link } from 'gatsby';
-
+import Global from "../components/Global"
 import Layout from '../components/layout';
-import SEO from '../components/seo';
 
 const PPage = () => (
-  <Layout>
-    <SEO title="About Us" />
+  <Global pageTitle={''} path={''} description={''}>
     <h1>
       About us
     </h1>
@@ -48,7 +46,7 @@ const PPage = () => (
     <br/>
     <br/>
     <br/>
-  </Layout>
+  </Global>
 );
 
 // Evaluates2 is a dedicated team of experienced web and mobile engineers with a focus on developing software solutions using Agile methodology, flexibility, and an open, transparent process. They are committed to hyperlocal development, supporting projects like High Line public park, NYC's Campaign Finance Board, the Museum of Modern Art, born-and-bred NYC like startups ArtsPool and PreeLine.

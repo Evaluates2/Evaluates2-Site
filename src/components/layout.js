@@ -7,7 +7,7 @@ import { ThemeProvider } from 'emotion-theming';
 import theme from '../style/theme';
 import { toggleDrawer as toggleDrawerAction } from '../state/app';
 
-import MobileHeader from './header';
+// import MobileHeader from './header';
 import Drawer from './drawer';
 import './layout.css';
 
@@ -69,7 +69,7 @@ const Layout = ({ children, isDrawerOpen, toggleDrawer }) => (
           onClick={() => toggleDrawer(false)}
         />
         <Drawer />
-        <MobileHeader siteTitle={data.site.siteMetadata.title} />
+        {/* <MobileHeader siteTitle={data.site.siteMetadata.title} /> */}
       </ThemeProvider>
     )}
   />

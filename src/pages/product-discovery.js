@@ -1,12 +1,10 @@
 import React from 'react';
 import { Link } from 'gatsby';
-
+import Global from "../components/Global"
 import Layout from '../components/layout';
-import SEO from '../components/seo';
 
 const ProductDiscoveryPage = () => (
-  <Layout>
-    <SEO title="Product Discovery" />
+  <Global pageTitle={''} path={''} description={''}>
     <h1>Product Discovery</h1>
     <h3>Ready to bring your idea to life?</h3>
     {/* <Link to="/">home</Link> */}
@@ -128,7 +126,7 @@ const ProductDiscoveryPage = () => (
     </h3>
 
     {/* <h3>From initial product conception to after launch, we're here to help</h3> */}
-  </Layout>
+  </Global>
 );
 
 export default ProductDiscoveryPage;

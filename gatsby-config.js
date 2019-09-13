@@ -1,18 +1,19 @@
 module.exports = {
   siteMetadata: {
-    title: `( Evaluates2 )`,
-    description: `New York City's Excellent creative development agency.`,
-    author: `@jimtheman`,
+    title: `Def Method`,
+    description: `German student-run nonprofit initiative`,
+    author: `Janosh Riebesell`,
+    url: `https://studenten-bilden-schueler.de`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
+        path: `${__dirname}/src/data`
+      }
     },
+    `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -28,6 +29,7 @@ module.exports = {
       },
     },
     'gatsby-plugin-emotion',
+    `gatsby-plugin-styled-components`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
