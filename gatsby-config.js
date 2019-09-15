@@ -10,6 +10,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `json`,
         path: `${__dirname}/src/data`
       }
     },

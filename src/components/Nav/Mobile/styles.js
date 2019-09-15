@@ -67,7 +67,6 @@ export const Children = styled(animated.div)`
   margin-left: 0.5em;
   padding-left: 0.5em;
   border-left: thin dashed white;
-  overflow: hidden;
   padding-bottom: ${props => props.open && `0.6em`};
   > div {
     margin-top: 0.6em;
