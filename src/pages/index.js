@@ -1,6 +1,7 @@
 import { graphql } from "gatsby"
 import React from "react"
 import Global from "../components/Global"
+import Images from "../components/Images"
 
 export default function IndexPage({ data, location }) {
   // const { page, slideshow, updatedAt } = data
@@ -8,7 +9,7 @@ export default function IndexPage({ data, location }) {
   // const { excerpt, html } = body && body.remark
   return (
     <Global pageTitle={''} path={''} description={''}>
-      
+      <Images/>
 //     <br />
 //     <br />
 //     <br />

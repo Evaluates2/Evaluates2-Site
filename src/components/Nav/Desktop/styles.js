@@ -28,6 +28,6 @@ export const SubNav = styled.div`
   padding: 0.5em 0.7em;
   grid-template-columns: ${props =>
     props.children.length >= 10 ? `1fr 1fr` : `1fr`};
-  background: rgba(0, 0, 0, 0.9);
+  background-color: transparent;
   ${fadeInOnHoverParent(NavEntry)}
 `

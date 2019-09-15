@@ -9,7 +9,7 @@ const Header = ({ site }) => (
           query LOGO_IMAGE_QUERY {
             file(relativePath: { eq: "logo.png" }) {
               childImageSharp {
-                fixed(width: 400) {
+                fixed(width: 1000) {
                   ...GatsbyImageSharpFixed_tracedSVG
                 }
               }
@@ -18,7 +18,6 @@ const Header = ({ site }) => (
         `}
         render={data => (
           <Headroom css="z-index: 3;">
-            {console.log(data)}
             <HeaderContainer>
               <SiteTitle to="/" title={site.title} rel="home">
                 <Img fixed={data.file.childImageSharp.fixed} />
