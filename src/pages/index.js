@@ -38,11 +38,15 @@ const IndexPage = () => (
 
     <h3>Technical Audits</h3>
 
-    <p>
+  <h2>
+
       Excellence of Code
+  </h2>
       <br />
+    <p>
       At Evaluates2, we focus on excellence in code. As such we emphasize the
       following values on all out projects:
+    </p>
       <ul>
         <li>Test Driven Development</li>
         <li>Continuous Integration</li>
@@ -50,7 +54,6 @@ const IndexPage = () => (
         <li>Dependency Management and Upgrades.</li>
         <li>Readability and Clean Code</li>
       </ul>
-    </p>
 
     <br />
     <br />
@@ -65,8 +68,8 @@ const IndexPage = () => (
 
     <h3>Project Management</h3>
 
-    <p>
       <h3>Workflows & Story Prioritization</h3>
+    <p>
       Successful development starts with effective product management. Align
       your team and get successful project results with Evaluates2 Product
       Management. Our PMs will work with your team to find the process that
@@ -87,10 +90,13 @@ const IndexPage = () => (
 
 <h3>Maintenance Mode</h3>
 
-<p>
+{/* <p> */}
   <h3>Workflows & Story Prioritization</h3>
+  <p>
+
   Are you on the first stage of your project and are looking for a technical team to help bring your vision to life? Well, then, you've come to the right place! At Evaluates2 we have a process in place that makes building an MVP seamless, tested, and scalable. As founders, we know what it's like building a company and look forward to partnering with you to build yours! 
-</p>
+  </p>
+{/* </p> */}
 
 
 <br />

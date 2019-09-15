@@ -2,8 +2,8 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 const Footer = styled.div`
-    background-color: green;
-    min-height: 150px;
+    background-color: lightgoldenrodyellow;
+    min-height: 90px;
     width: 100%;
 
     display: grid;
@@ -40,12 +40,14 @@ const Footer = styled.div`
         height: 60px;
         width: 40px;
 
-        
+        @media only screen and (max-width: 640px){
+            display: none;
+        }
 
 
     }
 
 
-  )`
+  `
 
 export default (Footer);

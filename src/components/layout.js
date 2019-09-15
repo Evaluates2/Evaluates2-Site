@@ -21,9 +21,9 @@ const Content = styled.section`
   transition: transform 0.3s ease-in-out;
   transform: perspective(200px)
     ${p =>
-    p.isDrawerOpen
-      ? `translateX(${p.theme.size(8)}) translateZ(-20px)`
-      : 'none'};
+      p.isDrawerOpen
+        ? `translateX(${p.theme.size(8)}) translateZ(-20px)`
+        : 'none'};
   padding-top: ${p => p.theme.size(5)};
   padding-left: ${p => p.theme.size(1)};
   padding-right: ${p => p.theme.size(1)};
@@ -42,6 +42,22 @@ const Overlay = styled.div`
   pointer-events: ${p => (p.isDrawerOpen ? 'all' : 'none')};
 `;
 
+const VeryBottomFooter = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  flex-direction: row;
+  align-content: center;
+  background-color: lightgoldenrodyellow;
+
+  .very-bottom-footer-item {
+    min-width: 170px;
+    display: flex;
+    justify-content: center;
+  }
+
+`;
+
 const Layout = ({ children, isDrawerOpen, toggleDrawer }) => (
   <StaticQuery
     query={graphql`
@@ -56,14 +72,7 @@ const Layout = ({ children, isDrawerOpen, toggleDrawer }) => (
     render={data => (
       <ThemeProvider theme={theme}>
         <Container>
-          <Content isDrawerOpen={isDrawerOpen}>
-            {children}
-            <footer>
-              © {new Date().getFullYear()}
-              {` `}
-              <a href="https://www.evaluates2.io">Evaluates2</a>
-            </footer>
-          </Content>
+          <Content isDrawerOpen={isDrawerOpen}>{children}</Content>
         </Container>
         <Overlay
           isDrawerOpen={isDrawerOpen}
@@ -72,57 +81,51 @@ const Layout = ({ children, isDrawerOpen, toggleDrawer }) => (
         <Drawer />
         <MobileHeader siteTitle={data.site.siteMetadata.title} />
 
-        <div ></div>
+        <div />
         <Footer>
-
           {/* <div className="img-container"> */}
-            <div className="footer-img">
-              img!
-          {/* </div> */}
+          <div className="footer-img">
+            img!
+            {/* </div> */}
           </div>
-          <div clasSName="footer-about">
-            <h1>
-              About
-            </h1>
-            <a>
-              Team
-            </a>
+          <div className="footer-about">
+            <h1>About</h1>
+            <a>Team</a>
           </div>
-          <div clasSName="footer-services">
-            <h1>
-              Services
-            </h1>
-            <a>
-              Engineering
-            </a>
-            <a>
-              Product Management
-            </a>
-            <a>
-              MVP Development
-            </a>
+          <div className="footer-services">
+            <h1>Services</h1>
+            <a>Engineering</a>
+            <br/>
+            <a>Product Management</a>
+            <br/>
+            <a>MVP Development</a>
           </div>
-          <div clasSName="footer-resources">
-            <h1>
-              Resources
-            </h1>
-            <a>
-              Articles
-            </a>
-            <a>
-              Blogs
-            </a>
-            <a>
-              MVP Development
-            </a>
+          <div className="footer-resources">
+            <h1>Resources</h1>
+            <a>Articles</a>
+            <br/>
+            <a>Blogs</a>
+            <br/>
+            <a>MVP Development</a>
           </div>
-          <div clasSName="footer-contact">
-            <h1>
-              Contact
-            </h1>
+          <div className="footer-contact">
+            <h1>Contact</h1>
           </div>
-
         </Footer>
+
+        <VeryBottomFooter>
+          <div className="very-bottom-footer-item">
+            Careers
+          </div>
+          <div className="very-bottom-footer-item">
+            Terms of Service
+          </div>
+          <div className="very-bottom-footer-item">
+            © <a href="https://www.evaluates2.io">Evaluates2</a>{' '}
+            {new Date().getFullYear()}
+          </div>
+            
+        </VeryBottomFooter>
       </ThemeProvider>
     )}
   />
