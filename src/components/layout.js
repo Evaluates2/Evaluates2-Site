@@ -25,7 +25,7 @@ const Content = styled.section`
       p.isDrawerOpen
         ? `translateX(${p.theme.size(8)}) translateZ(-20px)`
         : 'none'};
-  /* padding-top: ${p => p.theme.size(5)};
+  padding-top: ${p => p.theme.size(5)};
   padding-left: ${p => p.theme.size(1)};
   padding-right: ${p => p.theme.size(1)}; */
 `;
@@ -49,30 +49,12 @@ const VeryBottomFooter = styled.div`
   padding: 10px;
   flex-direction: row;
   align-content: center;
-  background-color: #000011;
+  background-color: lightgoldenrodyellow;
 
-  a {
-      color: #777777;
-      cursor: pointer;
-
-      line-height: 1.3em;
-
-      :hover {
-          color: #f9f9f9f9;
-      }
-  }
   .very-bottom-footer-item {
+    min-width: 170px;
     display: flex;
     justify-content: center;
-    padding: 0 18px 10px;
-  }
-
-  a.orange-link {
-    color: #FF7D00;
-
-    :hover {
-      color: #ffc892;
-    }
   }
 
 `;
@@ -98,46 +80,52 @@ const Layout = ({ children, isDrawerOpen, toggleDrawer }) => (
           onClick={() => toggleDrawer(false)}
         />
         <Drawer />
+        <MobileHeader siteTitle={data.site.siteMetadata.title} />
+
         <div />
         <Footer>
-          <div className="img-container">
-            <div className="footer-img">
-              <TheDImage></TheDImage>
-            </div>
-            <h1>(evaluates2)</h1>
+          {/* <div className="img-container"> */}
+          <div className="footer-img">
+            img!
+            {/* </div> */}
           </div>
-          <div className="footer-grid-block">
+          <div className="footer-about">
             <h1>About</h1>
             <a>Team</a>
           </div>
-          <div className="footer-grid-block">
+          <div className="footer-services">
             <h1>Services</h1>
             <a>Engineering</a>
-            <br />
+            <br/>
             <a>Product Management</a>
-            <br />
+            <br/>
             <a>MVP Development</a>
           </div>
-          <div className="footer-grid-block">
+          <div className="footer-resources">
             <h1>Resources</h1>
             <a>Articles</a>
-            <br />
+            <br/>
             <a>Blogs</a>
-            <br />
+            <br/>
             <a>MVP Development</a>
           </div>
-          <div className="footer-grid-block">
+          <div className="footer-contact">
             <h1>Contact</h1>
-            <a>Contact Us</a>
           </div>
         </Footer>
 
         <VeryBottomFooter>
-          <Link to="/" className="very-bottom-footer-item orange-link">Careers</Link>
-          <a className="very-bottom-footer-item">Terms of Service</a>
-          <a className="very-bottom-footer-item">
-            ©&nbsp;&nbsp;(Evaluates2)&nbsp;&nbsp;{new Date().getFullYear()}
-          </a>
+          <div className="very-bottom-footer-item">
+            Careers
+          </div>
+          <div className="very-bottom-footer-item">
+            Terms of Service
+          </div>
+          <div className="very-bottom-footer-item">
+            © <a href="https://www.evaluates2.io">Evaluates2</a>{' '}
+            {new Date().getFullYear()}
+          </div>
+            
         </VeryBottomFooter>
       </ThemeProvider>
     )}

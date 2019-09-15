@@ -2,10 +2,9 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 const Footer = styled.div`
-  min-height: 90px;
-  width: 100%;
-  padding: 35px 23px 20px;
-  display: grid;
+    background-color: lightgoldenrodyellow;
+    min-height: 90px;
+    width: 100%;
 
   // desktop, 4 items in a row
   grid-template-columns: auto auto auto auto auto;
@@ -27,7 +26,9 @@ const Footer = styled.div`
       color: #777777;
       cursor: pointer;
 
-      line-height: 1.3em;
+        @media only screen and (max-width: 640px){
+            display: none;
+        }
 
       :hover {
           color: #f9f9f9f9;
@@ -86,10 +87,6 @@ const Footer = styled.div`
   }
   
 
-  .gatsby-image-wrapper {
-    width: 80px;
-    height: 80px;
-  }
-`;
+  `
 
 export default Footer;
