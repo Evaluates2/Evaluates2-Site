@@ -17,6 +17,9 @@ export const Img = styled(Image)`
 `
 
 export const HeaderContainer = styled.header`
+  padding: 20px;
+  position: fixed;
+  width: 100vw;
   background: ${props => props.theme.darkBlue};
   display: grid;
   grid-gap: calc(1em + 1vw);
@@ -24,8 +27,11 @@ export const HeaderContainer = styled.header`
   justify-items: center;
   grid-template-areas: "nav title social search";
   grid-template-columns: auto 1fr auto auto;
-  padding: calc(0.25em + 1vh) calc(1em + 1vw);
   font-weight: bold;
+  background-color: rgba(0, 0, 0, 0);
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  will-change: background;
   ${mediaQuery.minNetbook} {
     grid-template-areas: "title nav social search";
   }
@@ -37,7 +43,8 @@ export const SiteTitle = styled(Link)`
   align-items: center;
   grid-auto-flow: column;
   grid-gap: 1em;
-  ${navLinkStyle};
+  color: white;
+  transition: ${props => props.theme.shortTrans};
   ${mediaQuery.minTablet} {
     grid-auto-flow: column;
   }
