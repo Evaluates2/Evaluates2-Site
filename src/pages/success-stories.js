@@ -2,12 +2,11 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 import Layout from '../components/layout';
-import SEO from '../components/seo';
 import Img from 'gatsby-image';
+import Global from "../components/Global"
 
 const StartupPage = () => (
-  <Layout>
-    <SEO title="Success Stories" />
+  <Global pageTitle={''} path={''} description={''}>
     <h1>Success Stories</h1>
     <p>
       We have had many success stories here at Evaluates2. Here are just few of
@@ -58,7 +57,7 @@ const StartupPage = () => (
     {/* <Link to="/">home</Link> */}
     <br />
     {/* <Link to="/page-p/">Page P</Link> */}
-  </Layout>
+  </Global>
 );
 
 export default StartupPage;

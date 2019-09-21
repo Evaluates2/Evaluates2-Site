@@ -1,12 +1,10 @@
 import React from 'react';
 import { Link } from 'gatsby';
-
+import Global from "../components/Global"
 import Layout from '../components/layout';
-import SEO from '../components/seo';
 
 const StartupPage = () => (
-  <Layout>
-    <SEO title="Contact Us" />
+  <Global pageTitle={''} path={''} description={''}>
     <h1>We Look Forward To Speaking!</h1>
     {/* <p>You can contact us here:</p> */}
 
@@ -44,7 +42,7 @@ const StartupPage = () => (
     <br/>
 
     {/* <Link to="/page-p/">Page P</Link> */}
-  </Layout>
+  </Global>
 );
 
 export default StartupPage;

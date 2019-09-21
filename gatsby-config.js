@@ -1,18 +1,20 @@
 module.exports = {
   siteMetadata: {
-    title: `( Evaluates2 )`,
-    description: `New York City's Excellent creative development agency.`,
-    author: `@jimtheman`,
+    title: `(Evaluates2)`,
+    description: `German student-run nonprofit initiative`,
+    author: `Janosh Riebesell`,
+    url: `https://studenten-bilden-schueler.de`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
+        name: `json`,
+        path: `${__dirname}/src/data`
+      }
     },
+    `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -24,10 +26,11 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/data/logo.png`, // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-emotion',
+    `gatsby-plugin-styled-components`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',

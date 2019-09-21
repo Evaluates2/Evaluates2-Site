@@ -1,13 +1,10 @@
 import React from 'react';
 import { Link } from 'gatsby';
-
+import Global from "../components/Global"
 import Layout from '../components/layout';
-import SEO from '../components/seo';
 
 const EngineeringPage = () => (
-  <Layout>
-    <SEO title="Engineering" />
-    <h1>Engineering</h1>
+  <Global pageTitle={''} path={''} description={''}>
     <p>Code crafted with care</p>
 
 
@@ -213,7 +210,7 @@ Database Choices:
 
 <br/>
 <br/>
-  </Layout>
+  </Global>
 );
 
 export default EngineeringPage;

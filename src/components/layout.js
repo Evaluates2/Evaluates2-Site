@@ -8,7 +8,7 @@ import theme from '../style/theme';
 import { toggleDrawer as toggleDrawerAction } from '../state/app';
 import Footer from './footer';
 
-import MobileHeader from './header';
+// import MobileHeader from './header';
 import Drawer from './drawer';
 import './layout.css';
 
@@ -70,6 +70,7 @@ const Layout = ({ children, isDrawerOpen, toggleDrawer }) => (
           onClick={() => toggleDrawer(false)}
         />
         <Drawer />
+
         <MobileHeader siteTitle={data.site.siteMetadata.title} />
 
         <div ></div>
@@ -123,7 +124,9 @@ const Layout = ({ children, isDrawerOpen, toggleDrawer }) => (
           </div>
 
         </Footer>
+
       </ThemeProvider>
+
     )}
   />
 );
