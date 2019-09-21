@@ -1,3 +1,29 @@
+
+@font-face {
+  font-family: 'e2-Raleway-Bold';
+  src: url('../fonts/Raleway/Raleway-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'e2-Raleway';
+  src: url('../fonts/Raleway/Raleway-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'e2-Raleway-italic';
+  src: url('../fonts/Raleway/Raleway-RegularItalic.ttf');
+}
+
+@font-face {
+  font-family: 'e2-Raleway-Black';
+  src: url('../fonts/Raleway/Raleway-Black.ttf');
+}
+
+@font-face {
+  font-family: 'e2-Raleway-Light';
+  src: url('../fonts/Raleway/Raleway-Light.ttf');
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -613,8 +639,8 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
-@media only screen and (max-width: 480px) {
+/* @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
   }
-}
+} */
