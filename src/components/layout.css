@@ -24,26 +24,6 @@
   src: url('../fonts/Raleway/Raleway-Light.ttf');
 }
 
-@font-face {
-  font-family: 'e2-Raleway-Black-Italic';
-  src: url('../fonts/Raleway/Raleway-BlackItalic.ttf');
-}
-
-@font-face {
-  font-family: 'e2-Raleway-Semi-Bold';
-  src: url('../fonts/Raleway/Raleway-SemiBold.ttf');
-}
-
-@font-face {
-  font-family: 'e2-Raleway-Semi-Bold-Italic';
-  src: url('../fonts/Raleway/Raleway-SemiBoldItalic.ttf');
-}
-
-@font-face {
-  font-family: 'e2-Raleway-Extra-Bold';
-  src: url('../fonts/Raleway/Raleway-ExtraBold.ttf');
-}
-
 html {
   font-family: sans-serif;
 }

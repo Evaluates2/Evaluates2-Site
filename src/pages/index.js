@@ -14,6 +14,11 @@ const IndexPage = () => (
     <br />
     <h1>Together</h1>
     <h3>We will build something incredible.</h3>
+
+    <Image>
+
+    </Image>
+
     <br />
     <br />
     <br />
