@@ -22,7 +22,7 @@ const Header = ({ site }) => (
               <SiteTitle to="/" title={site.title} rel="home">
                 <Img fixed={data.file.childImageSharp.fixed} />
                   <div>
-                    def<br/>method()
+                    (evaluates2)
                   </div>
               </SiteTitle>
               <Nav />
