@@ -6,6 +6,7 @@ import { connect } from 'react-redux';
 import { ThemeProvider } from 'emotion-theming';
 import theme from '../style/theme';
 import { toggleDrawer as toggleDrawerAction } from '../state/app';
+import { myFooter } from './Footer/footer';
 
 // import MobileHeader from './header';
 import Drawer from './drawer';
@@ -97,7 +98,11 @@ const Layout = ({ children, isDrawerOpen, toggleDrawer }) => (
         />
         <Drawer />
         {/* <MobileHeader siteTitle={data.site.siteMetadata.title} /> */}
+      
+      <myFooter></myFooter>
+      
       </ThemeProvider>
+
     )}
   />
 );

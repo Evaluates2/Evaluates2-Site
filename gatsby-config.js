@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Def Method`,
+    title: `(Evaluates2)`,
     description: `German student-run nonprofit initiative`,
     author: `Janosh Riebesell`,
     url: `https://studenten-bilden-schueler.de`,
