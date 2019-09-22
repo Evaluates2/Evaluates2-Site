@@ -8,7 +8,7 @@ import theme from '../style/theme';
 import { toggleDrawer as toggleDrawerAction } from '../state/app';
 import Footer from './footer';
 import TheDImage from './img-components/the-d.img';
-
+import Link from 'gatsby-link';
 import MobileHeader from './header';
 import Drawer from './drawer';
 import './layout.css';
@@ -49,13 +49,32 @@ const VeryBottomFooter = styled.div`
   padding: 10px;
   flex-direction: row;
   align-content: center;
-  background-color: lightgoldenrodyellow;
+  background-color: #000011;
 
+  a {
+      color: #777777;
+      cursor: pointer;
+
+      line-height: 1.3em;
+
+      :hover {
+          color: #f9f9f9f9;
+      }
+  }
   .very-bottom-footer-item {
-    min-width: 170px;
     display: flex;
     justify-content: center;
+    padding: 0 18px 10px;
   }
+
+  a.orange-link {
+    color: #FF7D00;
+
+    :hover {
+      color: #ffc892;
+    }
+  }
+
 `;
 
 const Layout = ({ children, isDrawerOpen, toggleDrawer }) => (
@@ -89,11 +108,11 @@ const Layout = ({ children, isDrawerOpen, toggleDrawer }) => (
             </div>
             <h1>(evaluates2)</h1>
           </div>
-          <div className="footer-about">
+          <div className="footer-grid-block">
             <h1>About</h1>
             <a>Team</a>
           </div>
-          <div className="footer-services">
+          <div className="footer-grid-block">
             <h1>Services</h1>
             <a>Engineering</a>
             <br />
@@ -101,7 +120,7 @@ const Layout = ({ children, isDrawerOpen, toggleDrawer }) => (
             <br />
             <a>MVP Development</a>
           </div>
-          <div className="footer-resources">
+          <div className="footer-grid-block">
             <h1>Resources</h1>
             <a>Articles</a>
             <br />
@@ -109,18 +128,18 @@ const Layout = ({ children, isDrawerOpen, toggleDrawer }) => (
             <br />
             <a>MVP Development</a>
           </div>
-          <div className="footer-contact">
+          <div className="footer-grid-block">
             <h1>Contact</h1>
+            <a>Contact Us</a>
           </div>
         </Footer>
 
         <VeryBottomFooter>
-          <div className="very-bottom-footer-item">Careers</div>
-          <div className="very-bottom-footer-item">Terms of Service</div>
-          <div className="very-bottom-footer-item">
-            © <a href="https://www.evaluates2.io">Evaluates2</a>{' '}
-            {new Date().getFullYear()}
-          </div>
+          <Link to="/" className="very-bottom-footer-item orange-link">Careers</Link>
+          <a className="very-bottom-footer-item">Terms of Service</a>
+          <a className="very-bottom-footer-item">
+            ©&nbsp;&nbsp;(Evaluates2)&nbsp;&nbsp;{new Date().getFullYear()}
+          </a>
         </VeryBottomFooter>
       </ThemeProvider>
     )}

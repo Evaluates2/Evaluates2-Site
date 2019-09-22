@@ -2,10 +2,9 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 const Footer = styled.div`
-  background-color: lightgoldenrodyellow;
   min-height: 90px;
   width: 100%;
-
+  padding: 35px 23px 20px;
   display: grid;
 
   // desktop, 4 items in a row
@@ -24,13 +23,24 @@ const Footer = styled.div`
   background-color: #000011;
   color: white;
 
+  a {
+      color: #777777;
+      cursor: pointer;
+
+      line-height: 1.3em;
+
+      :hover {
+          color: #f9f9f9f9;
+      }
+  }
+
   .img-container {
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    grid-row: 1 / 5;
+    grid-row: 1 / 3;
     grid-column: 1;
     flex: 1;
     /* height: 100%; */
@@ -68,6 +78,12 @@ const Footer = styled.div`
 
   }
 
+  .footer-grid-block {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: flex-start;
+  }
   
 
   .gatsby-image-wrapper {
