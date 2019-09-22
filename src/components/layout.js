@@ -7,6 +7,7 @@ import { ThemeProvider } from 'emotion-theming';
 import theme from '../style/theme';
 import { toggleDrawer as toggleDrawerAction } from '../state/app';
 import Footer from './footer';
+import TheDImage from './img-components/the-d.img';
 
 import MobileHeader from './header';
 import Drawer from './drawer';
@@ -55,7 +56,6 @@ const VeryBottomFooter = styled.div`
     display: flex;
     justify-content: center;
   }
-
 `;
 
 const Layout = ({ children, isDrawerOpen, toggleDrawer }) => (
@@ -83,10 +83,11 @@ const Layout = ({ children, isDrawerOpen, toggleDrawer }) => (
 
         <div />
         <Footer>
-          {/* <div className="img-container"> */}
-          <div className="footer-img">
-            img!
-            {/* </div> */}
+          <div className="img-container">
+            <div className="footer-img">
+              <TheDImage></TheDImage>
+            </div>
+            <h1>(evaluates2)</h1>
           </div>
           <div className="footer-about">
             <h1>About</h1>
@@ -95,17 +96,17 @@ const Layout = ({ children, isDrawerOpen, toggleDrawer }) => (
           <div className="footer-services">
             <h1>Services</h1>
             <a>Engineering</a>
-            <br/>
+            <br />
             <a>Product Management</a>
-            <br/>
+            <br />
             <a>MVP Development</a>
           </div>
           <div className="footer-resources">
             <h1>Resources</h1>
             <a>Articles</a>
-            <br/>
+            <br />
             <a>Blogs</a>
-            <br/>
+            <br />
             <a>MVP Development</a>
           </div>
           <div className="footer-contact">
@@ -114,17 +115,12 @@ const Layout = ({ children, isDrawerOpen, toggleDrawer }) => (
         </Footer>
 
         <VeryBottomFooter>
-          <div className="very-bottom-footer-item">
-            Careers
-          </div>
-          <div className="very-bottom-footer-item">
-            Terms of Service
-          </div>
+          <div className="very-bottom-footer-item">Careers</div>
+          <div className="very-bottom-footer-item">Terms of Service</div>
           <div className="very-bottom-footer-item">
             © <a href="https://www.evaluates2.io">Evaluates2</a>{' '}
             {new Date().getFullYear()}
           </div>
-            
         </VeryBottomFooter>
       </ThemeProvider>
     )}
