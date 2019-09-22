@@ -2,9 +2,11 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 const Footer = styled.div`
-    background-color: lightgoldenrodyellow;
-    min-height: 90px;
-    width: 100%;
+  background-color: lightgoldenrodyellow;
+  min-height: 90px;
+  width: 100%;
+
+  display: grid;
 
   // desktop, 4 items in a row
   grid-template-columns: auto auto auto auto auto;
@@ -22,26 +24,13 @@ const Footer = styled.div`
   background-color: #000011;
   color: white;
 
-  a {
-      color: #777777;
-      cursor: pointer;
-
-        @media only screen and (max-width: 640px){
-            display: none;
-        }
-
-      :hover {
-          color: #f9f9f9f9;
-      }
-  }
-
   .img-container {
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    grid-row: 1 / 3;
+    grid-row: 1 / 5;
     grid-column: 1;
     flex: 1;
     /* height: 100%; */
@@ -79,14 +68,12 @@ const Footer = styled.div`
 
   }
 
-  .footer-grid-block {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    justify-content: flex-start;
-  }
   
 
-  `
+  .gatsby-image-wrapper {
+    width: 80px;
+    height: 80px;
+  }
+`;
 
 export default Footer;
