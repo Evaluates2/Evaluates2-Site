@@ -25,7 +25,7 @@ const Content = styled.section`
       p.isDrawerOpen
         ? `translateX(${p.theme.size(8)}) translateZ(-20px)`
         : 'none'};
-  padding-top: ${p => p.theme.size(5)};
+  /* padding-top: ${p => p.theme.size(5)};
   padding-left: ${p => p.theme.size(1)};
   padding-right: ${p => p.theme.size(1)}; */
 `;
