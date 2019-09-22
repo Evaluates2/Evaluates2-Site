@@ -39,6 +39,11 @@
   src: url('../fonts/Raleway/Raleway-SemiBoldItalic.ttf');
 }
 
+@font-face {
+  font-family: 'e2-Raleway-Extra-Bold';
+  src: url('../fonts/Raleway/Raleway-ExtraBold.ttf');
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
