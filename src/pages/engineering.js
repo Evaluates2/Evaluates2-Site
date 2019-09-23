@@ -10,6 +10,7 @@ import StaffAugmentationImage from '../components/img-components/staff-augmentat
 import JsFizzbuzzScreenshotImage from '../components/img-components/js-fizzbuzz.img';
 import KeyPrinciplesHeader from './../components/generic-reusable-components/key-principle-header';
 import KeyPrinciplesInfoBlock from './../components/generic-reusable-components/key-principles-info-block';
+import ChangeGearsBlock from './../components/generic-reusable-components/change-gears-block';
 
 const EngineeringPageContainer = styled.div`
   font-family: 'e2-Raleway-Black';
@@ -812,6 +813,8 @@ const EngineeringPage = () => {
         <KeyPrinciplesHeader headerText="Healthy Dependencies"></KeyPrinciplesHeader>
         <KeyPrinciplesInfoBlock data={keyPrinciplesData['Healthy Dependencies']}></KeyPrinciplesInfoBlock>
         
+        <ChangeGearsBlock headerText='Find out more about how we work...' linkText='Product Management' linkTo='/product-management'></ChangeGearsBlock>
+
         <CallToActionFooter>
           <h1>Ready to partner with us?</h1>
           {/* <h2> */}

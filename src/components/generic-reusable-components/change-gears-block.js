@@ -3,7 +3,6 @@ import styled from '@emotion/styled';
 import { Link } from 'gatsby';
 
 const StyledChangeGearsBlock = styled.div`
-  text-decoration: none;
   position: relative;
   z-index: 5;
   display: flex;
