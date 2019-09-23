@@ -11,6 +11,7 @@ import JsFizzbuzzScreenshotImage from '../components/img-components/js-fizzbuzz.
 import KeyPrinciplesHeader from './../components/generic-reusable-components/key-principle-header';
 import KeyPrinciplesInfoBlock from './../components/generic-reusable-components/key-principles-info-block';
 import ChangeGearsBlock from './../components/generic-reusable-components/change-gears-block';
+import JoinOurTeamCornerBtn from './../components/generic-reusable-components/join-our-team-corner-btn';
 
 const EngineeringPageContainer = styled.div`
   font-family: 'e2-Raleway-Black';
@@ -20,6 +21,7 @@ const EngineeringPageContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 
   h1 {
     font-family: 'e2-Raleway-Black';
@@ -76,6 +78,7 @@ const StackableColumnsContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  padding: 0 20px;
 
   @media only screen and (max-width: 640px) {
     flex-direction: column;
@@ -142,7 +145,7 @@ const WorkTogetherSection = styled.div`
 `;
 
 const LanguagesHeaderSection = styled.div`
-  padding: 5px;
+  padding: 5px 20px;;
   background-color: #000032;
   color: white;
   display: flex;
@@ -161,7 +164,7 @@ const LanguagesHeaderSection = styled.div`
 
   p {
     text-align: left;
-    width: 100%;
+    width: 94%;
     font-size: 30px;
     line-height: 37px;
     letter-spacing: 2px;
@@ -275,19 +278,19 @@ const LanguageInfoSection = styled.div`
 `;
 
 const LanguageIdeScreenshotContainer = styled.div`
-  padding: 30px;
-  /* grid-column: 1 / 1; */
   grid-row: 3 / 3;
-
-  /* @media only screen and (min-width: 660px) {
-      grid-column: 2 / 2;
-      grid-row: 2 / 2;
-    } */
+  padding: 10px 60px;
 
   @media only screen and (min-width: 990px) {
     grid-column: 2 / 2;
     grid-row: 2 / 2;
   }
+
+  img {
+    text-align: center;
+    height: 100%;
+  }
+
 `;
 
 const BestStackForYouSection = styled.div`
@@ -827,6 +830,8 @@ const EngineeringPage = () => {
         <br />
         <br />
         <br />
+
+        <JoinOurTeamCornerBtn/>
         {/* <br />
         <ul></ul>
         <h2>Choose Your Own Tech Stack Trio!</h2>

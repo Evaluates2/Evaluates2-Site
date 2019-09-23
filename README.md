@@ -7,7 +7,7 @@ use node v11.15.0
 
 ## Usage
 
-instll dependencies
+install dependencies
 ```
 npm install
 ```
