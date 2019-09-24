@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import ServicePageHero from '../components/generic-reusable-components/service-page-hero';
 
 const stringWithBrackets = `We write requirements in the form of user stories using the format:
 As a <user>, when <action>, I want <a feature> so that <user goals>`;
@@ -10,6 +11,9 @@ As a <user>, when <action>, I want <a feature> so that <user goals>`;
 const ProductManagementPage = () => (
   <Layout>
     <SEO title="Product Management" />
+
+    <ServicePageHero title="Project Management" description="uyoo"></ServicePageHero>
+
     <h1>Product Management</h1>
     <h3>Leadership that guides successful product development</h3>
     <h1>Our process</h1>
