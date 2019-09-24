@@ -10,41 +10,26 @@ const StyledServicePageHero = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 200px;
-  margin-bottom: 200px;
+  margin-top: 60px;
 
   h1 {
-    max-width: 95vw;
-    font-size: 120px;
-    line-height: 160px;
-    font-weight: 800;
-    text-align: center;
-    letter-spacing: 5px;
-
-    font-family: 'e2-Raleway-Extra-Bold';
-
     @media only screen and (min-width: 660px) {
-      font-size: 120px;
-
+      font-size: 95px;
+      line-height: 150px;
     }
 
     @media only screen and (min-width: 990px) {
-
+      font-size: 120px;
+      line-height: 250px;
     }
   }
 
   p {
-    
-    margin: 0px 130px;
-    text-align: center;
-    font-family: 'e2-Raleway';
-    font-size: 38px;
-    letter-spacing: 1px;
-    opacity: .7;
     @media only screen and (min-width: 660px) {
-
+      font-size: 23px;
     }
     @media only screen and (min-width: 990px) {
+      font-size: 30px;
     }
   }
 `;
