@@ -97,10 +97,61 @@ const Layout = ({ children, isDrawerOpen, toggleDrawer }) => (
           onClick={() => toggleDrawer(false)}
         />
         <Drawer />
-        {/* <MobileHeader siteTitle={data.site.siteMetadata.title} /> */}
-      
-      <myFooter></myFooter>
-      
+
+        <MobileHeader siteTitle={data.site.siteMetadata.title} />
+
+        <div ></div>
+        <Footer>
+
+          {/* <div className="img-container"> */}
+            <div className="footer-img">
+              img!
+          {/* </div> */}
+          </div>
+          <div clasSName="footer-about">
+            <h1>
+              About
+            </h1>
+            <a>
+              Team
+            </a>
+          </div>
+          <div clasSName="footer-services">
+            <h1>
+              Services
+            </h1>
+            <a>
+              Engineering
+            </a>
+            <a>
+              Product Management
+            </a>
+            <a>
+              MVP Development
+            </a>
+          </div>
+          <div clasSName="footer-resources">
+            <h1>
+              Resources
+            </h1>
+            <a>
+              Articles
+            </a>
+            <a>
+              Blogs
+            </a>
+            <a>
+              MVP Development
+            </a>
+          </div>
+          <div clasSName="footer-contact">
+            <h1>
+              Contact
+            </h1>
+          </div>
+
+        </Footer>
+
       </ThemeProvider>
 
     )}
