@@ -48,7 +48,6 @@ const items = [
 
 const Drawer = ({ isDrawerOpen, toggleDrawer }) => (
   <Paper isDrawerOpen={isDrawerOpen}>
-    <MobileHeader />
     {items.map(item => (
       <Item key={item.url} to={item.url} onClick={() => toggleDrawer(false)}>
         {item.name}

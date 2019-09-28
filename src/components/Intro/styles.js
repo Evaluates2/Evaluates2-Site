@@ -8,4 +8,5 @@ export const IntroContainer = styled.div`
     overflow: hidden;
     color: white !important;
     background-image: linear-gradient(180deg,#000,#000032);
+    padding: 50px;
 `

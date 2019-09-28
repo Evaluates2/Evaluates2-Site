@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from "gatsby"
 import { ThemeProvider } from "styled-components"
 import PropTypes from "prop-types"
 
-import Seo from "../Seo"
+import SEO from "../Seo"
 import Header from "../Header"
 import theme from "../../utils/theme"
 import Scroll from "../Scroll"
@@ -13,7 +13,7 @@ import { GlobalStyle } from "./styles"
 const Global = ({ children, site, ...rest }) => (
   <ThemeProvider theme={theme}>
     <>
-      <Seo site={site.meta} {...rest} />
+      <SEO site={site.meta} {...rest} />
       <GlobalStyle />
       <Header site={site.meta} />
       {children}

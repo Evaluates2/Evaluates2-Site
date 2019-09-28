@@ -1,7 +1,51 @@
+
+@font-face {
+  font-family: 'e2-Raleway-Bold';
+  src: url('../fonts/Raleway/Raleway-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'e2-Raleway';
+  src: url('../fonts/Raleway/Raleway-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'e2-Raleway-italic';
+  src: url('../fonts/Raleway/Raleway-RegularItalic.ttf');
+}
+
+@font-face {
+  font-family: 'e2-Raleway-Black';
+  src: url('../fonts/Raleway/Raleway-Black.ttf');
+}
+
+@font-face {
+  font-family: 'e2-Raleway-Light';
+  src: url('../fonts/Raleway/Raleway-Light.ttf');
+}
+
+@font-face {
+  font-family: 'e2-Raleway-Black-Italic';
+  src: url('../fonts/Raleway/Raleway-BlackItalic.ttf');
+}
+
+@font-face {
+  font-family: 'e2-Raleway-Semi-Bold';
+  src: url('../fonts/Raleway/Raleway-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'e2-Raleway-Semi-Bold-Italic';
+  src: url('../fonts/Raleway/Raleway-SemiBoldItalic.ttf');
+}
+
+@font-face {
+  font-family: 'e2-Raleway-Extra-Bold';
+  src: url('../fonts/Raleway/Raleway-ExtraBold.ttf');
+}
+
 html {
   font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
 }
 body {
   margin: 0;
@@ -181,6 +225,10 @@ textarea {
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   font: inherit;
+}
+html {
+  font: 112.5%/1.45em georgia, serif;
+  box-sizing: border-box;
 }
 * {
   box-sizing: inherit;
@@ -607,8 +655,8 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
-@media only screen and (max-width: 480px) {
+/* @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
   }
-}
+} */

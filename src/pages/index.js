@@ -1,8 +1,10 @@
 import { graphql } from "gatsby"
 import React from "react"
 import Global from "../components/Global"
+import Layout from '../components/layout';
 import Images from "../components/Images"
 import Intro from "../components/Intro"
+import 'semantic-ui-css/semantic.min.css';
 
 export default function IndexPage({ data, location }) {
   // const { page, slideshow, updatedAt } = data
@@ -10,8 +12,10 @@ export default function IndexPage({ data, location }) {
   // const { excerpt, html } = body && body.remark
   return (
     <Global pageTitle={''} path={''} description={''}>
-      <Images/>
-      <Intro/>
+      <Layout>
+        <Images/>
+        <Intro/>
+      </Layout>
     </Global>
   )
 }

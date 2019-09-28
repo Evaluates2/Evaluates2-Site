@@ -32,7 +32,7 @@ class Header extends React.Component {
       if (prevScrollpos > currentScrollPos) {
         document.getElementsByTagName("header")[0].style.top = "0px"
       } else {
-        document.getElementsByTagName("header")[0].style.top = "-200px"
+        document.getElementsByTagName("header")[0].style.top = "-300px"
       }
       prevScrollpos = currentScrollPos;
     }
