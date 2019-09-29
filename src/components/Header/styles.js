@@ -14,9 +14,19 @@ export const Img = styled(Image)`
   :hover {
     transform: scale(1.05);
   }
+  ${mediaQuery.maxNetbook} {
+    width: 40px !important;
+    height: 40px !important;
+  }
+`
+export const Label = styled.div`
+  ${mediaQuery.maxNetbook} {
+    font-size: 20px !important;
+  }
 `
 
-export const HeaderContainer = styled.header`
+export const HeaderContainer = styled.header`  
+  transition: all 0.5s linear;
   padding: 20px;
   position: fixed;
   width: 100vw;
@@ -29,11 +39,11 @@ export const HeaderContainer = styled.header`
   grid-template-columns: auto 1fr auto auto;
   font-weight: bold;
   background-color: rgba(0, 0, 0, 0);
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-  transform-style: preserve-3d;
-  will-change: background;
   ${mediaQuery.minNetbook} {
     grid-template-areas: "title nav social search";
+  }
+  ${mediaQuery.maxNetbook} {
+    padding: 10px;
   }
 `
 
