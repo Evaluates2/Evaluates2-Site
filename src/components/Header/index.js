@@ -6,12 +6,19 @@ import Headroom from "react-headroom";
 import { StaticQuery } from "gatsby";
 import Nav from "../Nav";
 import { HeaderContainer, Logo, SiteTitle, Img, Label } from "./styles"
+import TheDImage from '../img-components/the-d.img';
 
 const ColoredHeader = styled.div`
   .blue-header {
     background-color: #000032;
   }
 `;
+
+const StyledDImage = styled.div`
+  transform: rotate(-90deg);
+  min-width: 50px;
+  min-height: 50px;
+`
 
 class Header extends React.Component {
 
@@ -68,7 +75,9 @@ class Header extends React.Component {
             <ColoredHeader >
               <HeaderContainer css={this.state.divStyle} className={this.window.location.pathname === '/about' ? 'blue-header' : ''}>
                 <SiteTitle to="/" rel="home">
-                  <Img fixed={data.file.childImageSharp.fixed} />
+                  <StyledDImage>
+                    <TheDImage />
+                  </StyledDImage>
                   <Label>
                     (evaluates2)
                   </Label>

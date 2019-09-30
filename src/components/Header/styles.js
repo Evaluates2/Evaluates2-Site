@@ -12,9 +12,6 @@ export const Img = styled(Image)`
   transition: ease-in-out;
   margin-bottom: 0.3em;
   transform: rotate(-90deg);
-  :hover {
-    transform: scale(1.05);
-  }
   ${mediaQuery.maxNetbook} {
     width: 40px !important;
     height: 40px !important;
