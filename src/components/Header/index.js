@@ -66,7 +66,7 @@ class Header extends React.Component {
         render={data => (
           <Headroom css="z-index: 20;">
             <ColoredHeader >
-              <HeaderContainer css={this.state.divStyle} className={this.window.location.pathname === '/about' ? 'blue-header' : 'blue-header'}>
+              <HeaderContainer css={this.state.divStyle} className={this.window.location.pathname === '/about' ? 'blue-header' : ''}>
                 <SiteTitle to="/" rel="home">
                   <Img fixed={data.file.childImageSharp.fixed} />
                   <Label>
