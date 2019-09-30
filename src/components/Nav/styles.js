@@ -32,3 +32,11 @@ export const NavLink = styled(Link).attrs({
   ${navLinkStyle};
   ${props => props.span && span};
 `
+
+export const ParentNavLink = styled(Link).attrs({
+  activeClassName: `paactive`,
+  partiallyActive: true,
+})`
+  ${navLinkStyle};
+  ${props => props.span && span};
+`

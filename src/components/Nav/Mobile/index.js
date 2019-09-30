@@ -2,7 +2,7 @@ import React, { memo, useEffect, useRef, useState } from "react"
 import { animated, useSpring } from "react-spring"
 import ResizeObserver from "resize-observer-polyfill"
 import { useClickOutside } from "../../../utils/hooks"
-import { Children, Closer, Icons, Menu, MobileNavDiv, NavLink } from "./styles"
+import { Children, Closer, Icons, Menu, MobileNavDiv, NavLink, ParentNavLink, Parent } from "./styles"
 
 export const useSize = (ref, quantity) => {
   const [size, setSize] = useState(0)
@@ -17,7 +17,7 @@ export const useSize = (ref, quantity) => {
   return size
 }
 
-const Tree = memo(({ text, url, children }) => {
+const Tree = memo(({ text, url, children, length }) => {
   const ref = useRef()
   const [open, setOpen] = useState(false)
   const treeHeight = useSize(ref, `height`)
@@ -33,7 +33,12 @@ const Tree = memo(({ text, url, children }) => {
   return (
     <span>
       <Icon onClick={() => setOpen(!open)} />
-      <NavLink to={url}>{text}</NavLink>
+      {
+        length > 0 ?
+        <Parent onClick={() => setOpen(!open)}>{text}</Parent>
+        :
+        <NavLink to={url}>{text}</NavLink>
+      }
       {children && (
         <Children style={{ opacity, height }} open={open}>
           <animated.div style={{ transform }} ref={ref}>
@@ -56,10 +61,10 @@ export default function MobileNav({ nav }) {
       <MobileNavDiv ref={ref} open={open} onScroll={e => e.preventDefault()}>
         <Closer onClick={toggleNav} />
         {nav.map(({node: { url, title, subNav }}) => (
-          <Tree key={url} url={url || subNav[0].url} text={title}>
+          <Tree key={url} url={url || subNav[0].url} text={title} length={subNav.length}>
             {subNav.length ?
               subNav.map(item => (
-                <Tree key={item.url} url={item.url} text={item.title} />
+                <Tree key={item.url} url={item.url} text={item.title} length={0}/>
               )): ''}
           </Tree>
         ))}

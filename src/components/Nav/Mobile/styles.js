@@ -6,9 +6,9 @@ import { KeyboardArrowRight as Arrow } from "styled-icons/material/KeyboardArrow
 import { KeyboardArrowUp as Less } from "styled-icons/material/KeyboardArrowUp"
 import { ThMenu } from "styled-icons/typicons/ThMenu"
 import mediaQuery from "../../../utils/mediaQuery"
-import { NavLink } from "../styles"
+import { NavLink, ParentNavLink } from "../styles"
 
-export { NavLink }
+export { NavLink, ParentNavLink }
 
 const iconCss = css`
   width: 1em;
@@ -18,11 +18,11 @@ const iconCss = css`
 `
 
 export const Icons = {
-  More: styled(More)`
+  More: styled(Arrow)`
     ${iconCss};
     color: ${props => props.theme.lightBlue};
   `,
-  Less: styled(Less)`
+  Less: styled(More)`
     ${iconCss};
     color: ${props => props.theme.lightBlue};
   `,
@@ -30,6 +30,22 @@ export const Icons = {
     ${iconCss};
   `,
 }
+
+export const Parent = styled.div`
+  margin: 0 30px;
+  opacity: .4;
+  -webkit-transition: opacity .2s ease;
+  transition: opacity .2s ease;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  display: inline;
+  :hover {
+    color: white;
+    opacity: 1;
+    cursor: pointer !important;
+  }
+`
 
 export const MobileNavDiv = styled.nav`
   position: fixed;
