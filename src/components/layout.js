@@ -22,9 +22,9 @@ const Content = styled.section`
   transition: transform 0.3s ease-in-out;
   transform: perspective(200px)
     ${p =>
-      p.isDrawerOpen
-        ? `translateX(${p.theme.size(8)}) translateZ(-20px)`
-        : 'none'};
+    p.isDrawerOpen
+      ? `translateX(${p.theme.size(8)}) translateZ(-20px)`
+      : 'none'};
   /* padding-top: ${p => p.theme.size(5)};
   padding-left: ${p => p.theme.size(1)};
   padding-right: ${p => p.theme.size(1)}; */
@@ -43,6 +43,10 @@ const Overlay = styled.div`
   pointer-events: ${p => (p.isDrawerOpen ? 'all' : 'none')};
 `;
 
+const StyledDImage = styled.div`
+  transform: rotate(-90deg);
+`
+
 const VeryBottomFooter = styled.div`
   display: flex;
   justify-content: flex-end;
@@ -54,13 +58,26 @@ const VeryBottomFooter = styled.div`
   a {
       color: #777777;
       cursor: pointer;
+      font-size: 14px;
 
       line-height: 1.3em;
 
       :hover {
           color: #f9f9f9f9;
       }
+
+      @media only screen and (max-width: 660px) {
+      font-size: 18px;
+    }
   }
+
+  p {
+    color: #777777;
+    font-size: 14px;
+    font-family: 'e2-Raleway-Bold';
+    padding: 0 10px;
+  }
+    
   .very-bottom-footer-item {
     display: flex;
     justify-content: center;
@@ -101,43 +118,75 @@ const Layout = ({ children, isDrawerOpen, toggleDrawer }) => (
         <div />
         <Footer>
           <div className="img-container">
+          {/* <Link to='/'>
+          <Link> */}
             <div className="footer-img">
-              <TheDImage></TheDImage>
+              <StyledDImage>
+
+                <TheDImage />
+              </StyledDImage>
             </div>
-            <h1>(evaluates2)</h1>
+            <h2>(evaluates2)</h2>
           </div>
-          <div className="footer-grid-block">
-            <h1>About</h1>
-            <a>Team</a>
+          <div className="footer-grid-block footer-about">
+            <h2>About</h2>
+            <Link to='/about'>
+              <a>About Us</a>
+            </Link>
+            <br />
+            <Link to='/about'>
+              <a>Team</a>
+            </Link>
+            <br />
           </div>
-          <div className="footer-grid-block">
-            <h1>Services</h1>
-            <a>Engineering</a>
+          <div className="footer-grid-block footer-services">
+            <h2>Services</h2>
+            <Link to='/engineering'>
+              <a>Engineering</a>
+            </Link>
             <br />
-            <a>Product Management</a>
+            <Link to='/product-management'>
+              <a>Product Management</a>
+            </Link>
             <br />
-            <a>MVP Development</a>
+            <Link to='/startup'>
+              <a>Startup</a>
+            </Link>
+            <br />
+            <Link to='/data-and-analytics'>
+              <a>Data & Analytics</a>
+            </Link>
+            <br />
           </div>
-          <div className="footer-grid-block">
-            <h1>Resources</h1>
-            <a>Articles</a>
+          <div className="footer-grid-block footer-resources">
+            <h2>Our Work</h2>
+            <Link to='/our-work'>
+              <a>Our Work</a>
+            </Link>
             <br />
-            <a>Blogs</a>
-            <br />
-            <a>MVP Development</a>
+            <Link to='/our-work'>
+              Open Source
+              <br />
+            </Link>
+
           </div>
-          <div className="footer-grid-block">
-            <h1>Contact</h1>
-            <a>Contact Us</a>
+          <div className="footer-grid-block footer-contact">
+            <h2>Contact</h2>
+            <Link to='/contact'>
+              Contact Us
+            </Link>
+            <br />
           </div>
         </Footer>
 
         <VeryBottomFooter>
-          <Link to="/" className="very-bottom-footer-item orange-link">Careers</Link>
-          <a className="very-bottom-footer-item">Terms of Service</a>
-          <a className="very-bottom-footer-item">
+          <Link to="/careers" className="very-bottom-footer-item orange-link">Careers</Link>
+          <Link to="/terms" className="very-bottom-footer-item">Terms of Service</Link>
+
+          <p>
             ©&nbsp;&nbsp;(Evaluates2)&nbsp;&nbsp;{new Date().getFullYear()}
-          </a>
+          </p>
+
         </VeryBottomFooter>
       </ThemeProvider>
     )}

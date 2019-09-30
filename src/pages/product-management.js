@@ -3,7 +3,6 @@ import { Link } from 'gatsby';
 import Global from "../components/Global"
 import Layout from '../components/layout';
 import styled from '@emotion/styled';
-import SEO from '../components/seo';
 import ServicePageHero from '../components/generic-reusable-components/service-page-hero';
 import SecondServiceHero from '../components/generic-reusable-components/service-second-hero';
 import StackableColumnsContainer from '../components/generic-reusable-components/stackable-columns-container';
@@ -34,8 +33,10 @@ const ProjectManagementPageContainer = styled.div`
 `;
 
 const ProductManagementPage = () => (
-  <Global pageTitle={''} path={''} description={''}>
+  <Global pageTitle={'Product Management'} path={'product-management'} description={'product-management'}>
+
     <Layout>
+
       <ProjectManagementPageContainer>
         <ServicePageHero
           title="Product Management"
@@ -55,7 +56,7 @@ const ProductManagementPage = () => (
               every project by collecting product requirements, aligning with your
               team on goals, and building out an initial project estimate
               spreadsheet that is broken down by a backlog and icebox.
-            </p>
+          </p>
             <p>
               The primary goal of the kickoff is to get alignment among all team
               members: clarify the key goals and the anti-goals (what we will not
@@ -64,7 +65,7 @@ const ProductManagementPage = () => (
               prioritization of features. Once we've completed this process with
               your team, we'll have the information we need to dive in head-first
               to product development.
-            </p>
+          </p>
           </StackableColumn>
           <StackableColumn>
             <ProgressTrackingImage />
@@ -73,7 +74,7 @@ const ProductManagementPage = () => (
               Once a project is kicked off, Def Method PMs use an agile process to
               manage product development. This includes daily standups, weekly
               IPMs, weekly demos and project retros.
-            </p>
+          </p>
             <p>
               The PMs will work with the project management tools that your team
               prefers. For user story tracking we commonly use Pivotal Tracker,
@@ -83,7 +84,7 @@ const ProductManagementPage = () => (
               scale projects. We typically use Slack for communication, Google
               Hangouts/Meet for remote meetings, Rollbar for error tracking and
               New Relic for performance monitoring.
-            </p>
+          </p>
           </StackableColumn>
           <StackableColumn>
             <MaintenanceImage />
@@ -92,7 +93,7 @@ const ProductManagementPage = () => (
               As is a natural course for many websites, development moves
               temporarily from active development of new features to ongoing
               maintenance.
-            </p>
+          </p>
             <p>
               As part of our development process, we will implement the
               appropriate tracking tools to ensure your application is effectively
@@ -103,17 +104,15 @@ const ProductManagementPage = () => (
               goes down. We offer maintenance plans for customers that are
               interested in having the option for development of small features
               and bug resolution.
-            </p>
+          </p>
           </StackableColumn>
         </StackableColumnsContainer>
-
         <br />
         <br />
         <br />
         <br />
         <br />
         <br />
-
         <StackableImageAndTextDuo
           title="Daily Standups"
           header1="15-min Standups"
@@ -147,22 +146,40 @@ const ProductManagementPage = () => (
           buttonText="Learn More"
           buttonLinkTo="/"
         ></StackableImageAndTextDuo>
-
+        <StackableImageAndTextDuo
+          title="Pair Programming"
+          header1="A Collective Knowledge And Ownership of the Codebase"
+          paragraph1="We like pair programming because it's aawesome!"
+          header2="Story Acceptance"
+          paragraph2="Our engineering teams deliver continuously and you, the client, play the primary role in reviewing and accepting delivered features. As soon as a user story is complete it is put in a queue for you to review and approve. To facilitate the review and feedback process we hold weekly demos of the delivered features with the engineers. This is where you provide feedback to the team on what you see. The ongoing nature of the review and feedback process throughout development allows you to call in adjustments as the work is being done reducing significant rework and redesign. It also provides full transparency to you with regard to the progress and quality of work being conducted."
+          imgName="USER_STORIES"
+          imgOnLeft={false}
+          buttonText="Learn More"
+          buttonLinkTo="/"
+        ></StackableImageAndTextDuo>
+        <StackableImageAndTextDuo
+          title="Demo Time!"
+          header1="A Happy Ending For Every Sprint"
+          paragraph1="We like pair programming because it's aawesome!"
+          header2="Story Acceptance"
+          paragraph2="Our engineering teams deliver continuously and you, the client, play the primary role in reviewing and accepting delivered features. As soon as a user story is complete it is put in a queue for you to review and approve. To facilitate the review and feedback process we hold weekly demos of the delivered features with the engineers. This is where you provide feedback to the team on what you see. The ongoing nature of the review and feedback process throughout development allows you to call in adjustments as the work is being done reducing significant rework and redesign. It also provides full transparency to you with regard to the progress and quality of work being conducted."
+          imgName="USER_STORIES"
+          imgOnLeft={true}
+          buttonText="Learn More"
+          buttonLinkTo="/"
+        ></StackableImageAndTextDuo>
         <ChangeGearsBlock
           headerText="Find out more about our development work..."
           linkText="Engineering"
           linkTo="/engineering"
         ></ChangeGearsBlock>
-
         <ReadyToGetStartedSection>
           <h1>Ready to partner with us?</h1>
           <Link to="/contact">Contact us today!</Link>
         </ReadyToGetStartedSection>
-
         <JoinOurTeamCornerBtn />
       </ProjectManagementPageContainer>
     </Layout>
   </Global>
 );
-
 export default ProductManagementPage;

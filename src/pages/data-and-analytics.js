@@ -18,7 +18,7 @@ import SecondServiceHero from '../components/generic-reusable-components/service
 import ReadyToGetStartedSection from '../components/generic-reusable-components/ready-to-get-started-section';
 import Global from "../components/Global"
 
-const EngineeringPageContainer = styled.div`
+const DataAndAnalyticsPageContainer = styled.div`
   font-family: 'e2-Raleway-Black';
   background-color: #000032;
   color: white;
@@ -395,7 +395,7 @@ const keyPrinciplesData = {
   },
 };
 
-const EngineeringPage = () => {
+const DataAndAnalyticsPage = () => {
   const [lastLanguageClicked, setLastLanguageClicked] = useState('');
   const [lastLanguageHovered, setLastLanguageHovered] = useState('');
   const [languageSelected, setLanguageSelected] = useState('');
@@ -428,12 +428,12 @@ const EngineeringPage = () => {
   };
 
   return (
-    <Global pageTitle={'Engineering'} path={'engineering'} description={'engineering'}>
+    <Global pageTitle={'Data & Analytics'} path={'data-and-analytics'} description={'data and analytics'}>
       <Layout>
 
-        <EngineeringPageContainer onClick={pageClicked}>
+        <DataAndAnalyticsPageContainer onClick={pageClicked}>
 
-          <ServicePageHero title="Engineering" description="Code crafted with care."></ServicePageHero>
+          <ServicePageHero title="DataAndAnalytics" description="Code crafted with care."></ServicePageHero>
           <SecondServiceHero title="Ways we can work together" description="...to get your products built."></SecondServiceHero>
 
           <StackableColumnsContainer>
@@ -707,9 +707,9 @@ const EngineeringPage = () => {
           <br />
           <JoinOurTeamCornerBtn />
 
-        </EngineeringPageContainer>
+        </DataAndAnalyticsPageContainer>
       </Layout>
     </Global>
   );
 };
-export default EngineeringPage;
+export default DataAndAnalyticsPage;

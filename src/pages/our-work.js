@@ -16,9 +16,9 @@ import StackableColumnsContainer from '../components/generic-reusable-components
 import StackableColumn from '../components/generic-reusable-components/stackable-column';
 import SecondServiceHero from '../components/generic-reusable-components/service-second-hero';
 import ReadyToGetStartedSection from '../components/generic-reusable-components/ready-to-get-started-section';
-import Global from "../components/Global"
+import Global from "../components/Global";
 
-const EngineeringPageContainer = styled.div`
+const OurWorkPageContainer = styled.div`
   font-family: 'e2-Raleway-Black';
   background-color: #000032;
   color: white;
@@ -395,7 +395,7 @@ const keyPrinciplesData = {
   },
 };
 
-const EngineeringPage = () => {
+const OurWorkPage = () => {
   const [lastLanguageClicked, setLastLanguageClicked] = useState('');
   const [lastLanguageHovered, setLastLanguageHovered] = useState('');
   const [languageSelected, setLanguageSelected] = useState('');
@@ -428,12 +428,12 @@ const EngineeringPage = () => {
   };
 
   return (
-    <Global pageTitle={'Engineering'} path={'engineering'} description={'engineering'}>
+    <Global pageTitle={'Our Work'} path={'our-work'} description={'our-work'}>
       <Layout>
 
-        <EngineeringPageContainer onClick={pageClicked}>
+        <OurWorkPageContainer onClick={pageClicked}>
 
-          <ServicePageHero title="Engineering" description="Code crafted with care."></ServicePageHero>
+          <ServicePageHero title="OurWork" description="Code crafted with care."></ServicePageHero>
           <SecondServiceHero title="Ways we can work together" description="...to get your products built."></SecondServiceHero>
 
           <StackableColumnsContainer>
@@ -707,9 +707,9 @@ const EngineeringPage = () => {
           <br />
           <JoinOurTeamCornerBtn />
 
-        </EngineeringPageContainer>
+        </OurWorkPageContainer>
       </Layout>
     </Global>
   );
 };
-export default EngineeringPage;
+export default OurWorkPage;

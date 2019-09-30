@@ -18,13 +18,17 @@
             },
             {
                 "title": "Startup",
-                "url": "/product-discovery"
+                "url": "/startup"
+            },
+            {
+                "title": "Data & Analytics",
+                "url": "/data-and-analytics"
             }
         ]
     },
     {
-        "title": "Resources",
-        "url": "/success-stories",
+        "title": "Our Work",
+        "url": "/our-work",
         "subNav": []
     },
     {

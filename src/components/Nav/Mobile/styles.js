@@ -20,7 +20,7 @@ const iconCss = css`
 export const Icons = {
   More: styled(More)`
     ${iconCss};
-    color: ${props => props.theme.lightGreen};
+    color: ${props => props.theme.lightBlue};
   `,
   Less: styled(Less)`
     ${iconCss};

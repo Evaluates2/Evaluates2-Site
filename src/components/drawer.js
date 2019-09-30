@@ -40,9 +40,9 @@ const items = [
   { url: '/about/', name: 'About' }, 
   { url: '/engineering/', name: `Engineering` }, 
   { url: '/product-management/', name: 'Product Management' }, 
-  { url: '/product-discovery/', name: 'Product Discovery' },
-  { url: '/our-values/', name: 'Our Values' },
-  { url: '/success-stories/', name: 'Success Stories' },
+  { url: '/data-and-analytics/', name: 'Data & Analytics' }, 
+  { url: '/startup/', name: 'Product Discovery' },
+  { url: '/our-work/', name: 'Our Work' },
   { url: '/contact/', name: 'Contact' }
 ];
 

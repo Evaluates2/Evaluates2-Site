@@ -15,7 +15,7 @@ const Global = ({ children, site, ...rest }) => (
     <>
       <SEO site={site.meta} {...rest} />
       <GlobalStyle />
-      <Header site={site.meta} />
+        <Header site={site.meta} />
       {children}
       <Scroll showBelow={1500} css="position: fixed; right: 1em;" />
     </>

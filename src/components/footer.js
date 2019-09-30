@@ -27,10 +27,56 @@ const Footer = styled.div`
       color: #777777;
       cursor: pointer;
 
+      font-size: 17px;
       line-height: 1.3em;
 
       :hover {
           color: #f9f9f9f9;
+      }
+
+      @media only screen and (max-width: 660px) {
+        font-size: 35px;
+      }
+  }
+
+  h1 {
+    
+    display: flex;
+    color: white;
+    font-family: 'e2-Raleway-Extra-Bold';
+    font-size: 31px;
+    letter-spacing:2px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    height: 100%;
+    margin: auto;
+    align-items: left;
+    flex-direction: column;
+    padding: 15px;
+    /* width: 300px; */
+  }
+  
+  h2 {
+    
+    /* display: flex;
+    color: white; */
+    font-family: 'e2-Raleway-Extra-Bold';
+    font-size: 31px;
+    /* letter-spacing: 1.9px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    height: 100%;
+    margin: auto; */
+    /* align-items: left; */
+    text-align: left;
+    /* flex-direction: column; */
+    padding-bottom: 15px;
+    /* width: 300px; */
+
+    @media only screen and (max-width: 660px) {
+        font-size: 50px;
       }
   }
 
@@ -46,26 +92,13 @@ const Footer = styled.div`
     /* height: 100%; */
     /* max-width: 60px; */
     /* min-width: 400px; */
-    @media only screen and (max-width: 640px) {
-      display: none;
+    padding-right: 20px;
+    @media only screen and (max-width: 660px) {
+    padding: 5px;
+      /* display: none; */
+      margin: 20px 20px 40px;
     }
 
-    h1 {
-    
-    display: flex;
-    color: white;
-    font-family: 'e2-Raleway-Black';
-    font-size: 31px;
-    letter-spacing: 1.9px;
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    height: 100%;
-    margin: auto;
-    align-items: left;
-    flex-direction: column;
-    /* width: 300px; */
-  }
 }
 
 .footer-img {
@@ -75,7 +108,8 @@ const Footer = styled.div`
     flex-direction: column;
     flex: 1;
     max-width: 100px;
-
+    
+   
   }
 
   .footer-grid-block {
@@ -83,6 +117,11 @@ const Footer = styled.div`
     flex-direction: column;
     flex: 1;
     justify-content: flex-start;
+    margin: 5px;
+
+    @media only screen and (max-width: 660px) {
+      padding-left: 20px;
+    }
   }
   
 

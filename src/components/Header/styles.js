@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 import { Link } from "gatsby"
 import Image from 'gatsby-image'
 import mediaQuery from "../../utils/mediaQuery"
@@ -11,6 +11,7 @@ export const Img = styled(Image)`
   color: #f0f;
   transition: ease-in-out;
   margin-bottom: 0.3em;
+  transform: rotate(-90deg);
   :hover {
     transform: scale(1.05);
   }

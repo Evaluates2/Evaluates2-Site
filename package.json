@@ -27,12 +27,12 @@
     "react-redux": "^6.0.0",
     "react-spring": "^8.0.27",
     "redux": "^4.0.1",
-    "typeface-raleway": "^0.0.75",
     "resize-observer-polyfill": "^1.5.1",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.88.0",
     "styled-components": "^4.3.2",
-    "styled-icons": "^8.3.0"
+    "styled-icons": "^8.3.0",
+    "typeface-raleway": "^0.0.75"
   },
   "keywords": [
     "gatsby",
