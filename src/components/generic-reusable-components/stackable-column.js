@@ -19,21 +19,27 @@ const StackableColumn = styled.div`
 
   h1 {
     font-family: 'e2-Raleway-Bold';
-    font-size: 26px;
+    font-size: 40px;
     max-width: 95vw;
-    line-height: 60px;
+    line-height: 80px;
     text-align: center;
     -webkit-letter-spacing: 4px;
     -moz-letter-spacing: 4px;
     -ms-letter-spacing: 4px;
     letter-spacing: 1.5px;
+    /* margin: 20px auto; */
+    min-height: 110px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
   }
 
   p {
     margin-bottom: 10px;
-    line-height: 30px;
+    line-height: 35px;
     text-align: justify;
-    font-size: 17px;
+    font-size: 20px;
     letter-spacing: 1.25px;
     font-family: 'e2-Raleway-Light';
   }
@@ -42,6 +48,8 @@ const StackableColumn = styled.div`
     height: auto;
     width: 80%;
     text-align: center;
+    max-width: 270px;
+    
   }
 `;
 

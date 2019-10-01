@@ -366,6 +366,10 @@ const languageDescriptionsMap = {
     "Go Lang stuff! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with theincluding versions of Lorem Ipsum.",
   Rust:
     "Rust stuff! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the including versions of Lorem Ipsum.",
+  Swift:
+    "Swift stuff! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the including versions of Lorem Ipsum.",
+  Kotlin:
+    "Kotlin stuff! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the including versions of Lorem Ipsum.",
   Java:
     "Java stuff! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the including versions of Lorem Ipsum.",
   'C#':
@@ -566,6 +570,34 @@ const DataAndAnalyticsPage = () => {
                   }}
                 >
                   Rust
+              </li>
+                <li
+                  className={languageSelected === 'Swift' ? 'li-selected' : ''}
+                  onClick={event => {
+                    handleLanguageOptionClick('Swift', event);
+                  }}
+                  onMouseOver={() => {
+                    handleLanguageOptionHoverOver('Swift');
+                  }}
+                  onMouseOut={() => {
+                    handleLanguageOptionHoverOut();
+                  }}
+                >
+                  Swift
+              </li>
+                <li
+                  className={languageSelected === 'Kotlin' ? 'li-selected' : ''}
+                  onClick={event => {
+                    handleLanguageOptionClick('Kotlin', event);
+                  }}
+                  onMouseOver={() => {
+                    handleLanguageOptionHoverOver('Kotlin');
+                  }}
+                  onMouseOut={() => {
+                    handleLanguageOptionHoverOut();
+                  }}
+                >
+                  Kotlin
               </li>
                 <li
                   className={languageSelected === 'Java' ? 'li-selected' : ''}

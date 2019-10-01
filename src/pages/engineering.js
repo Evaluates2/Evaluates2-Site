@@ -67,7 +67,7 @@ const SectionHero = styled.div`
     font-size: 38px;
     opacity: 0.7;
     @media only screen and (min-width: 660px) {
-      font-size: 23px;
+      font-size: 28px;
     }
     @media only screen and (min-width: 990px) {
       /* font-size: 30px; */
@@ -84,12 +84,16 @@ const WorkTogetherSection = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 400px;
+  margin: 300px;
   padding: 60px 40px;
   h1 {
-    line-height: 55px;
+    font-size: 85px;
+    line-height: 75px;
     text-align: left;
+    margin-bottom: 80px;
   }
   p {
+    font-size: 28px;
     text-align: left;
     width: 100%;
   }
@@ -366,6 +370,10 @@ const languageDescriptionsMap = {
     "Go Lang stuff! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with theincluding versions of Lorem Ipsum.",
   Rust:
     "Rust stuff! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the including versions of Lorem Ipsum.",
+  Swift:
+    "Swift stuff! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the including versions of Lorem Ipsum.",
+  Kotlin:
+    "Kotlin stuff! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the including versions of Lorem Ipsum.",
   Java:
     "Java stuff! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the including versions of Lorem Ipsum.",
   'C#':
@@ -432,10 +440,29 @@ const EngineeringPage = () => {
       <Layout>
 
         <EngineeringPageContainer onClick={pageClicked}>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+        <SectionHero>
+          <h1>
+          Engineering
+          </h1>
+          <p>Code crafted with care.
+            </p>
+        </SectionHero>
+          {/* <ServicePageHero title="Engineering" description="Code crafted with care."></ServicePageHero> */}
+          {/* <SecondServiceHero title="Ways we can work together" description="...to get your products built."></SecondServiceHero> */}
 
-          <ServicePageHero title="Engineering" description="Code crafted with care."></ServicePageHero>
-          <SecondServiceHero title="Ways we can work together" description="...to get your products built."></SecondServiceHero>
-
+          <WorkTogetherSection>
+    
+            <h1>
+            Ways we can work together
+            </h1>
+            <p>
+            ...to get your products built.
+              </p>
+          </WorkTogetherSection>
           <StackableColumnsContainer>
             <StackableColumn>
               <TechnicalAuditsImage />
@@ -568,6 +595,34 @@ const EngineeringPage = () => {
                   Rust
               </li>
                 <li
+                  className={languageSelected === 'Swift' ? 'li-selected' : ''}
+                  onClick={event => {
+                    handleLanguageOptionClick('Swift', event);
+                  }}
+                  onMouseOver={() => {
+                    handleLanguageOptionHoverOver('Swift');
+                  }}
+                  onMouseOut={() => {
+                    handleLanguageOptionHoverOut();
+                  }}
+                >
+                  Swift
+              </li>
+                <li
+                  className={languageSelected === 'Kotlin' ? 'li-selected' : ''}
+                  onClick={event => {
+                    handleLanguageOptionClick('Kotlin', event);
+                  }}
+                  onMouseOver={() => {
+                    handleLanguageOptionHoverOver('Kotlin');
+                  }}
+                  onMouseOut={() => {
+                    handleLanguageOptionHoverOut();
+                  }}
+                >
+                  Kotlin
+              </li>
+                <li
                   className={languageSelected === 'Java' ? 'li-selected' : ''}
                   onClick={event => {
                     handleLanguageOptionClick('Java', event);
@@ -643,6 +698,8 @@ const EngineeringPage = () => {
                 <li>Vue (JavaScript)</li>
                 <li>Elm</li>
                 <li>NativeScript</li>
+                <li>Native Ios (Swift)</li>
+                <li>Native Android (Kotlin)</li>
               </ul>
             </StackableColumn>
             <StackableColumn>
