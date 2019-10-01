@@ -24,10 +24,17 @@ export const SubNav = styled.div`
   border-radius: ${props => props.theme.smallBorderRadius};
   grid-gap: 0.2em 0.5em;
   position: absolute;
+  background-color: #000032;
+  border-radius: 5px;
   transition: ${props => props.theme.shortTrans};
   padding: 0.5em 0.7em;
   grid-template-columns: ${props =>
     props.children.length >= 10 ? `1fr 1fr` : `1fr`};
-  background-color: transparent;
+  /* background-color: transparent; */
   ${fadeInOnHoverParent(NavEntry)}
+
+    a {
+      background-color: rgba(0,0,0,0);
+    }
+
 `

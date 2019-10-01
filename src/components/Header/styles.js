@@ -31,6 +31,7 @@ export const HeaderContainer = styled.header`
   background: ${props => props.theme.darkBlue};
   display: grid;
   grid-gap: calc(1em + 1vw);
+
   align-items: center;
   justify-items: center;
   grid-template-areas: "nav title social search";
@@ -52,6 +53,7 @@ export const SiteTitle = styled(Link)`
   grid-auto-flow: column;
   grid-gap: 1em;
   color: white;
+  background-color: #000032;
   transition: ${props => props.theme.shortTrans};
   ${mediaQuery.minTablet} {
     grid-auto-flow: column;

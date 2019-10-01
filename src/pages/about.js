@@ -3,6 +3,9 @@ import Global from "../components/Global"
 import Layout from '../components/layout';
 import styled from '@emotion/styled';
 import JoinOurTeamCornerBtn from './../components/generic-reusable-components/join-our-team-corner-btn';
+import PersonImage from '../components/img-components/person-img.img';
+import Link from 'gatsby-link';
+import TeamMemberBlock from './../components/generic-reusable-components/team-member-block';
 
 const AboutHero = styled.div`
   h1 {
@@ -103,6 +106,9 @@ const AboutBlurb = styled.div`
   }
 `;
 
+
+
+
 const OurTeamSection = styled.div`
 
   padding: 0 100px;
@@ -112,9 +118,45 @@ const OurTeamSection = styled.div`
     font-size: 80px;
     line-height: 100px;
     font-weight: 800;
+    margin-bottom: 40px;
   }
 
   .our-team-grid {
+
+    display: grid;
+    grid-gap: 35px;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+    grid-template-columns: auto auto auto auto auto auto auto;
+
+    @media only screen and (max-width: 1350px) {
+    grid-template-columns: auto auto auto auto auto auto;
+        
+      }
+
+    @media only screen and (max-width: 1160px) {
+    grid-template-columns: auto auto auto auto auto;
+        
+      }
+    @media only screen and (max-width: 990px) {
+    grid-template-columns: auto auto auto auto;
+        
+      }
+
+    @media only screen and (max-width: 810px) {
+    grid-template-columns: auto auto auto;
+
+      }
+    @media only screen and (max-width: 610px) {
+    grid-template-columns: auto auto ;
+
+      }
+    @media only screen and (max-width: 430px) {
+    grid-template-columns: auto;
+
+      }
+      
 
     .team-member-cell {
 
@@ -201,6 +243,19 @@ const PinkBox = styled.div`
     align-items: flex-start;
     background-image: linear-gradient(51deg,#f0f,#efe51a);
     color: #fff;
+    border-radius: 4px;
+
+    h1 {
+      font-size: 35px;
+      margin: 20px auto 30px 0;
+      text-align: left;
+      min-height: 85px;
+    }
+
+    p {
+      font-size: 24px;
+
+    }
 `;
 
 const AboutPage = () => (
@@ -254,9 +309,27 @@ const AboutPage = () => (
         <h1>Our Team</h1>
         <div className="our-team-grid">
 
-          <div>
+          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
+          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
+          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
+          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
+          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
+          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
+          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
+          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
+          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
+          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
+          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
+          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
+          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
+          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
+          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
+          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
+          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
+          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
+          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
+          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
 
-          </div>
 
         </div>
       </OurTeamSection>
@@ -275,15 +348,19 @@ const AboutPage = () => (
       <PinkBoxesContainer>
 
 
-        <PinkBox>
-          <h1>Previous Success Stories</h1>
-          <p>Real case stories of businesses we've helped.</p>
-        </PinkBox>
+        <Link to="/our-work">
+          <PinkBox>
+            <h1>Previous Success Stories</h1>
+            <p>Real case stories of businesses we've helped.</p>
+          </PinkBox>
+        </Link>
 
-        <PinkBox>
-          <h1>Open Source</h1>
-          <p>See how we contribute back to the software comunity.</p>
-        </PinkBox>
+        <Link to="/our-work">
+          <PinkBox>
+            <h1>Open Source</h1>
+            <p>See how we contribute back to the software comunity.</p>
+          </PinkBox>
+        </Link>
       </PinkBoxesContainer>
       <br />
       <br />
