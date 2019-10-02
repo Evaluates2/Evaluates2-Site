@@ -17,21 +17,21 @@ const StyledPrinciplesInfoBlock = styled.div`
     font-family: 'e2-Raleway-Semi-Bold';
     letter-spacing: 1px;
     text-align: left;
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 27px;
+    line-height: 60px;
   }
   
   p {
-    font-size: 16px;
+    font-size: 20px;
     font-family: 'e2-Raleway';
     color: #DDDDDD;
+    line-height: 37px;
   }
 
 `;
 
 const KeyPrinciplesInfoBlock = ({data}) => (
   <StyledPrinciplesInfoBlock>
-    {/* <h4 className='infoBlock'>{infoBlockText}</h4> */}
     <h1 className='header'>{data.header ? data.header : ''}</h1>
     <p>{data.paragraph1 ? data.paragraph1 : ''}</p>
     <p>{data.paragraph2 ? data.paragraph2 : ''}</p>

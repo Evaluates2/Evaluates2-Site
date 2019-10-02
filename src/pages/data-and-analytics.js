@@ -67,7 +67,7 @@ const SectionHero = styled.div`
     font-size: 38px;
     opacity: 0.7;
     @media only screen and (min-width: 660px) {
-      font-size: 23px;
+      font-size: 28px;
     }
     @media only screen and (min-width: 990px) {
       /* font-size: 30px; */
@@ -84,14 +84,19 @@ const WorkTogetherSection = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 400px;
-  padding: 60px 40px;
+  margin: 300px 100px;
+  padding: 60px 20px;
   h1 {
-    line-height: 55px;
-    text-align: left;
+    font-size: 80px;
+    line-height: 115px;
+    text-align: center;
+    margin-bottom: 80px;
   }
   p {
-    text-align: left;
+    font-size: 28px;
+    text-align: center;
     width: 100%;
+    line-height: 60px;
   }
 `;
 
@@ -366,6 +371,10 @@ const languageDescriptionsMap = {
     "Go Lang stuff! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with theincluding versions of Lorem Ipsum.",
   Rust:
     "Rust stuff! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the including versions of Lorem Ipsum.",
+  Swift:
+    "Swift stuff! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the including versions of Lorem Ipsum.",
+  Kotlin:
+    "Kotlin stuff! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the including versions of Lorem Ipsum.",
   Java:
     "Java stuff! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the including versions of Lorem Ipsum.",
   'C#':
@@ -374,24 +383,25 @@ const languageDescriptionsMap = {
 
 const keyPrinciplesData = {
   'CI & Multiple Environments': {
+
     header: 'The Use of Continuous Integration and Multiple Environments',
     paragraph1:
-      'Every time our engineers make a substantive change, they will commit this change to GitHub (or other hosting service of your choice). Def Method employs an automated continuous delivery process whereby any changes in GitHub are detected. Once a change is detected, all unit tests are run. If they fail, all developers are notified immediately so that a fix can be made. If all tests pass, the continuous delivery system will deploy these new changes directly to the staging environment.',
+    'Each time an engineer makes a substantial change he or she will commit this change to GitHub (or your favorite hosting service!). Here at Evaluates2 we employ automated continuous delivery processes whereby any changes in GitHub (to specially designated branches) are detected at which point all builds are done, varous automated tests are run, etc. If any step fails, all developers are notified immediately so that a fix can be made. After all commands exit successfully the continuous delivery system will then deploy these new changes directly to the staging environment.',
     paragraph2:
-      'Def Method maintains two environments when building applications: a staging and a production environment. Production is what you might expect: it’s the live site, the public-facing application that everyone uses on a daily basis. The staging environment is not open to the public. Our customer and Def Method engineers are the only ones who can see the staging environment. With a staging environment, stakeholders can see our progress, evaluate features, and experiment without worrying about impacting real users. We also benefit from seeing features run on an identical ecosystem as production. This increases the efficiency of delivering features and reduces the risk of introducing bugs into the production system.',
+    'Evaluates2 prefers to maintain three environments when building applications: development, staging, and production. Development is connected to automated continuous deployment and should be rapidly changing. Staging is the "pre-release" envionment where we can give a final check over on things before pushing to prod. Production is the live user-facing application environment! '
   },
   'Test Driven Development': {
     header: 'The Importance of Test Driven Development (TDD)',
     paragraph1:
-      'At Def Method we have several core values that we insist on when working with a client. Once of those core values is the use of test-driven development. Test Driven Development or TDD, for short, is a software development process that builds up a suite of automated tests alongside our software. These tests run continuously to ensure proper functionality and to reduce the presence of bugs. In our opinion, testing is paramount for the future success of your project. Since we partner with each of our clients, your future success is a main priority. See more on our philosophy on test-first in the article below.',
-    paragraph2: '',
+      'Here at Evaluate2 we have several core values that we insist on when working with a client, and one of those core values is the use of test-driven development. Test Driven Development, or "TDD" for short, is a software development process that builds up a suite of automated tests alongside the software source code. These tests run continuously to quickly ensure proper functionality and to reduce the presence of bugs.',
+    paragraph2: 'In our opinion, testing is paramount for the future success of your project, and your future success is our main priority. By taking an outside-in approach we can be confident that our tests are passing only when they should be passing, and depending on the project we utilize a wide variety of automated tests including unit testing, end-to-end testing, UI testing, Behavior-driven testing, load testing, and smoke testing.',
   },
   'Healthy Dependencies': {
-    header: 'The Use of Continuous Integration and Multiple Environments',
+    header: 'Keeping a Project Robust & Fresh',
     paragraph1:
-      'Every time our engineers make a substantive change, they will commit this change to GitHub (or other hosting service of your choice). Def Method employs an automated continuous delivery process whereby any changes in GitHub are detected. Once a change is detected, all unit tests are run. If they fail, all developers are notified immediately so that a fix can be made. If all tests pass, the continuous delivery system will deploy these new changes directly to the staging environment.',
+      'Third-party libraries are great to use, but there are a few considerations that must be carefully considered. Our engineers can help guide decision making in library selection and provide support for upgrading old libraries to newer versions.',
     paragraph2:
-      'Def Method maintains two environments when building applications: a staging and a production environment. Production is what you might expect: it’s the live site, the public-facing application that everyone uses on a daily basis. The staging environment is not open to the public. Our customer and Def Method engineers are the only ones who can see the staging environment. With a staging environment, stakeholders can see our progress, evaluate features, and experiment without worrying about impacting real users. We also benefit from seeing features run on an identical ecosystem as production. This increases the efficiency of delivering features and reduces the risk of introducing bugs into the production system.',
+      'After years of development most large project will have significat amounts of technical tebt. Maybe the engineers just couldn\'t get those automated tests to work so they abandoned the pracice, or maybe the project works but there are tons of annoying warnings in the console. With the expertise from an Evaluates2 engineers these kinds of problems can be quickly addressed, the necessary modifications can be made, and your project can be reborn and as a thriving and happy project.',
   },
 };
 
@@ -428,52 +438,74 @@ const DataAndAnalyticsPage = () => {
   };
 
   return (
-    <Global pageTitle={'Data & Analytics'} path={'data-and-analytics'} description={'data and analytics'}>
+    <Global pageTitle={'Data And Analytics'} path={'dataAndAnalytics'} description={'dataAndAnalytics'}>
       <Layout>
 
         <DataAndAnalyticsPageContainer onClick={pageClicked}>
+          <br />
+          <br />
+          <br />
+          <br />
+          <SectionHero>
+            <h1>
+              Data & Analytics
+          </h1>
+            <p>Code crafted with care.
+            </p>
+          </SectionHero>
+          {/* <ServicePageHero title="DataAndAnalytics" description="Code crafted with care."></ServicePageHero> */}
+          {/* <SecondServiceHero title="Ways we can work together" description="...to get your products built."></SecondServiceHero> */}
 
-          <ServicePageHero title="DataAndAnalytics" description="Code crafted with care."></ServicePageHero>
-          <SecondServiceHero title="Ways we can work together" description="...to get your products built."></SecondServiceHero>
+          <WorkTogetherSection>
 
+            <h1>
+              We Love Building Software
+            </h1>
+            <p>
+             ...so if you have a great idea, let's make it happen.
+              </p>
+          </WorkTogetherSection>
           <StackableColumnsContainer>
             <StackableColumn>
               <TechnicalAuditsImage />
               <h1>Technical Audits</h1>
               <p>
-                During the technical audit an Evaluates2 engineer will work with
-                you to answer any technical questions you may have. For example
-                they can focus on an assessment of the health of your current code
-                base, work on estimating time & cost for new features you are
-                looking to build, and they can offer general technical guidance
-                for your technical decisions. Also, it's free! 😊
-            </p>
+                FREE upfront audits of your project on:
+              </p>
+              <ul>
+                <li>
+                  Code Quality
+                </li>
+                <li>
+                  Automated Testing
+                </li>
+                <li>
+                  User Experience
+                </li>
+                <li>
+                  Full Platform Support
+                </li>
+                <li>
+                  Security
+                </li>
+                <li>
+                  Data Integrity
+                </li>
+              </ul>
             </StackableColumn>
             <StackableColumn>
               <StaffAugmentationImage />
               <h1>Staff Augmentation</h1>
               <p>
-                Our NYC-based engineers will work on site with your team. By
-                having our engineers in the office, you can experience information
-                osmosis. In general working this way means that development can be
-                more productive and the engineers can better understand the
-                industry and overall company goals. Also, your team will benefit
-                more from working with our engineers day-to-day, sharing knowledge
-                with your team, build lasting relationships with junior and senior
-                team members alike.
-            </p>
+                Our clients work onsite in New York City, and we can provide a full development team or individual Evaluates2 engineers!
+              </p>
             </StackableColumn>
             <StackableColumn>
               <ResourceEfficiencyImage />
               <h1>Resource Efficiency</h1>
               <p>
-                We teach through example. When you work with Evaluates2 engineers
-                they not only will move your product forward, but they will also
-                work with your team to make strides with overall resource
-                efficiency. This can be done through pair programming,
-                implementation of agile process such as daily standups, or overall
-                engineer management.
-            </p>
+                When Evaluates2 engineers are integrated into other teams they can lead by example, increase the code quality, testing breadth, etc, and set the to be leveraged by others.
+              </p>
             </StackableColumn>
           </StackableColumnsContainer>
 
@@ -482,8 +514,8 @@ const DataAndAnalyticsPage = () => {
             <p>
               We're a test-obsessed team of polyglot engineers who strive to
               always use the best tools for the job. We specialize in functional
-              programming, web development, and building out lean, lightning fast
-              microservices.
+              programming, building beatifully interactive UIs, and putting up lean, lightning fast
+              microservices all with an outside-in TDD approach. 
           </p>
           </LanguagesHeaderSection>
           <LanguagePickerGrid>
@@ -568,6 +600,34 @@ const DataAndAnalyticsPage = () => {
                   Rust
               </li>
                 <li
+                  className={languageSelected === 'Swift' ? 'li-selected' : ''}
+                  onClick={event => {
+                    handleLanguageOptionClick('Swift', event);
+                  }}
+                  onMouseOver={() => {
+                    handleLanguageOptionHoverOver('Swift');
+                  }}
+                  onMouseOut={() => {
+                    handleLanguageOptionHoverOut();
+                  }}
+                >
+                  Swift
+              </li>
+                <li
+                  className={languageSelected === 'Kotlin' ? 'li-selected' : ''}
+                  onClick={event => {
+                    handleLanguageOptionClick('Kotlin', event);
+                  }}
+                  onMouseOver={() => {
+                    handleLanguageOptionHoverOver('Kotlin');
+                  }}
+                  onMouseOut={() => {
+                    handleLanguageOptionHoverOut();
+                  }}
+                >
+                  Kotlin
+              </li>
+                <li
                   className={languageSelected === 'Java' ? 'li-selected' : ''}
                   onClick={event => {
                     handleLanguageOptionClick('Java', event);
@@ -643,6 +703,8 @@ const DataAndAnalyticsPage = () => {
                 <li>Vue (JavaScript)</li>
                 <li>Elm</li>
                 <li>NativeScript</li>
+                <li>Native Ios (Swift)</li>
+                <li>Native Android (Kotlin)</li>
               </ul>
             </StackableColumn>
             <StackableColumn>

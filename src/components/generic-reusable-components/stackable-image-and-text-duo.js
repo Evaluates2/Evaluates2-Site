@@ -112,6 +112,7 @@ const StackableImageAndTextDuo = ({
   imgOnLeft,
   buttonText,
   buttonLinkTo,
+  children
 }) => {
   const getImage = imgName => {
     switch (imgName) {
@@ -136,6 +137,7 @@ const StackableImageAndTextDuo = ({
           <p>{paragraph1}</p>
           <h2>{header2}</h2>
           <p>{paragraph2}</p>
+          {children}
           <Link to={buttonLinkTo}>
             <button>{buttonText}</button>
           </Link>

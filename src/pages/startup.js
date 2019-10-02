@@ -5,6 +5,7 @@ import Layout from '../components/layout';
 import styled from '@emotion/styled';
 import ServicePageHero from '../components/generic-reusable-components/service-page-hero';
 import SecondServiceHero from '../components/generic-reusable-components/service-second-hero';
+import SecondServiceHeroDescription from '../components/generic-reusable-components/service-second-hero-description';
 
 import StackableColumnsContainer from '../components/generic-reusable-components/stackable-columns-container';
 import StackableColumn from '../components/generic-reusable-components/stackable-column';
@@ -60,97 +61,207 @@ const StyledStartupPage = styled.div`
   }
 `;
 
+const StartupSecondHero = styled.div`
+  padding: 5px;
+  background-color: #000032;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  margin: 300px 100px;
+  padding: 60px 20px;
+  h1 {
+    font-size: 80px;
+    line-height: 115px;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  p {
+    font-size: 28px;
+    text-align: center;
+    width: 100%;
+    line-height: 60px;
+  }
+`;
+
 const StartupPage = () => (
   <Global pageTitle={'Startup'} path={'startup'} description={'startup'}>
-  <Layout>
-    <StyledStartupPage>
-      <br />
-      <br />
-      <br />
+    <Layout>
+      <StyledStartupPage>
+        <br />
+        <br />
+        <br />
 
-      <ServicePageHero
-        title="The E2 Discovery Process"
-        description="Ready to bring your idea to life?"
-      ></ServicePageHero>
-      <SecondServiceHero
-        title="The Product Journey"
-        description="The Def Method Discovery Process is an amalgamation of a Design Sprint as described by Jake Knapp from Google Ventures in the book Sprint (http://www.gv.com/sprint/) and an agile product inception as described by Martin Fowler in his Lead Inception article (https://martinfowler.com/articles/lean-inception/). During this workshop the team will focus on:
-        - Project goals and key risks
-        - Assumptions
-        - Storyboarding and solution mapping
-        - Feature prioritization
-        - Creative problem solving
-        
-        The goal of the Discovery Process is to deliver the information your company needs to make immediate progress on the most important features of the platform. You will walk away from this workshop with a team that is firmly aligned and a product plan that is clear and tested."
-      ></SecondServiceHero>
+        <ServicePageHero
+          title="The E2 Discovery Process"
+          description="Ready to bring your idea to life?"
+        ></ServicePageHero>
 
-      <StackableColumnsContainer className="wide">
-        <StackableColumn>
-          <p className="discovery-p">Stage 1</p>
-          <h2 className="discovery-header">Discovery</h2>
-          <ProjectKickoffImage />
-          {/* <MaintenanceImage /> */}
-        </StackableColumn>
-        <StackableColumn>
-          <p className="discovery-p">Stage 2</p>
-          <h2 className="discovery-header">MVP Build</h2>
-          <ProgressTrackingImage />
-          {/* <MaintenanceImage /> */}
-        </StackableColumn>
-        <StackableColumn>
-          <p className="discovery-p">Stage 3</p>
-          <h2 className="discovery-header">Maintenance</h2>
-          <MaintenanceImage className="startup-img" />
-        </StackableColumn>
-      </StackableColumnsContainer>
+        <br />
+        <br />
+        {/* <SecondServiceHero
+          title="The Product Journey"
+          description={SecondServiceHeroDescription}
+        ></SecondServiceHero> */}
+        <StartupSecondHero>
 
-      <StackableImageAndTextDuo
-        title="Discovery"
-        header1="15-min Standups"
-        paragraph1="The daily standup is a quick check-in between the developers and decision makers on the project. Standups are expected to run less than 15 minutes and each team member in turn shares what task they worked on the previous day, what task they are working on today and if they face any “blockers” or obstacles. Decision makers can help remove any obstacles or answer any clarifying questions on the active user stories during these meetings."
-        header2=""
-        paragraph2=""
-        imgName="DAILY_STANDUPS"
-        imgOnLeft={true}
-        buttonText="Learn More"
-        buttonLinkTo="/contact"
-      ></StackableImageAndTextDuo>
-      <StackableImageAndTextDuo
-        title="MVP Build"
-        header1="Iteration Planning Meetings (IPMs)"
-        paragraph1="Iteration Planning Meetings (IPM)s also known as Sprint planning occurs once every week or every two weeks depending on the project needs. At this meeting the team together review the user stories that they will work on for the following sprint, clarify the acceptance criteria and point the stories. Once all the stories are pointed they will use story points as a guide to commit to completing a unit of work during the sprint. At the end of the sprint the team will demo their deliverables to the client and other stakeholders."
-        header2="Retrospectives (Retros)"
-        paragraph2='Retrospective meetings are held once every week or every two weeks depending on the team. Retrospectives allows the team to evaluate their progress, share what worked well for them and what created friction in their work during the past sprint. Regular retrospectives allow the team to check in frequently and run mini-experiments to improve workflow and become more efficient as a team. The retrospective aims to answer questions such as, "What should we stop doing?", "What should we continue doing?", and "What can we start doing that will help us be more efficient?"'
-        imgName="IPMS/RETROS"
-        imgOnLeft={false}
-        buttonText="Learn More"
-        buttonLinkTo="/"
-      ></StackableImageAndTextDuo>
-      <StackableImageAndTextDuo
-        title="Maintenance & Monitoring"
-        header1="Story Writing"
-        paragraph1="We write requirements in the form of user stories using the format: As a <user>, when <action>, I want <a feature> so that <user goals> ‍Writing stories this way keeps the business and engineering teams focused on the end user and guides product design and development according to the needs of the target user. Once we have defined each user story, we add functional and non-functional requirements and acceptance criteria that need to be met for the user story to be considered completed. We break down our user stories to make sure each user story is small enough to be done within 2-3 days to ensure ongoing progress and prevent blockers."
-        header2="Story Acceptance"
-        paragraph2="Our engineering teams deliver continuously and you, the client, play the primary role in reviewing and accepting delivered features. As soon as a user story is complete it is put in a queue for you to review and approve. To facilitate the review and feedback process we hold weekly demos of the delivered features with the engineers. This is where you provide feedback to the team on what you see. The ongoing nature of the review and feedback process throughout development allows you to call in adjustments as the work is being done reducing significant rework and redesign. It also provides full transparency to you with regard to the progress and quality of work being conducted."
-        imgName="USER_STORIES"
-        imgOnLeft={true}
-        buttonText="Learn More"
-        buttonLinkTo="/"
-      ></StackableImageAndTextDuo>
+          <h1>
+            The Product Journey
+          </h1>
+          <p>
+            From the very beginnings to long after product launch, we're here to help.
+          </p>
+        </StartupSecondHero>
 
-      <ChangeGearsBlock
-        headerText="Find out more about our development work..."
-        linkText="Engineering"
-        linkTo="/engineering"
-      ></ChangeGearsBlock>
 
-      <ReadyToGetStartedSection>
-        <h1>Ready to partner with us?</h1>
-        <Link to="/contact">Contact us today!</Link>
-      </ReadyToGetStartedSection>
+        <StackableColumnsContainer className="wide">
+          <StackableColumn>
+            <p className="discovery-p">Stage 1</p>
+            <h2 className="discovery-header">Discovery</h2>
+            <ProjectKickoffImage />
+            {/* <MaintenanceImage /> */}
+          </StackableColumn>
+          <StackableColumn>
+            <p className="discovery-p">Stage 2</p>
+            <h2 className="discovery-header">MVP Build</h2>
+            <ProgressTrackingImage />
+            {/* <MaintenanceImage /> */}
+          </StackableColumn>
+          <StackableColumn>
+            <p className="discovery-p">Stage 3</p>
+            <h2 className="discovery-header">Maintenance</h2>
+            <MaintenanceImage className="startup-img" />
+          </StackableColumn>
+        </StackableColumnsContainer>
 
-      <JoinOurTeamCornerBtn />
-      {/* <br />
+        <StackableImageAndTextDuo
+          title="Discovery"
+          header1="Our Process"
+          paragraph1=""
+          header2=""
+          paragraph2=""
+          imgName="DAILY_STANDUPS"
+          imgOnLeft={true}
+          buttonText="Learn More"
+          buttonLinkTo="/contact"
+        >
+          <p>
+
+            The Def Method Discovery Process is an amalgamation of a Design Sprint as described by Jake Knapp from Google Ventures in the book Sprint (http://www.gv.com/sprint/) and an agile product inception as described by Martin Fowler in his Lead Inception article (https://martinfowler.com/articles/lean-inception/). During this workshop the team will focus on:
+          </p>
+
+          <ul>
+            <li>
+
+          - Project goals and key risks
+            </li>
+            <li>
+
+          - Assumptions
+            </li>
+            <li>
+
+          - Storyboarding and solution mapping
+            </li>
+            <li>
+
+          - Feature prioritization
+            </li>
+            <li>
+
+          - Creative problem solving
+            </li>
+          </ul>
+          
+          <p>
+
+            The goal of the Discovery Process is to deliver the information your company needs to make immediate progress on the most important features of the platform. You will walk away from this workshop with a team that is firmly aligned and a product plan that is clear and tested.
+          </p>
+        </StackableImageAndTextDuo>
+        <StackableImageAndTextDuo
+          title="MVP Development"
+          header1=""
+          paragraph1="The ultimate goal of the Product Discovery process is to achieve successful application development and delivery. Using the deliverables from the Discovery Workshop, Def Method will begin the development process following the Product Discovery."
+          header2=""
+          paragraph2=''
+          imgName="IPMS/RETROS"
+          imgOnLeft={false}
+          buttonText="Learn More"
+          buttonLinkTo="/"
+        >
+
+<ul>
+            <li>
+
+          - Offshore resources
+            </li>
+            <li>
+
+          - Product Management
+            </li>
+            <li>
+
+          - Product Strategy
+            </li>
+            <li>
+
+          - User testing
+            </li>
+
+          </ul>
+        </StackableImageAndTextDuo>
+        <StackableImageAndTextDuo
+          title="Maintenance"
+          header1="Logs, Analytics, and Systems Upkeep"
+          paragraph1="As is a natural course for many websites, startups will typically temporarily move from active development of new features on its website to ongoing maintenance after the launch of the MVP. With maintenance you can rest assured that your application will stay up and running with a part-time engineer keeping your code base up-to-date and smaller features built. During maintenance mode you will get the following:"
+          header2=""
+          paragraph2=""
+          imgName="USER_STORIES"
+          imgOnLeft={true}
+          buttonText="Learn More"
+          buttonLinkTo="/"
+        >
+          <ul>
+            <li>
+
+            - Implementation of small user features
+            </li>
+            <li>
+
+            - Update and maintenance of 3rd party dependencies
+            </li>
+            <li>
+
+            - Resolution of bugs
+            </li>
+            <li>
+
+            - Monitoring for exceptions, unusual traffic patterns, performance degradation, or increased memory usage
+            </li>
+            <li>
+
+            - Infrastructural and architectural maintenance (AWS, Heroku, etc...)
+            </li>
+
+          </ul>
+
+        </StackableImageAndTextDuo>
+
+        <ChangeGearsBlock
+          headerText="Find out more about our development work..."
+          linkText="Engineering"
+          linkTo="/engineering"
+        ></ChangeGearsBlock>
+
+        <ReadyToGetStartedSection>
+          <h1>Ready to partner with us?</h1>
+          <Link to="/contact">Contact us today!</Link>
+        </ReadyToGetStartedSection>
+
+        <JoinOurTeamCornerBtn />
+        {/* <br />
       <br />
       <br />
       <br />
@@ -165,8 +276,8 @@ const StartupPage = () => (
       <Link to="/">home</Link>
       <br />
       <Link to="/page-p/">Page P</Link> */}
-    </StyledStartupPage>
-  </Layout>
+      </StyledStartupPage>
+    </Layout>
   </Global>
 );
 
