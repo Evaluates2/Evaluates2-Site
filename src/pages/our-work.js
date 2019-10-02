@@ -16,7 +16,7 @@ const OurWorkHero = styled.div`
     margin-top: 150px;
   }
   p {
-    color: #000032;
+    color: #000011;
     font-size: 38px;
     font-family: 'e2-Raleway';
     text-align: center;
@@ -59,16 +59,24 @@ const CenteredVideo = styled.div`
     align-items: center;
 `;
 
-const PartnersSection = styled.div`
+const BigSectionTitle = styled.div`
 
-  h1 {
+padding: 0 100px;
+min-height: 500px;
+  
+h1 {
     font-size: 80px;
     line-height: 100px;
     font-family: 'e2-Raleway-Extra-Bold';
-    padding: 0 100px;
+    color: #000032;
+  }
+  
+  p {
+    font-size: 30px;
+    line-height: 45px;
+
   }
 
-  min-height: 500px;
 
 `;
 
@@ -99,7 +107,7 @@ const OurWorkBlurb = styled.div`
     margin-top: 50px 40px;
     font-size: 30px;
     line-height: 50px;
-    padding: 80px 160px;
+    padding: 10px 40px 230px;
     color: #333333;
     text-align: justify;
     
@@ -268,8 +276,19 @@ const OurWorkPage = () => (
 
       <OurWorkHero>
         <h1>Our&nbsp;Work</h1>
-        <p>We don't just say we've built awesome things- .</p>
+        <p>We don't just say we've built awesome things- we've been doing it for a while...</p>
       </OurWorkHero>
+
+
+      <BigSectionTitle>
+        <h1>Success Stories</h1>
+        <p>A few of the previous projecs we've succesfully helped clients launch.</p>
+      </BigSectionTitle>
+
+      <BigSectionTitle>
+        <h1>Open Source</h1>
+        <p>Evaluates2 engineers are not only great contractors; we are also contributors back to the open source community!</p>
+      </BigSectionTitle>
 
 
       <CenteredVideo>
@@ -292,9 +311,7 @@ const OurWorkPage = () => (
       </p>
       </OurWorkBlurb>
 
-      <PartnersSection>
-        <h1>Some of our partners:</h1>
-      </PartnersSection>
+   
 
       <NiceQuoteSection>
         <h1>

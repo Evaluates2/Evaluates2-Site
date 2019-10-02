@@ -1,5 +1,6 @@
 import React from "react"
 import { IntroContainer } from "./styles"
+import { Link } from 'gatsby';
 
 class Intro extends React.Component {
 
@@ -15,13 +16,13 @@ class Intro extends React.Component {
   render() {
     return (
         <IntroContainer>
-            <h1>Together</h1>
-            <h3>We will build something incredible.</h3>
-
+           <br/>
+           <br/>
+           <br/>
             <p>
-            At Evaluates2 we offer strategic guidance in bringing new products to life
-            that combines a unique and efficient approach to product management with
-            software consulting service focused on excellence of code and product.
+            At Evaluates2 we offer strategic guidance in <Link to="">bringing new products to life </Link>
+            that combines a <Link to="">unique and efficient approach</Link> to product management with
+            software consulting service focused on <Link to="">excellence of code and product</Link>.
             </p>
             <h1>Engineering</h1>
 

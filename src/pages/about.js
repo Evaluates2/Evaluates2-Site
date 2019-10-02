@@ -106,9 +106,6 @@ const AboutBlurb = styled.div`
   }
 `;
 
-
-
-
 const OurTeamSection = styled.div`
 
   padding: 0 100px;
@@ -176,6 +173,11 @@ const OurTeamSection = styled.div`
 
   }
 
+`;
+
+const MidPageAnchor = styled.div`
+  min-height: 50px;
+  padding: 20px;
 `;
 
 const WhatWeveBuiltSection = styled.div`
@@ -305,6 +307,11 @@ const AboutPage = () => (
         </p>
       </NiceQuoteSection>
 
+      <MidPageAnchor>
+        <a id="OUR_TEAM_LINK"/>
+      </MidPageAnchor>
+      <br/>
+      <br/>
       <OurTeamSection>
         <h1>Our Team</h1>
         <div className="our-team-grid">
