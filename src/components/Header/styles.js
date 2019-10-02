@@ -53,7 +53,7 @@ export const SiteTitle = styled(Link)`
   grid-auto-flow: column;
   grid-gap: 1em;
   color: white;
-  background-color: #000032;
+  background-color: transparent;
   transition: ${props => props.theme.shortTrans};
   ${mediaQuery.minTablet} {
     grid-auto-flow: column;

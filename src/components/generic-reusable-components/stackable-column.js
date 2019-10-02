@@ -8,9 +8,8 @@ const StackableColumn = styled.div`
   align-items: center;
   padding: 25px 30px;
   height: 100%;
-  /* flex-basis: 33%; */
-  /* flex-grow: 0; */
   width: 33%;
+
 
   @media only screen and (max-width: 960px) {
     justify-content: flex-start;
@@ -51,6 +50,23 @@ const StackableColumn = styled.div`
     max-width: 270px;
     
   }
+
+  ul {
+    
+
+    font-size: 24px;
+    line-height: 37px;
+    /* margin: 20px; */
+    padding-top: 20px;
+
+  }
+
+  li {
+    font-size: 30px;
+
+  }
+
+
 `;
 
 export default StackableColumn;

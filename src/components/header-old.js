@@ -95,6 +95,7 @@ const Top = styled.div`
 `;
 
 const Title = styled.h2`
+  background: transparent;
   color: ${p => p.theme.palette.primary.contrast};
   padding-left: ${p => p.theme.size(4)};
   font-size: ${p => p.theme.size(1)};
@@ -163,7 +164,7 @@ const MobileHeader = ({ isDrawerOpen, toggleDrawer, siteTitle }) => (
     <Top>
       {/* <Navbar isDrawerOpen={isDrawerOpen}> */}
       <div className="header-logo">
-        <Link to="/" css={{ textDecoration: 'none' }}>
+        <Link to="/" css={{ textDecoration: 'none', background: 'transparent' }}>
           <Title>{siteTitle}</Title>
         </Link>
         </div>

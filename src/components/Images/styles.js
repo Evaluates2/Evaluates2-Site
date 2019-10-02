@@ -10,7 +10,7 @@ export const ImagesContainer = styled.div`
         height: 70vh
     }
 `
-export const ImageTitle = styled.div `
+export const ImageTitle = styled.div`
     z-index:10;
     position: relative;
     bottom: -18vh;
@@ -20,7 +20,7 @@ export const ImageTitle = styled.div `
     flex-direction: column;
 `
 
-export const Title = styled.div `
+export const Title = styled.div`
     color: white;
     font-size: 120px;
     line-height: 140px;
@@ -34,9 +34,22 @@ export const Title = styled.div `
     ${mediaQuery.maxPhone} {
         font-size: 40px;
     }
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+
+        @keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+
 `
 
-export const Sub = styled.div `
+export const Sub = styled.div`
     font-size: 38px;
     color: white;
     line-height: 45px;

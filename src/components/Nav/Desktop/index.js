@@ -1,29 +1,62 @@
-import React from "react"
-import { DownArrow } from "styled-icons/boxicons-regular/DownArrow"
+import React from "react";
+import { DownArrow } from "styled-icons/boxicons-regular/DownArrow";
+import styled from '@emotion/styled';
 
 import { NavEntry, SubNav, NavLink, DesktopNavDiv } from "./styles"
 
-export default ({ nav }) => (
-  <DesktopNavDiv>
-    {nav.map(({node: { url, title, subNav }}) => (
+
+const WrappedSubnav = styled.div`
+
+  .blue-bg {
+    background-color: #000032;
+  }
+  
+`;
+
+class Desktop extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      divStyle: {}
+    };
+
+    this.window = window;
+  
+  }
+
+  render() {
+
+  return (
+    <DesktopNavDiv>
+       {this.props.nav.map(({node: { url, title, subNav }}) => (
       <NavEntry key={url}>
         <NavLink to={url || subNav[0].url} title={title}>
           {title} {subNav.length ? <DownArrow size="0.5em" />:''}
         </NavLink> 
+
+        <WrappedSubnav>
+
         {subNav.length > 0 && (
-          <SubNav>
+          <SubNav className={this.window.location.pathname === '/about' || this.window.location.pathname === '/our-work' ? 'blue-bg' : ''}>
             {subNav.map(item => (
               <NavLink
-                key={item.url}
-                to={item.url}
-                title={item.title}
+              key={item.url}
+              to={item.url}
+              title={item.title}
               >
                 {item.title}
               </NavLink>
             ))}
           </SubNav>
         )}
+        </WrappedSubnav>
       </NavEntry>
-    ))}
-  </DesktopNavDiv>
-)
+      ))}
+    </DesktopNavDiv>
+    )
+  }
+
+}
+
+export default Desktop;
