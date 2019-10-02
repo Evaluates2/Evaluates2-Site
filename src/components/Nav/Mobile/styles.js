@@ -28,6 +28,7 @@ export const Icons = {
   `,
   Arrow: styled(Arrow)`
     ${iconCss};
+    cursor: default !important;
   `,
 }
 
