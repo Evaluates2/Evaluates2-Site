@@ -6,7 +6,7 @@ import mediaQuery from "../../utils/mediaQuery"
 import MobileNav from "./Mobile"
 import DesktopNav from "./Desktop"
 
-export { navLinkStyle, NavLink } from "./styles"
+export { navLinkStyle, NavLink, ParentNavLink } from "./styles"
 
 const Nav = props => {
   if (typeof window !== `undefined`) {

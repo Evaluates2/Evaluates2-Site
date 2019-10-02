@@ -2,7 +2,7 @@ import React from "react";
 import { DownArrow } from "styled-icons/boxicons-regular/DownArrow";
 import styled from '@emotion/styled';
 
-import { NavEntry, SubNav, NavLink, DesktopNavDiv } from "./styles"
+import { NavEntry, SubNav, NavLink, DesktopNavDiv, ParentNavLink } from "./styles"
 
 
 const WrappedSubnav = styled.div`
@@ -31,12 +31,16 @@ class Desktop extends React.Component {
     <DesktopNavDiv>
        {this.props.nav.map(({node: { url, title, subNav }}) => (
       <NavEntry key={url}>
-        <NavLink to={url || subNav[0].url} title={title}>
-          {title} {subNav.length ? <DownArrow size="0.5em" />:''}
-        </NavLink> 
-
-        <WrappedSubnav>
-
+        {
+          subNav.length ?
+          <ParentNavLink to={url || subNav[0].url} title={title}>
+            {title} {subNav.length ? <DownArrow size="0.5em" />:''}
+          </ParentNavLink>:
+          <NavLink to={url || subNav[0].url} title={title}>
+            {title} {subNav.length ? <DownArrow size="0.5em" />:''}
+          </NavLink> 
+        }
+        
         {subNav.length > 0 && (
           <SubNav className={this.window.location.pathname === '/about' || this.window.location.pathname === '/our-work' ? 'blue-bg' : ''}>
             {subNav.map(item => (
