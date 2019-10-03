@@ -11,6 +11,7 @@ export default function SEO({ site, pageTitle, path = ``, ...rest }) {
     <Helmet>
       <title>{title}</title>
       <meta property="og:type" content="website" />
+      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
       <html lang="en" />
       {pageTitle && <meta property="og:title" content={pageTitle} />}
       <meta property="og:url" content={pageUrl} />

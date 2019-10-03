@@ -336,6 +336,11 @@ const StyledFormWithTwoBoxes = styled.div`
 `;
 
 
+const changey = (e) => {
+  console.log('e is: ', e);
+}
+
+
 const ContactPage = () => (
   <Global pageTitle={'Contact Us'} path={'contact'} description={'contact'}>
     <Layout>
@@ -352,14 +357,17 @@ const ContactPage = () => (
         <StyledFormWithTwoBoxes>
           <StyledContactForm>
 
-        <br />
-        <br />
+            <br />
+            <br />
             <h2>We look forward to speaking!</h2>
-        <br />
-        <br />
+            <br />
+            <br />
 
             <div className="grid-container">
               <div className="form-container">
+
+              <form action="javascript:alert(grecaptcha.getResponse(widgetId1));">
+                <br />
                 <FlexRow>
                   <InputAndLabel>
                     <label htmlFor="name">Name</label>
@@ -384,10 +392,19 @@ const ContactPage = () => (
                 <br />
 
                 <FlexRow>
+                  huh d
+                  <div class="g-recaptcha" data-sitekey="6LcVobsUAAAAALWas1f5PZf_XAAEz4spBp8NmHAQ" onChange={changey} ></div>
+                </FlexRow>
+
+                <br />
+                <FlexRow>
                   <a>
                     <button>Submit</button>
                   </a>
+                  <input type="submit" value="getResponse" />
                 </FlexRow>
+
+                </form>
                 <br />
                 <br />
               </div>
@@ -412,7 +429,7 @@ const ContactPage = () => (
             <br />
             <br />
             <br />
-            <JoinOurTeamCornerBtn/>
+            <JoinOurTeamCornerBtn />
           </StyledContactForm>
         </StyledFormWithTwoBoxes>
       </StyledContactPage>
