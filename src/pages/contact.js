@@ -4,6 +4,8 @@ import Global from "../components/Global"
 import Layout from '../components/layout';
 import styled from '@emotion/styled';
 import JoinOurTeamCornerBtn from './../components/generic-reusable-components/join-our-team-corner-btn';
+import ReCAPTCHA from "react-google-recaptcha";
+import { useState } from 'react';
 
 const StyledContactPage = styled.div`
   font-family: 'e2-Raleway-Black';
@@ -128,6 +130,15 @@ const FlexRow = styled.div`
   flex: 1;
   /* min-width: 400px; */
 
+
+  button {
+
+    opacity: 1;
+    
+    :disabled {
+      opacity: 0.6;
+    }
+  }
 
   // tablet, 2 x 2 square items in one column
     @media only screen and (max-width: 990px) {
@@ -341,100 +352,119 @@ const changey = (e) => {
 }
 
 
-const ContactPage = () => (
-  <Global pageTitle={'Contact Us'} path={'contact'} description={'contact'}>
-    <Layout>
 
-      <StyledContactPage>
+const ContactPage = () => {
 
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <StyledFormWithTwoBoxes>
-          <StyledContactForm>
 
-            <br />
-            <br />
-            <h2>We look forward to speaking!</h2>
-            <br />
-            <br />
+  const onChange = (e) => {
+    console.log('e is: ', e);
+    setHumanVerified(true)
 
-            <div className="grid-container">
-              <div className="form-container">
+  }
 
-              <form action="javascript:alert(grecaptcha.getResponse(widgetId1));">
-                <br />
-                <FlexRow>
-                  <InputAndLabel>
-                    <label htmlFor="name">Name</label>
-                    <input htmlFor="name"></input>
-                  </InputAndLabel>
-                </FlexRow>
+  // const [humanVerified, setHumanVerified] = useState(false)
 
-                <FlexRow>
-                  <InputAndLabel>
-                    <label htmlFor="name">Email</label>
-                    <input htmlFor="name"></input>
-                  </InputAndLabel>
-                </FlexRow>
+  const [humanVerified, setHumanVerified] = useState(false);
 
-                <FlexRow>
-                  <InputAndLabel>
-                    <label htmlFor="name">Message</label>
-                    <textarea htmlFor="name" maxlength="10000"></textarea>
-                  </InputAndLabel>
-                </FlexRow>
 
-                <br />
+  return (
+    <Global pageTitle={'Contact Us'} path={'contact'} description={'contact'}>
+      <Layout>
 
-                <FlexRow>
-                  huh d
-                  <div class="g-recaptcha" data-sitekey="6LcVobsUAAAAALWas1f5PZf_XAAEz4spBp8NmHAQ" onChange={changey} ></div>
-                </FlexRow>
+        <StyledContactPage>
 
-                <br />
-                <FlexRow>
-                  <a>
-                    <button>Submit</button>
-                  </a>
-                  <input type="submit" value="getResponse" />
-                </FlexRow>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <StyledFormWithTwoBoxes>
+            <StyledContactForm>
 
-                </form>
-                <br />
-                <br />
+              <br />
+              <br />
+              <h2>We look forward to speaking!</h2>
+              <br />
+              <br />
+
+              <div className="grid-container">
+                <div className="form-container">
+
+                  <form action="javascript:alert(grecaptcha.getResponse(widgetId1));">
+                    <br />
+                    <FlexRow>
+                      <InputAndLabel>
+                        <label htmlFor="name">Name</label>
+                        <input htmlFor="name"></input>
+                      </InputAndLabel>
+                    </FlexRow>
+
+                    <FlexRow>
+                      <InputAndLabel>
+                        <label htmlFor="name">Email</label>
+                        <input htmlFor="name"></input>
+                      </InputAndLabel>
+                    </FlexRow>
+
+                    <FlexRow>
+                      <InputAndLabel>
+                        <label htmlFor="name">Message</label>
+                        <textarea htmlFor="name" maxlength="10000"></textarea>
+                      </InputAndLabel>
+                    </FlexRow>
+
+                    <br />
+
+                    <FlexRow>
+                      {/* <div class="g-recaptcha" data-sitekey="6LcVobsUAAAAALWas1f5PZf_XAAEz4spBp8NmHAQ" onChange={changey} ></div> */}
+
+                      <ReCAPTCHA
+                        sitekey="6LcVobsUAAAAALWas1f5PZf_XAAEz4spBp8NmHAQ"
+                        onChange={onChange}
+                      />
+                    </FlexRow>
+                    <br />
+                    <br />
+                    <FlexRow>
+                      <a>
+                        <button disabled={!humanVerified}>Submit</button>
+                      </a>
+                      {/* <input type="submit" value="getResponse" /> */}
+                    </FlexRow>
+
+                  </form>
+                  <br />
+                  <br />
+                </div>
+
+                <div className="box location-box">
+                  <h1>Location</h1>
+                  <h3>228 w 25th St.</h3>
+                  <h3>NY NY 10001</h3>
+                </div>
+                <div className="box contact-us-box">
+                  <h1>Contact</h1>
+                  <h3>info@evaluates2.com</h3>
+                  <h3>(917) 745-3133</h3>
+                </div>
               </div>
+              <br />
+              <br />
 
-              <div className="box location-box">
-                <h1>Location</h1>
-                <h3>228 w 25th St.</h3>
-                <h3>NY NY 10001</h3>
-              </div>
-              <div className="box contact-us-box">
-                <h1>Contact</h1>
-                <h3>info@evaluates2.com</h3>
-                <h3>(917) 745-3133</h3>
-              </div>
-            </div>
-            <br />
-            <br />
-
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <JoinOurTeamCornerBtn />
-          </StyledContactForm>
-        </StyledFormWithTwoBoxes>
-      </StyledContactPage>
-    </Layout>
-  </Global>
-);
-
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <JoinOurTeamCornerBtn />
+            </StyledContactForm>
+          </StyledFormWithTwoBoxes>
+        </StyledContactPage>
+      </Layout>
+    </Global>
+  );
+}
 export default ContactPage;
