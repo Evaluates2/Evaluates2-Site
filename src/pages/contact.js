@@ -459,7 +459,7 @@ const ContactPage = () => {
                           <FlexRow>
                             <InputAndLabel>
                               <label htmlFor="message">Message</label>
-                              <Field name="message" type="message" />
+                              <Field name="message" type="message" component="textarea"/>
                               <p className="signup-error-text">
                                 {errors.message && touched.message ? <div>{errors.message}</div> : null}
                               </p>
