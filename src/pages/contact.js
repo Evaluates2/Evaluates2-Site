@@ -6,6 +6,22 @@ import styled from '@emotion/styled';
 import JoinOurTeamCornerBtn from './../components/generic-reusable-components/join-our-team-corner-btn';
 import ReCAPTCHA from "react-google-recaptcha";
 import { useState } from 'react';
+import { Formik, Form, Field } from 'formik';
+import * as Yup from 'yup';
+
+const SignupSchema = Yup.object().shape({
+  name: Yup.string()
+    .min(2, 'Please enter your name!')
+    .max(100, 'Please enter a shorter name!')
+    .required('Required'),
+  email: Yup.string()
+    .email('Please enter a valid email')
+    .required('Required'),
+  message: Yup.string()
+    .min(5, 'Please enter a message!')
+    .max(1000, 'Sorry, please enter a shorter message!')
+    .required('Required')
+});
 
 const StyledContactPage = styled.div`
   font-family: 'e2-Raleway-Black';
@@ -153,6 +169,16 @@ const FlexRow = styled.div`
       /* grid-template-columns: auto;
       grid-template-rows: auto auto auto auto; */
     }
+
+
+    p.signup-error-text {
+      padding-top: 10px;
+      color: greenyellow;
+      font-family: 'e2-Raleway-italic';
+      font-size: 17px;
+      letter-spacing: 1px;
+    }
+
 `;
 
 
@@ -373,6 +399,7 @@ const ContactPage = () => {
 
         <StyledContactPage>
 
+
           <br />
           <br />
           <br />
@@ -383,6 +410,82 @@ const ContactPage = () => {
           <StyledFormWithTwoBoxes>
             <StyledContactForm>
 
+              <div>
+                <br />
+                <br />
+                <h2>We look forward to speaking!</h2>
+                <br />
+                <br />
+
+                <div className="grid-container">
+                  <div className="form-container">
+                    <Formik
+                      initialValues={{
+                        name: '',
+                        email: '',
+                        message: '',
+                      }}
+                      validationSchema={SignupSchema}
+                      onSubmit={values => {
+                        // same shape as initial values
+                        console.log(values);
+                      }}
+                    >
+                      {({ errors, touched }) => (
+
+                        <Form>
+                          <FlexRow>
+                            <InputAndLabel>
+                              <label htmlFor="name">Name</label>
+                              <Field name="name" />
+                              <p className="signup-error-text">
+                                {errors.name && touched.name ? (
+                                  <div>{errors.name}</div>
+                                ) : null}
+                              </p>
+                            </InputAndLabel>
+                          </FlexRow>
+                          <FlexRow>
+                            <InputAndLabel>
+                              <label htmlFor="email">Email</label>
+                              <Field name="email" />
+                              <p className="signup-error-text">
+                                {errors.email && touched.email ? (
+                                  <div>{errors.email}</div>
+                                ) : null}
+                              </p>
+                            </InputAndLabel>
+                          </FlexRow>
+                          <FlexRow>
+                            <InputAndLabel>
+                              <label htmlFor="message">Message</label>
+                              <Field name="message" type="message" />
+                              <p className="signup-error-text">
+                                {errors.message && touched.message ? <div>{errors.message}</div> : null}
+                              </p>
+                            </InputAndLabel>
+                          </FlexRow>
+
+                          <button type="submit">Submit</button>
+
+                        </Form>
+                      )}
+                    </Formik>
+                  </div>
+
+                  <div className="box location-box">
+                  <h1>Location</h1>
+                  <h3>228 w 25th St.</h3>
+                  <h3>NY NY 10001</h3>
+                </div>
+                <div className="box contact-us-box">
+                  <h1>Contact</h1>
+                  <h3>info@evaluates2.com</h3>
+                  <h3>(917) 745-3133</h3>
+                </div>
+                </div>
+
+              </div>
               <br />
               <br />
               <h2>We look forward to speaking!</h2>
@@ -411,7 +514,7 @@ const ContactPage = () => {
                     <FlexRow>
                       <InputAndLabel>
                         <label htmlFor="name">Message</label>
-                        <textarea htmlFor="name" maxlength="10000"></textarea>
+                        <textarea htmlFor="name" maxlength="1000"></textarea>
                       </InputAndLabel>
                     </FlexRow>
 
