@@ -19,7 +19,7 @@ const E2GithubScreenshotImage = () => (
       query {
         placeholderImage: file(relativePath: { eq: "e2-github-page.png" }) {
           childImageSharp {
-            fluid(maxWidth: 300) {
+            fluid(maxWidth: 600) {
               ...GatsbyImageSharpFluid
             }
           }

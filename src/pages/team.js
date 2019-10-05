@@ -99,7 +99,7 @@ const TermsTextSection = styled.div`
   }
 `;
 
-const TeamPage = () => (
+const TeamPage = (location) => (
   <Global pageTitle={'Terms'} path={'terms'} description={'terms'}>
     <Layout>
       <StyledTeamPage>
@@ -108,10 +108,26 @@ const TeamPage = () => (
         <br />
         <br />
         <br />
+        {JSON.stringify(location.path)}
+        <br/>
+        {JSON.stringify(location.pageResources)}
+        <br/>
+        <br/>
+        {JSON.stringify(location.location.pathname)}
+
+        <br/>
+        <br/>
+
+       
+
+        <br/>
+        <br/>
+        <br/>
+        {JSON.stringify(location.pageResources['*'])}
 
 
         <SectionHero>
-          <h1>Our Terms</h1>
+          <h1>{location.location.pathname.slice(location.path.length - 1)}</h1>
           <p>transparent and straightforward.</p>
         </SectionHero>
         <TermsTextSection>

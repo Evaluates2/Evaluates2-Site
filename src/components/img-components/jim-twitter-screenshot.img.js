@@ -19,7 +19,7 @@ const JimTwitterScreenshotImage = () => (
       query {
         placeholderImage: file(relativePath: { eq: "jim-twitter-screenshot.png" }) {
           childImageSharp {
-            fluid(maxWidth: 300) {
+            fluid(maxWidth: 800) {
               ...GatsbyImageSharpFluid
             }
           }

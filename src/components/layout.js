@@ -134,7 +134,7 @@ const Layout = ({ children, isDrawerOpen, toggleDrawer }) => (
               <a>About Us</a>
             </Link>
             <br />
-            <Link to='/about#OUR_TEAM_LINK'>
+            <Link to='/about#OUR_TEAM'>
               <a>Team</a>
             </Link>
             <br />

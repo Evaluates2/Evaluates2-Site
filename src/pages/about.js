@@ -308,7 +308,7 @@ const AboutPage = () => (
       </NiceQuoteSection>
 
       <MidPageAnchor>
-        <a id="OUR_TEAM_LINK"/>
+        <a id="OUR_TEAM"/>
       </MidPageAnchor>
       <br/>
       <br/>

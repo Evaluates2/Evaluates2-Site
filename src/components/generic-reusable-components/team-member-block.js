@@ -63,9 +63,9 @@ const StyledPersonImage = styled.div`
   }
 `
 
-const TeamMemberBlock = ({ name, linkTo, role }) => {
+const TeamMemberBlock = ({ itemId, name, linkTo, role }) => {
     return (
-        <Link to="team/joe-leo">
+        <Link to="/team/joe">
             <StyledPersonImage>
               <PersonColorContainer>
                 <PersonImage name="Joe Leo" role="CEO, Cofounder"></PersonImage>

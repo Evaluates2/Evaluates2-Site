@@ -19,7 +19,7 @@ const TitaniumLambdaImage = () => (
       query {
         placeholderImage: file(relativePath: { eq: "titanium-lambda-logo.png" }) {
           childImageSharp {
-            fluid(maxWidth: 300) {
+            fluid(maxWidth: 800) {
               ...GatsbyImageSharpFluid
             }
           }
