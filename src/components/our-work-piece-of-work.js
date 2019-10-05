@@ -5,6 +5,10 @@ import ProjectKickoffImage from './img-components/project-kickoff.img';
 import Link from 'gatsby-link';
 import KateFromHrScreenshotImage from './img-components/kate-from-hr-screenshot.img';
 import JimTwitterScreenshotImage from './img-components/jim-twitter-screenshot.img';
+// import WojBlogScreenshotImage from './img-components/woj-blog-screenshot.img';
+import WojScreenshot from './img-components/woj-blog-screenshot.img';
+import E2GithubScreenshotImage from './img-components/e2-github-page.img';
+import TitaniumLambdaImage from './img-components/titanium-lambda.img';
 
 const StyledOurWorkPieceOfWork = styled.div`
   .container {
@@ -141,8 +145,20 @@ const OurWorkPieceOfWork = ({
              <JimTwitterScreenshotImage />
           </a>);
 
-      case 'WOG_BLOG':
-        return <JimTwitterScreenshotImage />;
+      case 'WOJ_BLOG':
+          return (<a href={header1link}>
+            <WojScreenshot/>
+         </a>);
+      
+      case 'E2_GITHUB':
+          return (<a href={header1link}>
+            <E2GithubScreenshotImage/>
+         </a>);
+      
+      case 'TITANIUM_LAMBDA':
+          return (<a href={header1link}>
+            <TitaniumLambdaImage/>
+         </a>);
     }
   };
 

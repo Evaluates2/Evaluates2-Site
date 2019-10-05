@@ -8,6 +8,7 @@ const ReadyToGetStartedSection = styled.div`
     font-family: 'e2-Raleway-Black-Italic';
     font-size: 40px;
     margin: 50px 50px 20px 50px;
+    text-align: center;
   }
 
   a {

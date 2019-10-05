@@ -9,6 +9,7 @@ import StackableImageAndTextDuo from '../components/generic-reusable-components/
 import StackableColumnsContainer from '../components/generic-reusable-components/stackable-columns-container';
 import OurWorkPieceOfWork from '../components/our-work-piece-of-work';
 import ChangeGearsBlock from '../components/generic-reusable-components/change-gears-block';
+import ReadyToGetStartedSection from '../components/generic-reusable-components/ready-to-get-started-section';
 
 const OurWorkHero = styled.div`
   h1 {
@@ -63,8 +64,7 @@ const CenteredVideo = styled.div`
 `;
 
 const BigSectionTitle = styled.div`
-  padding: 0 100px;
-  min-height: 500px;
+  padding: 150px 100px;
 
   h1 {
     font-size: 80px;
@@ -290,8 +290,14 @@ const OurWorkPage = () => (
       >
         <ul>
           <li>Extremely Cheap & Quick to Run & Maintain.</li>
-          <li>Aquired Thousands of Total Likes & Followers for @WebWhizJim and other private client accounts.</li>
-          <li>Written for AWS Lambda Twice Using Both Es6 JavaScript and ClojureScript.</li>
+          <li>
+            Aquired Thousands of Total Likes & Followers for @WebWhizJim and
+            other private client accounts.
+          </li>
+          <li>
+            Written for AWS Lambda Twice Using Both Es6 JavaScript and
+            ClojureScript.
+          </li>
         </ul>
       </OurWorkPieceOfWork>
 
@@ -302,15 +308,21 @@ const OurWorkPage = () => (
         paragraph1="Kate from HR is a tool for making teams better. A fun and easy-to-use Slack-integrated chatbot collected anonymous feedback that can be public or private (specified by the user). This is then aggregated and visualized in a web dashboard."
         header2=""
         paragraph2=""
-        imgName="JIM_TWITTER"
-        imgOnLeft={false}
+        imgName="WOJ_BLOG"
+        imgOnLeft={true}
         buttonText="Tweet Jim!"
         buttonLinkTo="https://www.wisdomofjim.com"
       >
         <ul>
           <li>Extremely Cheap & Quick to Run & Maintain.</li>
-          <li>Aquired Thousands of Total Likes & Followers for @WebWhizJim and other private client accounts.</li>
-          <li>Written for AWS Lambda Twice Using Both Es6 JavaScript and ClojureScript.</li>
+          <li>
+            Aquired Thousands of Total Likes & Followers for @WebWhizJim and
+            other private client accounts.
+          </li>
+          <li>
+            Written for AWS Lambda Twice Using Both Es6 JavaScript and
+            ClojureScript.
+          </li>
         </ul>
       </OurWorkPieceOfWork>
       {/* </StackableColumnsContainer> */}
@@ -330,34 +342,46 @@ const OurWorkPage = () => (
         paragraph1="Kate from HR is a tool for making teams better. A fun and easy-to-use Slack-integrated chatbot collected anonymous feedback that can be public or private (specified by the user). This is then aggregated and visualized in a web dashboard."
         header2=""
         paragraph2=""
-        imgName="JIM_TWITTER"
+        imgName="TITANIUM_LAMBDA"
         imgOnLeft={false}
         buttonText="Tweet Jim!"
         buttonLinkTo="https://www.wisdomofjim.com"
       >
         <ul>
           <li>Extremely Cheap & Quick to Run & Maintain.</li>
-          <li>Aquired Thousands of Total Likes & Followers for @WebWhizJim and other private client accounts.</li>
-          <li>Written for AWS Lambda Twice Using Both Es6 JavaScript and ClojureScript.</li>
+          <li>
+            Aquired Thousands of Total Likes & Followers for @WebWhizJim and
+            other private client accounts.
+          </li>
+          <li>
+            Written for AWS Lambda Twice Using Both Es6 JavaScript and
+            ClojureScript.
+          </li>
         </ul>
       </OurWorkPieceOfWork>
 
       <OurWorkPieceOfWork
-        title="Sample Projects & Workshops"
+        title="Titanium Lambda"
         header1="www.wisdomofjim.com"
         header1link="https://www.wisdomofjim.com"
         paragraph1="Kate from HR is a tool for making teams better. A fun and easy-to-use Slack-integrated chatbot collected anonymous feedback that can be public or private (specified by the user). This is then aggregated and visualized in a web dashboard."
         header2=""
         paragraph2=""
-        imgName="JIM_TWITTER"
-        imgOnLeft={false}
+        imgName="E2_GITHUB"
+        imgOnLeft={true}
         buttonText="Tweet Jim!"
         buttonLinkTo="https://www.wisdomofjim.com"
       >
         <ul>
           <li>Extremely Cheap & Quick to Run & Maintain.</li>
-          <li>Aquired Thousands of Total Likes & Followers for @WebWhizJim and other private client accounts.</li>
-          <li>Written for AWS Lambda Twice Using Both Es6 JavaScript and ClojureScript.</li>
+          <li>
+            Aquired Thousands of Total Likes & Followers for @WebWhizJim and
+            other private client accounts.
+          </li>
+          <li>
+            Written for AWS Lambda Twice Using Both Es6 JavaScript and
+            ClojureScript.
+          </li>
         </ul>
       </OurWorkPieceOfWork>
 
@@ -382,18 +406,25 @@ const OurWorkPage = () => (
         </p>
       </OurWorkBlurb> */}
 
-<br/>
-<br/>
-<br/>
-<br/>
+      <br />
+      <br />
+      <br />
+      <br />
       <NiceQuoteSection>
         <h1>
-          "Although we've <span className="empashized">accomplished</span> a lot, I still wake up every day <span className="empashized">hungry</span> and ready to take on new and <span className="empashized">exciting</span> software development <span className="empashized">challenges</span>."
+          "Although we've already<span className="empashized">accomplished</span> a
+          lot, I still wake up every day{' '}
+          <span className="empashized">hungry</span> for new <span className="empashized">exciting</span> software development{' '}
+          <span className="empashized">challenges</span>."
         </h1>
         <p>- Founder & Principal Engineer Jim Lynch</p>
       </NiceQuoteSection>
 
-      <ChangeGearsBlock headerText='Find out more about how we work...' linkText='Product Management' linkTo='/product-management'></ChangeGearsBlock>
+      <ChangeGearsBlock
+        headerText="Find out more about how we work..."
+        linkText="Product Management"
+        linkTo="/product-management"
+      ></ChangeGearsBlock>
 
       {/* <WhatWeveBuiltSection>
         <h1>What We've Built</h1>
@@ -408,6 +439,11 @@ const OurWorkPage = () => (
       <br />
       <br />
 
+      <ReadyToGetStartedSection>
+            <h1>Ready to partner with us?</h1>
+            <Link to="/contact">Contact us today!</Link>
+          </ReadyToGetStartedSection>
+
       {/* <PinkBoxesContainer>
         <Link to="/our-work">
           <PinkBox>
@@ -416,7 +452,7 @@ const OurWorkPage = () => (
           </PinkBox>
         </Link> */}
 
-        {/* <Link to="/our-work">
+      {/* <Link to="/our-work">
           <PinkBox>
             <h1>Open Source</h1>
             <p>See how we contribute back to the software comunity.</p>
