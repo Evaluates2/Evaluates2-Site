@@ -3,6 +3,10 @@
   font-family: 'e2-Raleway-Bold';
   src: url('../fonts/Raleway/Raleway-Bold.ttf');
 }
+@font-face {
+  font-family: 'e2-Raleway-Bold-Italic';
+  src: url('../fonts/Raleway/Raleway-BlackItalic.ttf');
+}
 
 @font-face {
   font-family: 'e2-Raleway';
