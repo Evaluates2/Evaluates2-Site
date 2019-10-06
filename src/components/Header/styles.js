@@ -27,7 +27,7 @@ export const HeaderContainer = styled.header`
   transition: all 0.5s linear;
   padding: 20px;
   position: fixed;
-  width: 100vw;
+  width: 100%;
   background: ${props => props.theme.darkBlue};
   display: grid;
   grid-gap: calc(1em + 1vw);

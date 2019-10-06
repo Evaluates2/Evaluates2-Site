@@ -1,6 +1,8 @@
 import React from "react"
-import { IntroContainer } from "./styles"
+import { IntroContainer, TextContainer } from "./styles"
+import $ from 'jquery'; 
 import { Link } from 'gatsby';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 class Intro extends React.Component {
 
@@ -11,20 +13,22 @@ class Intro extends React.Component {
   }
 
   componentDidMount() {
+   
   }
 
   render() {
     return (
         <IntroContainer>
-           <br/>
-           <br/>
-           <br/>
-            <p>
-            At Evaluates2 we offer strategic guidance in <Link to="">bringing new products to life </Link>
-            that combines a <Link to="">unique and efficient approach</Link> to product management with
-            software consulting service focused on <Link to="">excellence of code and product</Link>.
-            </p>
-            <h1>Engineering</h1>
+          <TextContainer>
+            At Evaluates2, we offer strategic guidance in 
+            <AnchorLink href="#discovery"> bringing new products to life </AnchorLink>
+            that combines a 
+            <AnchorLink href="#product"> unique and efficient approach </AnchorLink> 
+            to product management with
+            software consulting service focused on 
+            <AnchorLink href="#engineering"> excellence of code and product</AnchorLink>.
+          </TextContainer>
+            {/* <h1>Engineering</h1>
 
             <h3>Staff Augmentation</h3>
 
@@ -74,7 +78,7 @@ class Intro extends React.Component {
             <p>
             <h3>Workflows & Story Prioritization</h3>
             Are you on the first stage of your project and are looking for a technical team to help bring your vision to life? Well, then, you've come to the right place! At Evaluates2 we have a process in place that makes building an MVP seamless, tested, and scalable. As founders, we know what it's like building a company and look forward to partnering with you to build yours! 
-            </p>
+            </p> */}
         </IntroContainer>
     )
   }

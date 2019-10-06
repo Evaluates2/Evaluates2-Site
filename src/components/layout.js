@@ -14,7 +14,7 @@ import Drawer from './drawer';
 import './layout.css';
 
 const Container = styled.main`
-  width: 100vw;
+  width: 100%;
   overflow-x: hidden;
 `;
 

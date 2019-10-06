@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 
 const StyledJoinOurTeamCornerBtn = styled.div`
   /* background-image: linear-gradient(90deg,#000032,#0ff); */
+  background-color: #000032;
   min-height: 120px;
   display: flex;
   width: 100%;
