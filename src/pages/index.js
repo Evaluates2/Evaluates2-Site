@@ -3,142 +3,90 @@ import React from "react"
 import Global from "../components/Global"
 import Layout from '../components/layout';
 import Images from "../components/Images"
+import Videos from "../components/Videos"
 import Intro from "../components/Intro"
+import StackableImageAndTextDuo from '../components/generic-reusable-components/stackable-image-and-text-duo';
+import ChangeGearsBlock from '../components/generic-reusable-components/change-gears-block';
+import JoinOurTeamCornerBtn from './../components/generic-reusable-components/join-our-team-corner-btn';
 import 'semantic-ui-css/semantic.min.css';
+import StaffAugmentationImage from "../components/img-components/staff-augmentation.img";
 
 export default function IndexPage({ data, location }) {
-  // const { page, slideshow, updatedAt } = data
-  // const { title, subtitle, body } = page
-  // const { excerpt, html } = body && body.remark
   return (
     <Global pageTitle={''} path={''} description={''}>
       <Layout>
         <Images/>
         <Intro/>
+        <div id='engineering'>
+        <StackableImageAndTextDuo
+          images={[{img: 'staff', name: 'Staff Augmentation'}, {img: 'top', name: 'Top Engineering Talent'}, {img: 'technical', name: 'Technical Audits'}]}
+          title="Engineering"
+          header1="Excellence in Code"
+          paragraph1=""
+          header2=""
+          paragraph2=""
+          imgName="HOME_ENG"
+          imgOnLeft={true}
+          buttonText="Discover More"
+          buttonLinkTo="/contact"
+        >
+          <p>
+          At Def Method, we focus on excellence in code. As such we focus on the following values on all projects we work on.
+          <br/>
+          - Test Driven Development
+          <br/>
+          - Continuous Integration
+          <br/>
+          - Staging and Production Environments
+          <br/>
+          - Dependency Management and Clean Code
+          </p>
+        </StackableImageAndTextDuo>
+        </div>
+        <div id='product'>
+          <StackableImageAndTextDuo
+          images={[{img: 'resource', name: 'Resource Efficiency'}, {img: 'process', name: 'Process Improvements'}, {img: 'project', name: 'Project Management'}]}
+          title="Product Management"
+          header1="Workflows & Story Prioritization"
+          paragraph1=""
+          header2=""
+          paragraph2=""
+          imgName="HOME_PRODUCT"
+          imgOnLeft={false}
+          buttonText="Read More"
+          buttonLinkTo="/contact"
+        >
+          <p>
+          Successful development starts with effective product management. Align your team and get successful project results with Def Method Product Management. Our PMs will work with your team to find the process that works best for you. They will manage communication and make sure the team stays focused on delivering your goals.
+          </p>
+        </StackableImageAndTextDuo>
+        </div>
+        <div id='discovery'>
+          <StackableImageAndTextDuo
+          images={[{img: 'design', name: 'Design Sprint'}, {img: 'mvp', name: 'MVP Build'}, {img: 'maintenance', name: 'Maintenance Mode'}]}
+          title="Product Discovery"
+          header1="Building Your MVP"
+          paragraph1=""
+          header2=""
+          paragraph2=""
+          imgName="HOME_DISCOVERY"
+          imgOnLeft={true}
+          buttonText="Learn More"
+          buttonLinkTo="/contact"
+        >
+          <p>
+          Are you on the first stage of your project and are looking for a technical team to help bring your vision to life? Well, then, you've come to the right place! At Def Method we have a process in place that makes building an MVP seamless, tested, and scalable. As founders, we know what it's like building a company and look forward to partnering with you to build yours! 
+          </p>
+        </StackableImageAndTextDuo>
+        </div>
+        <ChangeGearsBlock
+          headerText="See how we think"
+          linkText="View our resources"
+          linkTo="/engineering"
+        ></ChangeGearsBlock>
+        <Videos/>
+        <JoinOurTeamCornerBtn />
       </Layout>
     </Global>
   )
 }
-
-// export const query = graphql`
-//   {
-//     page: contentfulPage(slug: { eq: "/" }) {
-//       ...pageFields
-//     }
-//     slideshow: contentfulSlideshow(title: { eq: "Landing Page" }) {
-//       slides {
-//         ...slideFields
-//       }
-//     }
-//   }
-// `
-
-// import React from 'react';
-// import { Link } from 'gatsby';
-
-// import Layout from '../components/layout';
-// import Image from '../components/image';
-// import SEO from '../components/seo';
-// import 'semantic-ui-css/semantic.min.css';
-
-// const IndexPage = () => (
-//   <Layout>
-//     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-//     <br />
-//     <br />
-//     <br />
-//     <h1>Together</h1>
-//     <h3>We will build something incredible.</h3>
-//     <br />
-//     <br />
-//     <br />
-//     <br />
-//     <br />
-//     <br />
-
-//     <p>
-//       At Evaluates2 we offer strategic guidance in bringing new products to life
-//       that combines a unique and efficient approach to product management with
-//       software consulting service focused on excellence of code and product.
-//     </p>
-//     <br />
-//     <br />
-//     <br />
-//     <br />
-//     <h1>Engineering</h1>
-
-//     <h3>Staff Augmentation</h3>
-
-//     <h3>Top Engineering Talent</h3>
-
-//     <h3>Technical Audits</h3>
-
-//     <p>
-//       Excellence of Code
-//       <br />
-//       At Evaluates2, we focus on excellence in code. As such we emphasize the
-//       following values on all out projects:
-//       <ul>
-//         <li>Test Driven Development</li>
-//         <li>Continuous Integration</li>
-//         <li>Staging and Production Environments</li>
-//         <li>Dependency Management and Upgrades.</li>
-//         <li>Readability and Clean Code</li>
-//       </ul>
-//     </p>
-
-//     <br />
-//     <br />
-//     <br />
-//     <br />
-
-//     <h1>Product Management</h1>
-
-//     <h3>Resource Efficiency</h3>
-
-//     <h3>Process Improvements</h3>
-
-//     <h3>Project Management</h3>
-
-//     <p>
-//       <h3>Workflows & Story Prioritization</h3>
-//       Successful development starts with effective product management. Align
-//       your team and get successful project results with Evaluates2 Product
-//       Management. Our PMs will work with your team to find the process that
-//       works best for you. They will manage communication and make sure the team
-//       stays focused on delivering your goals.
-//     </p>
-
-//     <br />
-//     <br />
-//     <br />
-//     <br />
-
-//     <h1>Product Discovery</h1>
-
-// <h3>Design Sprint</h3>
-
-// <h3>MVP Build</h3>
-
-// <h3>Maintenance Mode</h3>
-
-// <p>
-//   <h3>Workflows & Story Prioritization</h3>
-//   Are you on the first stage of your project and are looking for a technical team to help bring your vision to life? Well, then, you've come to the right place! At Evaluates2 we have a process in place that makes building an MVP seamless, tested, and scalable. As founders, we know what it's like building a company and look forward to partnering with you to build yours! 
-// </p>
-
-
-// <br />
-//     <br />
-//     <br />
-//     <br />
-
-//     <Link to="/our-values/">Learn More about our core agile engineering values -></Link>
-
-//     <br />
-//     <br />
-
-//   </Layout>
-// );
-
-// export default IndexPage;

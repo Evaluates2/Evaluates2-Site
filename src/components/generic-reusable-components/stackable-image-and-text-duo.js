@@ -1,19 +1,68 @@
+import React from "react"
 import styled from '@emotion/styled';
+import mediaQuery from "../../utils/mediaQuery"
+import EngineeringHomeImage from '../img-components/engineering_home.img';
 import ProgressTrackingImage from '../img-components/progress-tracking.img';
 import StaffAugmentationImage from '../img-components/staff-augmentation.img';
 import ProjectKickoffImage from '../img-components/project-kickoff.img';
+import TopEngineeringTalentImage from '../img-components/top-engineering-talent.img'
+import TechnicalAuditsImage from '../img-components/technical-audits.img'
+import ProductHomeImage from '../img-components/product_home.img'
+import ResourceEfficiencyImage from '../img-components/resource-efficiency.img'
+import ProgressImprovementImage from '../img-components/progress_improvement.img'
+import ProjectManagementImage from '../img-components/project_management.img'
+import DiscoverHomeImage from '../img-components/discover_home.img'
+import DesignSprintImage from '../img-components/design_sprint.img'
+import MvpBuildImage from '../img-components/mvp_build.img'
+import MaintenanceImage from '../img-components/maintenance.img'
+
 import Link from 'gatsby-link';
 
 const StyledStackableImageAndTextDuo = styled.div`
+  background-color: #000032;
+  .text {
+    margin-top: 10px;
+  }
+  .img_container {
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+  }
+  .s_img {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+  }
+  .img_container {
+    display: flex;
+  }
+  .text {
+    color: white;
+  }
   .container {
+    margin: 0px !important;
     flex: 1;
+    flex-direction: row-reverse;
     display: flex;
     justify-content: space-evenly;
     padding: 30px 0;
     flex: 1;
-    width: 90%;
-    height: 100%;
-    flex-direction: row-reverse;
+    width: 100%;
+    .gatsby-image-wrapper {
+      height: 100% !important;
+    }
+    ${mediaQuery.maxNetbook} {
+      width: 95% !important;
+      margin: 0 auto !important;
+      flex-direction: column !important;
+     
+    }
+  }
+
+  ul {
+    list-style: none;
+    li {
+      color: white;
+    }
   }
 
   @media only screen and (max-width: 960px) {
@@ -29,6 +78,7 @@ const StyledStackableImageAndTextDuo = styled.div`
     letter-spacing: .75px;
     font-family: 'e2-Raleway';
     color: #DDDDDD;
+    font-weight: 300;
 
     @media only screen and (max-width: 900px) {
       font-size: 19px;
@@ -38,14 +88,12 @@ const StyledStackableImageAndTextDuo = styled.div`
 
   div {
     /* width: 100%; */
-    padding: 30px;
-    width: 80%;
+    width: 100%;
     align-content: center;
     text-align: center;
-    margin: 15px;
+    margin: 0px;
     .img {
       display: flex;
-      height: 100%;
       flex-direction: column;
       justify-content: flex-start;
       /* align-items: center; */
@@ -53,19 +101,31 @@ const StyledStackableImageAndTextDuo = styled.div`
 
     .text-container {
       text-align: left;
+      margin-right: 2vw;
+      margin-left: 2vw;
+      ${mediaQuery.maxNetbook} {
+        margin-top: 20px;
+        padding-right: 0px;
+        padding-left: 0px;
+      }
     }
 
   }
 
   h1 {
-    font-size: 43px;
+    color: white !important;
+    font-size: 6vw;
+    line-height: 6vw;
     letter-spacing: .5px;
     font-family: 'e2-Raleway-Extra-Bold';
   }
 
   h2 {
-    font-size: 24px;
+    color: white !important;
     letter-spacing: .25px;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 500;
     font-family: 'e2-Raleway';
   }
 
@@ -84,6 +144,7 @@ const StyledStackableImageAndTextDuo = styled.div`
   }
 
   button {
+    margin-top: 50px;
     background-image: linear-gradient(90deg,#ff7d00,#e0d950);
     transition: opacity 0.2s ease;
     color: #fff;
@@ -102,49 +163,98 @@ const StyledStackableImageAndTextDuo = styled.div`
   }
 `;
 
-const StackableImageAndTextDuo = ({
-  title,
-  header1,
-  paragraph1,
-  header2,
-  paragraph2,
-  imgName,
-  imgOnLeft,
-  buttonText,
-  buttonLinkTo,
-  children
-}) => {
-  const getImage = imgName => {
-    switch (imgName) {
-      case 'DAILY_STANDUPS':
-        return <ProgressTrackingImage />;
+class StackableImageAndTextDuo extends React.Component {
 
-      case 'IPMS/RETROS':
-        return <ProjectKickoffImage />;
-
-      case 'USER_STORIES':
-        return <StaffAugmentationImage />;
+  constructor(props) {
+    super(props);
+      this.state = { 
+      };
     }
-  };
 
-  return (
-    <StyledStackableImageAndTextDuo>
-      <div className={`container ${imgOnLeft ? 'reversed' : ''}`}>
-        <div className="img">{getImage(imgName)}</div>
-        <div className="text-container">
-          <h1>{title}</h1>
-          <h2>{header1}</h2>
-          <p>{paragraph1}</p>
-          <h2>{header2}</h2>
-          <p>{paragraph2}</p>
-          {children}
-          <Link to={buttonLinkTo}>
-            <button>{buttonText}</button>
-          </Link>
+  componentDidMount() {
+    
+  }
+  render() {
+    const title = this.props.title
+    const header1 = this.props.header1
+    const paragraph1 = this.props.paragraph1
+    const header2 = this.props.header2
+    const paragraph2 = this.props.paragraph2
+    const imgName = this.props.imgName
+    const imgOnLeft = this.props.imgOnLeft
+    const buttonText = this.props.buttonText
+    const buttonLinkTo = this.props.buttonLinkTo
+    const images = this.props.images
+    const getImage = imgName => {
+      switch (imgName) {
+        case 'HOME_PRODUCT':
+          return <ProductHomeImage/>
+        case 'HOME_ENG': 
+          return <EngineeringHomeImage/>
+        case 'DAILY_STANDUPS':
+          return <ProgressTrackingImage />;
+        case 'HOME_DISCOVERY': 
+          return <DiscoverHomeImage/>
+        case 'IPMS/RETROS':
+          return <ProjectKickoffImage />;
+        case 'USER_STORIES':
+          return <StaffAugmentationImage />;
+        case 'staff':
+          return <StaffAugmentationImage/>;
+        case 'top':
+          return <TopEngineeringTalentImage/>;
+        case 'technical':
+          return <TechnicalAuditsImage/>;
+        case 'resource':
+          return <ResourceEfficiencyImage/>;
+        case 'process':
+          return <ProgressImprovementImage/>;
+        case 'project':
+          return <ProjectManagementImage/>;
+        case 'design':
+          return <DesignSprintImage/>;
+        case 'mvp':
+          return <MvpBuildImage/>;
+        case 'maintenance':
+          return <MaintenanceImage/>;
+      }
+    }
+    return (
+      <StyledStackableImageAndTextDuo>
+        <div className={`container ${imgOnLeft ? 'reversed' : ''}`}>
+          <div className="img">{getImage(imgName)}</div>
+          <div className="text-container">
+            <h1>{title}</h1>
+            {
+              images != undefined && images.length > 0 ?
+              <div className="img_container">
+                {images.map((item) => {
+                  return (
+                    <div className="small_image">
+                      <div className="s_img">{getImage(item.img)}</div>
+                      <div className="text">
+                        {item.name}
+                      </div>
+                    </div>
+                  )
+                })}
+              </div>
+              :
+              <div></div>
+            }
+            <h2>{header1}</h2>
+            <p>{paragraph1}</p>
+            <h2>{header2}</h2>
+            <p>{paragraph2}</p>
+            {this.props.children}
+            <Link to={buttonLinkTo}>
+              <button>{buttonText}</button>
+            </Link>
+          </div>
         </div>
-      </div>
-    </StyledStackableImageAndTextDuo>
-  );
-};
+      </StyledStackableImageAndTextDuo>
+    )
+  }
+}
 
 export default StackableImageAndTextDuo;

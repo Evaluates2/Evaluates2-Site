@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import { Link } from 'gatsby';
 
 const StyledChangeGearsBlock = styled.div`
+  background-color: #000032;
   text-decoration: none;
   position: relative;
   z-index: 5;
