@@ -19,7 +19,7 @@ const WojBlogScreenshotImage = () => (
       query {
         placeholderImage: file(relativePath: { eq: "woj-blog-screenshot.png" }) {
           childImageSharp {
-            fluid(maxWidth: 300) {
+            fluid(maxWidth: 800) {
               ...GatsbyImageSharpFluid
             }
           }

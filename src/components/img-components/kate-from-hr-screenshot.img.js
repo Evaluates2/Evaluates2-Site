@@ -19,7 +19,7 @@ const KateFromHrScreenshotImage = () => (
       query {
         placeholderImage: file(relativePath: { eq: "kate-from-hr-screenshot.png" }) {
           childImageSharp {
-            fluid(maxWidth: 400) {
+            fluid(maxWidth: 800) {
               ...GatsbyImageSharpFluid
             }
           }

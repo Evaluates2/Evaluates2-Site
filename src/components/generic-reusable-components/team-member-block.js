@@ -22,7 +22,7 @@ const StyledPersonImage = styled.div`
   
   .gatsby-image-wrapper {
     background-color: #000032;
-    max-height: 200px;
+    height: 200px;
     border-radius: 8px;
 
     :hover {
@@ -47,7 +47,7 @@ const StyledPersonImage = styled.div`
     font-size: 15px;
     margin: 2px auto 2px 5px;
     font-family: 'e2-Raleway';
-    line-height: 15px;
+    line-height: 18px;
 
 :hover {
   color: #678cff;
@@ -63,12 +63,12 @@ const StyledPersonImage = styled.div`
   }
 `
 
-const TeamMemberBlock = ({ name, linkTo, role }) => {
+const TeamMemberBlock = ({ itemId, name, linkTo, role, img }) => {
     return (
-        <Link to="team/joe-leo">
+        <Link to={linkTo}>
             <StyledPersonImage>
               <PersonColorContainer>
-                <PersonImage name="Joe Leo" role="CEO, Cofounder"></PersonImage>
+                {img}
               </PersonColorContainer>
             <h2>
                 {name}

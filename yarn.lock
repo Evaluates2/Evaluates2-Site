@@ -735,6 +735,13 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
+"@babel/runtime@^7.6.2":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.6.2.tgz#c3d6e41b304ef10dcf13777a33e7694ec4a9a6dd"
+  integrity sha512-EXxN64agfUqqIGeEjI5dL5z0Sw0ZwWo1mLTi4mQowCZ42O59b7DRpZAnTC6OqdF28wMBMFKNb/4uFGrVaigSpg==
+  dependencies:
+    regenerator-runtime "^0.13.2"
+
 "@babel/template@^7.1.0", "@babel/template@^7.4.4", "@babel/template@^7.6.0":
   version "7.6.0"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.6.0.tgz#7f0159c7f5012230dad64cca42ec9bdb5c9536e6"
@@ -5419,6 +5426,13 @@ gatsby-page-utils@^0.0.17:
     lodash "^4.17.15"
     micromatch "^3.1.10"
     slash "^3.0.0"
+
+gatsby-plugin-create-client-paths@^2.1.12:
+  version "2.1.12"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-create-client-paths/-/gatsby-plugin-create-client-paths-2.1.12.tgz#b78b94b0ec6cf7d6ea415d8bdd80b52b3034947f"
+  integrity sha512-c7h1EidtA1B+jpJaCT5TKixu39XbrqS2GqE5dT12tH+AUi2j8TfPNRhiJaYL6LfIk4FMn7iyKqcnjXdbxlQlaw==
+  dependencies:
+    "@babel/runtime" "^7.6.2"
 
 gatsby-plugin-emotion@^4.0.3:
   version "4.1.6"

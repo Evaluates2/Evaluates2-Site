@@ -8,6 +8,10 @@ module.exports = {
   plugins: [
     `gatsby-transformer-json`,
     {
+      resolve: `gatsby-plugin-create-client-paths`,
+      options: { prefixes: [`/team/*`] },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `json`,

@@ -13,13 +13,13 @@ import Img from 'gatsby-image';
  * - `StaticQuery`: https://gatsby.app/staticquery
  */
 
-const WojScreenshot = () => (
+const JimLynchHeadshotImage = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "woj-blog-screenshot.png" }) {
+        placeholderImage: file(relativePath: { eq: "headshots/jim-lynch-headshot.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 300) {
+            fluid(maxWidth: 600) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -29,4 +29,4 @@ const WojScreenshot = () => (
     render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
   />
 );
-export default WojScreenshot;
+export default JimLynchHeadshotImage;

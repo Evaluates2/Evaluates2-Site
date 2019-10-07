@@ -13,13 +13,13 @@ import Img from 'gatsby-image';
  * - `StaticQuery`: https://gatsby.app/staticquery
  */
 
-const E2GithubScreenshotImage = () => (
+const NinaYangHeadshotImage = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "e2-github-page.png" }) {
+        placeholderImage: file(relativePath: { eq: "headshots/nina-yang-headshot.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 600) {
+            fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -29,4 +29,4 @@ const E2GithubScreenshotImage = () => (
     render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
   />
 );
-export default E2GithubScreenshotImage;
+export default NinaYangHeadshotImage;
