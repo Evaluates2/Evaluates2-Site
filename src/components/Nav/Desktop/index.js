@@ -41,8 +41,6 @@ class Desktop extends React.Component {
           </NavLink> 
         }
         
-
-       sjkdasd  {this.window.location.pathname}
         <WrappedSubnav>
         {subNav.length > 0 && (
           <SubNav className={this.window.location.pathname === '/about' || this.window.location.pathname === '/our-work' || this.window.location.pathname.indexOf('/team') !== -1 ? 'blue-bg' : ''}>

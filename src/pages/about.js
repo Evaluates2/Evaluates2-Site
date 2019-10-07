@@ -4,6 +4,9 @@ import Layout from '../components/layout';
 import styled from '@emotion/styled';
 import JoinOurTeamCornerBtn from './../components/generic-reusable-components/join-our-team-corner-btn';
 import PersonImage from '../components/img-components/person-img.img';
+import JimLynchHeadshotImage from './../components/img-components/headshots/jim-lynch-headshot.img';
+import NinaYangHeadshotImage from '../components/img-components/headshots/nina-yang-headshot.img';
+import LeeNguyenHeadshotImage from '../components/img-components/headshots/lee-nguyen-headshot.img';
 import Link from 'gatsby-link';
 import TeamMemberBlock from './../components/generic-reusable-components/team-member-block';
 
@@ -316,28 +319,10 @@ const AboutPage = () => (
         <h1>Our Team</h1>
         <div className="our-team-grid">
 
-          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
-          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
-          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
-          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
-          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
-          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
-          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
-          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
-          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
-          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
-          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
-          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
-          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
-          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
-          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
-          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
-          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
-          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
-          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
-          <TeamMemberBlock name="Joe Leo" linkTo="joe-leo" role="Ceo/Co-founder"></TeamMemberBlock>
-
-
+          <TeamMemberBlock name="Jim Lynch" linkTo="/team/jim-lynch" role="CEO / Principal Engineer" img={<JimLynchHeadshotImage/>}></TeamMemberBlock>
+          <TeamMemberBlock name="Nina Yang" linkTo="/team/nina-yang" role="Business Development" img={<NinaYangHeadshotImage/>}></TeamMemberBlock>
+          <TeamMemberBlock name="Lee Nguyen" linkTo="/team/lee-nguyen" role="Sr. Software Engineer" img={<LeeNguyenHeadshotImage/>}></TeamMemberBlock>
+          
         </div>
       </OurTeamSection>
 
