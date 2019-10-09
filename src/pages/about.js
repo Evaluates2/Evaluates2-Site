@@ -1,5 +1,5 @@
 import React from 'react';
-import Global from "../components/Global"
+import Global from '../components/Global';
 import Layout from '../components/layout';
 import styled from '@emotion/styled';
 import JoinOurTeamCornerBtn from './../components/generic-reusable-components/join-our-team-corner-btn';
@@ -53,17 +53,16 @@ const AboutHero = styled.div`
 `;
 
 const CenteredVideo = styled.div`
-    text-align: center;
-    width: 100%;
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 `;
 
 const PartnersSection = styled.div`
-
   h1 {
     font-size: 80px;
     line-height: 100px;
@@ -72,11 +71,9 @@ const PartnersSection = styled.div`
   }
 
   min-height: 500px;
-
 `;
 
 const NiceQuoteSection = styled.div`
-
   padding: 0 100px;
 
   h1 {
@@ -94,7 +91,6 @@ const NiceQuoteSection = styled.div`
   }
 
   min-height: 300px;
-
 `;
 
 const AboutBlurb = styled.div`
@@ -105,12 +101,10 @@ const AboutBlurb = styled.div`
     padding: 80px 160px;
     color: #333333;
     text-align: justify;
-    
   }
 `;
 
 const OurTeamSection = styled.div`
-
   padding: 0 100px;
 
   h1 {
@@ -122,7 +116,6 @@ const OurTeamSection = styled.div`
   }
 
   .our-team-grid {
-
     display: grid;
     grid-gap: 35px;
     justify-content: space-around;
@@ -131,51 +124,37 @@ const OurTeamSection = styled.div`
     grid-template-columns: auto auto auto auto auto auto auto;
 
     @media only screen and (max-width: 1350px) {
-    grid-template-columns: auto auto auto auto auto auto;
-        
-      }
+      grid-template-columns: auto auto auto auto auto auto;
+    }
 
     @media only screen and (max-width: 1160px) {
-    grid-template-columns: auto auto auto auto auto;
-        
-      }
+      grid-template-columns: auto auto auto auto auto;
+    }
     @media only screen and (max-width: 990px) {
-    grid-template-columns: auto auto auto auto;
-        
-      }
+      grid-template-columns: auto auto auto auto;
+    }
 
     @media only screen and (max-width: 810px) {
-    grid-template-columns: auto auto auto;
-
-      }
+      grid-template-columns: auto auto auto;
+    }
     @media only screen and (max-width: 610px) {
-    grid-template-columns: auto auto ;
-
-      }
+      grid-template-columns: auto auto;
+    }
     @media only screen and (max-width: 430px) {
-    grid-template-columns: auto;
-
-      }
-      
+      grid-template-columns: auto;
+    }
 
     .team-member-cell {
-
       .team-member-img {
-
       }
 
       h2 {
-
       }
 
       p {
-
       }
-
     }
-
   }
-
 `;
 
 const MidPageAnchor = styled.div`
@@ -184,7 +163,6 @@ const MidPageAnchor = styled.div`
 `;
 
 const WhatWeveBuiltSection = styled.div`
-
   padding: 0 100px;
 
   h1 {
@@ -195,72 +173,81 @@ const WhatWeveBuiltSection = styled.div`
   }
 
   p {
-
-    opacity: .8;
+    opacity: 0.8;
     font-size: 30px;
     line-height: 40px;
     font-family: 'e2-Raleway';
 
     padding: 20px 0;
-
   }
-
-
-
 `;
 
 const PinkBoxesContainer = styled.div`
-
   padding: 0 100px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
 
-
   @media only screen and (max-width: 990px) {
-  flex-direction: column;
-
+    flex-direction: column;
   }
-
 `;
 
 const PinkBox = styled.div`
-    display: flex;
-    width: 35vw;
-    height: 35vw;
-    min-width: 250px;
-    min-height: 250px;
-    max-width: 450px;
-    max-height: 450px;
-    margin: 20px 20px;
-    padding: 30px;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    background-image: linear-gradient(51deg,#f0f,#efe51a);
-    color: #fff;
-    border-radius: 4px;
+  display: flex;
+  width: 35vw;
+  height: 35vw;
+  min-width: 300px;
+  min-height: 300px;
+  max-width: 450px;
+  max-height: 450px;
+  margin: 20px 20px;
+  padding: 30px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  background-image: linear-gradient(51deg, #f0f, #efe51a);
+  color: #fff;
+  border-radius: 4px;
 
-    h1 {
-      font-size: 35px;
-      margin: 20px auto 30px 0;
-      text-align: left;
-      min-height: 85px;
+  h1 {
+    font-size: 35px;
+    margin: 20px auto 30px 0;
+    text-align: left;
+    min-height: 85px;
+    min-height: 85px;
+    
+    
+    @media only screen and (max-width: 990px) {
+      font-size: 30px;
+      min-height: 65px;
     }
-
-    p {
-      font-size: 24px;
-
+    
+    @media only screen and (max-width: 660px) {
+      min-height: 55px;
+      font-size: 25px;
     }
+  }
+  
+  p {
+    font-size: 24px;
+      @media only screen and (max-width: 990px) {
+        font-size: 22px;
+      }
+      
+      @media only screen and (max-width: 660px) {
+        font-size: 20px;
+      }
+  }
 `;
 
 const AboutPage = () => (
@@ -270,12 +257,10 @@ const AboutPage = () => (
       <br />
       <br />
 
-
       <AboutHero>
         <h1>About us</h1>
         <p>When it comes to software, we're full of solutions.</p>
       </AboutHero>
-
 
       <CenteredVideo>
         <iframe
@@ -290,11 +275,12 @@ const AboutPage = () => (
 
       <AboutBlurb>
         <p>
-          "At Evaluates2 we believe in the integrity of our code and are passionate
-            about always learning. We work tirelessly to help our clients build the
-            best products possible and to contribute back to the software development
-            community; because it's not just our job, it's our passion."
-      </p>
+          "At Evaluates2 we believe in the integrity of our code and are
+          passionate about always learning. We work tirelessly to help our
+          clients build the best products possible and to contribute back to the
+          software development community; because it's not just our job, it's
+          our passion."
+        </p>
       </AboutBlurb>
 
       <PartnersSection>
@@ -303,33 +289,47 @@ const AboutPage = () => (
 
       <NiceQuoteSection>
         <h1>
-          "They are not only razor sharp developers, they are excellent people as well."
+          "They are not only razor sharp developers, they are excellent people
+          as well."
         </h1>
-        <p>
-          Artspool
-        </p>
+        <p>Artspool</p>
       </NiceQuoteSection>
 
       <MidPageAnchor>
-        <a id="OUR_TEAM"/>
+        <a id="OUR_TEAM" />
       </MidPageAnchor>
-      <br/>
-      <br/>
+      <br />
+      <br />
       <OurTeamSection>
         <h1>Our Team</h1>
         <div className="our-team-grid">
-
-          <TeamMemberBlock name="Jim Lynch" linkTo="/team/jim-lynch" role="CEO / Principal Engineer" img={<JimLynchHeadshotImage/>}></TeamMemberBlock>
-          <TeamMemberBlock name="Nina Yang" linkTo="/team/nina-yang" role="Business Development" img={<NinaYangHeadshotImage/>}></TeamMemberBlock>
-          <TeamMemberBlock name="Lee Nguyen" linkTo="/team/lee-nguyen" role="Sr. Software Engineer" img={<LeeNguyenHeadshotImage/>}></TeamMemberBlock>
-          
+          <TeamMemberBlock
+            name="Jim Lynch"
+            linkTo="/team/jim-lynch"
+            role="CEO / Principal Engineer"
+            img={<JimLynchHeadshotImage />}
+          ></TeamMemberBlock>
+          <TeamMemberBlock
+            name="Nina Yang"
+            linkTo="/team/nina-yang"
+            role="Business Development"
+            img={<NinaYangHeadshotImage />}
+          ></TeamMemberBlock>
+          <TeamMemberBlock
+            name="Lee Nguyen"
+            linkTo="/team/lee-nguyen"
+            role="Sr. Software Engineer"
+            img={<LeeNguyenHeadshotImage />}
+          ></TeamMemberBlock>
         </div>
       </OurTeamSection>
 
       <WhatWeveBuiltSection>
-
         <h1>What We've Built</h1>
-        <p>You don't have to take our word for it that we can build great software- just take a look at some the awesome project we've made!</p>
+        <p>
+          You don't have to take our word for it that we can build great
+          software- just take a look at some the awesome project we've made!
+        </p>
       </WhatWeveBuiltSection>
 
       <br />
@@ -338,8 +338,6 @@ const AboutPage = () => (
       <br />
 
       <PinkBoxesContainer>
-
-
         <Link to="/our-work">
           <PinkBox>
             <h1>Previous Success Stories</h1>
@@ -357,8 +355,6 @@ const AboutPage = () => (
       <br />
       <br />
       <br />
-
-
 
       <JoinOurTeamCornerBtn />
       {/* <h1>Some of Our Partners</h1>
@@ -391,8 +387,6 @@ const AboutPage = () => (
       <br />
       <br />
     </Layout>
-
-
   </Global>
 );
 

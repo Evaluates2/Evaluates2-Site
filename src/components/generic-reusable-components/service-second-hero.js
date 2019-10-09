@@ -54,7 +54,10 @@ const SecondServiceHero = ({title, description}) => {
   return (
     <StyledSecondServiceHero>
       <h1>{title}</h1>
+      <p>
+
       {description}
+      </p>
     </StyledSecondServiceHero>
   )
   

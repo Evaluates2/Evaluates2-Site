@@ -1,12 +1,10 @@
 import React from 'react';
 import { Link } from 'gatsby';
-
+import Global from "../components/Global"
 import Layout from '../components/layout';
 import styled from '@emotion/styled';
 import ServicePageHero from '../components/generic-reusable-components/service-page-hero';
 import SecondServiceHero from '../components/generic-reusable-components/service-second-hero';
-import SecondServiceHeroDescription from '../components/generic-reusable-components/service-second-hero-description';
-
 import StackableColumnsContainer from '../components/generic-reusable-components/stackable-columns-container';
 import StackableColumn from '../components/generic-reusable-components/stackable-column';
 
@@ -15,13 +13,15 @@ import ProgressTrackingImage from '../components/img-components/progress-trackin
 import ProjectKickoffImage from '../components/img-components/project-kickoff.img';
 import ResourceEfficiencyImage from '../components/img-components/resource-efficiency.img';
 import StaffAugmentationImage from '../components/img-components/staff-augmentation.img';
-import StackableImageAndTextDuo from '../components/generic-reusable-components/stackable-image-and-text-duo';
 import ChangeGearsBlock from '../components/generic-reusable-components/change-gears-block';
 import ReadyToGetStartedSection from '../components/generic-reusable-components/ready-to-get-started-section';
-import JoinOurTeamCornerBtn from './../components/generic-reusable-components/join-our-team-corner-btn';
-import Global from "../components/Global"
+import StackableImageAndTextDuo from '../components/generic-reusable-components/stackable-image-and-text-duo';
+import JoinOurTeamCornerBtn from '../components/generic-reusable-components/join-our-team-corner-btn';
 
-const StyledStartupPage = styled.div`
+const stringWithBrackets = `We write requirements in the form of user stories using the format:
+As a <user>, when <action>, I want <a feature> so that <user goals>`;
+
+const ProjectManagementPageContainer = styled.div`
   font-family: 'e2-Raleway-Black';
   background-color: #000032;
   color: white;
@@ -30,255 +30,161 @@ const StyledStartupPage = styled.div`
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  h1 {
-    font-family: 'e2-Raleway-Black';
-    font-size: 44px;
-    max-width: 95vw;
-    line-height: 140px;
-    text-align: center;
-    letter-spacing: 4px;
-  }
+
   p {
-    font-size: 16px;
-    line-height: 30px;
-    letter-spacing: 2px;
-    font-family: 'e2-Raleway';
-  }
-  .wide {
-    width: 95%;
-  }
-  .discovery-header {
-    font-size: 50px;
-    color: #ff00ff;
-    font-family: 'e2-Raleway-Extra-Bold';
-    text-align: center;
-  }
-  .discovery-p {
-    font-size: 20px;
-  }
-  .startup-img {
-    margin-top: 25px;
+    @media only screen and (max-width: 900px) {
+      
+      padding-right: 60px;
+    }
   }
 `;
 
-const StartupSecondHero = styled.div`
-  padding: 5px;
-  background-color: #000032;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 400px;
-  margin: 300px 100px;
-  padding: 60px 20px;
-  h1 {
-    font-size: 80px;
-    line-height: 115px;
-    text-align: center;
-    margin-bottom: 80px;
-  }
-  p {
-    font-size: 28px;
-    text-align: center;
-    width: 100%;
-    line-height: 60px;
-  }
-`;
 
-const StartupPage = () => (
-  <Global pageTitle={'Startup'} path={'startup'} description={'startup'}>
+const ProductManagementPage = () => (
+  <Global pageTitle={'Product Management'} path={'product-management'} description={'product-management'}>
+
     <Layout>
-      <StyledStartupPage>
-        <br />
-        <br />
-        <br />
 
+      <ProjectManagementPageContainer>
         <ServicePageHero
-          title="The E2 Discovery Process"
-          description="Ready to bring your idea to life?"
+          title="Product Discovery"
+          description="Ready to bring your ideas to life?"
         ></ServicePageHero>
-
-        <br />
-        <br />
-        {/* <SecondServiceHero
+        <SecondServiceHero
           title="The Product Journey"
-          description={SecondServiceHeroDescription}
-        ></SecondServiceHero> */}
-        <StartupSecondHero>
-
-          <h1>
-            The Product Journey
-          </h1>
-          <p>
-            From the very beginnings to long after product launch, we're here to help.
-          </p>
-        </StartupSecondHero>
-
-
-        <StackableColumnsContainer className="wide">
+          description="From initial product inception to post-deployment, we're here to help."
+        ></SecondServiceHero>
+        <StackableColumnsContainer>
           <StackableColumn>
-            <p className="discovery-p">Stage 1</p>
-            <h2 className="discovery-header">Discovery</h2>
             <ProjectKickoffImage />
-            {/* <MaintenanceImage /> */}
+            <h1>Discovery</h1>
+
+            <p>
+              During the discovery phase we determine key goals and needs for your software.
+            </p>
+
+            <p>
+              Every successful project starts with a team that's firmly aligned
+              and prepared for product development. At Def Method, we start off
+              every project by collecting product requirements, aligning with your
+              team on goals, and building out an initial project estimate
+              spreadsheet that is broken down by a backlog and icebox.
+          </p>
+            <p>
+              The purpose of the kickoff is primary to align all team members on these goals and focus on building a product that hits these keys deliverables, is a nice, clean codebase, and is actually a <i>fun</i> project for the people building it!
+          </p>
           </StackableColumn>
           <StackableColumn>
-            <p className="discovery-p">Stage 2</p>
-            <h2 className="discovery-header">MVP Build</h2>
             <ProgressTrackingImage />
-            {/* <MaintenanceImage /> */}
+            <h1>MVP Build</h1>
+            <p>
+              During the MVP Build we build an MVP
+          </p>
+            <p>
+              The PMs will work with the project management tools that your team
+              prefers. For user story tracking we commonly use Pivotal Tracker,
+              Trello, or Jira. Pivotal Tracker and Trello come with a low learning
+              curve and are straightforward to set up, whereas Jira allows for
+              detailed customization of workflow and is well suited to larger
+              scale projects. We typically use Slack for communication, Google
+              Hangouts/Meet for remote meetings, Rollbar for error tracking and
+              New Relic for performance monitoring.
+          </p>
           </StackableColumn>
           <StackableColumn>
-            <p className="discovery-p">Stage 3</p>
-            <h2 className="discovery-header">Maintenance</h2>
-            <MaintenanceImage className="startup-img" />
+            <MaintenanceImage />
+            <h1>Maintenance</h1>
+            <p>
+              As is a natural course for many websites, development moves
+              temporarily from active development of new features to ongoing
+              maintenance.
+          </p>
+            <p>
+              As part of our development process, we will implement the
+              appropriate tracking tools to ensure your application is effectively
+              maintained. This includes error tracking and performance monitoring
+              tools with appropriate notification settings and user tracking tools
+              such as Google Analytics, Mix Panel or Heap. At Def Method we stand
+              behind the products we build and will support you if your product
+              goes down. We offer maintenance plans for customers that are
+              interested in having the option for development of small features
+              and bug resolution.
+          </p>
           </StackableColumn>
         </StackableColumnsContainer>
-
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <StackableImageAndTextDuo
-          title="Discovery"
-          header1="Our Process"
-          paragraph1=""
+          title="Flexible Staff Augmentation"
+          header1="One Engineer ora Whole Team"
+          paragraph1="We work with all sorts of copmanies, large and small, and our services our always customized to the needs or each unique client."
           header2=""
           paragraph2=""
           imgName="DAILY_STANDUPS"
           imgOnLeft={true}
           buttonText="Learn More"
           buttonLinkTo="/contact"
-        >
-          <p>
-
-            The Def Method Discovery Process is an amalgamation of a Design Sprint as described by Jake Knapp from Google Ventures in the book Sprint (http://www.gv.com/sprint/) and an agile product inception as described by Martin Fowler in his Lead Inception article (https://martinfowler.com/articles/lean-inception/). During this workshop the team will focus on:
-          </p>
-
-          <ul>
-            <li>
-
-          - Project goals and key risks
-            </li>
-            <li>
-
-          - Assumptions
-            </li>
-            <li>
-
-          - Storyboarding and solution mapping
-            </li>
-            <li>
-
-          - Feature prioritization
-            </li>
-            <li>
-
-          - Creative problem solving
-            </li>
-          </ul>
-          
-          <p>
-
-            The goal of the Discovery Process is to deliver the information your company needs to make immediate progress on the most important features of the platform. You will walk away from this workshop with a team that is firmly aligned and a product plan that is clear and tested.
-          </p>
-        </StackableImageAndTextDuo>
+        ></StackableImageAndTextDuo>
         <StackableImageAndTextDuo
-          title="MVP Development"
-          header1=""
-          paragraph1="The ultimate goal of the Product Discovery process is to achieve successful application development and delivery. Using the deliverables from the Discovery Workshop, Def Method will begin the development process following the Product Discovery."
-          header2=""
-          paragraph2=''
+          title="Short or Long-Term Contracts"
+          header1="Honest & Realistic Estimations"
+          paragraph1="We estimate the length of project development based on previous projects and take into account CI / CD setup, test automation, and the possibility to change course mid-development."
+          header2="We're On Your Side"
+          paragraph2='Our engineers are taught to development with your best interest in mind and they are internally motivated to always bring up new ideas for improvement and innovation within client companies.'
           imgName="IPMS/RETROS"
           imgOnLeft={false}
           buttonText="Learn More"
           buttonLinkTo="/"
-        >
-
-<ul>
-            <li>
-
-          - Offshore resources
-            </li>
-            <li>
-
-          - Product Management
-            </li>
-            <li>
-
-          - Product Strategy
-            </li>
-            <li>
-
-          - User testing
-            </li>
-
-          </ul>
-        </StackableImageAndTextDuo>
+        ></StackableImageAndTextDuo>
         <StackableImageAndTextDuo
-          title="Maintenance"
-          header1="Logs, Analytics, and Systems Upkeep"
-          paragraph1="As is a natural course for many websites, startups will typically temporarily move from active development of new features on its website to ongoing maintenance after the launch of the MVP. With maintenance you can rest assured that your application will stay up and running with a part-time engineer keeping your code base up-to-date and smaller features built. During maintenance mode you will get the following:"
-          header2=""
-          paragraph2=""
+          title="We'll Work With Your Budget"
+          header1="A Free Consultaion Costs Nothing!"
+          paragraph1="Do you want to run some ideas by a few experienced engineers or just need some third-party tehnical guidance? Feel free to contact us for a free 15-30 minute techincal evaluation of your project and how it could possibly be improved."
+          header2="An E2 Engineer Pays Many Times Over"
+          paragraph2="Having Evaluates2 engineers embedded in your teams encourages a culture that appreciates well-written automated tests, solid CI / CD pipelines, multiples environments, and other practices that result in happy, healthy software."
           imgName="USER_STORIES"
           imgOnLeft={true}
           buttonText="Learn More"
           buttonLinkTo="/"
-        >
-          <ul>
-            <li>
-
-            - Implementation of small user features
-            </li>
-            <li>
-
-            - Update and maintenance of 3rd party dependencies
-            </li>
-            <li>
-
-            - Resolution of bugs
-            </li>
-            <li>
-
-            - Monitoring for exceptions, unusual traffic patterns, performance degradation, or increased memory usage
-            </li>
-            <li>
-
-            - Infrastructural and architectural maintenance (AWS, Heroku, etc...)
-            </li>
-
-          </ul>
-
-        </StackableImageAndTextDuo>
-
+        ></StackableImageAndTextDuo>
+        {/* <StackableImageAndTextDuo
+          title="Pair Programming"
+          header1="A Collective Knowledge And Ownership of the Codebase"
+          paragraph1="We like pair programming because it's aawesome!"
+          header2="Story Acceptance"
+          paragraph2="Our engineering teams deliver continuously and you, the client, play the primary role in reviewing and accepting delivered features. As soon as a user story is complete it is put in a queue for you to review and approve. To facilitate the review and feedback process we hold weekly demos of the delivered features with the engineers. This is where you provide feedback to the team on what you see. The ongoing nature of the review and feedback process throughout development allows you to call in adjustments as the work is being done reducing significant rework and redesign. It also provides full transparency to you with regard to the progress and quality of work being conducted."
+          imgName="USER_STORIES"
+          imgOnLeft={false}
+          buttonText="Learn More"
+          buttonLinkTo="/"
+        ></StackableImageAndTextDuo>
+        <StackableImageAndTextDuo
+          title="Live Demos!"
+          header1="A Happy Ending For Every Sprint"
+          paragraph1="We like pair programming because it's aawesome!"
+          header2="Story Acceptance"
+          paragraph2="Our engineering teams deliver continuously and you, the client, play the primary role in reviewing and accepting delivered features. As soon as a user story is complete it is put in a queue for you to review and approve. To facilitate the review and feedback process we hold weekly demos of the delivered features with the engineers. This is where you provide feedback to the team on what you see. The ongoing nature of the review and feedback process throughout development allows you to call in adjustments as the work is being done reducing significant rework and redesign. It also provides full transparency to you with regard to the progress and quality of work being conducted."
+          imgName="USER_STORIES"
+          imgOnLeft={true}
+          buttonText="Learn More"
+          buttonLinkTo="/"
+        ></StackableImageAndTextDuo> */}
         <ChangeGearsBlock
           headerText="Find out more about our development work..."
           linkText="Engineering"
           linkTo="/engineering"
         ></ChangeGearsBlock>
-
         <ReadyToGetStartedSection>
           <h1>Ready to partner with us?</h1>
           <Link to="/contact">Contact us today!</Link>
         </ReadyToGetStartedSection>
-
         <JoinOurTeamCornerBtn />
-        {/* <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <h1>Startup Page</h1>
-      <p>startup page</p>
-      <Link to="/">home</Link>
-      <br />
-      <Link to="/page-p/">Page P</Link> */}
-      </StyledStartupPage>
+      </ProjectManagementPageContainer>
     </Layout>
   </Global>
 );
-
-export default StartupPage;
+export default ProductManagementPage;

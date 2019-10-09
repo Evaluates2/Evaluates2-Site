@@ -30,7 +30,15 @@ const ProjectManagementPageContainer = styled.div`
   justify-content: center;
   align-items: center;
   overflow: hidden;
+
+  p {
+    @media only screen and (max-width: 900px) {
+      
+      padding-right: 60px;
+    }
+  }
 `;
+
 
 const ProductManagementPage = () => (
   <Global pageTitle={'Product Management'} path={'product-management'} description={'product-management'}>
@@ -43,13 +51,18 @@ const ProductManagementPage = () => (
           description="Leadership that guides successful product development."
         ></ServicePageHero>
         <SecondServiceHero
-          title="The Product Journey"
-          description="From initial product conception to after launch, we're here to help"
+          title="Our Development Process"
+          description="We'll show you how to get the most of agile development methodologies such as SCRUM and XP (extreme programming) to get work done quickly and effectively."
         ></SecondServiceHero>
         <StackableColumnsContainer>
           <StackableColumn>
             <ProjectKickoffImage />
             <h1>Project Kickoff</h1>
+
+            <p>
+              We like to start off every new project with a team that's firmly aligned and prepared to develop what the client needs. We start off by collecting requirements an learning how your business operates so we can and align with your goals. By the end of the project kickoff we should have a backlog of tasks roughly estimated and an idea of what we should have at various stages throughout develpoment. 
+            </p>
+
             <p>
               Every successful project starts with a team that's firmly aligned
               and prepared for product development. At Def Method, we start off
@@ -58,13 +71,7 @@ const ProductManagementPage = () => (
               spreadsheet that is broken down by a backlog and icebox.
           </p>
             <p>
-              The primary goal of the kickoff is to get alignment among all team
-              members: clarify the key goals and the anti-goals (what we will not
-              do) for the project, identify key constraints (launch date, market
-              conditions, budget) and risks factors, and establish the
-              prioritization of features. Once we've completed this process with
-              your team, we'll have the information we need to dive in head-first
-              to product development.
+              The purpose of the kickoff is primary to align all team members on these goals and focus on building a product that hits these keys deliverables, is a nice, clean codebase, and is actually a <i>fun</i> project for the people building it!
           </p>
           </StackableColumn>
           <StackableColumn>
@@ -88,7 +95,7 @@ const ProductManagementPage = () => (
           </StackableColumn>
           <StackableColumn>
             <MaintenanceImage />
-            <h1>Maintenance</h1>
+            <h1>Post-Development Maintenance</h1>
             <p>
               As is a natural course for many websites, development moves
               temporarily from active development of new features to ongoing
@@ -158,7 +165,7 @@ const ProductManagementPage = () => (
           buttonLinkTo="/"
         ></StackableImageAndTextDuo>
         <StackableImageAndTextDuo
-          title="Demo Time!"
+          title="Live Demos!"
           header1="A Happy Ending For Every Sprint"
           paragraph1="We like pair programming because it's aawesome!"
           header2="Story Acceptance"

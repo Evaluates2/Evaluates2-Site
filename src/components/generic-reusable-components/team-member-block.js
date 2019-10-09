@@ -24,6 +24,7 @@ const StyledPersonImage = styled.div`
     background-color: #000032;
     height: 200px;
     border-radius: 8px;
+    max-width: 310px;
 
     :hover {
       top: -8px;

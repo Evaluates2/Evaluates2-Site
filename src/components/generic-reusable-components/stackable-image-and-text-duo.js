@@ -1,25 +1,26 @@
-import React from "react"
+import React from 'react';
 import styled from '@emotion/styled';
-import mediaQuery from "../../utils/mediaQuery"
+import mediaQuery from '../../utils/mediaQuery';
 import EngineeringHomeImage from '../img-components/engineering_home.img';
 import ProgressTrackingImage from '../img-components/progress-tracking.img';
 import StaffAugmentationImage from '../img-components/staff-augmentation.img';
 import ProjectKickoffImage from '../img-components/project-kickoff.img';
-import TopEngineeringTalentImage from '../img-components/top-engineering-talent.img'
-import TechnicalAuditsImage from '../img-components/technical-audits.img'
-import ProductHomeImage from '../img-components/product_home.img'
-import ResourceEfficiencyImage from '../img-components/resource-efficiency.img'
-import ProgressImprovementImage from '../img-components/progress_improvement.img'
-import ProjectManagementImage from '../img-components/project_management.img'
-import DiscoverHomeImage from '../img-components/discover_home.img'
-import DesignSprintImage from '../img-components/design_sprint.img'
-import MvpBuildImage from '../img-components/mvp_build.img'
-import MaintenanceImage from '../img-components/maintenance.img'
+import TopEngineeringTalentImage from '../img-components/top-engineering-talent.img';
+import TechnicalAuditsImage from '../img-components/technical-audits.img';
+import ProductHomeImage from '../img-components/product_home.img';
+import ResourceEfficiencyImage from '../img-components/resource-efficiency.img';
+import ProgressImprovementImage from '../img-components/progress_improvement.img';
+import ProjectManagementImage from '../img-components/project_management.img';
+import DiscoverHomeImage from '../img-components/discover_home.img';
+import DesignSprintImage from '../img-components/design_sprint.img';
+import MvpBuildImage from '../img-components/mvp_build.img';
+import MaintenanceImage from '../img-components/maintenance.img';
 
 import Link from 'gatsby-link';
 
 const StyledStackableImageAndTextDuo = styled.div`
   background-color: #000032;
+  margin: 50px 0;
   .text {
     margin-top: 10px;
   }
@@ -39,24 +40,50 @@ const StyledStackableImageAndTextDuo = styled.div`
     color: white;
   }
   .container {
-    margin: 0px !important;
+    /* margin: 0px !important; */
     flex: 1;
     flex-direction: row-reverse;
     display: flex;
     justify-content: space-evenly;
     padding: 30px 0;
-    flex: 1;
-    width: 100%;
+    /* width: 100%; */
+    
+ 
+
     .gatsby-image-wrapper {
-      height: 100% !important;
+      /* max-width: 310px; */
+      /* height: 100%; */
+      height: 100%;
+
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+      justify-content: center;
     }
-    ${mediaQuery.maxNetbook} {
-      width: 95% !important;
-      margin: 0 auto !important;
+    /* ${mediaQuery.maxNetbook} {
+      width: 95%;
+      margin: 0 auto;
       flex-direction: column !important;
      
+    } */
+
+   
+
+    @media only screen and (max-width: 660px) {
+      flex-direction: column;
+      }
+      
+      
     }
-  }
+    
+    .reversed {
+      flex-direction: row;
+      flex: 1;
+      
+          @media only screen and (max-width: 660px) {
+            flex-direction: column;
+            }
+    }
 
   ul {
     list-style: none;
@@ -92,11 +119,15 @@ const StyledStackableImageAndTextDuo = styled.div`
     align-content: center;
     text-align: center;
     margin: 0px;
+      
     .img {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       /* align-items: center; */
+      width: 100%;
+      height: auto;
+      /* max-width: 350px; */
     }
 
     .text-container {
@@ -109,6 +140,8 @@ const StyledStackableImageAndTextDuo = styled.div`
         padding-left: 0px;
       }
     }
+
+    
 
   }
 
@@ -139,9 +172,7 @@ const StyledStackableImageAndTextDuo = styled.div`
     background-color: lightskyblue;
   }
 
-  .reversed {
-    flex-direction: row;
-  }
+  
 
   button {
     margin-top: 50px;
@@ -164,84 +195,77 @@ const StyledStackableImageAndTextDuo = styled.div`
 `;
 
 class StackableImageAndTextDuo extends React.Component {
-
   constructor(props) {
     super(props);
-      this.state = { 
-      };
-    }
-
-  componentDidMount() {
-    
+    this.state = {};
   }
+
+  componentDidMount() {}
   render() {
-    const title = this.props.title
-    const header1 = this.props.header1
-    const paragraph1 = this.props.paragraph1
-    const header2 = this.props.header2
-    const paragraph2 = this.props.paragraph2
-    const imgName = this.props.imgName
-    const imgOnLeft = this.props.imgOnLeft
-    const buttonText = this.props.buttonText
-    const buttonLinkTo = this.props.buttonLinkTo
-    const images = this.props.images
+    const title = this.props.title;
+    const header1 = this.props.header1;
+    const paragraph1 = this.props.paragraph1;
+    const header2 = this.props.header2;
+    const paragraph2 = this.props.paragraph2;
+    const imgName = this.props.imgName;
+    const imgOnLeft = this.props.imgOnLeft;
+    const buttonText = this.props.buttonText;
+    const buttonLinkTo = this.props.buttonLinkTo;
+    const images = this.props.images;
     const getImage = imgName => {
       switch (imgName) {
         case 'HOME_PRODUCT':
-          return <ProductHomeImage/>
-        case 'HOME_ENG': 
-          return <EngineeringHomeImage/>
+          return <ProductHomeImage />;
+        case 'HOME_ENG':
+          return <EngineeringHomeImage />;
         case 'DAILY_STANDUPS':
           return <ProgressTrackingImage />;
-        case 'HOME_DISCOVERY': 
-          return <DiscoverHomeImage/>
+        case 'HOME_DISCOVERY':
+          return <DiscoverHomeImage />;
         case 'IPMS/RETROS':
           return <ProjectKickoffImage />;
         case 'USER_STORIES':
           return <StaffAugmentationImage />;
         case 'staff':
-          return <StaffAugmentationImage/>;
+          return <StaffAugmentationImage />;
         case 'top':
-          return <TopEngineeringTalentImage/>;
+          return <TopEngineeringTalentImage />;
         case 'technical':
-          return <TechnicalAuditsImage/>;
+          return <TechnicalAuditsImage />;
         case 'resource':
-          return <ResourceEfficiencyImage/>;
+          return <ResourceEfficiencyImage />;
         case 'process':
-          return <ProgressImprovementImage/>;
+          return <ProgressImprovementImage />;
         case 'project':
-          return <ProjectManagementImage/>;
+          return <ProjectManagementImage />;
         case 'design':
-          return <DesignSprintImage/>;
+          return <DesignSprintImage />;
         case 'mvp':
-          return <MvpBuildImage/>;
+          return <MvpBuildImage />;
         case 'maintenance':
-          return <MaintenanceImage/>;
+          return <MaintenanceImage />;
       }
-    }
+    };
     return (
       <StyledStackableImageAndTextDuo>
         <div className={`container ${imgOnLeft ? 'reversed' : ''}`}>
           <div className="img">{getImage(imgName)}</div>
           <div className="text-container">
             <h1>{title}</h1>
-            {
-              images != undefined && images.length > 0 ?
+            {images != undefined && images.length > 0 ? (
               <div className="img_container">
-                {images.map((item) => {
+                {images.map(item => {
                   return (
                     <div className="small_image">
                       <div className="s_img">{getImage(item.img)}</div>
-                      <div className="text">
-                        {item.name}
-                      </div>
+                      <div className="text">{item.name}</div>
                     </div>
-                  )
+                  );
                 })}
               </div>
-              :
+            ) : (
               <div></div>
-            }
+            )}
             <h2>{header1}</h2>
             <p>{paragraph1}</p>
             <h2>{header2}</h2>
@@ -253,7 +277,7 @@ class StackableImageAndTextDuo extends React.Component {
           </div>
         </div>
       </StyledStackableImageAndTextDuo>
-    )
+    );
   }
 }
 

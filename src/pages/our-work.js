@@ -325,7 +325,36 @@ const OurWorkPage = () => (
           </li>
         </ul>
       </OurWorkPieceOfWork>
-      {/* </StackableColumnsContainer> */}
+
+      <OurWorkPieceOfWork
+        title="This Website!"
+        header1="www.evaluates2.com"
+        header1link="https://www.evaluates2.com"
+        paragraph1='The core of this website is a modern, fuctinonal React.js frontend. The contact form uses an AWS Lambda function and was the first ever example of our \"E2-Super-Contact-Form!" project.'
+        header2=""
+        paragraph2=""
+        imgName="E2_SCREENSHOT"
+        imgOnLeft={false}
+        buttonText="Tweet Jim!"
+        buttonLinkTo="https://www.twitter.com/WebWhizJim"
+      >
+        <ul>
+          <li>
+            Clean, modern React.js Frontend with Jest and Cucumber+Cypress
+            testing.
+          </li>
+          <li>
+            AWS Lambda + MongoDB backend for contact form that includes field
+            validation, recaptcha human validation, inserting data into mongoDb,
+            and notifying admins of form submissions.
+          </li>
+          <li>
+            Responive design leveraging flexbox, grid-css, media queries, and
+            more responsive design tricks for great UI across desktops, tablets,
+            and phones!
+          </li>
+        </ul>
+      </OurWorkPieceOfWork>
 
       <BigSectionTitle>
         <h1>Open Source</h1>
@@ -337,15 +366,15 @@ const OurWorkPage = () => (
 
       <OurWorkPieceOfWork
         title="Titanium Lambda"
-        header1="www.wisdomofjim.com"
-        header1link="https://www.wisdomofjim.com"
+        header1="www.github.com/titanium-lambda"
+        header1link="www.github.com/titanium-lambda"
         paragraph1="Kate from HR is a tool for making teams better. A fun and easy-to-use Slack-integrated chatbot collected anonymous feedback that can be public or private (specified by the user). This is then aggregated and visualized in a web dashboard."
         header2=""
         paragraph2=""
         imgName="TITANIUM_LAMBDA"
-        imgOnLeft={false}
-        buttonText="Tweet Jim!"
-        buttonLinkTo="https://www.wisdomofjim.com"
+        imgOnLeft={true}
+        buttonText="Explore..."
+        buttonLinkTo="www.github.com/titanium-lambda"
       >
         <ul>
           <li>Extremely Cheap & Quick to Run & Maintain.</li>
@@ -361,16 +390,16 @@ const OurWorkPage = () => (
       </OurWorkPieceOfWork>
 
       <OurWorkPieceOfWork
-        title="Titanium Lambda"
-        header1="www.wisdomofjim.com"
-        header1link="https://www.wisdomofjim.com"
+        title="E2 Super Contact Form"
+        header1="www.github.com/e2-super-contact-form"
+        header1link="www.github.com/e2-super-contact-form"
         paragraph1="Kate from HR is a tool for making teams better. A fun and easy-to-use Slack-integrated chatbot collected anonymous feedback that can be public or private (specified by the user). This is then aggregated and visualized in a web dashboard."
         header2=""
         paragraph2=""
-        imgName="E2_GITHUB"
-        imgOnLeft={true}
+        imgName="TITANIUM_LAMBDA"
+        imgOnLeft={false}
         buttonText="Tweet Jim!"
-        buttonLinkTo="https://www.wisdomofjim.com"
+        buttonLinkTo="www.github.com/e2-super-contact-form"
       >
         <ul>
           <li>Extremely Cheap & Quick to Run & Maintain.</li>
@@ -385,41 +414,22 @@ const OurWorkPage = () => (
         </ul>
       </OurWorkPieceOfWork>
 
-      {/* <CenteredVideo>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/2AslJmdhSro"
-          frameBorder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-      </CenteredVideo> */}
-
-      {/* <OurWorkBlurb>
-        <p>
-          "At Evaluates2 we believe in the integrity of our code and are
-          passionate ourWork always learning. We work tirelessly to help our
-          clients build the best products possible and to contribute back to the
-          software development community; because it's not just our job, it's
-          our passion."
-        </p>
-      </OurWorkBlurb> */}
-
       <br />
       <br />
       <br />
       <br />
       <NiceQuoteSection>
         <h1>
-          "Although we've already<span className="empashized">accomplished</span> a
-          lot, I still wake up every day{' '}
-          <span className="empashized">hungry</span> for new <span className="empashized">exciting</span> software development{' '}
+          "Although we've already<span className="empashized"> accomplished </span> a lot, I still wake
+          up every day <span className="empashized">hungry</span> for new{' '}
+          <span className="empashized">exciting</span> software development{' '}
           <span className="empashized">challenges</span>."
         </h1>
         <p>- Founder & Principal Engineer Jim Lynch</p>
       </NiceQuoteSection>
 
+      <br />
+      <br />
       <ChangeGearsBlock
         headerText="Find out more about how we work..."
         linkText="Product Management"
@@ -437,12 +447,11 @@ const OurWorkPage = () => (
       <br />
       <br />
       <br />
-      <br />
 
       <ReadyToGetStartedSection>
-            <h1>Ready to partner with us?</h1>
-            <Link to="/contact">Contact us today!</Link>
-          </ReadyToGetStartedSection>
+        <h1>Ready to partner with us?</h1>
+        <Link to="/contact">Contact us today!</Link>
+      </ReadyToGetStartedSection>
 
       {/* <PinkBoxesContainer>
         <Link to="/our-work">

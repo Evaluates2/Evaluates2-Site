@@ -7,7 +7,7 @@ import KateFromHrScreenshotImage from './img-components/kate-from-hr-screenshot.
 import JimTwitterScreenshotImage from './img-components/jim-twitter-screenshot.img';
 // import WojBlogScreenshotImage from './img-components/woj-blog-screenshot.img';
 import WojScreenshot from './img-components/woj-blog-screenshot.img';
-import E2GithubScreenshotImage from './img-components/e2-github-page.img';
+import Evaluates2ScreenshotImage from './img-components/evaluates-2-screenshot.img';
 import TitaniumLambdaImage from './img-components/titanium-lambda.img';
 
 const StyledOurWorkPieceOfWork = styled.div`
@@ -153,6 +153,11 @@ const OurWorkPieceOfWork = ({
       case 'E2_GITHUB':
           return (<a href={header1link}>
             <E2GithubScreenshotImage/>
+         </a>);
+      
+      case 'E2_SCREENSHOT':
+          return (<a href={header1link}>
+            <Evaluates2ScreenshotImage/>
          </a>);
       
       case 'TITANIUM_LAMBDA':

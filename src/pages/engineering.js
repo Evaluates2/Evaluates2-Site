@@ -73,6 +73,9 @@ const SectionHero = styled.div`
       /* font-size: 30px; */
     }
   }
+
+
+  
 `;
 
 const WorkTogetherSection = styled.div`
@@ -714,13 +717,16 @@ const EngineeringPage = () => {
                 <li>NodeJS (Express + TypeScript)</li>
                 <li>NodeJS (Serverless JavaScript)</li>
                 <li>NodeJS (Serverless TypeScript)</li>
+                <li>NodeJS (Websocket Streams)</li>
                 <br />
                 <li>NodeJS (Serverless ClojureScript)</li>
                 <li>JVM Clojure (Pedastal or Ring)</li>
                 <br />
                 <li>Go (Revel)</li>
+                <li>Go (Serverless)</li>
                 <br />
                 <li>Java (Spring / Spark)</li>
+                <li>NodeJS (Websocket Streams)</li>
                 <li>Java (Serverless Java)</li>
                 <br />
                 <li>Python (Python Flask / Django)</li>
@@ -739,11 +745,12 @@ const EngineeringPage = () => {
                 <li>Redis</li>
                 <li>Datomic</li>
                 <li>Neo4J</li>
+                <li>CosmosDB</li>
                 <li>Cassandra</li>
                 <h4>(Relational)</h4>
                 <li>Postgres</li>
                 <li>Google BigTable</li>
-                <li>Amazon RDS</li>
+                <li>Amazon Aurora</li>
                 <li>MySQL</li>
               </ul>
             </StackableColumn>

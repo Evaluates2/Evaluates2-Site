@@ -382,21 +382,21 @@ const languageDescriptionsMap = {
 };
 
 const keyPrinciplesData = {
-  'CI & Multiple Environments': {
+  'DatabasesVsDataWareHouses': {
 
-    header: 'The Use of Continuous Integration and Multiple Environments',
+    header: 'A Playground For Data Engineers To Go Wild',
     paragraph1:
-    'Each time an engineer makes a substantial change he or she will commit this change to GitHub (or your favorite hosting service!). Here at Evaluates2 we employ automated continuous delivery processes whereby any changes in GitHub (to specially designated branches) are detected at which point all builds are done, varous automated tests are run, etc. If any step fails, all developers are notified immediately so that a fix can be made. After all commands exit successfully the continuous delivery system will then deploy these new changes directly to the staging environment.',
+    'Though engineers don\'t like to admit it, production databases can be pretty delicate and unstable. The need for the business side to have continuously fresh data can sometimes cause conflict between business and engineering.',
     paragraph2:
-    'Evaluates2 prefers to maintain three environments when building applications: development, staging, and production. Development is connected to automated continuous deployment and should be rapidly changing. Staging is the "pre-release" envionment where we can give a final check over on things before pushing to prod. Production is the live user-facing application environment! '
+    'We specializez in putting systems in place so that the data engineers can use data warehousing solutions (such as google bigtable) to go crazy and and crunch numbers in any way they see fit without risk of negatively affecting production data or performance.'
   },
-  'Test Driven Development': {
+  'Data Visualisation': {
     header: 'The Importance of Test Driven Development (TDD)',
     paragraph1:
       'Here at Evaluate2 we have several core values that we insist on when working with a client, and one of those core values is the use of test-driven development. Test Driven Development, or "TDD" for short, is a software development process that builds up a suite of automated tests alongside the software source code. These tests run continuously to quickly ensure proper functionality and to reduce the presence of bugs.',
     paragraph2: 'In our opinion, testing is paramount for the future success of your project, and your future success is our main priority. By taking an outside-in approach we can be confident that our tests are passing only when they should be passing, and depending on the project we utilize a wide variety of automated tests including unit testing, end-to-end testing, UI testing, Behavior-driven testing, load testing, and smoke testing.',
   },
-  'Healthy Dependencies': {
+  'Strategic Decision Making': {
     header: 'Keeping a Project Robust & Fresh',
     paragraph1:
       'Third-party libraries are great to use, but there are a few considerations that must be carefully considered. Our engineers can help guide decision making in library selection and provide support for upgrading old libraries to newer versions.',
@@ -450,7 +450,7 @@ const DataAndAnalyticsPage = () => {
             <h1>
               Data & Analytics
           </h1>
-            <p>Code crafted with care.
+            <p>Decisions based on facts, not assumptions.
             </p>
           </SectionHero>
           {/* <ServicePageHero title="DataAndAnalytics" description="Code crafted with care."></ServicePageHero> */}
@@ -459,241 +459,53 @@ const DataAndAnalyticsPage = () => {
           <WorkTogetherSection>
 
             <h1>
-              We Love Building Software
+            Truly understand your users
             </h1>
             <p>
-             ...so if you have a great idea, let's make it happen.
+            By harnessing the data of how users interact with their applications, businesses can more
+            confidently make calculated decisions based on historical evidence. 
               </p>
           </WorkTogetherSection>
           <StackableColumnsContainer>
             <StackableColumn>
               <TechnicalAuditsImage />
-              <h1>Technical Audits</h1>
+              <h1>Data-Centric Game Plan</h1>
               <p>
-                FREE upfront audits of your project on:
+                At Evaluates2 we understand that data and analytics is important for every compoany and every application, and we are aware of this ahead of time. We will set up a practical flow of data from databse into a "data warehouse" where it can be easily queried against for analytics and other testing purposes.
               </p>
-              <ul>
-                <li>
-                  Code Quality
-                </li>
-                <li>
-                  Automated Testing
-                </li>
-                <li>
-                  User Experience
-                </li>
-                <li>
-                  Full Platform Support
-                </li>
-                <li>
-                  Security
-                </li>
-                <li>
-                  Data Integrity
-                </li>
-              </ul>
+              
             </StackableColumn>
             <StackableColumn>
               <StaffAugmentationImage />
-              <h1>Staff Augmentation</h1>
+              <h1>Custom Visualizations & Dashboards</h1>
               <p>
-                Our clients work onsite in New York City, and we can provide a full development team or individual Evaluates2 engineers!
+                We have used numerous different javascript charting libraries to build custom visualtions of clients' data. Visual aids such as simple pies charts and bar charts can consolidate millions of rows worth of data into understandable metrics.
               </p>
             </StackableColumn>
             <StackableColumn>
               <ResourceEfficiencyImage />
-              <h1>Resource Efficiency</h1>
+              <h1>Continuously Validating Hypotheses</h1>
               <p>
-                When Evaluates2 engineers are integrated into other teams they can lead by example, increase the code quality, testing breadth, etc, and set the to be leveraged by others.
+                Regardless of whether a business is a budding new startup or a centries-old tycoon, every business is continuous fighting to validate that it's business model holds up in today's every-changing economy. Evaluates2 canc help companies wrangle the chaotic, dissonant strams of data into one managable stream of consciousness.
               </p>
             </StackableColumn>
           </StackableColumnsContainer>
 
           <LanguagesHeaderSection>
-            <h1>Languages</h1>
+            <h1>Numbers-Based Business Recommendations</h1>
             <p>
-              We're a test-obsessed team of polyglot engineers who strive to
-              always use the best tools for the job. We specialize in functional
-              programming, building beatifully interactive UIs, and putting up lean, lightning fast
-              microservices all with an outside-in TDD approach. 
+              We prefer to make as few assumptions about the users as possible and let the data tell us what they like and dislike...
           </p>
           </LanguagesHeaderSection>
-          <LanguagePickerGrid>
-            <LanguageOptionsColumn>
-              <ul>
-                <li
-                  className={
-                    languageSelected === 'JavaScript' ? 'li-selected' : ''
-                  }
-                  onClick={event => {
-                    handleLanguageOptionClick('JavaScript', event);
-                  }}
-                  onMouseOver={() => {
-                    handleLanguageOptionHoverOver('JavaScript');
-                  }}
-                  onMouseOut={() => {
-                    handleLanguageOptionHoverOut();
-                  }}
-                >
-                  JavaScript
-              </li>
-                <li
-                  className={
-                    languageSelected === 'TypeScript' ? 'li-selected' : ''
-                  }
-                  onClick={event => {
-                    handleLanguageOptionClick('TypeScript', event);
-                  }}
-                  onMouseOver={() => {
-                    handleLanguageOptionHoverOver('TypeScript');
-                  }}
-                  onMouseOut={() => {
-                    handleLanguageOptionHoverOut();
-                  }}
-                >
-                  TypeScript
-              </li>
-                <li
-                  className={
-                    languageSelected === 'Clojure / ClojureScript'
-                      ? 'li-selected'
-                      : ''
-                  }
-                  onClick={event => {
-                    handleLanguageOptionClick('Clojure / ClojureScript', event);
-                  }}
-                  onMouseOver={() => {
-                    handleLanguageOptionHoverOver('Clojure / ClojureScript');
-                  }}
-                  onMouseOut={() => {
-                    handleLanguageOptionHoverOut();
-                  }}
-                >
-                  Clojure / ClojureScript
-              </li>
-                <li
-                  className={languageSelected === 'Go Lang' ? 'li-selected' : ''}
-                  onClick={event => {
-                    handleLanguageOptionClick('Go Lang', event);
-                  }}
-                  onMouseOver={() => {
-                    handleLanguageOptionHoverOver('Go Lang');
-                  }}
-                  onMouseOut={() => {
-                    handleLanguageOptionHoverOut();
-                  }}
-                >
-                  Go Lang
-              </li>
-                <li
-                  className={languageSelected === 'Rust' ? 'li-selected' : ''}
-                  onClick={event => {
-                    handleLanguageOptionClick('Rust', event);
-                  }}
-                  onMouseOver={() => {
-                    handleLanguageOptionHoverOver('Rust');
-                  }}
-                  onMouseOut={() => {
-                    handleLanguageOptionHoverOut();
-                  }}
-                >
-                  Rust
-              </li>
-                <li
-                  className={languageSelected === 'Swift' ? 'li-selected' : ''}
-                  onClick={event => {
-                    handleLanguageOptionClick('Swift', event);
-                  }}
-                  onMouseOver={() => {
-                    handleLanguageOptionHoverOver('Swift');
-                  }}
-                  onMouseOut={() => {
-                    handleLanguageOptionHoverOut();
-                  }}
-                >
-                  Swift
-              </li>
-                <li
-                  className={languageSelected === 'Kotlin' ? 'li-selected' : ''}
-                  onClick={event => {
-                    handleLanguageOptionClick('Kotlin', event);
-                  }}
-                  onMouseOver={() => {
-                    handleLanguageOptionHoverOver('Kotlin');
-                  }}
-                  onMouseOut={() => {
-                    handleLanguageOptionHoverOut();
-                  }}
-                >
-                  Kotlin
-              </li>
-                <li
-                  className={languageSelected === 'Java' ? 'li-selected' : ''}
-                  onClick={event => {
-                    handleLanguageOptionClick('Java', event);
-                  }}
-                  onMouseOver={() => {
-                    handleLanguageOptionHoverOver('Java');
-                  }}
-                  onMouseOut={() => {
-                    handleLanguageOptionHoverOut();
-                  }}
-                >
-                  Java
-              </li>
-                <li
-                  className={languageSelected === 'C#' ? 'li-selected' : ''}
-                  onClick={event => {
-                    handleLanguageOptionClick('C#', event);
-                  }}
-                  onMouseOver={() => {
-                    handleLanguageOptionHoverOver('C#');
-                  }}
-                  onMouseOut={() => {
-                    handleLanguageOptionHoverOut();
-                  }}
-                >
-                  C#
-              </li>
-              </ul>
-            </LanguageOptionsColumn>
-            <LanguageInfoSection>
-              <h1>
-                {lastLanguageClicked === ''
-                  ? lastLanguageHovered
-                  : lastLanguageClicked}
-              </h1>
-              <p>
-                {
-                  languageDescriptionsMap[
-                  lastLanguageClicked === ''
-                    ? lastLanguageHovered
-                    : lastLanguageClicked
-                  ]
-                }
-              </p>
-            </LanguageInfoSection>
-
-            <LanguageIdeScreenshotContainer>
-              {languageSelected === 'JavaScript' && <JsFizzbuzzScreenshotImage />}
-              {/* TODO - Add screenshots for other languages */}
-            </LanguageIdeScreenshotContainer>
-          </LanguagePickerGrid>
-
+          
           <BestStackForYouSection>
-            <h1>We'll Use The Right Tech For YOUR Business.</h1>
-            <h2>Choose Your Own Tech Stack Trio!</h2>
+            <h1>It's true, these days... EVERY COMPANY is a tech company!</h1>
+            <h2>...because everyone can benefit from intelligent data usage.</h2>
             <p>
-              The tech stack for any of our software projects generally includes a
-              front-end, back-end, and a database. There are many options from
-              which to choose, and if you are at all unsure we can help you decide
-              which combination should fit best for your team and product. Of
-              course these are not fully exhaustive lists of possible front-ends,
-              backends, and databases, but these are the core competencies of the
-              current Evaluates2 team!
+              From simply understanding what your customers are asking for to predicting where the market is headed years down the road, intelligent analysis of data gives businesses a significant market advantage. Elavauates2 engineer can implement data-centric architectures and make recommendations on ways for making data more accessible to all areas of a company.
           </p>
           </BestStackForYouSection>
-          <BuildYourOwnStackSection>
+          {/* <BuildYourOwnStackSection>
             <StackableColumn>
               <h2>Frontends</h2>
               <ul>
@@ -747,16 +559,25 @@ const DataAndAnalyticsPage = () => {
                 <li>MySQL</li>
               </ul>
             </StackableColumn>
-          </BuildYourOwnStackSection>
+          </BuildYourOwnStackSection> */}
 
-          <KeyPrinciplesHeader headerText="Continuous Integration & Multiple Environments"></KeyPrinciplesHeader>
-          <KeyPrinciplesInfoBlock data={keyPrinciplesData['CI & Multiple Environments']}></KeyPrinciplesInfoBlock>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
 
-          <KeyPrinciplesHeader headerText="Test Driven Development"></KeyPrinciplesHeader>
-          <KeyPrinciplesInfoBlock data={keyPrinciplesData['Test Driven Development']}></KeyPrinciplesInfoBlock>
+          <KeyPrinciplesHeader headerText="Databases Vs Data Warehouses"></KeyPrinciplesHeader>
+          <KeyPrinciplesInfoBlock data={keyPrinciplesData['DatabasesVsDataWareHouses']}></KeyPrinciplesInfoBlock>
 
-          <KeyPrinciplesHeader headerText="Healthy Dependencies"></KeyPrinciplesHeader>
-          <KeyPrinciplesInfoBlock data={keyPrinciplesData['Healthy Dependencies']}></KeyPrinciplesInfoBlock>
+          <KeyPrinciplesHeader headerText="Data Visualisation"></KeyPrinciplesHeader>
+          <KeyPrinciplesInfoBlock data={keyPrinciplesData['Data Visualisation']}></KeyPrinciplesInfoBlock>
+
+          <KeyPrinciplesHeader headerText="Strategic Decision Making"></KeyPrinciplesHeader>
+          <KeyPrinciplesInfoBlock data={keyPrinciplesData['Strategic Decision Making']}></KeyPrinciplesInfoBlock>
 
           <ChangeGearsBlock headerText='Find out more about how we work...' linkText='Product Management' linkTo='/product-management'></ChangeGearsBlock>
           <ReadyToGetStartedSection>

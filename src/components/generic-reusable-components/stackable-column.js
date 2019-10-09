@@ -10,7 +10,6 @@ const StackableColumn = styled.div`
   height: 100%;
   width: 33%;
 
-
   @media only screen and (max-width: 960px) {
     justify-content: flex-start;
     width: 100%;
@@ -47,7 +46,7 @@ const StackableColumn = styled.div`
     height: auto;
     width: 80%;
     text-align: center;
-    max-width: 270px;
+    max-width: 310px;
     
   }
 
