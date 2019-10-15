@@ -99,6 +99,11 @@ const NiceQuoteSection = styled.div`
   min-height: 300px;
 `;
 
+const MidPageAnchor = styled.div`
+  min-height: 10px;
+  /* padding: 20px; */
+`;
+
 const OurWorkBlurb = styled.div`
   p {
     margin-top: 50px 40px;
@@ -310,7 +315,7 @@ const OurWorkPage = () => (
         paragraph2=""
         imgName="WOJ_BLOG"
         imgOnLeft={true}
-        buttonText="Tweet Jim!"
+        buttonText="Visit site"
         buttonLinkTo="https://www.wisdomofjim.com"
       >
         <ul>
@@ -330,13 +335,13 @@ const OurWorkPage = () => (
         title="This Website!"
         header1="www.evaluates2.com"
         header1link="https://www.evaluates2.com"
-        paragraph1='The core of this website is a modern, fuctinonal React.js frontend. The contact form uses an AWS Lambda function and was the first ever example of our \"E2-Super-Contact-Form!" project.'
+        paragraph1='The core of this website is a modern, fuctinonal React.js frontend. The contact form uses an AWS Lambda function and was the first ever live deployed instance of our "E2-Super-Contact-Form!" project.'
         header2=""
         paragraph2=""
         imgName="E2_SCREENSHOT"
         imgOnLeft={false}
-        buttonText="Tweet Jim!"
-        buttonLinkTo="https://www.twitter.com/WebWhizJim"
+        buttonText="visit site"
+        buttonLinkTo="https://evaluates2.com"
       >
         <ul>
           <li>
@@ -355,6 +360,10 @@ const OurWorkPage = () => (
           </li>
         </ul>
       </OurWorkPieceOfWork>
+
+      <MidPageAnchor>
+        <a id="OPEN_SOURCE" />
+      </MidPageAnchor>
 
       <BigSectionTitle>
         <h1>Open Source</h1>
@@ -389,7 +398,7 @@ const OurWorkPage = () => (
         </ul>
       </OurWorkPieceOfWork>
 
-      <OurWorkPieceOfWork
+      {/* <OurWorkPieceOfWork
         title="E2 Super Contact Form"
         header1="www.github.com/e2-super-contact-form"
         header1link="www.github.com/e2-super-contact-form"
@@ -410,6 +419,28 @@ const OurWorkPage = () => (
           <li>
             Written for AWS Lambda Twice Using Both Es6 JavaScript and
             ClojureScript.
+          </li>
+        </ul>
+      </OurWorkPieceOfWork> */}
+      <OurWorkPieceOfWork
+        title="E2 Public Repositories"
+        header1="www.github.com/evaluates2"
+        header1link="www.github.com/evaluates2"
+        paragraph1=""
+        header2="Check out some of our public repositories! We have all kinds of cool examples projects and guidelines displaying how we like to build clean, working software."
+        paragraph2=""
+        imgName="E2_GITHUB"
+        imgOnLeft={false}
+        buttonText="Explore..."
+        buttonLinkTo="www.github.com/evaluates2"
+      >
+        <ul>
+          <li>Many example projects and small isolated, demonstration projects across various languages.</li>
+          <li>
+            Examples of automated testing across all the languages we use.
+          </li>
+          <li>
+            Anyone can get involved! Feel free to open issues or pull requests of you'd like to join the (e2) movement!
           </li>
         </ul>
       </OurWorkPieceOfWork>

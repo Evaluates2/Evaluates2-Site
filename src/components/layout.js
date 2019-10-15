@@ -164,7 +164,7 @@ const Layout = ({ children, isDrawerOpen, toggleDrawer }) => (
               <a>Our Work</a>
             </Link>
             <br />
-            <Link to='/our-work'>
+            <Link to='/our-work#OPEN_SOURCE'>
               Open Source
               <br />
             </Link>

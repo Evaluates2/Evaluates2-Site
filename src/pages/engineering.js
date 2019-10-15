@@ -36,8 +36,8 @@ const EngineeringPageContainer = styled.div`
     letter-spacing: 4px;
   }
   p {
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 32px;
     letter-spacing: 2px;
     font-family: 'e2-Raleway';
   }
@@ -53,14 +53,20 @@ const SectionHero = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 60px;
+
   h1 {
+    max-width: 95vw;
+    font-size: 120px;
+    line-height: 160px;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 5px;
+
+    font-family: 'e2-Raleway-Extra-Bold';
+
     @media only screen and (min-width: 660px) {
-      font-size: 95px;
-      line-height: 150px;
-    }
-    @media only screen and (min-width: 990px) {
       font-size: 120px;
-      line-height: 250px;
+
     }
   }
   p {
@@ -89,17 +95,19 @@ const WorkTogetherSection = styled.div`
   min-height: 400px;
   margin: 300px 100px;
   padding: 60px 20px;
+
   h1 {
-    font-size: 80px;
+    font-size: 90px;
     line-height: 115px;
     text-align: center;
     margin-bottom: 80px;
   }
   p {
-    font-size: 28px;
+    font-size: 30px;
     text-align: center;
     width: 100%;
     line-height: 60px;
+    opacity: 0.7;
   }
 `;
 
@@ -123,7 +131,7 @@ const LanguagesHeaderSection = styled.div`
     text-align: left;
     width: 94%;
     font-size: 30px;
-    line-height: 37px;
+    line-height: 44px;
     letter-spacing: 2px;
     opacity: 0.8;
   }
@@ -365,23 +373,29 @@ const BuildYourOwnStackSection = styled.div`
 
 const languageDescriptionsMap = {
   JavaScript:
-    "JavaScript stuff! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the including versions of Lorem Ipsum.",
+    "JavaScript, though mercilessly mocked by programmers across the board for years, somehow rose above and evolve to become the king of the web. Though it's interpreted, dynamically-typed nature makes for very concise code, and it supports either a Class-based or a very functional style or writing. Today, some front-end JavaScript framework is an excellent choice for any website or web application, and there are probably more servers deployed these days running node.js than anything else!",
   TypeScript:
-    "TypeScript stuff! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the including versions of Lorem Ipsum.",
+    "Ahh TypeScript- take all the things you like about JavaScript and add the ability to explicitly define interfaces, create enums, overload functions, etc. TypeScript gives developers syntactic sugar that should make development easier to write, read, and understand. TypeScript sometimes gets a bad rap for causing annoying little errors and even sometimes slowing devlepment in the short run, after working with Evaluates2 engineers on a project with it we believe almost anyone will learn to love TypeScript!",
   'Clojure / ClojureScript':
-    "Clojure / ClojureScript Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the including versions of Lorem Ipsum.",
+    "Clojure is a dialect of lisp, and it aims to frame programming as logical evaluation of functions and immutable data. It was created by Rich Hickey as way to run Lisp on the JVM (first released in 2007). The syntax is meant to be extremely terse as clear as to allow programmers to get things done correctly, quickly, and enjoyably. A version that targets the Node.js V8 runtime, referred to as ClojureScript, appeared later as a response to the growing interest in Nodejs. Here at Evaluates2 we appreciate the beauty and brevity of Clojure code, and we love building projects using this awesome language!",
   'Go Lang':
-    "Go Lang stuff! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with theincluding versions of Lorem Ipsum.",
+    "Go is an incredible run-time efficiency, statically-typed language that is great for server-side development. It is compiled directly to machine code, and was created within Google in 2007 to replace C++ code and improve developer productivity.",
   Rust:
-    "Rust stuff! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the including versions of Lorem Ipsum.",
+    "Rust is an extremely fast language, static typed lanugage that emphasizes safe memory management. Created in 2006 within Mozilla to more easily develop safe systems, Rust has emerged as interesting, syntactically powerful language that can run at the speed of C & C++.",
   Swift:
-    "Swift stuff! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the including versions of Lorem Ipsum.",
+    "Swift is a elegant and fast modern language. It is open source and was created by Apple in 2014 as a replacement for Objective-C. It's strict syntax encourages you to write clean and consistent code. While everyone knows it is THE language for native iOS development, it also has excellent performance as a server-side language.",
   Kotlin:
-    "Kotlin stuff! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the including versions of Lorem Ipsum.",
+    "Kotlin is a syntatically beautiful, modern alternative to Java that targets JVM, JavaScript, Android, and other native platforms. It was developed by Jetbrains, officially released v1.0 in February 2016, and it is free & open-source. We love building android apps and serverless functions in Kotlin!",
+  Python:
+    "Python, originally developed in the late 1980s as a successor to the ABC language, has evolved considerably since then including majors upgrades Python 2 in 2000 and Python 3 in 2008. It is a general-purpose dynamic, garbage-collected language that is great for data science, machine-learning algorithms, and other staticial scratch-work.",
+  Scala:
+    "Scala is meant to be an extremely flexible alternative to Java that is both object-oriented and functional and runs on the JVM. It was created in 2004 by Martin Odersky and it a fantastic server-side language.",
   Java:
-    "Java stuff! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the including versions of Lorem Ipsum.",
+    "Java, released in 1995, was very popular langague at the turn of the century. It's object-oriented principles and straightforward yet sometimes overly-verbose syntax has been enjoyed by many developers over the years, and although it's popularity has declined it is still a strong choice for many software projects.",
   'C#':
-    "C# stuff! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the including versions of Lorem Ipsum.",
+    "C# was initially meant to be a general purpose C-like object-oriented programming language for the .NET framework. It was created within Microsoft and appeared in the year 2000. Although windows forms UI has fallen somewhat out of style, C# is still a popular and fine choice for server-side development.",
+  'C / C++':
+    "If you need to squeeze out every possible last ounce of juice from your server, C and C++ will give the absolute most control. Although it is not the most concise and readable code, C and C++ has been running in production since its origins in the early 1970s, and raw C has truly withstood the test of time to establish itself as a valid consideration a a language even for new projects today.",
 };
 
 const keyPrinciplesData = {
@@ -389,22 +403,22 @@ const keyPrinciplesData = {
 
     header: 'The Use of Continuous Integration and Multiple Environments',
     paragraph1:
-    'Each time an engineer makes a substantial change he or she will commit this change to GitHub (or your favorite hosting service!). Here at Evaluates2 we employ automated continuous delivery processes whereby any changes in GitHub (to specially designated branches) are detected at which point all builds are done, varous automated tests are run, etc. If any step fails, all developers are notified immediately so that a fix can be made. After all commands exit successfully the continuous delivery system will then deploy these new changes directly to the staging environment.',
+    'Each time an engineer makes a substantial change he or she will commit this change to GitHub (or the repository hosting service of your choice). Here at Evaluates2 we prefer to employ automated continuous delivery processes whereby any changes in GitHub (to specially designated branches) are detected at which point all builds are done, various automated tests are run, etc. If any step fails, all developers are notified immediately so that a fix can be made. After all commands exit successfully the continuous delivery system will then deploy these new changes directly to the staging environment.',
     paragraph2:
-    'Evaluates2 prefers to maintain three environments when building applications: development, staging, and production. Development is connected to automated continuous deployment and should be rapidly changing. Staging is the "pre-release" envionment where we can give a final check over on things before pushing to prod. Production is the live user-facing application environment! '
+    'Here at Evaluates2 we prefer to maintain three environments when building applications: development, staging, and production. Development is connected to automated continuous deployment and should be rapidly changing. Staging is the "pre-release" environment where we a human can give a final check over of things before pushing to prod. Production is the live user-facing application environment! Code will finally be deployed here if all automted tests are passing and a QA engineer has given the "ok" for the new features / bugfixes in staging environment.'
   },
   'Test Driven Development': {
     header: 'The Importance of Test Driven Development (TDD)',
     paragraph1:
       'Here at Evaluate2 we have several core values that we insist on when working with a client, and one of those core values is the use of test-driven development. Test Driven Development, or "TDD" for short, is a software development process that builds up a suite of automated tests alongside the software source code. These tests run continuously to quickly ensure proper functionality and to reduce the presence of bugs.',
-    paragraph2: 'In our opinion, testing is paramount for the future success of your project, and your future success is our main priority. By taking an outside-in approach we can be confident that our tests are passing only when they should be passing, and depending on the project we utilize a wide variety of automated tests including unit testing, end-to-end testing, UI testing, Behavior-driven testing, load testing, and smoke testing.',
+    paragraph2: 'In our opinion, testing is paramount for the future success of your project, and your future success is our main priority. By working in small red-green-refactor cycles we can be confident that our tests are passing only when they should be passing, and depending on the project we utilize a wide variety of automated tests including unit testing, end-to-end testing, UI testing, Behavior-driven testing, load testing, and smoke testing. We also prefer to take an outside-in approach where we begin with cucumber bdd tests whose step definition are mapped to UI tests (or end-to-end tests calling our routes for beckend REST server projects). We then try to make these tests pass by writing the implementation code with unit tests in a TDD fashion.'
   },
   'Healthy Dependencies': {
     header: 'Keeping a Project Robust & Fresh',
     paragraph1:
       'Third-party libraries are great to use, but there are a few considerations that must be carefully considered. Our engineers can help guide decision making in library selection and provide support for upgrading old libraries to newer versions.',
     paragraph2:
-      'After years of development most large project will have significat amounts of technical tebt. Maybe the engineers just couldn\'t get those automated tests to work so they abandoned the pracice, or maybe the project works but there are tons of annoying warnings in the console. With the expertise from an Evaluates2 engineers these kinds of problems can be quickly addressed, the necessary modifications can be made, and your project can be reborn and as a thriving and happy project.',
+      'After years of development most large project will have significat amounts of technical tebt. Maybe the engineers just couldn\'t get those automated tests to work so they abandoned the pracice, or maybe the project works but there are tons of annoying warnings in the console. With the expertise from an Evaluates2 engineers these kinds of problems can be quickly addressed, the necessary modifications can be made, and your project can be reborn and as one that is a joy for users and developers alike.',
   },
 };
 
@@ -465,7 +479,7 @@ const EngineeringPage = () => {
               We Love Building Software
             </h1>
             <p>
-             ...so if you have a great idea, let's make it happen.
+             ...so if you have great ideas, let's make them happen!
               </p>
           </WorkTogetherSection>
           <StackableColumnsContainer>
@@ -473,7 +487,10 @@ const EngineeringPage = () => {
               <TechnicalAuditsImage />
               <h1>Technical Audits</h1>
               <p>
-                FREE upfront audits of your project on:
+                FREE introductory audit of your project's codebase & architecture!
+              </p>
+              <p>
+                Audits may cover:
               </p>
               <ul>
                 <li>
@@ -492,6 +509,9 @@ const EngineeringPage = () => {
                   Security
                 </li>
                 <li>
+                  Throughput & Scalability
+                </li>
+                <li>
                   Data Integrity
                 </li>
               </ul>
@@ -500,14 +520,20 @@ const EngineeringPage = () => {
               <StaffAugmentationImage />
               <h1>Staff Augmentation</h1>
               <p>
-                Our clients work onsite in New York City, and we can provide a full development team or individual Evaluates2 engineers!
+                Our clients work onsite in New York City or remotely. Here at Evaluates2 we can provide a full development team or individual engineers!
+              </p>
+              <p>
+                During our initial consultantions we will work with you to determine the optimal number of Evaluates2 engineers to have on your team based on your current team and the project scope, timeline, and budget. 
               </p>
             </StackableColumn>
             <StackableColumn>
               <ResourceEfficiencyImage />
               <h1>Resource Efficiency</h1>
               <p>
-                When Evaluates2 engineers are integrated into other teams they can lead by example, increase the code quality, testing breadth, etc, and set the to be leveraged by others.
+                When Evaluates2 engineers are integrated into other teams they can lead by example and improve the code from every other engineer. 
+              </p>
+              <p>
+                By instilling expert-level practices in things such as automated testing and deployment strategies, Evlauates2 engineers can act as an unbiased third-party to keep engineering teams honest and disciplined in their development practices. 
               </p>
             </StackableColumn>
           </StackableColumnsContainer>
@@ -631,6 +657,34 @@ const EngineeringPage = () => {
                   Kotlin
               </li>
                 <li
+                  className={languageSelected === 'Python' ? 'li-selected' : ''}
+                  onClick={event => {
+                    handleLanguageOptionClick('Python', event);
+                  }}
+                  onMouseOver={() => {
+                    handleLanguageOptionHoverOver('Python');
+                  }}
+                  onMouseOut={() => {
+                    handleLanguageOptionHoverOut();
+                  }}
+                >
+                  Python
+              </li>
+                <li
+                  className={languageSelected === 'Scala' ? 'li-selected' : ''}
+                  onClick={event => {
+                    handleLanguageOptionClick('Scala', event);
+                  }}
+                  onMouseOver={() => {
+                    handleLanguageOptionHoverOver('Scala');
+                  }}
+                  onMouseOut={() => {
+                    handleLanguageOptionHoverOut();
+                  }}
+                >
+                  Scala
+              </li>
+                <li
                   className={languageSelected === 'Java' ? 'li-selected' : ''}
                   onClick={event => {
                     handleLanguageOptionClick('Java', event);
@@ -657,6 +711,20 @@ const EngineeringPage = () => {
                   }}
                 >
                   C#
+              </li>
+                <li
+                  className={languageSelected === 'C / C++' ? 'li-selected' : ''}
+                  onClick={event => {
+                    handleLanguageOptionClick('C / C++', event);
+                  }}
+                  onMouseOver={() => {
+                    handleLanguageOptionHoverOver('C / C++');
+                  }}
+                  onMouseOut={() => {
+                    handleLanguageOptionHoverOut();
+                  }}
+                >
+                  C / C++
               </li>
               </ul>
             </LanguageOptionsColumn>
@@ -691,7 +759,7 @@ const EngineeringPage = () => {
               front-end, back-end, and a database. There are many options from
               which to choose, and if you are at all unsure we can help you decide
               which combination should fit best for your team and product. Of
-              course these are not fully exhaustive lists of possible front-ends,
+              course these are not fully exhaustive lists of all possible front-ends,
               backends, and databases, but these are the core competencies of the
               current Evaluates2 team!
           </p>

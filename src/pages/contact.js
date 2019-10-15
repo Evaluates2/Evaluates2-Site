@@ -501,7 +501,7 @@ const ContactPage = () => {
                 <br />
                 <br />
 
-                <h2> backend {process.env.BACKEND_URL}</h2>
+                {/* <h2> backend {process.env.BACKEND_URL}</h2> */}
                 <div className="grid-container">
                   <div className="form-container">
                     <Formik
@@ -668,14 +668,7 @@ const ContactPage = () => {
                   <br />
                 </div>
               </div>
-              <br />
-              <br />
 
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
               <br />
               <JoinOurTeamCornerBtn />
             </StyledContactForm>

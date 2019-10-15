@@ -107,6 +107,33 @@ export default function IndexPage({ data, location }) {
               </p>
             </StackableImageAndTextDuo>
           </div>
+          <div id="data">
+            <StackableImageAndTextDuo
+              images={[
+                { img: 'design', name: 'Design Sprint' },
+                { img: 'mvp', name: 'MVP Build' },
+                { img: 'maintenance', name: 'Maintenance Mode' },
+              ]}
+              title="Data & Analytics"
+              header1="Learn More About Your Business & Users"
+              paragraph1=""
+              header2=""
+              paragraph2=""
+              imgName="HOME_DISCOVERY"
+              imgOnLeft={true}
+              buttonText="Learn More"
+              buttonLinkTo="/contact"
+            >
+              <p>
+                Are you on the first stage of your project and are looking for a
+                technical team to help bring your vision to life? Well, then,
+                you've come to the right place! At Def Method we have a process
+                in place that makes building an MVP seamless, tested, and
+                scalable. As founders, we know what it's like building a company
+                and look forward to partnering with you to build yours!
+              </p>
+            </StackableImageAndTextDuo>
+          </div>
           <ChangeGearsBlock
             headerText="See how we think"
             linkText="View our resources"

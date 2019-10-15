@@ -38,7 +38,7 @@ export const IntroContainer = styled.div`
     padding: 90px 100px;
     justify-content: center;
     a {
-        color: #f0f;
+        color: #0fdde8;
         :hover {
             color: #FF99FF;
         }

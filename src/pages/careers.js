@@ -18,6 +18,7 @@ import ReadyToGetStartedSection from '../components/generic-reusable-components/
 import StackableImageAndTextDuo from '../components/generic-reusable-components/stackable-image-and-text-duo';
 import JoinOurTeamCornerBtn from './../components/generic-reusable-components/join-our-team-corner-btn';
 import JobDescriptionBlock from './../components/generic-reusable-components/job-description-block';
+import JobPosting from './../components/generic-reusable-components/job-posting';
 
 const stringWithBrackets = `We write requirements in the form of user stories using the format:
 As a <user>, when <action>, I want <a feature> so that <user goals>`;
@@ -139,6 +140,11 @@ const CareersPage = () => (
         </JobDescriptionBlocks>
         <br />
         <br />
+
+        <JobPosting>
+          <h1>stuff</h1>
+          <p>other stuff</p>
+        </JobPosting>
         <br />
         <br />
         {/* <StackableImageAndTextDuo

@@ -8,7 +8,7 @@ import Link from 'gatsby-link';
 
 
 const PersonColorContainer = styled.div`
-  background-color: #0040ff;
+  background-color: rgba(0,51,204,0.85);
   border-radius: 8px;
 `;
 

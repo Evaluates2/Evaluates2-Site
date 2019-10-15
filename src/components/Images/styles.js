@@ -8,7 +8,7 @@ export const ImagesContainer = styled.div`
   background-image: radial-gradient(
     circle farthest-corner at 49% 83%,
     #fff,
-    #ff00d6 25%,
+    #00e7ff 15%,
     #2c0277 79%,
     #040438
   );
@@ -33,6 +33,7 @@ export const Title = styled.div`
   font-weight: 800;
   text-align: center;
   letter-spacing: 5px;
+  margin: 15px 0;
   ${mediaQuery.maxNetbook} {
     font-size: 70px;
     line-height: 70px;

@@ -8,7 +8,7 @@ import { navLinkStyle } from "../Nav"
 export const Img = styled(Image)`
   width: 70px !important;
   height: 70px !important;
-  color: #f0f;
+  color: #0fdde8;
   transition: ease-in-out;
   margin-bottom: 0.3em;
   transform: rotate(-90deg);

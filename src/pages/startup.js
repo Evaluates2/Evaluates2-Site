@@ -63,43 +63,22 @@ const ProductManagementPage = () => (
               During the discovery phase we determine key goals and needs for your software.
             </p>
 
-            <p>
-              Every successful project starts with a team that's firmly aligned
-              and prepared for product development. At Def Method, we start off
-              every project by collecting product requirements, aligning with your
-              team on goals, and building out an initial project estimate
-              spreadsheet that is broken down by a backlog and icebox.
-          </p>
-            <p>
-              The purpose of the kickoff is primary to align all team members on these goals and focus on building a product that hits these keys deliverables, is a nice, clean codebase, and is actually a <i>fun</i> project for the people building it!
-          </p>
           </StackableColumn>
           <StackableColumn>
             <ProgressTrackingImage />
             <h1>MVP Build</h1>
             <p>
-              During the MVP Build we build an MVP
+              Then we get to work building the necessary software in our disclined, agile style.
           </p>
-            <p>
-              The PMs will work with the project management tools that your team
-              prefers. For user story tracking we commonly use Pivotal Tracker,
-              Trello, or Jira. Pivotal Tracker and Trello come with a low learning
-              curve and are straightforward to set up, whereas Jira allows for
-              detailed customization of workflow and is well suited to larger
-              scale projects. We typically use Slack for communication, Google
-              Hangouts/Meet for remote meetings, Rollbar for error tracking and
-              New Relic for performance monitoring.
-          </p>
+           
           </StackableColumn>
           <StackableColumn>
             <MaintenanceImage />
             <h1>Maintenance</h1>
             <p>
-              As is a natural course for many websites, development moves
-              temporarily from active development of new features to ongoing
-              maintenance.
+              Once the development has completed we leave your engineering team with detailed usage instructions, documentation, and monitoring tools. We can provide additional suppport if neccesary. 
           </p>
-            <p>
+            {/* <p>
               As part of our development process, we will implement the
               appropriate tracking tools to ensure your application is effectively
               maintained. This includes error tracking and performance monitoring
@@ -109,7 +88,7 @@ const ProductManagementPage = () => (
               goes down. We offer maintenance plans for customers that are
               interested in having the option for development of small features
               and bug resolution.
-          </p>
+          </p> */}
           </StackableColumn>
         </StackableColumnsContainer>
         <br />

@@ -360,26 +360,6 @@ const BuildYourOwnStackSection = styled.div`
 
 `;
 
-const languageDescriptionsMap = {
-  JavaScript:
-    "JavaScript stuff! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the including versions of Lorem Ipsum.",
-  TypeScript:
-    "TypeScript stuff! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the including versions of Lorem Ipsum.",
-  'Clojure / ClojureScript':
-    "Clojure / ClojureScript Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the including versions of Lorem Ipsum.",
-  'Go Lang':
-    "Go Lang stuff! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with theincluding versions of Lorem Ipsum.",
-  Rust:
-    "Rust stuff! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the including versions of Lorem Ipsum.",
-  Swift:
-    "Swift stuff! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the including versions of Lorem Ipsum.",
-  Kotlin:
-    "Kotlin stuff! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the including versions of Lorem Ipsum.",
-  Java:
-    "Java stuff! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the including versions of Lorem Ipsum.",
-  'C#':
-    "C# stuff! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the including versions of Lorem Ipsum.",
-};
 
 const keyPrinciplesData = {
   'DatabasesVsDataWareHouses': {
@@ -469,9 +449,9 @@ const DataAndAnalyticsPage = () => {
           <StackableColumnsContainer>
             <StackableColumn>
               <TechnicalAuditsImage />
-              <h1>Data-Centric Game Plan</h1>
+              <h1>Intelligently Manage Your Data</h1>
               <p>
-                At Evaluates2 we understand that data and analytics is important for every compoany and every application, and we are aware of this ahead of time. We will set up a practical flow of data from databse into a "data warehouse" where it can be easily queried against for analytics and other testing purposes.
+                At Evaluates2 we understand that data and analytics is important for every company and every application, and we are aware of this from day 1. We will set up a practical flow of data from databases to data warehouses where it can then be easily queried against for analytics and other testing purposes.
               </p>
               
             </StackableColumn>
@@ -479,12 +459,12 @@ const DataAndAnalyticsPage = () => {
               <StaffAugmentationImage />
               <h1>Custom Visualizations & Dashboards</h1>
               <p>
-                We have used numerous different javascript charting libraries to build custom visualtions of clients' data. Visual aids such as simple pies charts and bar charts can consolidate millions of rows worth of data into understandable metrics.
+                We are familiar with various frontend charting and data visualization libraries. Visual aids such as simple pies charts and bar charts can consolidate millions of rows worth of data into understandable metrics which business leaders can act upon with confidence.
               </p>
             </StackableColumn>
             <StackableColumn>
               <ResourceEfficiencyImage />
-              <h1>Continuously Validating Hypotheses</h1>
+              <h1>Data-Justified Business Decisions</h1>
               <p>
                 Regardless of whether a business is a budding new startup or a centries-old tycoon, every business is continuous fighting to validate that it's business model holds up in today's every-changing economy. Evaluates2 canc help companies wrangle the chaotic, dissonant strams of data into one managable stream of consciousness.
               </p>
@@ -492,9 +472,9 @@ const DataAndAnalyticsPage = () => {
           </StackableColumnsContainer>
 
           <LanguagesHeaderSection>
-            <h1>Numbers-Based Business Recommendations</h1>
+            <h1>The Data You Need Is Out There</h1>
             <p>
-              We prefer to make as few assumptions about the users as possible and let the data tell us what they like and dislike...
+              ...are you ignoring it or capturing and analyzing it?
           </p>
           </LanguagesHeaderSection>
           
