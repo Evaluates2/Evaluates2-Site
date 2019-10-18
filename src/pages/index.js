@@ -119,8 +119,8 @@ export default function IndexPage({ data, location }) {
               paragraph1=""
               header2=""
               paragraph2=""
-              imgName="HOME_DISCOVERY"
-              imgOnLeft={true}
+              imgName="HOME_ANALYTICS"
+              imgOnLeft={false}
               buttonText="Learn More"
               buttonLinkTo="/contact"
             >

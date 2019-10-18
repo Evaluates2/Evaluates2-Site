@@ -161,7 +161,7 @@ const ProductManagementPage = () => (
           paragraph1="We like pair programming because it's awesome! We often code with two engineers at a computer, each with their own mouse and keyboard. While making changes to the code they are simultaneously talking out loud about what they are thinking. This inherently leads to easier to explain and understand code, and potential trip-ups are often caught and addressed more quickly by a pair. In this way two developers understand the code even before any reviews of pull requests."
           header2=""
           paragraph2=""
-          imgName="USER_STORIES"
+          imgName="PAIR_PROGRAMMING"
           imgOnLeft={false}
           buttonText="Learn More"
           buttonLinkTo="/"
@@ -172,7 +172,7 @@ const ProductManagementPage = () => (
           paragraph1="We believe that delivering working software (and software that will work well long into the future) is our main goal. If the engineers commit to delivering x stories in a sprint then by the end of the sprint we should be able to see a working demo of the stories in a live environment."
           header2="Final Story Acceptance"
           paragraph2="Of course not every story is delivered is exactly how the client would like every time or possibly because of some unforseen blocker a story is not finished by the end of the week. That's ok as long as it's a rare occurence and the blocker is communicated as soon as it is discovered during stand-up meetings. In general, we prefer demo meetings that are over more like festive celebrations with catering and live usable devices available. Large releases are often held at offsite locations and involve presentations from senior stakeholders."
-          imgName="USER_STORIES"
+          imgName="LIVE_DEMOS"
           imgOnLeft={true}
           buttonText="Learn More"
           buttonLinkTo="/"

@@ -133,9 +133,11 @@ const CareersPage = () => (
         <br />
 
         <JobDescriptionBlocks>
+
           <JobDescriptionBlock
             title='Contact/Freelance Senior Software Engineer'
             location='New York, NY, Unites States'
+            linkTo="https://www.google.com"
           />
         </JobDescriptionBlocks>
         <br />

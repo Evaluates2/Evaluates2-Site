@@ -390,10 +390,14 @@ const languageDescriptionsMap = {
     "Python, originally developed in the late 1980s as a successor to the ABC language, has evolved considerably since then including majors upgrades Python 2 in 2000 and Python 3 in 2008. It is a general-purpose dynamic, garbage-collected language that is great for data science, machine-learning algorithms, and other staticial scratch-work.",
   Scala:
     "Scala is meant to be an extremely flexible alternative to Java that is both object-oriented and functional and runs on the JVM. It was created in 2004 by Martin Odersky and it a fantastic server-side language.",
+  Haskell:
+    "Haskell is a purely functional, statically-typed language. Developed by academic professors, it was first released in 2003 and used largely only in academia. However, we have successfully used Haskell for AWS Lambda functions, in analytics work, and other areas. If your engineering team has an interest in Haskell, we'd love to help build out test-driven Haskell services and applications.",
   Java:
     "Java, released in 1995, was very popular langague at the turn of the century. It's object-oriented principles and straightforward yet sometimes overly-verbose syntax has been enjoyed by many developers over the years, and although it's popularity has declined it is still a strong choice for many software projects.",
   'C#':
     "C# was initially meant to be a general purpose C-like object-oriented programming language for the .NET framework. It was created within Microsoft and appeared in the year 2000. Although windows forms UI has fallen somewhat out of style, C# is still a popular and fine choice for server-side development.",
+  'Ruby':
+    "Ruby is a language that was developed for programmer productivity with and idea that making programming should be fun for programmers. It was developed in Japan in the mid 1990s and is still a popular choice for building quick prototypes and as a general purpose language.",
   'C / C++':
     "If you need to squeeze out every possible last ounce of juice from your server, C and C++ will give the absolute most control. Although it is not the most concise and readable code, C and C++ has been running in production since its origins in the early 1970s, and raw C has truly withstood the test of time to establish itself as a valid consideration a a language even for new projects today.",
 };
@@ -685,6 +689,20 @@ const EngineeringPage = () => {
                   Scala
               </li>
                 <li
+                  className={languageSelected === 'Haskell' ? 'li-selected' : ''}
+                  onClick={event => {
+                    handleLanguageOptionClick('Haskell', event);
+                  }}
+                  onMouseOver={() => {
+                    handleLanguageOptionHoverOver('Haskell');
+                  }}
+                  onMouseOut={() => {
+                    handleLanguageOptionHoverOut();
+                  }}
+                >
+                  Haskell
+              </li>
+                <li
                   className={languageSelected === 'Java' ? 'li-selected' : ''}
                   onClick={event => {
                     handleLanguageOptionClick('Java', event);
@@ -711,6 +729,20 @@ const EngineeringPage = () => {
                   }}
                 >
                   C#
+              </li>
+                <li
+                  className={languageSelected === 'Ruby' ? 'li-selected' : ''}
+                  onClick={event => {
+                    handleLanguageOptionClick('Ruby', event);
+                  }}
+                  onMouseOver={() => {
+                    handleLanguageOptionHoverOver('Ruby');
+                  }}
+                  onMouseOut={() => {
+                    handleLanguageOptionHoverOut();
+                  }}
+                >
+                  Ruby
               </li>
                 <li
                   className={languageSelected === 'C / C++' ? 'li-selected' : ''}

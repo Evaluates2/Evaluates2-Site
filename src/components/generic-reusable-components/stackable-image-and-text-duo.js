@@ -1,22 +1,34 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import mediaQuery from '../../utils/mediaQuery';
-import EngineeringHomeImage from '../img-components/engineering_home.img';
+import HomeEngineeringImage from '../img-components/rf/home-engineering-royalty-free.img';
 import ProgressTrackingImage from '../img-components/progress-tracking.img';
 import StaffAugmentationImage from '../img-components/staff-augmentation.img';
 import ProjectKickoffImage from '../img-components/project-kickoff.img';
 import TopEngineeringTalentImage from '../img-components/top-engineering-talent.img';
 import TechnicalAuditsImage from '../img-components/technical-audits.img';
 import ProductHomeImage from '../img-components/product_home.img';
+import HomeProductManagementImage from '../img-components/rf/home-product-management.img';
 import ResourceEfficiencyImage from '../img-components/resource-efficiency.img';
 import ProgressImprovementImage from '../img-components/progress_improvement.img';
 import ProjectManagementImage from '../img-components/project_management.img';
 import DiscoverHomeImage from '../img-components/discover_home.img';
+import HomeStartupImage from '../img-components/rf/home-startup-royalty-free.img';
 import DesignSprintImage from '../img-components/design_sprint.img';
 import MvpBuildImage from '../img-components/mvp_build.img';
 import MaintenanceImage from '../img-components/maintenance.img';
 
 import Link from 'gatsby-link';
+import HomeAnalyticsImage from '../img-components/rf/home-analytics-royalty-free.img';
+import PmDailyStandupsImage from '../img-components/rf/pm-daily-standups.img';
+import PmIpmsRetrosImage from '../img-components/rf/pm-ipms-retros-img';
+import PmUserStoriesImage from '../img-components/rf/pm-user-stories-img';
+import PmLiveDemosImage from '../img-components/rf/pm-live-demos-img';
+import PmPairProgrammingImage from '../img-components/rf/pm-pair-programming.img';
+import StartupFlexibleStaffAugmentationImage from '../img-components/rf/startup-flexible-staff-aug.img';
+import StartupWellWorkWithYourBudgetImage from '../img-components/rf/startup-well-work-with-your-budget.img';
+import StartupShortOrLongContractsImage from '../img-components/rf/startup-short-or-long-contracts.img';
+import AnalyticsIntelligentlyManageDataImage from '../img-components/rf/analytics-intelligently-manage-data-royalty-free.img';
 
 const StyledStackableImageAndTextDuo = styled.div`
   background-color: #000032;
@@ -215,17 +227,34 @@ class StackableImageAndTextDuo extends React.Component {
     const getImage = imgName => {
       switch (imgName) {
         case 'HOME_PRODUCT':
-          return <ProductHomeImage />;
+          return <HomeProductManagementImage />;
         case 'HOME_ENG':
-          return <EngineeringHomeImage />;
+          return <HomeEngineeringImage />;
         case 'DAILY_STANDUPS':
-          return <ProgressTrackingImage />;
+          // return <ProgressTrackingImage />;
+          return <PmDailyStandupsImage />;
         case 'HOME_DISCOVERY':
-          return <DiscoverHomeImage />;
+          return <HomeStartupImage />;
+        case 'HOME_ANALYTICS':
+          return <HomeAnalyticsImage />;
         case 'IPMS/RETROS':
-          return <ProjectKickoffImage />;
+          return <PmIpmsRetrosImage />;
         case 'USER_STORIES':
-          return <StaffAugmentationImage />;
+          return <PmUserStoriesImage />;
+        case 'PAIR_PROGRAMMING':
+          return <PmPairProgrammingImage />;
+        case 'LIVE_DEMOS':
+          return <PmLiveDemosImage />;
+        case 'FLEXIBLE_STAFF_AUGMENTATION':
+          return <StartupFlexibleStaffAugmentationImage />;
+        case 'WELL_WORK_WITH_YOUR_BUDGET':
+          return <StartupWellWorkWithYourBudgetImage />;
+        case 'SHORT_OR_LONG_CONTRACTS':
+          return <StartupShortOrLongContractsImage />;
+        case 'INTELLIGENTLY_MANAGE_DATA':
+          return <AnalyticsIntelligentlyManageDataImage />;
+        case 'LIVE_DEMOS':
+          return <PmLiveDemosImage />;
         case 'staff':
           return <StaffAugmentationImage />;
         case 'top':

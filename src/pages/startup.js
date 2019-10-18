@@ -103,7 +103,7 @@ const ProductManagementPage = () => (
           paragraph1="We work with all sorts of copmanies, large and small, and our services our always customized to the needs or each unique client."
           header2=""
           paragraph2=""
-          imgName="DAILY_STANDUPS"
+          imgName="FLEXIBLE_STAFF_AUGMENTATION"
           imgOnLeft={true}
           buttonText="Learn More"
           buttonLinkTo="/contact"
@@ -114,7 +114,7 @@ const ProductManagementPage = () => (
           paragraph1="We estimate the length of project development based on previous projects and take into account CI / CD setup, test automation, and the possibility to change course mid-development."
           header2="We're On Your Side"
           paragraph2='Our engineers are taught to development with your best interest in mind and they are internally motivated to always bring up new ideas for improvement and innovation within client companies.'
-          imgName="IPMS/RETROS"
+          imgName="SHORT_OR_LONG_CONTRACTS"
           imgOnLeft={false}
           buttonText="Learn More"
           buttonLinkTo="/"
@@ -125,7 +125,7 @@ const ProductManagementPage = () => (
           paragraph1="Do you want to run some ideas by a few experienced engineers or just need some third-party tehnical guidance? Feel free to contact us for a free 15-30 minute techincal evaluation of your project and how it could possibly be improved."
           header2="An E2 Engineer Pays Many Times Over"
           paragraph2="Having Evaluates2 engineers embedded in your teams encourages a culture that appreciates well-written automated tests, solid CI / CD pipelines, multiples environments, and other practices that result in happy, healthy software."
-          imgName="USER_STORIES"
+          imgName="WELL_WORK_WITH_YOUR_BUDGET"
           imgOnLeft={true}
           buttonText="Learn More"
           buttonLinkTo="/"

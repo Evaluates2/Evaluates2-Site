@@ -3,8 +3,32 @@ import styled from '@emotion/styled';
 import { Link } from 'gatsby';
 
 const StyledJobDescription = styled.div`
+  position: relative;
+  background-color: yellowgreen;
+  display: block;
+  /* width: 80%; */
+  min-width: 500px;
+  min-height: 500px;
+  border-radius: 5px;
 
+  .movable-block {
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background-color: #000032;
+    padding: 40px;
 
+    :hover {
+      background-color: #153363;
+      top: -8px;
+      left: -8px;
+    }
+  }
 `;
 
 // const StyledChangeGearsBlock = styled.div`
@@ -64,11 +88,11 @@ const StyledJobDescription = styled.div`
 //       0% {
 //         background-position: 0 0;
 //       }
-      
+
 //       100% {
 //         background-position: 100% 0;
 //       }
-     
+
 //     }
 
 //     h3.rainbow_text_animated {
@@ -107,11 +131,10 @@ const StyledJobDescription = styled.div`
 //   min-height: 425px;
 //   display: flex;
 //   flex-direction: column;
-//   justify-content: space-evenly; 
+//   justify-content: space-evenly;
 //   width: 100%;
 //   padding: 10vh 10vw;
-  
-  
+
 //   h1.header {
 //     font-size: 80px;
 //     line-height: 100px;
@@ -137,11 +160,15 @@ const StyledJobDescription = styled.div`
 // `;
 
 const JobDescriptionBlock = ({ headerText, linkText, linkTo }) => (
-  <div>
+  <a href={linkTo}>
     <StyledJobDescription>
-        (New Openings Coming Soon!)
+      <div className="movable-block">
+        
+        
+        movable thing
+      </div>x
     </StyledJobDescription>
-  </div>
+  </a>
 );
 
 export default JobDescriptionBlock;
