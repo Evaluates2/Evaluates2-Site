@@ -8,29 +8,27 @@ const PersonColorContainer = styled.div`
 `;
 
 const StyledPersonImage = styled.div`
-  width: 150px;
+  width: 90%;
   height: 100%;
   display: flex;
   flex: 1;
   flex-direction: column;
   color: #0033cc;
 
-  .job-container {
-    /* background-color: #000032; */
-    background-color: pink;
-    /* width: 100%; */
-    /* height: 100%; */
-    /* height: 200px; */
+  .career-block {
+    text-align: left;
+    display: block;
+    background-color: darkgrey;
+    width: 100%;
+    padding: 30px;
     border-radius: 8px;
-    max-width: 310px;
-    position: absolute;
     display: inline-block;
-    /* top: 0px;
-    left: 0px; */
+    color: white;
 
     :hover {
       margin-right: 20px;
     }
+
   }
 
   /* h2 {
@@ -65,14 +63,12 @@ const StyledPersonImage = styled.div`
 
 const JobPosting = ({ children, itemId, name, linkTo, role, img }) => {
   return (
-    <Link to={linkTo}>
-      <StyledPersonImage>
-        {/* <PersonColorContainer> */}
-          <div className="job-container">
-          {children}
-          </div>
-        {/* </PersonColorContainer> */}
-        {/* <h2>
+    // <Link to={linkTo}>
+    <StyledPersonImage>
+      {/* <PersonColorContainer> */}
+      <div className="career-block">{children}</div>
+      {/* </PersonColorContainer> */}
+      {/* <h2>
                 {name}
             </h2>
             <p>
@@ -81,8 +77,8 @@ const JobPosting = ({ children, itemId, name, linkTo, role, img }) => {
             <div className="bg-div">
 
             </div> */}
-      </StyledPersonImage>
-    </Link>
+    </StyledPersonImage>
+    // </Link>
   );
 };
 
