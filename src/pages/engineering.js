@@ -17,6 +17,7 @@ import StackableColumn from '../components/generic-reusable-components/stackable
 import SecondServiceHero from '../components/generic-reusable-components/service-second-hero';
 import ReadyToGetStartedSection from '../components/generic-reusable-components/ready-to-get-started-section';
 import Global from "../components/Global"
+import NodeJsFizzbuzzifiedStringImage from '../components/img-components/node-js-fizzbuzzifies-strings-screenshot.img';
 
 const EngineeringPageContainer = styled.div`
   font-family: 'e2-Raleway-Black';
@@ -778,7 +779,7 @@ const EngineeringPage = () => {
             </LanguageInfoSection>
 
             <LanguageIdeScreenshotContainer>
-              {languageSelected === 'JavaScript' && <JsFizzbuzzScreenshotImage />}
+              {languageSelected === 'JavaScript' && <NodeJsFizzbuzzifiedStringImage />}
               {/* TODO - Add screenshots for other languages */}
             </LanguageIdeScreenshotContainer>
           </LanguagePickerGrid>
