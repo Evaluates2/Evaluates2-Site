@@ -103,7 +103,7 @@ export const Def1 = styled.div`
       rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
     left: 0;
-    top: 35vh;
+    top: 50vh;
     right: 0;
     z-index: 3;
     width: 100%;
@@ -125,7 +125,7 @@ export const Def2 = styled.div`
     transform: translate3d(0px, 0.45vh, 0px) scale3d(1, 1, 1) rotateX(0deg)
       rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
-    top: 45vh;
+    top: 60vh;
     z-index: 1;
     display: block;
     width: 100%;
@@ -149,7 +149,7 @@ export const Def3 = styled.div`
     transform: translate3d(0px, 0.75vh, 0px) scale3d(1, 1, 1) rotateX(0deg)
       rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
-    top: 40vh;
+    top: 55vh;
     display: block;
     width: 100%;
     position: absolute;
