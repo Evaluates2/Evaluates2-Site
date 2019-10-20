@@ -13,11 +13,11 @@ import Img from 'gatsby-image';
  * - `StaticQuery`: https://gatsby.app/staticquery
  */
 
-const DesignSprintImage = () => (
+const GithubLogoImage = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "design_sprint.png" }) {
+        placeholderImage: file(relativePath: { eq: "partner-logos/github-logo.png" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
@@ -29,4 +29,4 @@ const DesignSprintImage = () => (
     render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
   />
 );
-export default DesignSprintImage;
+export default GithubLogoImage;

@@ -26,7 +26,7 @@ class Intro extends React.Component {
             <AnchorLink href="#product"> unique and efficient approach </AnchorLink> 
             to product management with
             software consulting service focused on 
-            <AnchorLink href="#engineering"> excellence of code and product</AnchorLink>.
+            <AnchorLink href="#engineering"> excellence of code and product.</AnchorLink>
           </TextContainer>
             {/* <h1>Engineering</h1>
 

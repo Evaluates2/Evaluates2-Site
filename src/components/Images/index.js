@@ -21,7 +21,7 @@ const Images = () => (
             <ImagesContainer>
                 <ImageTitle>
                     <Title>Together</Title>
-                    <Sub>we will build great things</Sub>
+                    <Sub>we will build great things.</Sub>
                 </ImageTitle>
                 <Def3>
                     <img src={def1} alt="def1" />

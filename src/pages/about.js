@@ -9,6 +9,16 @@ import NinaYangHeadshotImage from '../components/img-components/headshots/nina-y
 import LeeNguyenHeadshotImage from '../components/img-components/headshots/lee-nguyen-headshot.img';
 import Link from 'gatsby-link';
 import TeamMemberBlock from './../components/generic-reusable-components/team-member-block';
+import AwsLogoImage from '../components/img-components/partner-logos/amazon-web-services-logo.img';
+import GithubLogoImage from '../components/img-components/partner-logos/github-logo.img';
+import AppleLogoImage from '../components/img-components/partner-logos/apple-logo.img';
+import KateFromHrLogoImage from '../components/img-components/partner-logos/kate-from-hr-logo.img';
+import MongoAtlasImage from '../components/img-components/partner-logos/mongo-atlas-logo.img';
+import GoogleLogoImage from '../components/img-components/partner-logos/google-logo.img';
+import ServerlessLogoImage from '../components/img-components/partner-logos/serverless-logo.img';
+import MozillaLogoImage from '../components/img-components/partner-logos/mozilla-logo.img';
+import MicrosoftLogoImage from '../components/img-components/partner-logos/microsoft-logo.img';
+import GoogleTransparentImage from '../components/img-components/partner-logos/google-transparent.img';
 
 const AboutHero = styled.div`
   h1 {
@@ -50,6 +60,7 @@ const AboutHero = styled.div`
     justify-content: center;
     align-items: center;
   }
+
 `;
 
 const CenteredVideo = styled.div`
@@ -63,18 +74,61 @@ const CenteredVideo = styled.div`
 `;
 
 const PartnersSection = styled.div`
+
+  padding: 40px;
+
   h1 {
     font-size: 80px;
     line-height: 100px;
     font-family: 'e2-Raleway-Extra-Bold';
     padding: 0 100px;
+    margin-bottom: 40px;
   }
+
+  div.partner-row {
+    display: flex; 
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    min-height: 220px;
+    position: relative;
+    padding: 30px 0;
+
+    
+    img {
+        object-fit: scale-down !important;
+        width: 10px;
+        /* width: 100%; */
+        /* height: 100%; */
+        /* display: inline; */
+        /* position: relative; */
+      }
+  }
+
+  .gatsby-image-wrapper {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    /* display: inline; */
+    position: relative;
+    flex-direction: column;
+      
+  }
+
+  
+  
 
   min-height: 500px;
 `;
 
 const NiceQuoteSection = styled.div`
   padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   h1 {
     margin-bottom: 0;
@@ -101,6 +155,7 @@ const AboutBlurb = styled.div`
     padding: 80px 160px;
     color: #333333;
     text-align: justify;
+    
   }
 `;
 
@@ -262,7 +317,7 @@ const AboutPage = () => (
         <p>When it comes to software, we're full of solutions.</p>
       </AboutHero>
 
-      <CenteredVideo>
+      {/* <CenteredVideo>
         <iframe
           width="560"
           height="315"
@@ -271,35 +326,90 @@ const AboutPage = () => (
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
-      </CenteredVideo>
+      </CenteredVideo> */}
 
       <AboutBlurb>
-        <p>
+        {/* <p>
           "At Evaluates2 we believe in the integrity of our code and are
           passionate about always learning. We work tirelessly to help our
           clients build the best products possible and to contribute back to the
           software development community; because it's not just our job, it's
           our passion."
+        </p> */}
+        <p>
+          Evaluates2 is SO, MUCH, MORE than just another New York City software consulting agency.
+          <br />
+          <br />
+          At Evaluates2, we look at things differently.
+          <br />
+          <br />
+
+          We are architecting and building the systems of tomorrow.
+          <br />
+          <br />
+
+          We write the code that is not only ABLE to be maintained and understood by other engineers but that is actually EASY to be maintained and understood.
+          <br />
+          <br />
+
+          We approach troubling the most the most troubling issues with logic and curiosity.
+          <br />
+          <br />
+
+          We code in pairs, lean heavily on automated testing, and deploy insanely frequently.
+          <br />
+          <br />
+
+          We have spent our lives sharpening these legendary coding skills, and despite this we try to stay humble, respectful, open-minded, and eager to show others how fun and awesome can be for everyone.
+          <br />
+          <br />
+
+          We are not just engineers… We are the agents of change that can transform and enlighten ANY engineering department.
+          <br />
+          <br />
+
+          So let us help you, and together… we will build great things.
+          <br />
+          <br />
+
+          <br />
         </p>
       </AboutBlurb>
 
       <PartnersSection>
-        <h1>Some of our partners:</h1>
+        <h1>A Few of Our Partners:</h1>
+        <div className="partner-row">
+          <AwsLogoImage />
+          <GoogleTransparentImage />
+          <AppleLogoImage />
+        </div>
+        <div className="partner-row">
+          <MicrosoftLogoImage />
+          <ServerlessLogoImage />
+          <GithubLogoImage />
+        </div>
+        <div className="partner-row">
+          <MongoAtlasImage />
+          <MozillaLogoImage />
+          <KateFromHrLogoImage />
+        </div>
       </PartnersSection>
 
       <NiceQuoteSection>
         <h1>
-          "They are not only razor sharp developers, they are excellent people
-          as well."
+          {/* "They are not only razor sharp developers, they are excellent people
+          as well." */}
+          Evaluates2 engineers are not only razor sharp developers...
+          <br />
+          they are compassionate and honest people as well.
         </h1>
-        <p>Artspool</p>
+        {/* <p></p> */}
       </NiceQuoteSection>
 
       <MidPageAnchor>
         <a id="OUR_TEAM" />
       </MidPageAnchor>
-      <br />
-      <br />
+
       <OurTeamSection>
         <h1>Our Team</h1>
         <div className="our-team-grid">
@@ -345,7 +455,7 @@ const AboutPage = () => (
           </PinkBox>
         </Link>
 
-        <Link to="/our-work">
+        <Link to="/our-work#OPEN_SOURCE">
           <PinkBox>
             <h1>Open Source</h1>
             <p>See how we contribute back to the software comunity.</p>

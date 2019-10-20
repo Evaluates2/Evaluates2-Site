@@ -2,8 +2,12 @@ import styled from "styled-components"
 import mediaQuery from "../../utils/mediaQuery"
 
 export const TextContainer = styled.div`
-    position: relative;
+    /* position: relative; */
     z-index: 40px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
     max-width: 800px;
     min-width: 200px;
     -webkit-perspective: 608px;
@@ -34,7 +38,7 @@ export const IntroContainer = styled.div`
     font-size: 27px;
     line-height: 45px;
     display: flex;
-    min-height: 100vh;
+    min-height: 175vh;
     padding: 90px 100px;
     justify-content: center;
     a {
