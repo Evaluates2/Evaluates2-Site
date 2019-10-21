@@ -75,43 +75,14 @@ const ProductManagementPage = () => (
             <p>
               Our project managers are flexible enough to use project management software that your team prefers. For user story tracking we typically use Jira, Pivotal Tracker, Clubhouse, Monday, or Trello. Trello is comes with a low price and learning curve while Jira is more suitable for larger enterprise clients, and the others are somewhere in between. We believe the simple, frictionless communication is critical so we use Slack for text communication and Google hangouts or Skype for remote meetings.
             </p>
-            {/* <p>
-              Once a project is kicked off, Def Method PMs use an agile process to
-              manage product development. This includes daily standups, weekly
-              IPMs, weekly demos and project retros.
-          </p>
-            <p>
-              The PMs will work with the project management tools that your team
-              prefers. For user story tracking we commonly use Pivotal Tracker,
-              Trello, or Jira. Pivotal Tracker and Trello come with a low learning
-              curve and are straightforward to set up, whereas Jira allows for
-              detailed customization of workflow and is well suited to larger
-              scale projects. We typically use Slack for communication, Google
-              Hangouts/Meet for remote meetings, Rollbar for error tracking and
-              New Relic for performance monitoring.
-          </p> */}
           </StackableColumn>
           <StackableColumn>
             <MaintenanceImage />
             <h1>Post-Development Maintenance</h1>
             <p>
-              {/* As is a natural course for many websites, development moves
-              temporarily from active development of new features to ongoing
-              maintenance. */}
-
               At Evaluates2 we pride ourselves on being able to finish development of a project quickly and with very few bugs. However, any software will need some upkeep and monitoring, and we set out from the beginning to make maintenace of our applications as easy and streamlined as possible. 
           </p>
             <p>
-              {/* As part of our development process, we will implement the
-              appropriate tracking tools to ensure your application is effectively
-              maintained. This includes error tracking and performance monitoring
-              tools with appropriate notification settings and user tracking tools
-              such as Google Analytics, Mix Panel or Heap. At Def Method we stand
-              behind the products we build and will support you if your product
-              goes down. We offer maintenance plans for customers that are
-              interested in having the option for development of small features
-              and bug resolution. */}
-
               As part of the development process we will implement the appropriate logging and monitoring tools. We also create detailed documentation and provide training to engineers responsible for maintenace during project handoff sessions. Although we primarily aim to develop a project and let the client take over, we can provide Evaluates2 engineerings on standby for ongoing maintenance and/or bugfixes if desired.
           </p>
           </StackableColumn>

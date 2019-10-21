@@ -13,13 +13,13 @@ import Img from 'gatsby-image';
  * - `StaticQuery`: https://gatsby.app/staticquery
  */
 
-const NodeJsFizzbuzzifiedStringImage = () => (
+const LeeDanielHeadshotImage = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "node-js-fizzbuzzifies-strings-screenshot.png" }) {
+        placeholderImage: file(relativePath: { eq: "headshots/lee-daniel.jpeg" }) {
           childImageSharp {
-            fluid(maxWidth: 2000) {
+            fluid(maxWidth: 600) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -29,4 +29,4 @@ const NodeJsFizzbuzzifiedStringImage = () => (
     render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
   />
 );
-export default NodeJsFizzbuzzifiedStringImage;
+export default LeeDanielHeadshotImage;

@@ -8,13 +8,14 @@ import Link from 'gatsby-link';
 
 
 const PersonColorContainer = styled.div`
-  background-color: rgba(0,51,204,0.85);
+  background-color: yellowgreen;
   border-radius: 8px;
 `;
 
 const StyledPersonImage = styled.div`
   width: 150px;
   height: 100%;
+  min-height: 300px;
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -35,7 +36,7 @@ const StyledPersonImage = styled.div`
 
   h2 {
     font-size: 17px;
-    margin: 6px auto 6px 5px;
+    margin: 16px auto 6px 5px;
     font-family: 'e2-Raleway-Semi-Bold';
     line-height: 17px;
 

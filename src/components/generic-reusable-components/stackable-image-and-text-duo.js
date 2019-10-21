@@ -29,28 +29,36 @@ import StartupFlexibleStaffAugmentationImage from '../img-components/rf/startup-
 import StartupWellWorkWithYourBudgetImage from '../img-components/rf/startup-well-work-with-your-budget.img';
 import StartupShortOrLongContractsImage from '../img-components/rf/startup-short-or-long-contracts.img';
 import AnalyticsIntelligentlyManageDataImage from '../img-components/rf/analytics-intelligently-manage-data-royalty-free.img';
+import BusinessBarChartSvg from '../../images/business-bars-graphic.svg';
 
 const StyledStackableImageAndTextDuo = styled.div`
   background-color: #000032;
   margin: 50px 0;
-  .text {
+
+  .small_image {
+    margin-bottom: 40px;
+  }
+  
+  .img-info-text {
+    font-size: 24px;
+    line-height: 32px;
     margin-top: 10px;
+    color: white;
   }
   .img_container {
     margin-top: 10vh;
     margin-bottom: 5vh;
   }
   .s_img {
-    width: 50px;
-    height: 50px;
+    width: 60%;
+    height: auto;
     margin: 0 auto;
+    padding: 20px;
   }
   .img_container {
     display: flex;
   }
-  .text {
-    color: white;
-  }
+
   .container {
     /* margin: 0px !important; */
     flex: 1;
@@ -158,7 +166,7 @@ const StyledStackableImageAndTextDuo = styled.div`
   }
 
   h1 {
-    color: white !important;
+    color: white;
     font-size: 6vw;
     line-height: 6vw;
     letter-spacing: .5px;
@@ -166,7 +174,7 @@ const StyledStackableImageAndTextDuo = styled.div`
   }
 
   h2 {
-    color: white !important;
+    color: white ;
     letter-spacing: .25px;
     font-size: 22px;
     line-height: 32px;
@@ -204,6 +212,14 @@ const StyledStackableImageAndTextDuo = styled.div`
     transition-timing-function: ease;
     transition-delay: 0s;
   }
+`;
+
+const BusinessBarChartImage = styled.div`
+
+img {
+  width: 100%;
+}
+
 `;
 
 class StackableImageAndTextDuo extends React.Component {
@@ -273,6 +289,14 @@ class StackableImageAndTextDuo extends React.Component {
           return <MvpBuildImage />;
         case 'maintenance':
           return <MaintenanceImage />;
+          case 'pie-chart-stats':
+
+              return <BusinessBarChartImage style={{width: '100%'}}>
+              <img src={BusinessBarChartSvg} />
+            </BusinessBarChartImage>
+            return <PhoneScreenSvg />;
+          // return (<BusinessBarChartImage>
+          // </BusinessBarChartImage>);
       }
     };
     return (
@@ -287,7 +311,7 @@ class StackableImageAndTextDuo extends React.Component {
                   return (
                     <div className="small_image">
                       <div className="s_img">{getImage(item.img)}</div>
-                      <div className="text">{item.name}</div>
+                      <div className="img-info-text">{item.name}</div>
                     </div>
                   );
                 })}

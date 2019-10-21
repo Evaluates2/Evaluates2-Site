@@ -17,6 +17,9 @@ import ChangeGearsBlock from '../components/generic-reusable-components/change-g
 import ReadyToGetStartedSection from '../components/generic-reusable-components/ready-to-get-started-section';
 import StackableImageAndTextDuo from '../components/generic-reusable-components/stackable-image-and-text-duo';
 import JoinOurTeamCornerBtn from '../components/generic-reusable-components/join-our-team-corner-btn';
+import DiscoveryMagnifyingGlassImage from '../components/img-components/discovery-magnifying-glass.img';
+import MvpBuildImage from '../components/img-components/mvp-build.img';
+import Maintenance2Image from '../components/img-components/maintenance2.img';
 
 const stringWithBrackets = `We write requirements in the form of user stories using the format:
 As a <user>, when <action>, I want <a feature> so that <user goals>`;
@@ -47,7 +50,7 @@ const ProductManagementPage = () => (
 
       <ProjectManagementPageContainer>
         <ServicePageHero
-          title="Product Discovery"
+          title="Startup MVP Development"
           description="Ready to bring your ideas to life?"
         ></ServicePageHero>
         <SecondServiceHero
@@ -56,7 +59,7 @@ const ProductManagementPage = () => (
         ></SecondServiceHero>
         <StackableColumnsContainer>
           <StackableColumn>
-            <ProjectKickoffImage />
+            <DiscoveryMagnifyingGlassImage />
             <h1>Discovery</h1>
 
             <p>
@@ -65,7 +68,7 @@ const ProductManagementPage = () => (
 
           </StackableColumn>
           <StackableColumn>
-            <ProgressTrackingImage />
+            <MvpBuildImage />
             <h1>MVP Build</h1>
             <p>
               Then we get to work building the necessary software in our disclined, agile style.
@@ -73,22 +76,11 @@ const ProductManagementPage = () => (
            
           </StackableColumn>
           <StackableColumn>
-            <MaintenanceImage />
+            <Maintenance2Image />
             <h1>Maintenance</h1>
             <p>
               Once the development has completed we leave your engineering team with detailed usage instructions, documentation, and monitoring tools. We can provide additional suppport if neccesary. 
           </p>
-            {/* <p>
-              As part of our development process, we will implement the
-              appropriate tracking tools to ensure your application is effectively
-              maintained. This includes error tracking and performance monitoring
-              tools with appropriate notification settings and user tracking tools
-              such as Google Analytics, Mix Panel or Heap. At Def Method we stand
-              behind the products we build and will support you if your product
-              goes down. We offer maintenance plans for customers that are
-              interested in having the option for development of small features
-              and bug resolution.
-          </p> */}
           </StackableColumn>
         </StackableColumnsContainer>
         <br />

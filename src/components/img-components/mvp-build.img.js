@@ -13,13 +13,13 @@ import Img from 'gatsby-image';
  * - `StaticQuery`: https://gatsby.app/staticquery
  */
 
-const LeeNguyenHeadshotImage = () => (
+const MvpBuildImage = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "headshots/lee-nguyen-headshot.jpg" }) {
+        placeholderImage: file(relativePath: { eq: "mvp-build.png" }) {
           childImageSharp {
-            fluid(maxWidth: 600) {
+            fluid(maxWidth: 300) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -29,4 +29,4 @@ const LeeNguyenHeadshotImage = () => (
     render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
   />
 );
-export default LeeNguyenHeadshotImage;
+export default MvpBuildImage;

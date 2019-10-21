@@ -6,117 +6,113 @@ import Global from '../components/Global';
 import PersonImage from '../components/img-components/person-img.img';
 import JoinOurTeamCornerBtn from './../components/generic-reusable-components/join-our-team-corner-btn';
 import JimLynchHeadshotImage from '../components/img-components/headshots/jim-lynch-headshot.img';
-import LeeNguyenHeadshotImage from '../components/img-components/headshots/lee-nguyen-headshot.img';
+import LeeDanielHeadshotImage from '../components/img-components/headshots/lee-daniel-headshot.img';
 import NinaYangHeadshotImage from '../components/img-components/headshots/nina-yang-headshot.img';
 
 const personMap = {
-    'jim-lynch': {
+  'jim-lynch': {
     firstName: 'Jim',
     lastName: 'Lynch',
-    role: 'CEO, Principal Engineer',
+    role: 'Founder & Principal Engineer',
     hometown: 'Egg Harbor Township, New Jersey',
     currentLocation: 'Manhattan, New York',
-    education: 'Rutgers University - BA in Mathematics, minor in Economics.',
-    githubProfile: 'https://github.com/jleo3',
-    linkedInProfile: 'https://linkedin.com/jimtheman',
+    education: 'Rutgers University - BA in Mathematics, minor in Economics, NYC Code & Design Academy, Free Code Camp',
+    githubProfile: 'https://github.com/jimtheman',
+    linkedInProfile: 'https://linkedin.com/in/jimtheman',
     twitterProfile: 'https://twitter.com/webWhizJim',
     personImg: <JimLynchHeadshotImage />,
     moreStuff: (
       <>
+        <br />
         <p>
-          Joe brings his mix of engineering muscle, business acumen, enthusiasm
-          for challenges, and technical leadership to the helm of Def Method.
-          Before founding DM, Joe spent over a decade as a developer delivering
-          high-quality software solutions spanning government, education,
-          finance and e-commerce.
+          Jim brings his mix of engineering muscle, business acumen, enthusiasm
+          for challenges, and technical leadership to the helm of Evaluates2.
+          Before founding e2, Jim spent over a decade as a developer delivering
+          high-quality software solutions spanning banking, entertainment,
+          gaming and e-commerce.
         </p>
 
+        <br />
         <p>
-          As the CEO and Founder of Def Method he emulates the brand values of
+          As the CEO and Founder of Evaluates2 he emulates the brand values of
           transparency in business operations, trust among the team and
-          partners, and excellence in code.
+          partners, and excellence in code. Jim currently acts as the Principal Engineer, signing off on ADRs (architectural decision records), and being hands-on in the architural decisions throughout the development of the project.
         </p>
 
+        <br />
         <p>
-          Joe is co-author of{' '}
-          <a href="https://butkiss.com">
-            The Well-Grounded Rubyist, Third Edition
-          </a>
-          . Outside of the office, he has helped to build the NYC developer
+          Jim coined the Term "Titanium Lambda" and created the <a href="https://github.com/JimTheMan/Titanium-Lambda">corresponding github repo</a> in early 2018.
         </p>
+
+        <br />
+        <p>
+          He blogs about software and life at <a href="http://www.wisdomofjim.com">www.wisdomofjim.com</a>.
+        </p>
+
+        <br />
+        <p>
+          When he's not busy thinking about software devlopment in some way, Jim enjoy playing sports (such as golf, tennis, and snowboarding), socializing with friends and colleagues, and spending time with his family.
+        </p>
+
       </>
     ),
   },
   'nina-yang': {
     firstName: 'Nina',
     lastName: 'Yang',
-    role: 'CEO, Founder',
-    hometown: 'New York',
-    currentLocation: 'New York',
-    education: 'BS, Engineering',
-    githubProfile: 'https://github.com/jleo3',
-    linkedInProfile: 'https://linkedin.com/jimtheman',
-    twitterProfile: 'https://twitter.com/webWhizJim',
-    personImg: <NinaYangHeadshotImage/>,
+    role: 'Sales & Business Development Associate',
+    hometown: 'Fort Lee, New Jersey',
+    currentLocation: 'Manhattan, New York',
+    education: 'BS, Accounting - New York University',
+    githubProfile: '',
+    linkedInProfile: '',
+    twitterProfile: '',
+    personImg: <NinaYangHeadshotImage />,
     moreStuff: (
       <>
+      <br/>
         <p>
-          Joe brings his mix of engineering muscle, business acumen, enthusiasm
-          for challenges, and technical leadership to the helm of Def Method.
-          Before founding DM, Joe spent over a decade as a developer delivering
-          high-quality software solutions spanning government, education,
-          finance and e-commerce.
+          Nina brings a charisma and charm that allows her to becomes friends with anyone. With years of work in tech retail and sales, Nina can understand and explain concepts in both the raw technical form and the high-level, non-techy version.
         </p>
 
+      <br/>
         <p>
-          As the CEO and Founder of Def Method he emulates the brand values of
-          transparency in business operations, trust among the team and
-          partners, and excellence in code.
+          As the first business development manager, Nina is spearheading the effort to increase our partners and client engagements and signing on awesome, new projects for the engineers to create!
         </p>
 
+      <br/>
         <p>
-          Joe is co-author of{' '}
-          <a href="https://butkiss.com">
-            The Well-Grounded Rubyist, Third Edition
-          </a>
-          . Outside of the office, he has helped to build the NYC developer
+          In her spare time Nina enjoys listening to relaxing music, playing tennis, and playing board games with her husband and children.
         </p>
       </>
     ),
   },
-  'lee-nguyen': {
+  'lee-daniel': {
     firstName: 'Lee',
-    lastName: 'Nguyen',
+    lastName: 'Daniel',
     role: 'Sr. Software Engineer',
     hometown: 'Beijing, China',
     currentLocation: 'Beijing, China',
-    education: 'BS, Engineering',
-    githubProfile: 'https://github.com/jleo3',
-    linkedInProfile: 'https://linkedin.com/jimtheman',
-    twitterProfile: 'https://twitter.com/webWhizJim',
-    personImg: <LeeNguyenHeadshotImage />,
+    education: 'BS, Engineering - Zhejiang University',
+    githubProfile: 'https://github.com/BestWayDevelopment',
+    linkedInProfile: 'https://www.linkedin.com/in/lee-daniel-94b03b147/',
+    twitterProfile: '',
+    personImg: <LeeDanielHeadshotImage />,
     moreStuff: (
       <>
+      <br/>
         <p>
-          Joe brings his mix of engineering muscle, business acumen, enthusiasm
-          for challenges, and technical leadership to the helm of Def Method.
-          Before founding DM, Joe spent over a decade as a developer delivering
-          high-quality software solutions spanning government, education,
-          finance and e-commerce.
+          Lee is a passionate software engineer with over a decade of experience working on browser, destop, and mobile applications. He also has an interest in cryptocurrency and experience with smart contract development.
         </p>
 
+      <br/>
         <p>
-          As the CEO and Founder of Def Method he emulates the brand values of
-          transparency in business operations, trust among the team and
-          partners, and excellence in code.
+          Lee is a great developer and can be an asset to any team in need of JavaScript expertise. He has aided in development of this website and has been very much enjoying his recently developments with React, React Native, and Nodejs.
         </p>
 
+      <br/>
         <p>
-          Joe is co-author of{' '}
-          <a href="https://butkiss.com">
-            The Well-Grounded Rubyist, Third Edition
-          </a>
-          . Outside of the office, he has helped to build the NYC developer
+          Based in Beijing, China, Lee can provide remote programming expertise, joining on calls, submitting pull requests, and participating in remote pair proramming.  
         </p>
       </>
     ),
@@ -217,75 +213,6 @@ const TeamMemberBackButton = styled.button`
   transition-timing-function: ease;
   transition-delay: 0s;
 `;
-
-// const SectionHero = styled.div`
-//   height: 800px;
-//   min-height: 400px;
-//   line-height: 85px;
-//   flex: 1;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   margin-top: 60px;
-//   h1 {
-//   font-size: 100px;
-
-//     @media only screen and (max-width: 990px) {
-//       font-size: 80px;
-//     }
-
-//     @media only screen and (max-width: 660px) {
-//       font-size: 60px;
-//     }
-
-//   }
-//   p {
-//     font-size: 38px;
-//     opacity: 0.7;
-//     margin: 7px;
-//       opacity: 0.7;
-//       width: 80vw;
-//     min-width: 90%;
-//     text-align: center;
-//     line-height: 60px;
-
-//     @media only screen and (max-width: 990px) {
-//       font-size: 30px;
-//     }
-
-//     @media only screen and (max-width: 660px) {
-//       font-size: 24px;
-//     }
-
-//   }
-// `;
-
-// const TermsTextSection = styled.div`
-//   background-color: #000032;
-//   color: white;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   min-height: 400px;
-//   padding: 400px 100px 250px;
-
-//   h1 {
-//     line-height: 60px;
-//     font-size: 50px;
-//     text-align: left;
-//     padding-bottom: 40px;
-//   }
-//   p {
-//     color: #c3c3c3;
-//     font-size: 20px;
-//     line-height: 40px;
-//     /* margin: 10px 50px; */
-//     text-align: left;
-//     width: 100%;
-//   }
-// `;
 
 const TeamPage = location => {
   const person =

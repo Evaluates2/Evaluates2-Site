@@ -182,7 +182,7 @@ const StartupPage = () => (
         <StackableImageAndTextDuo
           title="MVP Development"
           header1=""
-          paragraph1="The ultimate goal of the Product Discovery process is to achieve successful application development and delivery. Using the deliverables from the Discovery Workshop, Def Method will begin the development process following the Product Discovery."
+          paragraph1="The ultimate goal of the Product Discovery process is to achieve successful application development and delivery. Using the deliverables from the Discovery Workshop, Evaluates2 will begin the development process following the Product Discovery."
           header2=""
           paragraph2=''
           imgName="IPMS/RETROS"
@@ -191,7 +191,7 @@ const StartupPage = () => (
           buttonLinkTo="/"
         >
 
-<ul>
+          <ul>
             <li>
 
           - Offshore resources

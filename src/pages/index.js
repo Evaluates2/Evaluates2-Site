@@ -38,10 +38,10 @@ export default function IndexPage({ data, location }) {
               imgName="HOME_ENG"
               imgOnLeft={true}
               buttonText="Discover More"
-              buttonLinkTo="/contact"
+              buttonLinkTo="/engineering"
             >
               <p>
-                At Def Method, we focus on excellence in code. As such we focus
+                At Evaluates2, we focus on excellence in code. As such we focus
                 on the following values on all projects we work on.
                 <br />
                 - Test Driven Development
@@ -68,7 +68,7 @@ export default function IndexPage({ data, location }) {
               imgName="HOME_PRODUCT"
               imgOnLeft={false}
               buttonText="Read More"
-              buttonLinkTo="/contact"
+              buttonLinkTo="/product-management"
             >
               <p>
                 Successful development starts with effective product management.
@@ -87,20 +87,20 @@ export default function IndexPage({ data, location }) {
                 { img: 'mvp', name: 'MVP Build' },
                 { img: 'maintenance', name: 'Maintenance Mode' },
               ]}
-              title="Product Discovery"
-              header1="Building Your MVP"
+              title="Startup MVP Development"
+              header1="Building The First Iteration of Your Product"
               paragraph1=""
               header2=""
               paragraph2=""
               imgName="HOME_DISCOVERY"
               imgOnLeft={true}
               buttonText="Learn More"
-              buttonLinkTo="/contact"
+              buttonLinkTo="/startup"
             >
               <p>
                 Are you on the first stage of your project and are looking for a
                 technical team to help bring your vision to life? Well, then,
-                you've come to the right place! At Def Method we have a process
+                you've come to the right place! At Evaluates2 we have a process
                 in place that makes building an MVP seamless, tested, and
                 scalable. As founders, we know what it's like building a company
                 and look forward to partnering with you to build yours!
@@ -110,9 +110,9 @@ export default function IndexPage({ data, location }) {
           <div id="data">
             <StackableImageAndTextDuo
               images={[
-                { img: 'design', name: 'Design Sprint' },
-                { img: 'mvp', name: 'MVP Build' },
-                { img: 'maintenance', name: 'Maintenance Mode' },
+                { img: 'process', name: 'Smart Data Storage' },
+                { img: 'pie-chart-stats', name: 'Visualizations' },
+                { img: 'staff', name: 'Informed Decisions' },
               ]}
               title="Data & Analytics"
               header1="Learn More About Your Business & Users"
@@ -121,16 +121,11 @@ export default function IndexPage({ data, location }) {
               paragraph2=""
               imgName="HOME_ANALYTICS"
               imgOnLeft={false}
-              buttonText="Learn More"
-              buttonLinkTo="/contact"
+              buttonText="See More"
+              buttonLinkTo="/data-and-analytics"
             >
               <p>
-                Are you on the first stage of your project and are looking for a
-                technical team to help bring your vision to life? Well, then,
-                you've come to the right place! At Def Method we have a process
-                in place that makes building an MVP seamless, tested, and
-                scalable. As founders, we know what it's like building a company
-                and look forward to partnering with you to build yours!
+                Deploying a new project for the first time is an exciting event, and it's especially exciting for data scientists because having real users means we'll be collecting real data! Building and deploying software without keeping tabs on the data is like shooting a rocket into out space and then just turning off the transmission feeds between it and ground control! Evaluates2 data engineers can help establish practices for funneling data to different places for different purposes, develop and determine the most useful visualizations for a given data set, and help management make informed decisions based on statisical evidence rather than biases and gut feelings.
               </p>
             </StackableImageAndTextDuo>
           </div>

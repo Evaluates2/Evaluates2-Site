@@ -439,7 +439,7 @@ const DataAndAnalyticsPage = () => {
           <WorkTogetherSection>
 
             <h1>
-            Truly understand your users
+            Truly understand your users.
             </h1>
             <p>
             By harnessing the data of how users interact with their applications, businesses can more

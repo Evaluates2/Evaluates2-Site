@@ -23,8 +23,8 @@ class Intro extends React.Component {
             At Evaluates2, we offer strategic guidance in 
             <AnchorLink href="#discovery"> bringing new products to life </AnchorLink>
             that combines a 
-            <AnchorLink href="#product"> unique and efficient approach </AnchorLink> 
-            to product management with
+            <AnchorLink href="#data"> unique and efficient approach </AnchorLink> 
+            to <AnchorLink href="#product">product management</AnchorLink> with
             software consulting service focused on 
             <AnchorLink href="#engineering"> excellence of code and product.</AnchorLink>
           </TextContainer>

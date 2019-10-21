@@ -25,6 +25,7 @@ export const TextContainer = styled.div`
         margin-right: 20px;
         margin-left: 20px;
       }
+      
 `
 
 export const IntroContainer = styled.div`
@@ -44,7 +45,7 @@ export const IntroContainer = styled.div`
     a {
         color: #0fdde8;
         :hover {
-            color: #FF99FF;
+            color: yellowgreen;
         }
     }
     ${mediaQuery.maxTablet} {

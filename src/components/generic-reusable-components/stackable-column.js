@@ -33,6 +33,13 @@ const StackableColumn = styled.div`
     flex-direction: column;
   }
 
+  h3 {
+    font-family: 'e2-Raleway-Semi-Bold';
+    font-size: 30px;
+    min-height: 40px;
+    padding-top: 20px;
+  }
+
   p {
     margin-bottom: 10px;
     line-height: 35px;
@@ -61,8 +68,9 @@ const StackableColumn = styled.div`
   }
 
   li {
-    font-size: 30px;
-
+    font-size: 26px;
+    padding: 5px 0;
+    font-family: 'e2-Raleway-Semi-Bold';
   }
 
 

@@ -6,7 +6,7 @@ import JoinOurTeamCornerBtn from './../components/generic-reusable-components/jo
 import PersonImage from '../components/img-components/person-img.img';
 import JimLynchHeadshotImage from './../components/img-components/headshots/jim-lynch-headshot.img';
 import NinaYangHeadshotImage from '../components/img-components/headshots/nina-yang-headshot.img';
-import LeeNguyenHeadshotImage from '../components/img-components/headshots/lee-nguyen-headshot.img';
+import LeeDanielHeadshotImage from '../components/img-components/headshots/lee-daniel-headshot.img';
 import Link from 'gatsby-link';
 import TeamMemberBlock from './../components/generic-reusable-components/team-member-block';
 import AwsLogoImage from '../components/img-components/partner-logos/amazon-web-services-logo.img';
@@ -337,7 +337,7 @@ const AboutPage = () => (
           our passion."
         </p> */}
         <p>
-          Evaluates2 is SO, MUCH, MORE than just another New York City software consulting agency.
+          Evaluates2 is SO MUCH MORE than just another New York City software consulting agency.
           <br />
           <br />
           At Evaluates2, we look at things differently.
@@ -422,14 +422,14 @@ const AboutPage = () => (
           <TeamMemberBlock
             name="Nina Yang"
             linkTo="/team/nina-yang"
-            role="Business Development"
+            role="Sales & Business Development Associate"
             img={<NinaYangHeadshotImage />}
           ></TeamMemberBlock>
           <TeamMemberBlock
-            name="Lee Nguyen"
-            linkTo="/team/lee-nguyen"
+            name="Lee Daniel"
+            linkTo="/team/lee-daniel"
             role="Sr. Software Engineer"
-            img={<LeeNguyenHeadshotImage />}
+            img={<LeeDanielHeadshotImage />}
           ></TeamMemberBlock>
         </div>
       </OurTeamSection>
