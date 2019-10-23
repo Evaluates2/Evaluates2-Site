@@ -197,62 +197,108 @@ const CareersPage = () => (
         <JobDescriptionBlocks>
           <JobDescriptionBlock isInternBlock={false} linkTo="https://www.google.com">
             {/* <JobPosting> */}
+
             <h2>Contract / Freelance Senior Software Engineer</h2>
             <h3>New York, NY, United States</h3>
             <br />
-            <h4>Mid-level Software Engineer at Evaluates2</h4>
+            <h4>Contract / Freelance Senior Software Engineer at Evaluates2</h4>
             <p>New York, NY</p>
             <br />
             <br />
             <h4>About Evalues2</h4>
             <p>
-              We are.. we can, by delivering excellent results for our
-              customers. We apply user-centered design and agile software
-              development principles to help our customers create valuable
-              products, and are always refining our craft.
+              We are a team of adept and exuberant polyglot engineers, product managers, and consultants committed to building the best software we can. We apply beautiful, user-tested UI design principles, disciplined test-driven engineering practices, and agile project management oversight to create real business value and delight our customers.
               </p>
             <br />
             <br />
-            <h4>Why You'll Love Working at Evaluates2</h4>
+            <h4>Why Work At Evaluates2?</h4>
             <p>
               {' '}
-              work on a variety of projects, solve coding challenges and work
-              with a team of language-agnostic experts who’ll have your back.
-              You'll promote diversity, inclusion, and understanding within
-              your team. We know you’re not just hands on a keyboard. You have
-              ideas and we’ll want to hear them.
+              At e2, you get to work on a variety or projects, solve interesting coding challenges, and work with a team of language-agnostic experts who love building awesome software. At Evaluates2 you'll be treated with respect, given lots of praise, and be granted the freedom and flexibility you need to get the job done right in a way that is enjoyable, and possibly even... fun!
               </p>
             <br />
             <br />
-            <h4>What You'll Bring</h4>
+            <h4>What You'll Bring to Evaluates2</h4>
             <p>
               {' '}
-              work on a variety of projects, solve coding challenges and work
-              with a team of language-agnostic experts who’ll have your back.
-              You'll promote diversity, inclusion, and understanding within
-              your team. We know you’re not just hands on a keyboard. You have
-              ideas and we’ll want to hear them.
+              * Flexible generalist engineer able to adapt quickly to new projects and platforms.
+              <br />
+              <br />
+              * Experience successfully shipping many applications, either personal or at work.
+              <br />
+              <br />
+              * Excellent communication skills- able to effective give and receive feedback from clients and other e3 team members while being respectful of their feelings.
+              <br />
+              <br />
+              * Eagerness to participate pair programming, work with other engineers face-to-face, and answer questions of non-technical clients.
+              <br />
+              <br />
+              * Intense appreciation for automated testing and willingness to adopt disciplined TDD practices, unit testing, end-to-end testing, and BDD testing frameworks.
+              <br />
+              <br />
+              * 5+ years experience working with modern programming languages.
+              <br />
+              <br />
+              * Experience with or interest in learning our most used languages: JavaScript, TypeScript, Go, Clojure, Swift, Python, Java.
+              <br />
+              <br />
+              * Strengths in web development or native mobile development, with a desire to expand personal skill set.
               </p>{' '}
-            <h4>What You'll Be Doing Here at Evaluates2</h4>
-            <p>
-              {' '}
-              work on a variety of projects, solve coding challenges and work
-              with a team of language-agnostic experts who’ll have your back.
-              You'll promote diversity, inclusion, and understanding within
-              your team. We know you’re not just hands on a keyboard. You have
-              ideas and we’ll want to hear them.
-              </p>
             <br />
-            <br />
-            <h4>Core Qualifications For Joining Evaluates2</h4>
+            <h4>How you'll spend your time at Evaluates2</h4>
+
             <p>
-              {' '}
-              work on a variety of projects, solve coding challenges and work
-              with a team of language-agnostic experts who’ll have your back.
-              You'll promote diversity, inclusion, and understanding within
-              your team. We know you’re not just hands on a keyboard. You have
-              ideas and we’ll want to hear them.
-              </p>
+
+              * Practice - be an advocate for the product by instilling revising and reinforcing the product vision across all stakeholders. Gather user feedback and data to inform product decisions and drive product prioritization. Communicate product requirements and strategy across design, engineering and client teams.
+              <br />
+              <br />
+
+              * Project Management - monitor, track and evaluate client projects and reiterate on the process as needed. Communicate project status and deliverables to stakeholders.
+              <br />
+              <br />
+
+              * Tactical - facilitate product discovery and development on client projects, act as PM advisor to our customers and consultants, lead workshops, provide additional project support as needed
+              <br />
+              <br />
+
+              * Operations - represent product management in sales conversations and scoping work
+              <br />
+              <br />
+              What you’ll bring
+
+              * Collaborating with engineers, product managers, designers, and any involved stakeholders.
+              <br />
+              <br />
+              * Helping team members and the company as a whole improve through your input and innovative ideas.
+              <br />
+              <br />
+            </p>
+
+            <br />
+            <h4>Why we love working here at Evaluates2</h4>
+            <p>
+              * Great pay!
+              <br />
+              <br />
+              * Ability to touch a variety of platforms and languages and a heavy investment from the company in the learning and development of its engineers.
+              <br />
+              <br />
+              * Generous vacation time and minimal travel (if at all)
+              <br />
+              <br />
+              * Flexible hours and work-from-home opportunities.
+              <br />
+              <br />
+              * Work in a respectful, safe place where everyone should feel comfortable and accepted.
+              <br />
+              <br />
+              * Awesome, incredibly smart colleagues and leadership who treat every employee and consultant as a meaningful member of the Evaluates2 family.
+              <br />
+              <br />
+              * Opportunity to join at the very beginning startup phase and be among the first few hires.
+            <br />
+              <br />
+            </p>
             {/* </JobPosting> */}
           </JobDescriptionBlock>
 
@@ -262,195 +308,285 @@ const CareersPage = () => (
         <JobDescriptionBlocks>
           <JobDescriptionBlock isInternBlock={false} linkTo="https://www.google.com">
             {/* <JobPosting> */}
+
             <h2>Mid-Level Software Engineer</h2>
             <h3>New York, NY, United States</h3>
             <br />
-            <h4>Mid-level Software Engineer at Evaluates2</h4>
+            <h4>Mid-Level Software Engineer at Evaluates2</h4>
             <p>New York, NY</p>
             <br />
             <br />
             <h4>About Evalues2</h4>
             <p>
-              We are.. we can, by delivering excellent results for our
-              customers. We apply user-centered design and agile software
-              development principles to help our customers create valuable
-              products, and are always refining our craft.
+              We are a team of adept and exuberant polyglot engineers, product managers, and consultants committed to building the best software we can. We apply beautiful, user-tested UI design principles, disciplined test-driven engineering practices, and agile project management oversight to create real business value and delight our customers.
               </p>
             <br />
             <br />
-            <h4>Why You'll Love Working at Evaluates2</h4>
+            <h4>Why Work At Evaluates2?</h4>
             <p>
               {' '}
-              work on a variety of projects, solve coding challenges and work
-              with a team of language-agnostic experts who’ll have your back.
-              You'll promote diversity, inclusion, and understanding within
-              your team. We know you’re not just hands on a keyboard. You have
-              ideas and we’ll want to hear them.
+              At e2, you get to work on a variety or projects, solve interesting coding challenges, and work with a team of language-agnostic experts who love building awesome software. At Evaluates2 you'll be treated with respect, given lots of praise, and be granted the freedom and flexibility you need to get the job done right in a way that is enjoyable, and possibly even... fun!
               </p>
             <br />
             <br />
-            <h4>What You'll Bring</h4>
+            <h4>What You'll Bring to Evaluates2</h4>
             <p>
               {' '}
-              work on a variety of projects, solve coding challenges and work
-              with a team of language-agnostic experts who’ll have your back.
-              You'll promote diversity, inclusion, and understanding within
-              your team. We know you’re not just hands on a keyboard. You have
-              ideas and we’ll want to hear them.
+              * Flexible generalist engineer able to adapt quickly to new projects and platforms.
+              <br />
+              <br />
+              * Experience successfully shipping many applications, either personal or at work.
+              <br />
+              <br />
+              * Excellent communication skills- able to effective give and receive feedback from clients and other e3 team members while being respectful of their feelings.
+              <br />
+              <br />
+              * Eagerness to participate pair programming, work with other engineers face-to-face, and answer questions of non-technical clients.
+              <br />
+              <br />
+              * Intense appreciation for automated testing and willingness to adopt disciplined TDD practices, unit testing, end-to-end testing, and BDD testing frameworks.
+              <br />
+              <br />
+              * 3+ years experience working with modern programming languages.
+              <br />
+              <br />
+              * Experience with or interest in learning our most used languages: JavaScript, TypeScript, Go, Clojure, Swift, Python, Java.
+              <br />
+              <br />
+              * Strengths in web development or native mobile development, with a desire to expand personal skill set.
               </p>{' '}
-            <h4>What You'll Be Doing Here at Evaluates2</h4>
+            <br />
+            <h4>How you'll spend your time at Evaluates2</h4>
             <p>
               {' '}
-              work on a variety of projects, solve coding challenges and work
-              with a team of language-agnostic experts who’ll have your back.
-              You'll promote diversity, inclusion, and understanding within
-              your team. We know you’re not just hands on a keyboard. You have
-              ideas and we’ll want to hear them.
+              * Creating software in small teams with active customer involvement.
+              <br />
+              <br />
+              * Collaborating with engineers, product managers, designers, and any involved stakeholders.
+              <br />
+              <br />
+              * Helping team members and the company as a whole improve through your input and innovative ideas.
+              <br />
+              <br />
+              * Learning from other colleagues and sharing your on discoveries as we proceed to make the best software we can.
               </p>
             <br />
-            <br />
-            <h4>Core Qualifications For Joining Evaluates2</h4>
+            <h4>Why we love working here at Evaluates2</h4>
             <p>
-              {' '}
-              work on a variety of projects, solve coding challenges and work
-              with a team of language-agnostic experts who’ll have your back.
-              You'll promote diversity, inclusion, and understanding within
-              your team. We know you’re not just hands on a keyboard. You have
-              ideas and we’ll want to hear them.
-              </p>
+              * Great pay!
+              <br />
+              <br />
+              * Ability to touch a variety of platforms and languages and a heavy investment from the company in the learning and development of its engineers.
+              <br />
+              <br />
+              * Generous vacation time and minimal travel (if at all)
+              <br />
+              <br />
+              * Flexible hours and work-from-home opportunities.
+              <br />
+              <br />
+              * Work in a respectful, safe place where everyone should feel comfortable and accepted.
+              <br />
+              <br />
+              * Awesome, incredibly smart colleagues and leadership who treat every employee and consultant as a meaningful member of the Evaluates2 family.
+              <br />
+              <br />
+              * Opportunity to join at the very beginning startup phase and be among the first few hires.
+            <br />
+              <br />
+            </p>
             {/* </JobPosting> */}
           </JobDescriptionBlock>
-
         </JobDescriptionBlocks>
         <br />
         <br />
         <JobDescriptionBlocks>
           <JobDescriptionBlock isInternBlock={false} linkTo="https://www.google.com">
             {/* <JobPosting> */}
-            <h2>Mid-Level Software Engineer</h2>
+
+            <h2>Product Manager</h2>
             <h3>New York, NY, United States</h3>
             <br />
-            <h4>Mid-level Software Engineer at Evaluates2</h4>
+            <h4>Product Manager</h4>
             <p>New York, NY</p>
             <br />
             <br />
             <h4>About Evalues2</h4>
             <p>
-              We are.. we can, by delivering excellent results for our
-              customers. We apply user-centered design and agile software
-              development principles to help our customers create valuable
-              products, and are always refining our craft.
+              We are a team of adept and exuberant polyglot engineers, product managers, and consultants committed to building the best software we can. We apply beautiful, user-tested UI design principles, disciplined test-driven engineering practices, and agile project management oversight to create real business value and delight our customers.
               </p>
             <br />
             <br />
-            <h4>Why You'll Love Working at Evaluates2</h4>
+            <h4>Why Work At Evaluates2?</h4>
             <p>
               {' '}
-              work on a variety of projects, solve coding challenges and work
-              with a team of language-agnostic experts who’ll have your back.
-              You'll promote diversity, inclusion, and understanding within
-              your team. We know you’re not just hands on a keyboard. You have
-              ideas and we’ll want to hear them.
+              At e2, you get to work on a variety or projects, solve interesting coding challenges, and work with a team of language-agnostic experts who love building awesome software. At Evaluates2 you'll be treated with respect, given lots of praise, and be granted the freedom and flexibility you need to get the job done right in a way that is enjoyable, and possibly even... fun!
               </p>
             <br />
             <br />
-            <h4>What You'll Bring</h4>
+            <h4>What You'll Bring to Evaluates2</h4>
             <p>
               {' '}
-              work on a variety of projects, solve coding challenges and work
-              with a team of language-agnostic experts who’ll have your back.
-              You'll promote diversity, inclusion, and understanding within
-              your team. We know you’re not just hands on a keyboard. You have
-              ideas and we’ll want to hear them.
+              * Flexible generalist engineer able to adapt quickly to new projects and platforms.
+              <br />
+              <br />
+              * Experience successfully shipping many applications, either personal or at work.
+              <br />
+              <br />
+              * Excellent communication skills- able to effective give and receive feedback from clients and other e3 team members while being respectful of their feelings.
+              <br />
+              <br />
+              * Eagerness to participate pair programming, work with other engineers face-to-face, and answer questions of non-technical clients.
+              <br />
+              <br />
+              * Intense appreciation for automated testing and willingness to adopt disciplined TDD practices, unit testing, end-to-end testing, and BDD testing frameworks.
+              <br />
+              <br />
+              * 5+ years experience working with modern programming languages.
+              <br />
+              <br />
+              * Experience with or interest in learning our most used languages: JavaScript, TypeScript, Go, Clojure, Swift, Python, Java.
+              <br />
+              <br />
+              * Strengths in web development or native mobile development, with a desire to expand personal skill set.
               </p>{' '}
-            <h4>What You'll Be Doing Here at Evaluates2</h4>
+            <br />
+            <h4>How you'll spend your time at Evaluates2</h4>
             <p>
               {' '}
-              work on a variety of projects, solve coding challenges and work
-              with a team of language-agnostic experts who’ll have your back.
-              You'll promote diversity, inclusion, and understanding within
-              your team. We know you’re not just hands on a keyboard. You have
-              ideas and we’ll want to hear them.
+              * Creating software in small teams with active customer involvement.
+              <br />
+              <br />
+              * Collaborating with engineers, product managers, designers, and any involved stakeholders.
+              <br />
+              <br />
+              * Helping team members and the company as a whole improve through your input and innovative ideas.
+              <br />
+              <br />
+              * Learning from other colleagues and sharing your on discoveries as we proceed to make the best software we can.
               </p>
             <br />
-            <br />
-            <h4>Core Qualifications For Joining Evaluates2</h4>
+            <h4>Why we love working here at Evaluates2</h4>
             <p>
-              {' '}
-              work on a variety of projects, solve coding challenges and work
-              with a team of language-agnostic experts who’ll have your back.
-              You'll promote diversity, inclusion, and understanding within
-              your team. We know you’re not just hands on a keyboard. You have
-              ideas and we’ll want to hear them.
-              </p>
+              * Great pay!
+              <br />
+              <br />
+              * Ability to touch a variety of platforms and languages and a heavy investment from the company in the learning and development of its engineers.
+              <br />
+              <br />
+              * Generous vacation time and minimal travel (if at all)
+              <br />
+              <br />
+              * Flexible hours and work-from-home opportunities.
+              <br />
+              <br />
+              * Work in a respectful, safe place where everyone should feel comfortable and accepted.
+              <br />
+              <br />
+              * Awesome, incredibly smart colleagues and leadership who treat every employee and consultant as a meaningful member of the Evaluates2 family.
+              <br />
+              <br />
+              * Opportunity to join at the very beginning startup phase and be among the first few hires.
+            <br />
+              <br />
+            </p>
             {/* </JobPosting> */}
           </JobDescriptionBlock>
-
         </JobDescriptionBlocks>
         <br />
         <br />
         <JobDescriptionBlocks>
           <JobDescriptionBlock isInternBlock={false} linkTo="https://www.google.com">
             {/* <JobPosting> */}
-            <h2>Mid-Level Software Engineer</h2>
+
+            <h2>Senior Software Engineer</h2>
             <h3>New York, NY, United States</h3>
             <br />
-            <h4>Mid-level Software Engineer at Evaluates2</h4>
+            <h4>Senior Software Engineer</h4>
             <p>New York, NY</p>
             <br />
             <br />
             <h4>About Evalues2</h4>
             <p>
-              We are.. we can, by delivering excellent results for our
-              customers. We apply user-centered design and agile software
-              development principles to help our customers create valuable
-              products, and are always refining our craft.
+              We are a team of adept and exuberant polyglot engineers, product managers, and consultants committed to building the best software we can. We apply beautiful, user-tested UI design principles, disciplined test-driven engineering practices, and agile project management oversight to create real business value and delight our customers.
               </p>
             <br />
             <br />
-            <h4>Why You'll Love Working at Evaluates2</h4>
+            <h4>Why Work At Evaluates2?</h4>
             <p>
               {' '}
-              work on a variety of projects, solve coding challenges and work
-              with a team of language-agnostic experts who’ll have your back.
-              You'll promote diversity, inclusion, and understanding within
-              your team. We know you’re not just hands on a keyboard. You have
-              ideas and we’ll want to hear them.
+              At e2, you get to work on a variety or projects, solve interesting coding challenges, and work with a team of language-agnostic experts who love building awesome software. At Evaluates2 you'll be treated with respect, given lots of praise, and be granted the freedom and flexibility you need to get the job done right in a way that is enjoyable, and possibly even... fun!
               </p>
             <br />
             <br />
-            <h4>What You'll Bring</h4>
+            <h4>What You'll Bring to Evaluates2</h4>
             <p>
               {' '}
-              work on a variety of projects, solve coding challenges and work
-              with a team of language-agnostic experts who’ll have your back.
-              You'll promote diversity, inclusion, and understanding within
-              your team. We know you’re not just hands on a keyboard. You have
-              ideas and we’ll want to hear them.
+              * Flexible generalist engineer able to adapt quickly to new projects and platforms.
+              <br />
+              <br />
+              * Experience successfully shipping many applications, either personal or at work.
+              <br />
+              <br />
+              * Excellent communication skills- able to effective give and receive feedback from clients and other e3 team members while being respectful of their feelings.
+              <br />
+              <br />
+              * Eagerness to participate pair programming, work with other engineers face-to-face, and answer questions of non-technical clients.
+              <br />
+              <br />
+              * Intense appreciation for automated testing and willingness to adopt disciplined TDD practices, unit testing, end-to-end testing, and BDD testing frameworks.
+              <br />
+              <br />
+              * 5+ years experience working with modern programming languages.
+              <br />
+              <br />
+              * Experience with or interest in learning our most used languages: JavaScript, TypeScript, Go, Clojure, Swift, Python, Java.
+              <br />
+              <br />
+              * Strengths in web development or native mobile development, with a desire to expand personal skill set.
               </p>{' '}
-            <h4>What You'll Be Doing Here at Evaluates2</h4>
+            <br />
+            <h4>How you'll spend your time at Evaluates2</h4>
             <p>
               {' '}
-              work on a variety of projects, solve coding challenges and work
-              with a team of language-agnostic experts who’ll have your back.
-              You'll promote diversity, inclusion, and understanding within
-              your team. We know you’re not just hands on a keyboard. You have
-              ideas and we’ll want to hear them.
+              * Creating software in small teams with active customer involvement.
+              <br />
+              <br />
+              * Collaborating with engineers, product managers, designers, and any involved stakeholders.
+              <br />
+              <br />
+              * Helping team members and the company as a whole improve through your input and innovative ideas.
+              <br />
+              <br />
+              * Learning from other colleagues and sharing your on discoveries as we proceed to make the best software we can.
               </p>
             <br />
-            <br />
-            <h4>Core Qualifications For Joining Evaluates2</h4>
+            <h4>Why we love working here at Evaluates2</h4>
             <p>
-              {' '}
-              work on a variety of projects, solve coding challenges and work
-              with a team of language-agnostic experts who’ll have your back.
-              You'll promote diversity, inclusion, and understanding within
-              your team. We know you’re not just hands on a keyboard. You have
-              ideas and we’ll want to hear them.
-              </p>
+              * Great pay!
+              <br />
+              <br />
+              * Ability to touch a variety of platforms and languages and a heavy investment from the company in the learning and development of its engineers.
+              <br />
+              <br />
+              * Generous vacation time and minimal travel (if at all)
+              <br />
+              <br />
+              * Flexible hours and work-from-home opportunities.
+              <br />
+              <br />
+              * Work in a respectful, safe place where everyone should feel comfortable and accepted.
+              <br />
+              <br />
+              * Awesome, incredibly smart colleagues and leadership who treat every employee and consultant as a meaningful member of the Evaluates2 family.
+              <br />
+              <br />
+              * Opportunity to join at the very beginning startup phase and be among the first few hires.
+            <br />
+              <br />
+            </p>
             {/* </JobPosting> */}
           </JobDescriptionBlock>
-
         </JobDescriptionBlocks>
         <br />
         <br />
@@ -460,27 +596,22 @@ const CareersPage = () => (
             <h2>Strategy & Operations Intern</h2>
             <h3>New York, NY, United States</h3>
             <br />
-            <h4>Mid-level Software Engineer at Evaluates2</h4>
+            <h4>Strategy & Operations Intern</h4>
             <ul>
               <li>
-                with a team of language-agnostic experts who’ll have your back.
-                You'll promote diversity, inclusion, and understanding
+                Help raise awareness of Evaluates2 in the New York City tech community.
                 </li>
               <li>
-                with a team of language-agnostic experts who’ll have your back.
-                You'll promote diversity, inclusion, and understanding
+                Help schedule and run public and internal events.
                 </li>
               <li>
-                with a team of language-agnostic experts who’ll have your back.
-                You'll promote diversity, inclusion, and understanding
+                Aid in business development and lead generation.
                 </li>
               <li>
-                with a team of language-agnostic experts who’ll have your back.
-                You'll promote diversity, inclusion, and understanding
+                Marketing, social media, and customer engagement
                 </li>
               <li>
-                with a team of language-agnostic experts who’ll have your back.
-                You'll promote diversity, inclusion, and understanding
+                Content creation: videos, graphics, emails, and/or code!
                 </li>
 
             </ul>
@@ -513,7 +644,7 @@ const CareersPage = () => (
             </span>
             </li>
             <li>Innovation - <span className="small-description">
-              Help the clients see what they really need. Fail fast and don't get discouraged. Be open-minded to the idea of other teammates, and create a culture where everyone's voice can be heard and where decisions are based on statistically data rather than the boss's gut feelings. 
+              Help the clients see what they really need. Fail fast and don't get discouraged. Be open-minded to the idea of other teammates, and create a culture where everyone's voice can be heard and where decisions are based on statistically data rather than the boss's gut feelings.
             </span>
             </li>
             <li>Efficiency - <span className="small-description">

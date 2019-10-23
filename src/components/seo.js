@@ -10,7 +10,8 @@ export default function SEO({ site, pageTitle, path = ``, ...rest }) {
   return (
     <Helmet>
       <title>{title}</title>
-      <meta property="og:type" content="website" />
+      <meta property="og:type" name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+      
       <script src="https://www.google.com/recaptcha/api.js" async defer></script>
       <html lang="en" />
       {pageTitle && <meta property="og:title" content={pageTitle} />}

@@ -25,11 +25,11 @@ import PmIpmsRetrosImage from '../img-components/rf/pm-ipms-retros-img';
 import PmUserStoriesImage from '../img-components/rf/pm-user-stories-img';
 import PmLiveDemosImage from '../img-components/rf/pm-live-demos-img';
 import PmPairProgrammingImage from '../img-components/rf/pm-pair-programming.img';
-import StartupFlexibleStaffAugmentationImage from '../img-components/rf/startup-flexible-staff-aug.img';
-import StartupWellWorkWithYourBudgetImage from '../img-components/rf/startup-well-work-with-your-budget.img';
-import StartupShortOrLongContractsImage from '../img-components/rf/startup-short-or-long-contracts.img';
+import StartupWorkWithinBudgetImage from '../img-components/startup-work-within-your-budget.img';
 import AnalyticsIntelligentlyManageDataImage from '../img-components/rf/analytics-intelligently-manage-data-royalty-free.img';
 import BusinessBarChartSvg from '../../images/business-bars-graphic.svg';
+import StartupShortOrLongImage from '../img-components/startup-short-or-long-engagements.img';
+import StartupFlexibleStaffImage from '../img-components/startup-flexible-staff-augmentation.img';
 
 const StyledStackableImageAndTextDuo = styled.div`
   background-color: #000032;
@@ -262,11 +262,11 @@ class StackableImageAndTextDuo extends React.Component {
         case 'LIVE_DEMOS':
           return <PmLiveDemosImage />;
         case 'FLEXIBLE_STAFF_AUGMENTATION':
-          return <StartupFlexibleStaffAugmentationImage />;
+          return <StartupFlexibleStaffImage />;
         case 'WELL_WORK_WITH_YOUR_BUDGET':
-          return <StartupWellWorkWithYourBudgetImage />;
+          return <StartupWorkWithinBudgetImage />;
         case 'SHORT_OR_LONG_CONTRACTS':
-          return <StartupShortOrLongContractsImage />;
+          return <StartupShortOrLongImage />;
         case 'INTELLIGENTLY_MANAGE_DATA':
           return <AnalyticsIntelligentlyManageDataImage />;
         case 'LIVE_DEMOS':

@@ -60,7 +60,7 @@ class Header extends React.Component {
       <StaticQuery
         query={graphql`
           query LOGO_IMAGE_QUERY {
-            file(relativePath: { eq: "logo.png" }) {
+            file(relativePath: { eq: "the-d-rotated.png" }) {
               childImageSharp {
                 fixed(width: 1000) {
                   ...GatsbyImageSharpFixed_tracedSVG

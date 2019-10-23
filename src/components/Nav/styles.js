@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 export const navLinkStyle = css`
   margin: 0 30px;
-  opacity: .4;
+  opacity: .65;
   -webkit-transition: opacity .2s ease;
   transition: opacity .2s ease;
   font-size: 15px;
@@ -11,7 +11,7 @@ export const navLinkStyle = css`
   color: white;
   transition: ${props => props.theme.shortTrans};
   &.active {
-    color: ${props => props.theme.orange};
+    color: ${props => props.theme.yellowgreen};
   }
   :hover {
     color: white;

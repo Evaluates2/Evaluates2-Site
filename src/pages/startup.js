@@ -101,7 +101,7 @@ const ProductManagementPage = () => (
           buttonLinkTo="/contact"
         ></StackableImageAndTextDuo>
         <StackableImageAndTextDuo
-          title="Short or Long-Term Contracts"
+          title="Short or Long-Term Engagements"
           header1="Honest & Realistic Estimations"
           paragraph1="We estimate the length of project development based on previous projects and take into account CI / CD setup, test automation, and the possibility to change course mid-development."
           header2="We're On Your Side"
@@ -112,7 +112,7 @@ const ProductManagementPage = () => (
           buttonLinkTo="/"
         ></StackableImageAndTextDuo>
         <StackableImageAndTextDuo
-          title="We'll Work With Your Budget"
+          title="We'll Work Within Your Budget"
           header1="A Free Consultaion Costs Nothing!"
           paragraph1="Do you want to run some ideas by a few experienced engineers or just need some third-party tehnical guidance? Feel free to contact us for a free 15-30 minute techincal evaluation of your project and how it could possibly be improved."
           header2="An E2 Engineer Pays Many Times Over"

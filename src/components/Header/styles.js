@@ -18,6 +18,8 @@ export const Img = styled(Image)`
   }
 `
 export const Label = styled.div`
+  color: white;
+
   ${mediaQuery.maxNetbook} {
     font-size: 20px !important;
   }

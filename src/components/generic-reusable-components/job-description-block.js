@@ -5,42 +5,45 @@ const StyledJobDescription = styled.div`
   position: relative;
   background-color: yellowgreen;
   display: block;
-  /* width: 100%; */
   border-radius: 5px;
   margin: 40px;
-  /* cursor: pointer; */
+  overflow: hidden;
 
   .non-intern-block {
-    min-height: 1500px;
+    min-height: 3000px;
+
+    @media only screen and (max-width: 660px) {
+    min-height: 3600px;
+
+      }
+    /* min-height: 100%; */
   }
   .intern-block {
     min-height: 500px;
     height: 600px;
   }
 
-  /* .fuck {
-    margin: 40px;
-    background-color: orange;
-  } */
-
   h2 {
     font-size: 25px;
     line-height: 30px;
     margin-bottom: 0;
     font-weight: 700;
+    letter-spacing: 1.2px;
   }
 
   h3 {
     color: #bbb;
     line-height: 32px;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 20px;
+    letter-spacing: 1.2px;
   }
 
   h4 {
     font-family: 'e2-Raleway-Bold';
     color: #ddd;
-    font-size: 14px;
+    font-size: 17px;
+    letter-spacing: 1.2px;
   }
 
   li {
@@ -50,7 +53,8 @@ const StyledJobDescription = styled.div`
   }
 
   p {
-    font-size: 14px;
+    font-size: 16px;
+    letter-spacing: 1.2px;
     font-family: 'e2-Raleway';
     color: #ddd;
   }

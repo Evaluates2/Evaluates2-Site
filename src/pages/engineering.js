@@ -17,7 +17,7 @@ import StackableColumn from '../components/generic-reusable-components/stackable
 import SecondServiceHero from '../components/generic-reusable-components/service-second-hero';
 import ReadyToGetStartedSection from '../components/generic-reusable-components/ready-to-get-started-section';
 import Global from "../components/Global"
-import NodeJsFizzbuzzifiedStringImage from '../components/img-components/node-js-fizzbuzzifies-strings-screenshot.img';
+import NodeJsFizzbuzzifiedStringImage from '../components/img-components/code-screenshots/node-js-fizzbuzzifies-strings-screenshot.img';
 
 const EngineeringPageContainer = styled.div`
   font-family: 'e2-Raleway-Black';
@@ -45,44 +45,110 @@ const EngineeringPageContainer = styled.div`
 `;
 
 const SectionHero = styled.div`
-  height: 800px;
-  min-height: 400px;
   line-height: 85px;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
+  
+  
+  @media only screen and (max-width: 10000px) {
+    height: 800px;
+    margin-top: 90px;
+    min-height: 400px;
+    }
+  @media only screen and (max-width: 1800px) {
+    height: 500px;
+    min-height: 400px;
+    }
+  @media only screen and (max-width: 1300px) {
+    height: 500px;
+    min-height: 400px;
+    }
+  @media only screen and (max-width: 990px) {
+    height: 500px;
+    min-height: 400px;
+    }
+    @media only screen and (max-width: 660px) {
+      height: 400px;
+      min-height: 300px;
+    }
+    @media only screen and (max-width: 400px) {
+      height: 300px;
+      min-height: 200px;
+    }
+
 
   h1 {
     max-width: 95vw;
-    font-size: 120px;
-    line-height: 160px;
-    font-weight: 800;
-    text-align: center;
-    letter-spacing: 5px;
-
     font-family: 'e2-Raleway-Extra-Bold';
-
-    @media only screen and (min-width: 660px) {
-      font-size: 120px;
-
+    text-align: center;
+    
+    margin-top: 100px;
+    letter-spacing: 5px;
+    line-height: 160px;
+    font-size: 110px;
+    
+    @media only screen and (max-width: 10000px) {
+      font-size: 160px;
+      
     }
-  }
-  p {
-    font-size: 38px;
-    opacity: 0.7;
-    @media only screen and (min-width: 660px) {
-      font-size: 28px;
+    @media only screen and (max-width: 1800px) {
+      
+      font-size: 140px;
     }
-    @media only screen and (min-width: 990px) {
-      /* font-size: 30px; */
+    @media only screen and (max-width: 1300px) {
+      font-size: 110px;
+      
     }
-  }
-
-
+    @media only screen and (max-width: 990px) {
+      font-size: 90px;
+      
+    }
+    @media only screen and (max-width: 660px) {
+      font-size: 50px;
+      
+    }
+    @media only screen and (max-width: 400px) {
+      font-size: 29px;
   
+    }
+    
+  }
+  
+  p {
+    opacity: 0.7;
+    line-height: 40px;
+    font-size: 36px;
+    margin-top: 60px;
+    
+    @media only screen and (max-width: 10000px) {
+      /* font-size: 160px; */
+      
+    }
+    @media only screen and (max-width: 1800px) {
+      
+      /* font-size: 140px; */
+    }
+    @media only screen and (max-width: 1300px) {
+      /* font-size: 110px; */
+      
+    }
+    @media only screen and (max-width: 990px) {
+      font-size: 36px;
+      
+    }
+    @media only screen and (max-width: 660px) {
+      font-size: 24px;
+      
+    }
+    @media only screen and (max-width: 400px) {
+      font-size: 15px;
+  
+    }
+  }
+
 `;
 
 const WorkTogetherSection = styled.div`
@@ -408,9 +474,9 @@ const keyPrinciplesData = {
 
     header: 'The Use of Continuous Integration and Multiple Environments',
     paragraph1:
-    'Each time an engineer makes a substantial change he or she will commit this change to GitHub (or the repository hosting service of your choice). Here at Evaluates2 we prefer to employ automated continuous delivery processes whereby any changes in GitHub (to specially designated branches) are detected at which point all builds are done, various automated tests are run, etc. If any step fails, all developers are notified immediately so that a fix can be made. After all commands exit successfully the continuous delivery system will then deploy these new changes directly to the staging environment.',
+      'Each time an engineer makes a substantial change he or she will commit this change to GitHub (or the repository hosting service of your choice). Here at Evaluates2 we prefer to employ automated continuous delivery processes whereby any changes in GitHub (to specially designated branches) are detected at which point all builds are done, various automated tests are run, etc. If any step fails, all developers are notified immediately so that a fix can be made. After all commands exit successfully the continuous delivery system will then deploy these new changes directly to the staging environment.',
     paragraph2:
-    'Here at Evaluates2 we prefer to maintain three environments when building applications: development, staging, and production. Development is connected to automated continuous deployment and should be rapidly changing. Staging is the "pre-release" environment where we a human can give a final check over of things before pushing to prod. Production is the live user-facing application environment! Code will finally be deployed here if all automted tests are passing and a QA engineer has given the "ok" for the new features / bugfixes in staging environment.'
+      'Here at Evaluates2 we prefer to maintain three environments when building applications: development, staging, and production. Development is connected to automated continuous deployment and should be rapidly changing. Staging is the "pre-release" environment where we a human can give a final check over of things before pushing to prod. Production is the live user-facing application environment! Code will finally be deployed here if all automted tests are passing and a QA engineer has given the "ok" for the new features / bugfixes in staging environment.'
   },
   'Test Driven Development': {
     header: 'The Importance of Test Driven Development (TDD)',
@@ -484,7 +550,7 @@ const EngineeringPage = () => {
               We Love Building Software
             </h1>
             <p>
-             ...so if you have great ideas, let's make them happen!
+              ...so if you have great ideas, let's make them happen!
               </p>
           </WorkTogetherSection>
           <StackableColumnsContainer>
@@ -528,17 +594,17 @@ const EngineeringPage = () => {
                 Our clients work onsite in New York City or remotely. Here at Evaluates2 we can provide a full development team or individual engineers!
               </p>
               <p>
-                During our initial consultantions we will work with you to determine the optimal number of Evaluates2 engineers to have on your team based on your current team and the project scope, timeline, and budget. 
+                During our initial consultantions we will work with you to determine the optimal number of Evaluates2 engineers to have on your team based on your current team and the project scope, timeline, and budget.
               </p>
             </StackableColumn>
             <StackableColumn>
               <ResourceEfficiencyImage />
               <h1>Resource Efficiency</h1>
               <p>
-                When Evaluates2 engineers are integrated into other teams they can lead by example and improve the code from every other engineer. 
+                When Evaluates2 engineers are integrated into other teams they can lead by example and improve the code from every other engineer.
               </p>
               <p>
-                By instilling expert-level practices in things such as automated testing and deployment strategies, Evlauates2 engineers can act as an unbiased third-party to keep engineering teams honest and disciplined in their development practices. 
+                By instilling expert-level practices in things such as automated testing and deployment strategies, Evlauates2 engineers can act as an unbiased third-party to keep engineering teams honest and disciplined in their development practices.
               </p>
             </StackableColumn>
           </StackableColumnsContainer>
@@ -549,7 +615,7 @@ const EngineeringPage = () => {
               We're a test-obsessed team of polyglot engineers who strive to
               always use the best tools for the job. We specialize in functional
               programming, building beatifully interactive UIs, and putting up lean, lightning fast
-              microservices all with an outside-in TDD approach. 
+              microservices all with an outside-in TDD approach.
           </p>
           </LanguagesHeaderSection>
           <LanguagePickerGrid>

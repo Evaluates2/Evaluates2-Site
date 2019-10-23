@@ -20,11 +20,9 @@ const iconCss = css`
 export const Icons = {
   More: styled(Arrow)`
     ${iconCss};
-    color: ${props => props.theme.lightBlue};
   `,
   Less: styled(More)`
     ${iconCss};
-    color: ${props => props.theme.lightBlue};
   `,
   Arrow: styled(Arrow)`
     ${iconCss};
@@ -34,7 +32,7 @@ export const Icons = {
 
 export const Parent = styled.div`
   margin: 0 30px;
-  opacity: .4;
+  opacity: .65;
   -webkit-transition: opacity .2s ease;
   transition: opacity .2s ease;
   font-size: 15px;
@@ -59,6 +57,7 @@ export const MobileNavDiv = styled.nav`
   padding: 8vmin 8vmin 8vmin 6vmin;
   box-sizing: border-box;
   font-size: 1.6em;
+  text-align: left;
   color: white;
   right: 100%;
   display: grid;
@@ -73,7 +72,6 @@ export const MobileNavDiv = styled.nav`
   }
   ${mediaQuery.maxPhone} {
     justify-content: center;
-    text-align: center;
     width: 100%;
     max-width: initial;
   }

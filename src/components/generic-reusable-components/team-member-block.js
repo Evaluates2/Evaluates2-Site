@@ -20,11 +20,14 @@ const StyledPersonImage = styled.div`
   flex: 1;
   flex-direction: column;
     color: #0033cc;
-  
+    /* border-radius: 0px 6px 6px 0px; */
+  border: 0;
+
   .gatsby-image-wrapper {
     background-color: #000032;
     height: 200px;
     border-radius: 8px;
+    border-radius: 0 0 8px 8px;
     max-width: 310px;
 
     :hover {
@@ -61,19 +64,20 @@ const StyledPersonImage = styled.div`
     display: inline-block;
     width: 100%;
     height: 100%;
-    background-color: teal;
   }
 `
 
 const TeamMemberBlock = ({ itemId, name, linkTo, role, img }) => {
     return (
-        <Link to={linkTo}>
+        // <Link to={linkTo}>
+        <>
             <StyledPersonImage>
               <PersonColorContainer>
                 {img}
               </PersonColorContainer>
             <h2>
-                {name}
+                {/* {name} */}
+                -- --
             </h2>
             <p>
                 {role}
@@ -82,7 +86,8 @@ const TeamMemberBlock = ({ itemId, name, linkTo, role, img }) => {
 
             </div>
             </StyledPersonImage>
-        </Link>
+            </>
+        // </Link>
     )
 }
 

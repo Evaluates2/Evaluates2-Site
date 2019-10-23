@@ -19,6 +19,7 @@ import ServerlessLogoImage from '../components/img-components/partner-logos/serv
 import MozillaLogoImage from '../components/img-components/partner-logos/mozilla-logo.img';
 import MicrosoftLogoImage from '../components/img-components/partner-logos/microsoft-logo.img';
 import GoogleTransparentImage from '../components/img-components/partner-logos/google-transparent.img';
+import AnonymousSilhouetteImage from '../components/img-components/headshots/anonymous-silhouette.img';
 
 const AboutHero = styled.div`
   h1 {
@@ -348,23 +349,23 @@ const AboutPage = () => (
           <br />
           <br />
 
-          We write the code that is not only ABLE to be maintained and understood by other engineers but that is actually EASY to be maintained and understood.
+          We write the code that is not only ABLE to be maintained and understood by other engineers but that is actually EASY to be changed and deployed with confidence.
           <br />
           <br />
 
-          We approach troubling the most the most troubling issues with logic and curiosity.
+          We approach troubleshooting the scariest of issues with reason and curiosity.
           <br />
           <br />
 
-          We code in pairs, lean heavily on automated testing, and deploy insanely frequently.
+          We code in pairs, lean heavily on automated testing, and quickly build stuff that works.
           <br />
           <br />
 
-          We have spent our lives sharpening these legendary coding skills, and despite this we try to stay humble, respectful, open-minded, and eager to show others how fun and awesome can be for everyone.
+          We have spent our lives sharpening these legendary coding skills, and despite this we try to stay humble, respectful, open-minded, and eager to show others how fun and awesome software development can be when it's well done.
           <br />
           <br />
 
-          We are not just engineers… We are the agents of change that can transform and enlighten ANY engineering department.
+          At Evaluates2 we are not just engineers, product managers, and data scientists… we are the agents of change that can transform and enlighten ANY company's tech department.
           <br />
           <br />
 
@@ -378,7 +379,7 @@ const AboutPage = () => (
 
       <PartnersSection>
         <h1>A Few of Our Partners:</h1>
-        <div className="partner-row">
+        {/* <div className="partner-row">
           <AwsLogoImage />
           <GoogleTransparentImage />
           <AppleLogoImage />
@@ -387,10 +388,10 @@ const AboutPage = () => (
           <MicrosoftLogoImage />
           <ServerlessLogoImage />
           <GithubLogoImage />
-        </div>
+        </div> */}
         <div className="partner-row">
-          <MongoAtlasImage />
-          <MozillaLogoImage />
+          {/* <MongoAtlasImage />
+          <MozillaLogoImage /> */}
           <KateFromHrLogoImage />
         </div>
       </PartnersSection>
@@ -417,19 +418,78 @@ const AboutPage = () => (
             name="Jim Lynch"
             linkTo="/team/jim-lynch"
             role="CEO / Principal Engineer"
-            img={<JimLynchHeadshotImage />}
-          ></TeamMemberBlock>
+            img={<AnonymousSilhouetteImage />}
+            // img={<JimLynchHeadshotImage />}
+            ></TeamMemberBlock>
           <TeamMemberBlock
             name="Nina Yang"
             linkTo="/team/nina-yang"
             role="Sales & Business Development Associate"
-            img={<NinaYangHeadshotImage />}
-          ></TeamMemberBlock>
+            img={<AnonymousSilhouetteImage />}
+            // img={<NinaYangHeadshotImage />}
+            ></TeamMemberBlock>
           <TeamMemberBlock
-            name="Lee Daniel"
+            name="_____ _____"
+            linkTo="/team/nina-yang"
+            role="Sales & Business Development Associate"
+            img={<AnonymousSilhouetteImage />}
+            // img={<NinaYangHeadshotImage />}
+            ></TeamMemberBlock>
+          <TeamMemberBlock
+            name="_____ _____"
             linkTo="/team/lee-daniel"
             role="Sr. Software Engineer"
-            img={<LeeDanielHeadshotImage />}
+            img={<AnonymousSilhouetteImage />}
+            // img={<LeeDanielHeadshotImage />}
+          ></TeamMemberBlock>
+          <TeamMemberBlock
+            name="_____ _____"
+            linkTo="/team/lee-daniel"
+            role="Sr. Software Engineer"
+            img={<AnonymousSilhouetteImage />}
+            // img={<LeeDanielHeadshotImage />}
+          ></TeamMemberBlock>
+          <TeamMemberBlock
+            name="_____ _____"
+            linkTo="/team/lee-daniel"
+            role="Sr. Software Engineer"
+            img={<AnonymousSilhouetteImage />}
+            // img={<LeeDanielHeadshotImage />}
+          ></TeamMemberBlock>
+          <TeamMemberBlock
+            name="_____ _____"
+            linkTo="/team/lee-daniel"
+            role="Software Engineering Consultant"
+            img={<AnonymousSilhouetteImage />}
+            // img={<LeeDanielHeadshotImage />}
+          ></TeamMemberBlock>
+          <TeamMemberBlock
+            name="_____ _____"
+            linkTo="/team/lee-daniel"
+            role="Software Engineering Consultant"
+            img={<AnonymousSilhouetteImage />}
+            // img={<LeeDanielHeadshotImage />}
+          ></TeamMemberBlock>
+          <TeamMemberBlock
+            name="_____ _____"
+            linkTo="/team/lee-daniel"
+            role="Sr. Project Manager"
+            img={<AnonymousSilhouetteImage />}
+            // img={<LeeDanielHeadshotImage />}
+          ></TeamMemberBlock>
+          <TeamMemberBlock
+            name="_____ _____"
+            linkTo="/team/lee-daniel"
+            role="Project Management Consultant"
+            img={<AnonymousSilhouetteImage />}
+            // img={<LeeDanielHeadshotImage />}
+          ></TeamMemberBlock>
+          <TeamMemberBlock
+            name="_____ _____"
+            linkTo="/team/lee-daniel"
+            role="Sr. Data Scientist"
+            img={<AnonymousSilhouetteImage />}
+            // img={<LeeDanielHeadshotImage />}
           ></TeamMemberBlock>
         </div>
       </OurTeamSection>
