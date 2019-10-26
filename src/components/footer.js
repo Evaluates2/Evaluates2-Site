@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 const Footer = styled.div`
   min-height: 90px;
   width: 100%;
-  padding: 35px 23px 20px;
+  padding: 35px 13px 20px;
   display: grid;
 
   // desktop, 4 items in a row
@@ -27,15 +27,15 @@ const Footer = styled.div`
       color: #777777;
       cursor: pointer;
 
-      font-size: 17px;
-      line-height: 1.3em;
-
       :hover {
           color: #f9f9f9f9;
       }
+      
+      font-size: calc(14px + 0.5vw);
+      line-height: 1.3em;
 
       @media only screen and (max-width: 660px) {
-        font-size: 35px;
+        font-size: 5vw;
       }
   }
 
@@ -62,7 +62,7 @@ const Footer = styled.div`
     /* display: flex;
     color: white; */
     font-family: 'e2-Raleway-Extra-Bold';
-    font-size: 31px;
+    font-size: 2.5vw;
     /* letter-spacing: 1.9px;
     display: flex;
     flex: 1;
@@ -75,8 +75,12 @@ const Footer = styled.div`
     padding-bottom: 15px;
     /* width: 300px; */
 
+    .e2-logo {
+      margin: 20px 0px 0 10px;
+    }
+
     @media only screen and (max-width: 660px) {
-        font-size: 50px;
+        font-size: 7vw;
       }
   }
 

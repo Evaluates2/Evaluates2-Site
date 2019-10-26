@@ -75,13 +75,16 @@ const VeryBottomFooter = styled.div`
     color: #777777;
     font-size: 14px;
     font-family: 'e2-Raleway-Bold';
-    padding: 0 10px;
+    padding: 0 1.5vw 1vw;
+    font-size: (10px + 0.5vw);
   }
-    
+  
   .very-bottom-footer-item {
     display: flex;
     justify-content: center;
-    padding: 0 18px 10px;
+    padding: 0 1.5vw 10px;
+    font-size: (10px + 0.5vw);
+
   }
 
   a.orange-link {

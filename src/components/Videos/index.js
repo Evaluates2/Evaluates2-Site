@@ -16,7 +16,8 @@ const VideosBlock = styled.div`
   h1 {
     color: white !important;
     font-size: 6vw;
-    line-height: 6vw;
+    line-height: 11vw;
+    padding-left: 2.5vw;
     letter-spacing: 0.5px;
     font-family: 'e2-Raleway-Extra-Bold';
     margin-bottom: 30px;
@@ -58,47 +59,18 @@ class Videos extends React.Component {
         </div>
         <div className="wrap-videos">
           <div className="video-wrapper">
-            {/* <video autoplay loop width="300">
-              {/* <source src="/static/video-hash-optshash.webm" type="video/webm" /> */}
-            {/* <source src="why-pair-programming-vid.mp4" type="video/mp4" />
-            </video> */}
-            {/* <Video
-        videoSrcURL="https://www.youtube.com/embed/dQw4w9WgXcQ"
-        videoTitle="Official Music Video on YouTube"
-      /> */}
-            {/* <Video></Video> */}
-            {/* <iframe
-                        width="100%"
-                        height="270px"
-                        src="https://www.youtube.com/embed/2AslJmdhSro"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                    ></iframe> */}
-
-            {/* <WhyPairProgrammingVideo /> */}
-
+           
             <iframe
               width="100%"
-              height="270"
+              height="270px"
               src="https://www.youtube.com/embed/GN_SI5wehAw"
               frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
           </div>
-          {/* <div className="video-wrapper">
-            <iframe
-              width="100%"
-              height="270px"
-              src="videos/why-pair-programming-vid.mp4"
-              frameBorder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe> */}
-          {/* </div> */}
 
-          <div>
+            <div className="video-wrapper">
             <iframe
               width="100%"
               height="270px"

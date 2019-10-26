@@ -48,15 +48,27 @@ const StyledStackableImageAndTextDuo = styled.div`
   .img_container {
     margin-top: 10vh;
     margin-bottom: 5vh;
+    display: flex;
+    padding: 0 1vw;
+
+    @media only screen and (max-width: 660px) {
+      flex-direction: column;
+      }
+
   }
   .s_img {
-    width: 60%;
+    width: 50vw;
     height: auto;
     margin: 0 auto;
     padding: 20px;
-  }
-  .img_container {
-    display: flex;
+
+    max-width: 150px;
+    
+    @media only screen and (max-width: 660px) {
+      flex-direction: column;
+      max-width: 250px;
+    }
+
   }
 
   .container {
@@ -120,17 +132,14 @@ const StyledStackableImageAndTextDuo = styled.div`
   }
 
   p {
-    font-size: 16px;
-    line-height: 29px;
+    font-size: calc(10px + 1.25vw);
+    line-height: calc(15px + 3vw);
+    padding: calc(4px + 2vw);
     letter-spacing: .75px;
     font-family: 'e2-Raleway';
     color: #DDDDDD;
     font-weight: 300;
-
-    @media only screen and (max-width: 900px) {
-      font-size: 19px;
-      line-height: 32px;
-    }
+   
   }
 
   div {
@@ -167,7 +176,9 @@ const StyledStackableImageAndTextDuo = styled.div`
 
   h1 {
     color: white;
-    font-size: 6vw;
+    padding: 0 calc(4px + 2vw);
+    font-size: calc(4px + 5vw);
+    line-height: calc(15px + 6vw);
     line-height: 6vw;
     letter-spacing: .5px;
     font-family: 'e2-Raleway-Extra-Bold';
@@ -180,6 +191,9 @@ const StyledStackableImageAndTextDuo = styled.div`
     line-height: 32px;
     font-weight: 500;
     font-family: 'e2-Raleway';
+    padding: 0 calc(4px + 2vw);
+    font-size: calc(10px + 2vw);
+    line-height: calc(15px + 4vw);
   }
 
   .one {
@@ -320,9 +334,9 @@ class StackableImageAndTextDuo extends React.Component {
               <div></div>
             )}
             <h2>{header1}</h2>
-            <p>{paragraph1}</p>
-            <h2>{header2}</h2>
-            <p>{paragraph2}</p>
+            {paragraph1 && <p>{paragraph1}</p>}
+            {header2 && <h2>{header2}</h2>}
+            {paragraph2 && <p>{paragraph2}</p>}
             {this.props.children}
             <Link to={buttonLinkTo}>
               <button>{buttonText}</button>

@@ -29,7 +29,7 @@ const StyledChangeGearsBlock = styled.div`
     display: flex;
     width: 82vw;
     padding-right: 20px;
-    padding-left: 90px;
+    padding-left: 7vw;
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
@@ -44,7 +44,7 @@ const StyledChangeGearsBlock = styled.div`
     line-height: 70px;
     font-family: 'e2-Raleway-Bold';
     letter-spacing: 1px;
-    margin: 70px 0 10px 20px;
+    margin: 70px 0 2vw 20px;
   }
 
   a {
@@ -52,8 +52,8 @@ const StyledChangeGearsBlock = styled.div`
     flex-direction: row;
     flex: 1;
     justify-content: flex-start;
-    margin: 0px 0 50px 111px;
-    min-height: 58px;
+    margin: 0px 0 50px calc(14px + 9vw);
+    min-height: 5vw;
 
     @keyframes rainbow_animation {
       0% {

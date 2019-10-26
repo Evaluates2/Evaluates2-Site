@@ -418,79 +418,24 @@ const AboutPage = () => (
             name="Jim Lynch"
             linkTo="/team/jim-lynch"
             role="CEO / Principal Engineer"
-            img={<AnonymousSilhouetteImage />}
-            // img={<JimLynchHeadshotImage />}
+            // img={<AnonymousSilhouetteImage />}
+            img={<JimLynchHeadshotImage />}
             ></TeamMemberBlock>
           <TeamMemberBlock
             name="Nina Yang"
             linkTo="/team/nina-yang"
             role="Sales & Business Development Associate"
-            img={<AnonymousSilhouetteImage />}
-            // img={<NinaYangHeadshotImage />}
-            ></TeamMemberBlock>
-          <TeamMemberBlock
-            name="_____ _____"
-            linkTo="/team/nina-yang"
-            role="Sales & Business Development Associate"
-            img={<AnonymousSilhouetteImage />}
-            // img={<NinaYangHeadshotImage />}
+            // img={<AnonymousSilhouetteImage />}
+            img={<NinaYangHeadshotImage />}
             ></TeamMemberBlock>
           <TeamMemberBlock
             name="_____ _____"
             linkTo="/team/lee-daniel"
             role="Sr. Software Engineer"
-            img={<AnonymousSilhouetteImage />}
-            // img={<LeeDanielHeadshotImage />}
+            // img={<AnonymousSilhouetteImage />}
+            img={<LeeDanielHeadshotImage />}
           ></TeamMemberBlock>
-          <TeamMemberBlock
-            name="_____ _____"
-            linkTo="/team/lee-daniel"
-            role="Sr. Software Engineer"
-            img={<AnonymousSilhouetteImage />}
-            // img={<LeeDanielHeadshotImage />}
-          ></TeamMemberBlock>
-          <TeamMemberBlock
-            name="_____ _____"
-            linkTo="/team/lee-daniel"
-            role="Sr. Software Engineer"
-            img={<AnonymousSilhouetteImage />}
-            // img={<LeeDanielHeadshotImage />}
-          ></TeamMemberBlock>
-          <TeamMemberBlock
-            name="_____ _____"
-            linkTo="/team/lee-daniel"
-            role="Software Engineering Consultant"
-            img={<AnonymousSilhouetteImage />}
-            // img={<LeeDanielHeadshotImage />}
-          ></TeamMemberBlock>
-          <TeamMemberBlock
-            name="_____ _____"
-            linkTo="/team/lee-daniel"
-            role="Software Engineering Consultant"
-            img={<AnonymousSilhouetteImage />}
-            // img={<LeeDanielHeadshotImage />}
-          ></TeamMemberBlock>
-          <TeamMemberBlock
-            name="_____ _____"
-            linkTo="/team/lee-daniel"
-            role="Sr. Project Manager"
-            img={<AnonymousSilhouetteImage />}
-            // img={<LeeDanielHeadshotImage />}
-          ></TeamMemberBlock>
-          <TeamMemberBlock
-            name="_____ _____"
-            linkTo="/team/lee-daniel"
-            role="Project Management Consultant"
-            img={<AnonymousSilhouetteImage />}
-            // img={<LeeDanielHeadshotImage />}
-          ></TeamMemberBlock>
-          <TeamMemberBlock
-            name="_____ _____"
-            linkTo="/team/lee-daniel"
-            role="Sr. Data Scientist"
-            img={<AnonymousSilhouetteImage />}
-            // img={<LeeDanielHeadshotImage />}
-          ></TeamMemberBlock>
+          
         </div>
       </OurTeamSection>
 

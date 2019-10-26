@@ -68,27 +68,25 @@ const StyledPersonImage = styled.div`
 `
 
 const TeamMemberBlock = ({ itemId, name, linkTo, role, img }) => {
-    return (
-        // <Link to={linkTo}>
-        <>
-            <StyledPersonImage>
-              <PersonColorContainer>
-                {img}
-              </PersonColorContainer>
-            <h2>
-                {/* {name} */}
-                -- --
+  return (
+    <Link to={linkTo}>
+      <StyledPersonImage>
+        <PersonColorContainer>
+          {img}
+        </PersonColorContainer>
+        <h2>
+          {/* {name} */}
+          -- --
             </h2>
-            <p>
-                {role}
-            </p>
-            <div className="bg-div">
+        <p>
+          {role}
+        </p>
+        <div className="bg-div">
 
-            </div>
-            </StyledPersonImage>
-            </>
-        // </Link>
-    )
+        </div>
+      </StyledPersonImage>
+    </Link>
+  )
 }
 
 export default TeamMemberBlock;

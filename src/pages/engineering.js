@@ -52,101 +52,25 @@ const SectionHero = styled.div`
   justify-content: center;
   align-items: center;
   
-  
-  @media only screen and (max-width: 10000px) {
-    height: 800px;
-    margin-top: 90px;
-    min-height: 400px;
-    }
-  @media only screen and (max-width: 1800px) {
-    height: 500px;
-    min-height: 400px;
-    }
-  @media only screen and (max-width: 1300px) {
-    height: 500px;
-    min-height: 400px;
-    }
-  @media only screen and (max-width: 990px) {
-    height: 500px;
-    min-height: 400px;
-    }
-    @media only screen and (max-width: 660px) {
-      height: 400px;
-      min-height: 300px;
-    }
-    @media only screen and (max-width: 400px) {
-      height: 300px;
-      min-height: 200px;
-    }
 
 
   h1 {
-    max-width: 95vw;
     font-family: 'e2-Raleway-Extra-Bold';
     text-align: center;
     
-    margin-top: 100px;
+    margin-top: calc(100px + 10vw);
     letter-spacing: 5px;
     line-height: 160px;
-    font-size: 110px;
-    
-    @media only screen and (max-width: 10000px) {
-      font-size: 160px;
-      
-    }
-    @media only screen and (max-width: 1800px) {
-      
-      font-size: 140px;
-    }
-    @media only screen and (max-width: 1300px) {
-      font-size: 110px;
-      
-    }
-    @media only screen and (max-width: 990px) {
-      font-size: 90px;
-      
-    }
-    @media only screen and (max-width: 660px) {
-      font-size: 50px;
-      
-    }
-    @media only screen and (max-width: 400px) {
-      font-size: 29px;
-  
-    }
-    
+    font-size: calc(3px + 9vw);
+
   }
   
   p {
     opacity: 0.7;
-    line-height: 40px;
-    font-size: 36px;
-    margin-top: 60px;
+    line-height: 3vw;
+    font-size: calc(7px + 3vw);
+    margin-top: 10vw;
     
-    @media only screen and (max-width: 10000px) {
-      /* font-size: 160px; */
-      
-    }
-    @media only screen and (max-width: 1800px) {
-      
-      /* font-size: 140px; */
-    }
-    @media only screen and (max-width: 1300px) {
-      /* font-size: 110px; */
-      
-    }
-    @media only screen and (max-width: 990px) {
-      font-size: 36px;
-      
-    }
-    @media only screen and (max-width: 660px) {
-      font-size: 24px;
-      
-    }
-    @media only screen and (max-width: 400px) {
-      font-size: 15px;
-  
-    }
   }
 
 `;
@@ -160,20 +84,26 @@ const WorkTogetherSection = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 400px;
-  margin: 300px 100px;
-  padding: 60px 20px;
+  /* margin: 300px 100px; */
+  margin: 25vw 2vw;
+
+
+  /* padding: 60px 20px; */
 
   h1 {
-    font-size: 90px;
-    line-height: 115px;
+    font-size: calc(3px + 9vw);
+    line-height: 13vw;
     text-align: center;
     margin-bottom: 80px;
+    width: 90%;
   }
   p {
-    font-size: 30px;
+    font-size: calc(5px + 2vw);
+    line-height: calc(15px + 3vw);
+    margin-top: 10vw;
+    padding: 0 5vw;
     text-align: center;
     width: 100%;
-    line-height: 60px;
     opacity: 0.7;
   }
 `;

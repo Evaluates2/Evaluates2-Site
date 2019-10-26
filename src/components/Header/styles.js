@@ -26,7 +26,7 @@ export const Label = styled.div`
 `
 
 export const HeaderContainer = styled.header`  
-  transition: all 0.5s linear;
+  transition: all 1s linear;
   padding: 20px;
   position: fixed;
   width: 100%;

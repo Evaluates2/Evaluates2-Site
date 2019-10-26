@@ -6,7 +6,7 @@ const StackableColumn = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 25px 30px;
+  padding: 10vw 5vw;
   height: 100%;
   width: 33%;
 
@@ -17,16 +17,16 @@ const StackableColumn = styled.div`
 
   h1 {
     font-family: 'e2-Raleway-Bold';
-    font-size: 40px;
+    font-size: calc(15px + 2vw);
     max-width: 95vw;
-    line-height: 80px;
+    line-height: 5vw;
     text-align: center;
     -webkit-letter-spacing: 4px;
     -moz-letter-spacing: 4px;
     -ms-letter-spacing: 4px;
     letter-spacing: 1.5px;
     /* margin: 20px auto; */
-    min-height: 110px;
+    min-height: 10vw;
     justify-content: center;
     text-align: center;
     display: flex;
@@ -35,16 +35,18 @@ const StackableColumn = styled.div`
 
   h3 {
     font-family: 'e2-Raleway-Semi-Bold';
-    font-size: 30px;
-    min-height: 40px;
-    padding-top: 20px;
+    font-size: calc(15px + 2vw);
+    max-width: 95vw;
+    line-height: 5vw;
+    min-height: 5vw;
+    padding-top: 3vw;
   }
 
   p {
-    margin-bottom: 10px;
-    line-height: 35px;
+    margin-bottom: 3vw;
+    line-height: calc(10px + 3vw);
     text-align: justify;
-    font-size: 20px;
+    font-size: calc(5px + 1.5vw);
     letter-spacing: 1.25px;
     font-family: 'e2-Raleway-Light';
   }
@@ -54,25 +56,22 @@ const StackableColumn = styled.div`
     width: 80%;
     text-align: center;
     max-width: 310px;
-    
   }
 
   ul {
-    
-
     font-size: 24px;
     line-height: 37px;
-    /* margin: 20px; */
     padding-top: 20px;
-
   }
 
   li {
-    font-size: 26px;
-    padding: 5px 0;
+    font-size: calc(15px + 2vw);
+    max-width: 95vw;
+    line-height: calc(15px + 5vw);
+    min-height: 5vw;
+    padding-top: 3vw;
     font-family: 'e2-Raleway-Semi-Bold';
   }
-
 
 `;
 
