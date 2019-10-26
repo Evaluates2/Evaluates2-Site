@@ -139,37 +139,37 @@ const Layout = ({ children, isDrawerOpen, toggleDrawer }) => (
           <div className="footer-grid-block footer-about">
             <h2>About</h2>
             <Link to='/about'>
-              <a>About Us</a>
+              About Us
             </Link>
             <br />
             <Link to='/about#OUR_TEAM'>
-              <a>Team</a>
+              Team
             </Link>
             <br />
           </div>
           <div className="footer-grid-block footer-services">
             <h2>Services</h2>
             <Link to='/engineering'>
-              <a>Engineering</a>
+              Engineering
             </Link>
             <br />
             <Link to='/product-management'>
-              <a>Product Management</a>
+              Product Management
             </Link>
             <br />
             <Link to='/startup'>
-              <a>Startup</a>
+              Startup
             </Link>
             <br />
             <Link to='/data-and-analytics'>
-              <a>Data & Analytics</a>
+              Data & Analytics
             </Link>
             <br />
           </div>
           <div className="footer-grid-block footer-resources">
             <h2>Our Work</h2>
             <Link to='/our-work'>
-              <a>Our Work</a>
+              Our Work
             </Link>
             <br />
             <Link to='/our-work#OPEN_SOURCE'>

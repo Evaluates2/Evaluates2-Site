@@ -64,9 +64,9 @@ class Videos extends React.Component {
               width="100%"
               height="270px"
               src="https://www.youtube.com/embed/GN_SI5wehAw"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </div>
 
@@ -75,9 +75,9 @@ class Videos extends React.Component {
               width="100%"
               height="270px"
               src="https://www.youtube.com/embed/Y1_DCigouRo"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </div>
 

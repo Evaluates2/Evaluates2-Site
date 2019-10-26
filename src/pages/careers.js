@@ -153,7 +153,7 @@ const CareersPage = () => (
         <p className="to-join">...to join the Evaluate2 team.</p>
         <StackableColumnsContainer>
           <StackableColumn>
-            <PhoneScreenImage style={{ width: '80%', 'max-width': '320px' }}>
+            <PhoneScreenImage style={{ width: '80%', 'maxWidth': '320px' }}>
               <img src={PhoneScreenSvg} />
             </PhoneScreenImage>
             <h3>stage 1</h3>

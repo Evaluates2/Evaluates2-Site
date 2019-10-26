@@ -153,7 +153,7 @@ class JoinOurTeamCornerBtn extends React.Component {
     return (
       <StyledJoinOurTeamCornerBtn>
         <Link to="/careers">
-          <a id="join-team-btn">
+          <div id="join-team-btn">
             <button
               className={`off-right-position ${
                 this.state.showJointButton
@@ -163,7 +163,7 @@ class JoinOurTeamCornerBtn extends React.Component {
             >
               Join our team
             </button>
-          </a>
+          </div>
         </Link>
       </StyledJoinOurTeamCornerBtn>
     );
