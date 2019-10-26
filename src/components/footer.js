@@ -121,7 +121,8 @@ const Footer = styled.div`
     flex-direction: column;
     flex: 1;
     justify-content: flex-start;
-    margin: 5px;
+    margin: 1vw;
+    font-size: calc(5px + 0.5vw);
 
     @media only screen and (max-width: 660px) {
       padding-left: 20px;

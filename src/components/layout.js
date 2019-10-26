@@ -58,8 +58,6 @@ const VeryBottomFooter = styled.div`
   a {
       color: #777777;
       cursor: pointer;
-      font-size: 14px;
-
       line-height: 1.3em;
 
       :hover {
@@ -70,23 +68,30 @@ const VeryBottomFooter = styled.div`
       font-size: 18px;
     }
   }
-
+  
   p {
     color: #777777;
-    font-size: 14px;
     font-family: 'e2-Raleway-Bold';
-    padding: 0 1.5vw 1vw;
-    font-size: (10px + 0.5vw);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-size: calc(10px + 0.5vw);
+    padding-right: 2vw;
+    
   }
   
   .very-bottom-footer-item {
     display: flex;
     justify-content: center;
-    padding: 0 1.5vw 10px;
-    font-size: (10px + 0.5vw);
-
+    /* padding: 0 1.5vw 10px; */
+    font-size: calc(10px + 0.5vw);
+    padding-right: 2vw;
+    
+    /* font-size: (10px + 0.5vw); */
   }
-
+  
   a.orange-link {
     color: #FF7D00;
 
@@ -121,7 +126,7 @@ const Layout = ({ children, isDrawerOpen, toggleDrawer }) => (
         <div />
         <Footer>
           <div className="img-container">
-          {/* <Link to='/'>
+            {/* <Link to='/'>
           <Link> */}
             <div className="footer-img">
               <StyledDImage>
@@ -187,7 +192,7 @@ const Layout = ({ children, isDrawerOpen, toggleDrawer }) => (
           <Link to="/terms" className="very-bottom-footer-item">Terms of Service</Link>
 
           <p>
-            ©&nbsp;&nbsp;(Evaluates2)&nbsp;&nbsp;{new Date().getFullYear()}
+            ©&nbsp;(Evaluates2)&nbsp;- {new Date().getFullYear()}
           </p>
 
         </VeryBottomFooter>

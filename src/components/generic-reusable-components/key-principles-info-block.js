@@ -2,30 +2,28 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 const StyledPrinciplesInfoBlock = styled.div`
-
-  /* background-image: linear-gradient(90deg,#000032,#0ff); */
-  /* min-height: 425px; */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly; 
   width: 100%;
-  padding: 20px 70px;
+  padding: 6vw 10vw;
   
   h1.header {
-    font-size: 80px;
-    line-height: 100px;
+    font-size: calc(10px + 3vw);
+    line-height: calc(15px + 4.5vw);
+    margin: 3vw 0;
     font-family: 'e2-Raleway-Semi-Bold';
     letter-spacing: 1px;
     text-align: left;
-    font-size: 27px;
-    line-height: 60px;
+    /* font-size: 27px; */
+    /* line-height: 60px; */
   }
   
   p {
-    font-size: 20px;
+    font-size: calc(10px + 2vw);
+    line-height: calc(16px + 3.5vw);
     font-family: 'e2-Raleway';
     color: #DDDDDD;
-    line-height: 37px;
   }
 
 `;

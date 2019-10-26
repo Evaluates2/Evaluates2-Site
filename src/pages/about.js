@@ -34,20 +34,34 @@ const AboutHero = styled.div`
     font-size: 38px;
     font-family: 'e2-Raleway';
     text-align: center;
-    margin: 10px 40px 150px;
+    margin: 0 7vw;
+    padding-top: 5vw; 
     opacity: 0.8;
+    line-height: calc(15px + 6vw);
+    font-size: calc(7px + 3vw);
+    margin-top: 10vw;
 
     .about-blurb {
       margin-top: 50px;
       margin-bottom: 50px;
       font-size: 30px;
-      line-height: 60px;
+      line-height: 15vw;
       max-width: 800px;
-      line-height: 3.5vw;
       text-align: justify;
     }
   }
 
+    h1 {
+    font-family: 'e2-Raleway-Extra-Bold';
+    text-align: center;
+    
+    margin-top: calc(100px + 10vw);
+    letter-spacing: 1vw;
+    line-height: 5vw;
+    font-size: calc(6px + 9vw);
+
+  }
+  
   div {
     text-align: center !important ;
   }
@@ -150,10 +164,12 @@ const NiceQuoteSection = styled.div`
 
 const AboutBlurb = styled.div`
   p {
-    margin-top: 50px 40px;
-    font-size: 30px;
-    line-height: 50px;
-    padding: 80px 160px;
+    /* margin-top: 50px 40px; */
+    font-size: calc(13px + 2vw);
+    line-height: calc(19px + 4vw);
+    padding: 5vw 10vw;
+
+    /* margin: 0 10vw;  */
     color: #333333;
     text-align: justify;
     

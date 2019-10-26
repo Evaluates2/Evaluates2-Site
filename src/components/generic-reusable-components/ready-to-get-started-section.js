@@ -6,7 +6,8 @@ const ReadyToGetStartedSection = styled.div`
   
   h1 {
     font-family: 'e2-Raleway-Black-Italic';
-    font-size: 40px;
+    font-size: calc(3px + 8vw);
+    line-height: calc(15px + 9vw);
     margin: 50px 50px 20px 50px;
     text-align: center;
   }
@@ -16,11 +17,12 @@ const ReadyToGetStartedSection = styled.div`
     font-family: 'e2-Raleway-Semi-Bold-Italic';
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding-top: calc(10px + 6vw);
+    font-size: calc(10px + 3vw);
+    line-height: calc(15px + 4.5vw);
     justify-content: center;
     align-items: center;
     text-decoration: underline;
-    font-size: 30px;
     letter-spacing: 1.5px;
   }
 `;

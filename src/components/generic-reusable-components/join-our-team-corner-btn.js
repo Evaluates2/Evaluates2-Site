@@ -75,7 +75,7 @@ class JoinOurTeamCornerBtn extends React.Component {
     // console.log('ok ', ok);
   }
 
-  componentWillUnmount() {
+  UNSAFE_componentWillMount() {
     this.window.removeEventListener(
       'scroll',
       this.handleScroll.bind(this),

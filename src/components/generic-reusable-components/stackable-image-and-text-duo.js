@@ -321,9 +321,9 @@ class StackableImageAndTextDuo extends React.Component {
             <h1>{title}</h1>
             {images != undefined && images.length > 0 ? (
               <div className="img_container">
-                {images.map(item => {
+                {images.map( (item, i) => {
                   return (
-                    <div className="small_image">
+                    <div className="small_image" key={i}>
                       <div className="s_img">{getImage(item.img)}</div>
                       <div className="img-info-text">{item.name}</div>
                     </div>
