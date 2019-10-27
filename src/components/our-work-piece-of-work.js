@@ -17,7 +17,7 @@ const StyledOurWorkPieceOfWork = styled.div`
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 50px;
+    padding: calc(15px + 3vw);
     flex: 1;
     width: 100%;
     height: 100%;

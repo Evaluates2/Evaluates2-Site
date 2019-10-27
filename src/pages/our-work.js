@@ -12,7 +12,37 @@ import ChangeGearsBlock from '../components/generic-reusable-components/change-g
 import ReadyToGetStartedSection from '../components/generic-reusable-components/ready-to-get-started-section';
 
 const OurWorkHero = styled.div`
-  h1 {
+
+h1 {
+    color: #000032;
+    font-family: 'e2-Raleway-Extra-Bold';
+    text-align: center;
+    margin-top: calc(160px + 12vw);
+    letter-spacing: 0.5vw;
+    line-height: 5vw;
+    font-size: calc(21px + 9vw);
+  }
+  p {
+    color: #000032;
+    font-size: 38px;
+    font-family: 'e2-Raleway';
+    text-align: center;
+    padding-top: 5vw; 
+    opacity: 0.8;
+    line-height: calc(15px + 6vw);
+    font-size: calc(7px + 3vw);
+    margin: 15vw 7vw 15vw;
+    .about-blurb {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      font-size: 30px;
+      line-height: 15vw;
+      max-width: 800px;
+      text-align: justify;
+    }
+  }
+  
+  /* h1 {
     color: #000032;
     font-size: 120px;
     font-family: 'e2-Raleway-Extra-Bold';
@@ -36,7 +66,7 @@ const OurWorkHero = styled.div`
       line-height: 3.5vw;
       text-align: justify;
     }
-  }
+  } */
 
   div {
     text-align: center !important ;
@@ -64,10 +94,10 @@ const CenteredVideo = styled.div`
 `;
 
 const BigSectionTitle = styled.div`
-  padding: 150px 100px;
+  padding: 30vw 10vw;
 
   h1 {
-    font-size: 80px;
+    font-size: calc(20 + 2vw);
     line-height: 100px;
     font-family: 'e2-Raleway-Extra-Bold';
     color: #000032;
@@ -80,7 +110,7 @@ const BigSectionTitle = styled.div`
 `;
 
 const NiceQuoteSection = styled.div`
-  padding: 0 100px;
+  padding: 0 calc(20px + 2vw);
 
   h1 {
     margin-bottom: 0;

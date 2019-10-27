@@ -153,13 +153,14 @@ const LanguageOptionsColumn = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   text-align: left;
   grid-column: 1 / 1;
   grid-row: 1 / 1;
   padding-left: 20px;
   margin-left: 40px;
+  margin-top: 5vw;
   @media only screen and (min-width: 990px) {
     /* grid-column-start: 1; */
     /* grid-column-end: 2; */
@@ -243,7 +244,8 @@ const LanguageInfoSection = styled.div`
 
 const LanguageIdeScreenshotContainer = styled.div`
   grid-row: 3 / 3;
-  padding: 10px 60px;
+  padding: 5vw 5vw 10vw;
+
   @media only screen and (min-width: 990px) {
     grid-column: 2 / 2;
     grid-row: 2 / 2;
@@ -631,7 +633,7 @@ const EngineeringPage = () => {
                 >
                   Rust
               </li>
-                <li
+                {/* <li
                   className={languageSelected === 'Swift' ? 'li-selected' : ''}
                   onClick={event => {
                     handleLanguageOptionClick('Swift', event);
@@ -644,8 +646,8 @@ const EngineeringPage = () => {
                   }}
                 >
                   Swift
-              </li>
-                <li
+              </li> */}
+                {/* <li
                   className={languageSelected === 'Kotlin' ? 'li-selected' : ''}
                   onClick={event => {
                     handleLanguageOptionClick('Kotlin', event);
@@ -658,7 +660,7 @@ const EngineeringPage = () => {
                   }}
                 >
                   Kotlin
-              </li>
+              </li> */}
                 <li
                   className={languageSelected === 'Python' ? 'li-selected' : ''}
                   onClick={event => {
@@ -673,7 +675,7 @@ const EngineeringPage = () => {
                 >
                   Python
               </li>
-                <li
+                {/* <li
                   className={languageSelected === 'Scala' ? 'li-selected' : ''}
                   onClick={event => {
                     handleLanguageOptionClick('Scala', event);
@@ -686,8 +688,8 @@ const EngineeringPage = () => {
                   }}
                 >
                   Scala
-              </li>
-                <li
+              </li> */}
+                {/* <li
                   className={languageSelected === 'Haskell' ? 'li-selected' : ''}
                   onClick={event => {
                     handleLanguageOptionClick('Haskell', event);
@@ -700,7 +702,7 @@ const EngineeringPage = () => {
                   }}
                 >
                   Haskell
-              </li>
+              </li> */}
                 <li
                   className={languageSelected === 'Java' ? 'li-selected' : ''}
                   onClick={event => {
@@ -715,7 +717,7 @@ const EngineeringPage = () => {
                 >
                   Java
               </li>
-                <li
+                {/* <li
                   className={languageSelected === 'C#' ? 'li-selected' : ''}
                   onClick={event => {
                     handleLanguageOptionClick('C#', event);
@@ -728,7 +730,7 @@ const EngineeringPage = () => {
                   }}
                 >
                   C#
-              </li>
+              </li> */}
                 <li
                   className={languageSelected === 'Ruby' ? 'li-selected' : ''}
                   onClick={event => {
@@ -743,7 +745,7 @@ const EngineeringPage = () => {
                 >
                   Ruby
               </li>
-                <li
+                {/* <li
                   className={languageSelected === 'C / C++' ? 'li-selected' : ''}
                   onClick={event => {
                     handleLanguageOptionClick('C / C++', event);
@@ -756,7 +758,7 @@ const EngineeringPage = () => {
                   }}
                 >
                   C / C++
-              </li>
+              </li> */}
               </ul>
             </LanguageOptionsColumn>
             <LanguageInfoSection>

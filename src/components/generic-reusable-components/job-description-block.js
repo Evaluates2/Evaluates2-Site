@@ -6,14 +6,15 @@ const StyledJobDescription = styled.div`
   background-color: yellowgreen;
   display: block;
   border-radius: 5px;
-  margin: 40px;
+  
+  margin: calc(5px + 2vw);
   overflow: hidden;
 
   .non-intern-block {
     min-height: 3000px;
 
     @media only screen and (max-width: 660px) {
-    min-height: 3600px;
+    min-height: 5000px;
 
       }
     /* min-height: 100%; */
@@ -24,11 +25,11 @@ const StyledJobDescription = styled.div`
   }
 
   h2 {
-    font-size: 25px;
-    line-height: 30px;
+    font-size: calc(17px + 2vw);
+    line-height: calc(30px + 2vw);
     margin-bottom: 0;
     font-weight: 700;
-    letter-spacing: 1.2px;
+    letter-spacing: 0.25vw;
   }
 
   h3 {
@@ -42,8 +43,10 @@ const StyledJobDescription = styled.div`
   h4 {
     font-family: 'e2-Raleway-Bold';
     color: #ddd;
-    font-size: 17px;
-    letter-spacing: 1.2px;
+    font-size: calc(10px + 2vw);
+    line-height: calc(24px + 2vw);
+    letter-spacing: 0.25vw;
+    margin: 3vw 0;
   }
 
   li {
@@ -53,8 +56,9 @@ const StyledJobDescription = styled.div`
   }
 
   p {
-    font-size: 16px;
-    letter-spacing: 1.2px;
+    font-size: calc(12px + 1vw);
+    line-height: calc(18px + 2vw);
+    letter-spacing: 0.25vw;
     font-family: 'e2-Raleway';
     color: #ddd;
   }
@@ -76,8 +80,8 @@ const StyledJobDescription = styled.div`
 
     :hover {
       background-color: #153363;
-      top: -8px;
-      left: -8px;
+      top: calc(-8px - 0.25vw);
+      left: calc(-8px - 0.25vw);
     }
   }
 `;

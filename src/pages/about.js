@@ -3,43 +3,33 @@ import Global from '../components/Global';
 import Layout from '../components/layout';
 import styled from '@emotion/styled';
 import JoinOurTeamCornerBtn from './../components/generic-reusable-components/join-our-team-corner-btn';
-import PersonImage from '../components/img-components/person-img.img';
 import JimLynchHeadshotImage from './../components/img-components/headshots/jim-lynch-headshot.img';
 import NinaYangHeadshotImage from '../components/img-components/headshots/nina-yang-headshot.img';
 import LeeDanielHeadshotImage from '../components/img-components/headshots/lee-daniel-headshot.img';
 import Link from 'gatsby-link';
 import TeamMemberBlock from './../components/generic-reusable-components/team-member-block';
-import AwsLogoImage from '../components/img-components/partner-logos/amazon-web-services-logo.img';
-import GithubLogoImage from '../components/img-components/partner-logos/github-logo.img';
-import AppleLogoImage from '../components/img-components/partner-logos/apple-logo.img';
 import KateFromHrLogoImage from '../components/img-components/partner-logos/kate-from-hr-logo.img';
-import MongoAtlasImage from '../components/img-components/partner-logos/mongo-atlas-logo.img';
-import GoogleLogoImage from '../components/img-components/partner-logos/google-logo.img';
-import ServerlessLogoImage from '../components/img-components/partner-logos/serverless-logo.img';
-import MozillaLogoImage from '../components/img-components/partner-logos/mozilla-logo.img';
-import MicrosoftLogoImage from '../components/img-components/partner-logos/microsoft-logo.img';
-import GoogleTransparentImage from '../components/img-components/partner-logos/google-transparent.img';
-import AnonymousSilhouetteImage from '../components/img-components/headshots/anonymous-silhouette.img';
 
 const AboutHero = styled.div`
   h1 {
     color: #000032;
-    font-size: 120px;
     font-family: 'e2-Raleway-Extra-Bold';
     text-align: center;
-    margin-top: 150px;
+    margin-top: calc(160px + 10vw);
+    letter-spacing: 0.5vw;
+    line-height: 5vw;
+    font-size: calc(21px + 9vw);
   }
   p {
     color: #000032;
     font-size: 38px;
     font-family: 'e2-Raleway';
     text-align: center;
-    margin: 0 7vw;
     padding-top: 5vw; 
     opacity: 0.8;
     line-height: calc(15px + 6vw);
     font-size: calc(7px + 3vw);
-    margin-top: 10vw;
+    margin: 15vw 7vw 20vw;
 
     .about-blurb {
       margin-top: 50px;
@@ -49,17 +39,6 @@ const AboutHero = styled.div`
       max-width: 800px;
       text-align: justify;
     }
-  }
-
-    h1 {
-    font-family: 'e2-Raleway-Extra-Bold';
-    text-align: center;
-    
-    margin-top: calc(100px + 10vw);
-    letter-spacing: 1vw;
-    line-height: 5vw;
-    font-size: calc(6px + 9vw);
-
   }
   
   div {
@@ -90,13 +69,11 @@ const CenteredVideo = styled.div`
 
 const PartnersSection = styled.div`
 
-  padding: 40px;
-
   h1 {
-    font-size: 80px;
-    line-height: 100px;
+    font-size: calc(30px + 5vw);
+    line-height: calc(60px + 5vw);
     font-family: 'e2-Raleway-Extra-Bold';
-    padding: 0 100px;
+    padding: 0 calc(30px + 6vw);
     margin-bottom: 40px;
   }
 
@@ -140,15 +117,15 @@ const PartnersSection = styled.div`
 `;
 
 const NiceQuoteSection = styled.div`
-  padding: 0 100px;
+  padding: 0 calc(20px + 2vw);
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   h1 {
     margin-bottom: 0;
-    font-size: 34px;
-    line-height: 60px;
+    font-size: calc(11px + 2vw);
+    line-height: calc(35px + 4vw);
     font-family: 'e2-Raleway-Bold';
   }
 
@@ -158,8 +135,6 @@ const NiceQuoteSection = styled.div`
     font-weight: 500;
     font-family: 'e2-Raleway-Semi-Bold';
   }
-
-  min-height: 300px;
 `;
 
 const AboutBlurb = styled.div`
@@ -177,14 +152,15 @@ const AboutBlurb = styled.div`
 `;
 
 const OurTeamSection = styled.div`
-  padding: 0 100px;
+  padding: 20px;
 
   h1 {
     font-family: 'e2-Raleway-Extra-Bold';
-    font-size: 80px;
-    line-height: 100px;
-    font-weight: 800;
-    margin-bottom: 40px;
+    font-size: calc(50px + 4vw);
+    line-height: calc(60px + 4vw);
+    margin: calc(30px + 5vw);
+    margin-right: 2vw;
+    padding: 0 calc(0px + 2vw);
   }
 
   .our-team-grid {
@@ -235,7 +211,7 @@ const MidPageAnchor = styled.div`
 `;
 
 const WhatWeveBuiltSection = styled.div`
-  padding: 0 100px;
+  padding: 0 calc(20px + 2vw);
 
   h1 {
     font-family: 'e2-Raleway-Extra-Bold';
@@ -246,11 +222,11 @@ const WhatWeveBuiltSection = styled.div`
 
   p {
     opacity: 0.8;
-    font-size: 30px;
-    line-height: 40px;
+    font-size: calc(14px + 1.5vw);
+    line-height: calc(34px + 1.5vw);
     font-family: 'e2-Raleway';
 
-    padding: 20px 0;
+    /* padding: 2vw 3vw; */
   }
 `;
 
@@ -330,7 +306,7 @@ const AboutPage = () => (
       <br />
 
       <AboutHero>
-        <h1>About us</h1>
+        <h1>About Us</h1>
         <p>When it comes to software, we're full of solutions.</p>
       </AboutHero>
 
@@ -445,7 +421,7 @@ const AboutPage = () => (
             img={<NinaYangHeadshotImage />}
             ></TeamMemberBlock>
           <TeamMemberBlock
-            name="_____ _____"
+            name="Lee Daniel"
             linkTo="/team/lee-daniel"
             role="Sr. Software Engineer"
             // img={<AnonymousSilhouetteImage />}

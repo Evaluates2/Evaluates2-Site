@@ -46,21 +46,6 @@ const CareersPageContainer = styled.div`
   align-items: center;
   overflow: hidden;
 
-  p {
-    @media only screen and (max-width: 900px) {
-      padding-right: 60px;
-    }
-  }
-
-  h1 {
-    margin: 50px 0 20px;
-    font-size: 70px;
-    /* display: flex;
-    flex: 1;
-    flex-direction: row;
-    justify-content: flex-start; */
-  }
-
   .core-values {
     text-align: left;
     width: 70vw;
@@ -74,24 +59,47 @@ const CareersPageContainer = styled.div`
     color: lightgray;
   }
 
-
-  .to-join {
-    font-size: 25px;
-    font-family: 'e2-Raleway';
-    padding: 0;
-  }
-
   .join-us {
-    font-size: 70px;
+    font-size: calc(25px + 8vw);
     display: flex;
     flex: 1;
     flex-direction: row;
     font-family: 'e2-Raleway-Extra-Bold';
     justify-content: flex-start;
-    margin-left: 200px;
+    /* margin-left: 200px; */
+    padding-left: calc(40px + 2vw);
     width: 100%;
   }
 
+  .how-to-apply {
+    width: 100%;
+    padding: 1vw 3vw;
+    text-align: center;
+
+    font-family: 'e2-Raleway-Extra-Bold';
+    text-align: center;
+    
+    margin: calc(100px + 10vw) calc(10px + 1vw) calc(3px + 7vw);
+    line-height: calc(14px + 5vw);
+    font-size: calc(3px + 9vw);
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .to-join {
+    font-size: 25px;
+    font-family: 'e2-Raleway';
+    padding: 0;
+    opacity: 0.7;
+    line-height: calc(15px + 4vw);
+    font-size: calc(7px + 3vw);
+    margin: calc(7px + 1vw) 0 calc(7px + 10vw);
+    max-width: 95vw;
+    text-align: center;
+    font-family: 'e2-Raleway-Semi-Bold';
+  }
 
 `;
 
@@ -113,15 +121,17 @@ ol {
 
 li {
   font-family: 'e2-Raleway-Semi-Bold';
-  font-size: 30px;
-  line-height: 35px;
+  font-size: calc(16px + 3vw);
+  line-height: calc(17px + 3vw);
   letter-spacing: 1.2px;
-  padding: 10px 0;
+  padding: 5vw 0;
 
   .small-description {
-  font-size: 22px;
-  line-height: 35px;
-  letter-spacing: 1.1px;
+  font-size: calc(10px + 2vw);
+  line-height: calc(25px + 2vw)
+  /* font-size: 22px; */
+  /* line-height: 35px; */
+  /* letter-spacing: 1.1px; */
   color: lightgrey;
 
   }

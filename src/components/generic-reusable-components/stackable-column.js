@@ -6,7 +6,7 @@ const StackableColumn = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10vw 5vw;
+  padding: 10vw calc(3px + 2vw);
   height: 100%;
   width: 33%;
 
@@ -44,9 +44,9 @@ const StackableColumn = styled.div`
 
   p {
     margin-bottom: 3vw;
-    line-height: calc(10px + 3vw);
+    line-height: calc(19px + 3vw);
     text-align: justify;
-    font-size: calc(5px + 1.5vw);
+    font-size: calc(12px + 1vw);
     letter-spacing: 1.25px;
     font-family: 'e2-Raleway-Light';
   }

@@ -2,51 +2,39 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 const StyledServicePageHero = styled.div`
-  height: 800px;
+  height: 40vw;
   min-height: 400px;
-  line-height: 85px;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 200px;
-  margin-bottom: 200px;
+  margin: calc(100px + 20vw) calc(10px + 2vw) calc(10px + 5vw);
+  
 
   h1 {
-    max-width: 95vw;
-    font-size: 120px;
-    line-height: 160px;
-    font-weight: 800;
-    text-align: center;
-    letter-spacing: 5px;
-
     font-family: 'e2-Raleway-Extra-Bold';
-
-    @media only screen and (min-width: 660px) {
-      font-size: 120px;
-
-    }
-
-    @media only screen and (min-width: 990px) {
-
-    }
-  }
-
-  p {
-    
-    margin: 0px 130px;
     text-align: center;
-    font-family: 'e2-Raleway';
-    font-size: 38px;
-    letter-spacing: 1px;
-    opacity: .7;
-    @media only screen and (min-width: 660px) {
-
-    }
-    @media only screen and (min-width: 990px) {
-    }
+    padding: calc(20px + 10vw) calc(10px + 1vw) calc(2px + 13vw);
+    font-size: calc(3px + 9vw);
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex-direction: column;
   }
+  
+  p {
+    opacity: 0.7;
+    line-height: calc(15px + 4vw);
+    font-size: calc(7px + 3vw);
+    margin-top: calc(7px + 1vw);
+    max-width: 95vw;
+    text-align: center;
+    font-family: 'e2-Raleway-Semi-Bold';
+    
+  }
+
+
 `;
 
 const ServicePageHero = ({title, description}) => {

@@ -13,13 +13,15 @@ font-family: 'e2-Raleway-Black';
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  padding-bottom: 7vw;
+
   h1 {
     font-family: 'e2-Raleway-Black';
-    font-size: 44px;
-    max-width: 95vw;
-    line-height: 140px;
+    font-size: calc(13px + 4vw);
+    max-width: 97vw;
+    line-height: calc(25px + 6vw);
     text-align: center;
-    letter-spacing: 4px;
+    letter-spacing: 0.55vw;
   }
   p {
     font-size: 16px;
@@ -27,6 +29,8 @@ font-family: 'e2-Raleway-Black';
     letter-spacing: 2px;
     font-family: 'e2-Raleway';
   }
+
+  
 `;
 
 
@@ -40,7 +44,7 @@ const SectionHero = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 60px;
-  h1 {
+  /* h1 {
   font-size: 100px;
  
     @media only screen and (max-width: 990px) {
@@ -70,6 +74,26 @@ const SectionHero = styled.div`
       font-size: 24px;
     }
 
+  } */
+
+  h1 {
+    font-family: 'e2-Raleway-Extra-Bold';
+    text-align: center;
+    
+    margin: calc(100px + 5vw) 0 calc(20px + 4vw);
+    line-height: 10vw;
+    font-size: calc(3px + 9vw);
+
+  }
+  
+  p {
+    font-family: 'e2-Raleway';
+    text-align: center;
+    opacity: 0.7;
+    line-height: calc(23px + 4vw);
+    font-size: calc(10px + 3vw);
+    margin: 10vw 0 20vw;
+    
   }
 `;
 
@@ -81,7 +105,8 @@ const TermsTextSection = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 400px;
-  padding: 150px 100px 250px;
+  /* padding: 150px 100px 250px; */
+  margin: 10vw 7vw;
 
   h2 {
     text-align: left;
