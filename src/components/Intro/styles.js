@@ -4,7 +4,7 @@ import mediaQuery from "../../utils/mediaQuery"
 export const TextContainer = styled.div`
     /* position: relative; */
     z-index: 40px;
-    display: flex;
+    display: inline-flex;
     flex: 1;
     flex-direction: column;
     justify-content: center;
@@ -25,6 +25,8 @@ export const TextContainer = styled.div`
         margin-right: 20px;
         margin-left: 20px;
       }
+
+
       
 `
 
@@ -38,7 +40,7 @@ export const IntroContainer = styled.div`
     padding: 50px;
     font-size: 27px;
     line-height: 45px;
-    display: flex;
+    display: inline-flex;
     min-height: 175vh;
     padding: 90px 100px;
     justify-content: center;

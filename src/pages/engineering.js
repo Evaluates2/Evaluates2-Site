@@ -18,6 +18,13 @@ import SecondServiceHero from '../components/generic-reusable-components/service
 import ReadyToGetStartedSection from '../components/generic-reusable-components/ready-to-get-started-section';
 import Global from "../components/Global"
 import NodeJsFizzbuzzifiedStringImage from '../components/img-components/code-screenshots/node-js-fizzbuzzifies-strings-screenshot.img';
+import TypeScriptFizzbuzzifiedStringImage from '../components/img-components/code-screenshots/typscript-fizzbuzzifies-strings-screenshot.img';
+import ClojureFizzbuzzifiedStringImage from '../components/img-components/code-screenshots/clojure-fizzbuzzified-string-screenshot.img';
+import GoFizzbuzzifiedStringImage from '../components/img-components/code-screenshots/go-fizzbuzzified-string-screenshot.img';
+import RustFizzbuzzifiedStringImage from '../components/img-components/code-screenshots/rust-fizzbuzzifies-strings-screenshot.img';
+import JavaFizzbuzzifiedStringImage from '../components/img-components/code-screenshots/java-fizzbuzzified-string-screenshot.img';
+import RubyFizzbuzzifiedStringImage from '../components/img-components/code-screenshots/ruby-fizzbuzzifies-strings-screenshot.img';
+import PythonFizzbuzzifiedStringImage from '../components/img-components/code-screenshots/python-fizzbuzzified-string-screenshot.img';
 
 const EngineeringPageContainer = styled.div`
   font-family: 'e2-Raleway-Black';
@@ -555,6 +562,9 @@ const EngineeringPage = () => {
           <LanguagePickerGrid>
             <LanguageOptionsColumn>
               <ul>
+                <p>
+                  (Please hover over or select a choice below)
+                </p>
                 <li
                   className={
                     languageSelected === 'JavaScript' ? 'li-selected' : ''
@@ -780,6 +790,13 @@ const EngineeringPage = () => {
 
             <LanguageIdeScreenshotContainer>
               {languageSelected === 'JavaScript' && <NodeJsFizzbuzzifiedStringImage />}
+              {languageSelected === 'TypeScript' && <TypeScriptFizzbuzzifiedStringImage />}
+              {languageSelected === 'Clojure / ClojureScript' && <ClojureFizzbuzzifiedStringImage />}
+              {languageSelected === 'Go Lang' && <GoFizzbuzzifiedStringImage />}
+              {languageSelected === 'Rust' && <RustFizzbuzzifiedStringImage />}
+              {languageSelected === 'Python' && <PythonFizzbuzzifiedStringImage />}
+              {languageSelected === 'Java' && <JavaFizzbuzzifiedStringImage />}
+              {languageSelected === 'Ruby' && <RubyFizzbuzzifiedStringImage />}
               {/* TODO - Add screenshots for other languages */}
             </LanguageIdeScreenshotContainer>
           </LanguagePickerGrid>

@@ -36,7 +36,7 @@ const StyledContactPage = styled.div`
   overflow: hidden;
   h2 {
     font-family: 'e2-Raleway-Bold';
-    font-size: 44px;
+    font-size: calc(px);
     max-width: 95vw;
     line-height: 140px;
     text-align: center;
@@ -101,12 +101,13 @@ const StyledContactForm = styled.div`
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  margin: 2vw
 
   h2 {
     font-family: 'e2-Raleway-Bold';
-    font-size: 44px;
+    font-size: calc(35px + 3vw);
+    line-height: calc(5px + 3vw);
     max-width: 95vw;
-    line-height: 75px;
     text-align: center;
     letter-spacing: 4px;
   }
@@ -324,17 +325,12 @@ const StyledFormWithTwoBoxes = styled.div`
   }
 
   h2 {
-    margin-top: 5px;
-    line-height: 55px;
-
-    // tablet, 2 x 2 square items in one column
-    @media only screen and (max-width: 990px) {
-      margin-bottom: 5px;
-    }
+    margin: calc(5px + 5vw);
+    font-size: calc(20px + 4vw);
+    line-height: calc(35px + 5vw);
   }
 
   .location-box {
-    /* background-color: lightcoral; */
 
     grid-row: 1;
     grid-column: 2;
@@ -381,7 +377,7 @@ const StyledFormWithTwoBoxes = styled.div`
       grid-row: 1 / span 2;
     }
 
-    margin-left: 20px;
+
     /* background-color: papayawhip; */
   }
 
