@@ -34,7 +34,7 @@ font-family: 'e2-Raleway-Black';
 `;
 
 
-const SectionHero = styled.div`
+const SectionHeroTermsPage = styled.div`
   height: 600px;
   min-height: 400px;
   line-height: 85px;
@@ -44,37 +44,6 @@ const SectionHero = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 60px;
-  /* h1 {
-  font-size: 100px;
- 
-    @media only screen and (max-width: 990px) {
-      font-size: 80px;
-    }
-
-    @media only screen and (max-width: 660px) {
-      font-size: 60px;
-    }
-  
-  }
-  p {
-    font-size: 38px;
-    opacity: 0.7;
-    margin: 7px;
-      opacity: 0.7;
-      width: 80vw;
-    min-width: 90%;
-    text-align: center;
-    line-height: 60px;
-
-    @media only screen and (max-width: 990px) {
-      font-size: 30px;
-    }
-
-    @media only screen and (max-width: 660px) {
-      font-size: 24px;
-    }
-
-  } */
 
   h1 {
     font-family: 'e2-Raleway-Extra-Bold';
@@ -140,10 +109,10 @@ const TermsPage = () => (
         <br />
 
 
-        <SectionHero>
+        <SectionHeroTermsPage>
           <h1>Our Terms</h1>
           <p>transparent and straightforward.</p>
-        </SectionHero>
+        </SectionHeroTermsPage>
         <TermsTextSection>
           <h1>Evaluates2 Terms of Service</h1>
           <br />

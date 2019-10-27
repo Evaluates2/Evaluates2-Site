@@ -20,8 +20,9 @@ const StyledPrinciplesInfoBlock = styled.div`
   }
   
   p {
-    font-size: calc(10px + 2vw);
-    line-height: calc(16px + 3.5vw);
+    font-size: calc(10px + 1vw);
+    line-height: calc(16px + 3vw);
+    opacity: 0.8;
     font-family: 'e2-Raleway';
     color: #DDDDDD;
   }

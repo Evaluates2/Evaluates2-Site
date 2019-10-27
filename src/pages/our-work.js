@@ -94,18 +94,18 @@ const CenteredVideo = styled.div`
 `;
 
 const BigSectionTitle = styled.div`
-  padding: 30vw 10vw;
+  padding: calc(20px + 10vw) calc(15px + 4vw);
 
   h1 {
-    font-size: calc(20 + 2vw);
-    line-height: 100px;
+    font-size: calc(20px + 2vw);
+    line-height: calc(35px + 2vw);
     font-family: 'e2-Raleway-Extra-Bold';
     color: #000032;
   }
 
   p {
-    font-size: 30px;
-    line-height: 45px;
+    font-size: calc(14px + 2vw);
+    line-height: calc(30px + 2vw);
   }
 `;
 
@@ -114,16 +114,16 @@ const NiceQuoteSection = styled.div`
 
   h1 {
     margin-bottom: 0;
-    font-size: 34px;
-    line-height: 60px;
+    font-size: calc(22px + 1vw);
+    line-height: calc(35px + 2vw);
     font-family: 'e2-Raleway-Semi-Bold-Italic';
   }
 
   p {
-    font-size: 22px;
-    line-height: 32px;
-    font-weight: 500;
+    font-size: calc(12px + 1vw);
+    line-height: calc(25px + 2vw);
     font-family: 'e2-Raleway-Semi-Bold';
+    padding-top: calc(25px + 1vw);
   }
 
   min-height: 300px;
@@ -405,15 +405,15 @@ const OurWorkPage = () => (
 
       <OurWorkPieceOfWork
         title="Titanium Lambda"
-        header1="www.github.com/titanium-lambda"
-        header1link="www.github.com/titanium-lambda"
+        header1="www.github.com/jimtheman/titanium-lambda"
+        header1link="https://www.github.com/jimtheman/titanium-lambda"
         paragraph1="Kate from HR is a tool for making teams better. A fun and easy-to-use Slack-integrated chatbot collected anonymous feedback that can be public or private (specified by the user). This is then aggregated and visualized in a web dashboard."
         header2=""
         paragraph2=""
         imgName="TITANIUM_LAMBDA"
         imgOnLeft={true}
         buttonText="Explore..."
-        buttonLinkTo="www.github.com/titanium-lambda"
+        buttonLinkTo="https://www.github.com/jimtheman/titanium-lambda"
       >
         <ul>
           <li>Extremely Cheap & Quick to Run & Maintain.</li>
@@ -455,14 +455,14 @@ const OurWorkPage = () => (
       <OurWorkPieceOfWork
         title="E2 Public Repositories"
         header1="www.github.com/evaluates2"
-        header1link="www.github.com/evaluates2"
+        header1link="https://www.github.com/evaluates2"
         paragraph1=""
         header2="Check out some of our public repositories! We have all kinds of cool examples projects and guidelines displaying how we like to build clean, working software."
         paragraph2=""
         imgName="E2_GITHUB"
         imgOnLeft={false}
         buttonText="Explore..."
-        buttonLinkTo="www.github.com/evaluates2"
+        buttonLinkTo="https://www.github.com/evaluates2"
       >
         <ul>
           <li>Many example projects and small isolated, demonstration projects across various languages.</li>

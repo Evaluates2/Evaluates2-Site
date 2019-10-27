@@ -31,12 +31,6 @@ const ProjectManagementPageContainer = styled.div`
   align-items: center;
   overflow: hidden;
 
-  p {
-    @media only screen and (max-width: 900px) {
-      
-      padding-right: 60px;
-    }
-  }
 `;
 
 

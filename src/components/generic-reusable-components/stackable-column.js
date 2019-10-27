@@ -19,7 +19,7 @@ const StackableColumn = styled.div`
     font-family: 'e2-Raleway-Bold';
     font-size: calc(15px + 2vw);
     max-width: 95vw;
-    line-height: 5vw;
+    line-height: calc(25px + 2vw);
     text-align: center;
     -webkit-letter-spacing: 4px;
     -moz-letter-spacing: 4px;

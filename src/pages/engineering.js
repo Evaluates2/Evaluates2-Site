@@ -51,32 +51,31 @@ const EngineeringPageContainer = styled.div`
   }
 `;
 
-const SectionHero = styled.div`
+const SectionHeroEngPage = styled.div`
   line-height: 85px;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
-
 
   h1 {
     font-family: 'e2-Raleway-Extra-Bold';
     text-align: center;
-    
-    margin-top: calc(100px + 10vw);
-    line-height: 160px;
-    font-size: calc(3px + 9vw);
-
+    margin-top: calc(160px + 10vw);
+    letter-spacing: 0.5vw;
+    line-height: calc(21px + 9vw);
+    font-size: calc(16px + 8vw);
   }
-  
   p {
-    opacity: 0.7;
-    line-height: 3vw;
+    font-family: 'e2-Raleway';
+    text-align: center;
+    padding: calc(15px + 2vw) calc(10px + 1vw); 
+    opacity: 0.8;
     font-size: calc(7px + 3vw);
-    margin-top: 10vw;
-    
+    line-height: calc(15px + 6vw);
+    margin: calc(7px + 10vw) calc(7px + 2vw) calc(20px + 6vw);;
+
   }
 
 `;
@@ -90,27 +89,25 @@ const WorkTogetherSection = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 400px;
-  /* margin: 300px 100px; */
   margin: 25vw 2vw;
 
-
-  /* padding: 60px 20px; */
-
   h1 {
-    font-size: calc(3px + 9vw);
-    line-height: 13vw;
+    font-family: 'e2-Raleway-Extra-Bold';
     text-align: center;
-    margin-bottom: 80px;
-    width: 90%;
+    margin-top: calc(160px + 10vw);
+    letter-spacing: 0.5vw;
+    line-height: calc(30px + 9vw);
+    font-size: calc(16px + 8vw);
   }
   p {
-    font-size: calc(12px + 1vw);
-    line-height: calc(25px + 3vw);
-    margin-top: 10vw;
-    padding: 0 5vw;
+    font-family: 'e2-Raleway';
     text-align: center;
-    width: 100%;
-    opacity: 0.7;
+    padding: calc(15px + 2vw) calc(10px + 1vw); 
+    opacity: 0.8;
+    font-size: calc(2px + 3vw);
+    line-height: calc(15px + 6vw);
+    margin: calc(7px + 4vw) calc(7px + 2vw) calc(20px + 6vw);
+
   }
 `;
 
@@ -175,6 +172,13 @@ const LanguageOptionsColumn = styled.div`
     grid-row: 1 / 4;
     /* grid-column: 1 / 2; */
   }
+  @media only screen and (max-width: 660px) {
+    /* grid-column-start: 1; */
+    /* grid-column-end: 2; */
+  padding-left: (10px + 1vw);
+  margin-left: 0;
+    /* grid-column: 1 / 2; */
+  }
   ul {
     padding: 5px;
     text-align: left;
@@ -227,10 +231,11 @@ const LanguageInfoSection = styled.div`
   grid-row: 2 / 2;
 
   h1 {
-    font-size: calc(3px + 9vw);
+    font-size: calc(3px + 7.5vw);
     line-height: 13vw;
     text-align: center;
-    padding: 2vw 0 
+    padding: 2vw 0;
+    letter-spacing: (1vw);
   }
   p {
     text-align: left;
@@ -281,11 +286,30 @@ const BestStackForYouSection = styled.div`
     padding: 0 5vw;
     opacity: 0.8;
   }
+  h1 {
+    font-family: 'e2-Raleway-Extra-Bold';
+    text-align: center;
+    margin: calc(160px + 10vw) calc(16px + 1vw);
+    letter-spacing: 0.5vw;
+    line-height: calc(21px + 9vw);
+    font-size: calc(16px + 8vw);
+
+  }
+  p {
+    font-family: 'e2-Raleway';
+    text-align: center;
+    padding: calc(15px + 2vw) calc(10px + 1vw); 
+    opacity: 0.8;
+    font-size: calc(7px + 3vw);
+    line-height: calc(15px + 6vw);
+    margin: 0 calc(7px + 2vw) calc(20px + 6vw);;
+
+  }
   h2 {
     font-size: calc(13px + 4vw);
     line-height: 9vw;
     text-align: left;
-    padding: 1vw 4vw 3vw; 
+    padding: 1vw 4vw 2vw; 
   }
 
 `;
@@ -463,7 +487,6 @@ const EngineeringPage = () => {
     /*
         Decided not to do anything here... :D
       */
-
   };
 
   return (
@@ -475,13 +498,13 @@ const EngineeringPage = () => {
           <br />
           <br />
           <br />
-          <SectionHero>
+          <SectionHeroEngPage>
             <h1>
               Engineering
           </h1>
             <p>Code crafted with care.
             </p>
-          </SectionHero>
+          </SectionHeroEngPage>
           {/* <ServicePageHero title="Engineering" description="Code crafted with care."></ServicePageHero> */}
           {/* <SecondServiceHero title="Ways we can work together" description="...to get your products built."></SecondServiceHero> */}
 

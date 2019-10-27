@@ -17,19 +17,18 @@ const AboutHero = styled.div`
     text-align: center;
     margin-top: calc(160px + 10vw);
     letter-spacing: 0.5vw;
-    line-height: 5vw;
+    line-height: calc(21px + 9vw);
     font-size: calc(21px + 9vw);
   }
   p {
     color: #000032;
-    font-size: 38px;
     font-family: 'e2-Raleway';
     text-align: center;
-    padding-top: 5vw; 
+    padding: calc(15px + 2vw) calc(10px + 1vw); 
     opacity: 0.8;
-    line-height: calc(15px + 6vw);
     font-size: calc(7px + 3vw);
-    margin: 15vw 7vw 20vw;
+    line-height: calc(15px + 6vw);
+    margin: calc(7px + 10vw) calc(7px + 2vw) calc(20px + 6vw);;
 
     .about-blurb {
       margin-top: 50px;
@@ -192,16 +191,6 @@ const OurTeamSection = styled.div`
       grid-template-columns: auto;
     }
 
-    .team-member-cell {
-      .team-member-img {
-      }
-
-      h2 {
-      }
-
-      p {
-      }
-    }
   }
 `;
 

@@ -2,13 +2,13 @@ import styled from '@emotion/styled';
 
 const ReadyToGetStartedSection = styled.div`
   
-  padding: 150px 30px;
+  padding: calc(40px + 20vw) calc(20px + 2vw);
   
   h1 {
     font-family: 'e2-Raleway-Black-Italic';
-    font-size: calc(3px + 8vw);
-    line-height: calc(15px + 9vw);
-    margin: 50px 50px 20px 50px;
+    font-size: calc(20px + 5vw);
+    line-height: calc(30px + 9vw);
+    margin: calc(5px + 1vw);
     text-align: center;
   }
 

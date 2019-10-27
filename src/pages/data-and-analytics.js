@@ -43,40 +43,36 @@ const DataAndAnalyticsPageContainer = styled.div`
   }
 `;
 
-const SectionHero = styled.div`
-  height: 800px;
-  min-height: 400px;
-  line-height: 85px;
+const SectionHeroDataPage = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
+
   h1 {
-    @media only screen and (min-width: 660px) {
-      font-size: 95px;
-      line-height: 150px;
-    }
-    @media only screen and (min-width: 990px) {
-      font-size: 120px;
-      line-height: 250px;
-    }
+    font-family: 'e2-Raleway-Extra-Bold';
+    text-align: center;
+    margin-top: calc(160px + 10vw);
+    letter-spacing: 0.5vw;
+    line-height: calc(30px + 9vw);
+    font-size: calc(16px + 8vw);
   }
   p {
-    font-size: 38px;
-    opacity: 0.7;
-    @media only screen and (min-width: 660px) {
-      font-size: 28px;
-    }
-    @media only screen and (min-width: 990px) {
-      /* font-size: 30px; */
-    }
+    font-family: 'e2-Raleway';
+    text-align: center;
+    padding: calc(15px + 2vw) calc(10px + 1vw); 
+    opacity: 0.8;
+    font-size: calc(7px + 3vw);
+    line-height: calc(15px + 6vw);
+    margin: calc(7px + 10vw) calc(7px + 2vw) calc(20px + 6vw);;
+
   }
+
 `;
 
-const WorkTogetherSection = styled.div`
-  padding: 5px;
+const WorkTogetherSectionData = styled.div`
+   padding: 5px;
   background-color: #000032;
   color: white;
   display: flex;
@@ -84,24 +80,30 @@ const WorkTogetherSection = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 400px;
-  margin: 300px 100px;
-  padding: 60px 20px;
+  margin: 25vw 2vw;
+
   h1 {
-    font-size: 80px;
-    line-height: 115px;
+    font-family: 'e2-Raleway-Extra-Bold';
     text-align: center;
-    margin-bottom: 80px;
+    margin-top: calc(160px + 10vw);
+    letter-spacing: 0.5vw;
+    line-height: calc(30px + 9vw);
+    font-size: calc(16px + 8vw);
   }
   p {
-    font-size: 28px;
+    font-family: 'e2-Raleway';
     text-align: center;
-    width: 100%;
-    line-height: 60px;
+    padding: calc(15px + 2vw) calc(10px + 1vw); 
+    opacity: 0.8;
+    font-size: calc(2px + 2vw);
+    line-height: calc(15px + 6vw);
+    margin: calc(7px + 4vw) calc(7px + 2vw) calc(20px + 6vw);
+
   }
 `;
 
-const LanguagesHeaderSection = styled.div`
-  padding: 5px 20px;;
+const YouDataIsOutThereSection = styled.div`
+  padding: 5px 20px;
   background-color: #000032;
   color: white;
   display: flex;
@@ -110,256 +112,88 @@ const LanguagesHeaderSection = styled.div`
   align-items: center;
   min-height: 400px;
   padding: 60px 40px;
-  h1 {
-    line-height: 55px;
-    text-align: left;
-    font-size: 80px;
-    line-height: 168px;
-  }
-  p {
-    text-align: left;
-    width: 94%;
-    font-size: 30px;
-    line-height: 37px;
-    letter-spacing: 2px;
-    opacity: 0.8;
-  }
-`;
-
-const LanguagePickerGrid = styled.div`
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto auto;
-  grid-auto-flow: column;
-  width: 100%;
-  @media only screen and (min-width: 660px) {
-  }
-  @media only screen and (min-width: 990px) {
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    grid-template-columns: 370px auto;
-  }
-`;
-
-const LanguageOptionsColumn = styled.div`
+  padding: 5px;
+  background-color: #000032;
+  color: white;
   display: flex;
   flex-direction: column;
-  flex: 1;
-  justify-content: space-around;
-  align-items: center;
-  text-align: left;
-  grid-column: 1 / 1;
-  grid-row: 1 / 1;
-  padding-left: 20px;
-  margin-left: 40px;
-  @media only screen and (min-width: 990px) {
-    /* grid-column-start: 1; */
-    /* grid-column-end: 2; */
-    height: 100%;
-    grid-row: 1 / 4;
-    /* grid-column: 1 / 2; */
-  }
-  ul {
-    padding: 5px;
-    text-align: left;
-    justify-content: flex-start;
-    display: flex;
-    flex-direction: column;
-  }
-  li {
-    font-size: 30px;
-    padding: 10px;
-    text-align: left;
-    line-height: 58px;
-    cursor: pointer;
-    border-radius: 3rem;
-    font-family: 'e2-Raleway-Bold';
-    letter-spacing: 2px;
-    @media only screen and (min-width: 660px) {
-      /* font-size: 35px; */
-      /* grid-column: 1 / 2; */
-    }
-    @media only screen and (min-width: 990px) {
-      margin-top: 20px;
-      margin-bottom: 20px;
-      /* width: 370px; */
-      /* flex: 1; */
-      font-size: 35px;
-      line-height: 56px;
-      /* grid-column: 1 / 2; */
-      /* grid-row: 1 / 1; */
-    }
-  }
-  .li-selected {
-    background-image: linear-gradient(
-      90deg,
-      rgba(27, 189, 189, 0),
-      rgba(27, 189, 189, 0.08),
-      rgba(27, 189, 189, 0.65)
-    );
-  }
-`;
-
-const LanguageInfoSection = styled.div`
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  justify-content: space-around;
-  align-items: center;
-  grid-column: 1 / 1;
-  grid-row: 2 / 2;
-  h1 {
-    font-size: 50px;
-  }
-  p {
-    /* font-size:  */
-    padding: 0 45px 40px;
-    text-align: left;
-    width: 94%;
-    font-size: 20px;
-    line-height: 37px;
-    -webkit-letter-spacing: 2px;
-    -moz-letter-spacing: 2px;
-    -ms-letter-spacing: 2px;
-    letter-spacing: 2px;
-    opacity: 0.8;
-  }
-  @media only screen and (min-width: 660px) {
-  }
-  @media only screen and (min-width: 990px) {
-    grid-column: 2 / 2;
-    grid-row: 1 / 2;
-  }
-`;
-
-const LanguageIdeScreenshotContainer = styled.div`
-  grid-row: 3 / 3;
-  padding: 10px 60px;
-  @media only screen and (min-width: 990px) {
-    grid-column: 2 / 2;
-    grid-row: 2 / 2;
-  }
-  img {
-    text-align: center;
-    height: 100%;
-  }
-`;
-
-const BestStackForYouSection = styled.div`
-  padding: 20px;
-  h1 {
-    margin: 50px 20px;
-    line-height: 55px;
-    text-align: left;
-    font-size: 80px;
-    line-height: 168px;
-  }
-  h2 {
-    margin-top: 100px;
-    padding-left: 20px;
-    font-size: 44px;
-  }
-  p {
-    margin: 30px 20px;
-    text-align: left;
-    font-size: 23px;
-    line-height: 32px;
-    letter-spacing: 2px;
-    opacity: 0.8;
-  }
-`;
-
-const StackBuilderResults = styled.div`
-  h1 {
-  }
-`;
-
-const BuildYourOwnStackSection = styled.div`
-  /* justify-content: space-evenly; */
-  /* padding: 5px; */
-  /* background-color: #001a33; */
-  /* color: white; */
-  /* display: flex; */
-  /* flex-direction: column; */
-  flex: 1;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
   justify-content: center;
+  align-items: center;
   min-height: 400px;
-  padding: 25px 25px;
-  @media only screen and (max-width: 990px) {
-    align-items: center;
-    flex-direction: column;
-  }
-  h2 {
-    line-height: 55px;
-    text-align: center;
-    font-size: 60px;
-    line-height: 168px;
-    font-family: 'e2-Raleway-Bold';
-  }
-  h4 {
-    font-size: 35px;
-    margin-bottom: 40px;
-    font-family: 'e2-Raleway-Black';
+  margin: 25vw 2vw;
+
+  h1 {
+    font-family: 'e2-Raleway-Extra-Bold';
     text-align: left;
-  }
-  p {
-    text-align: left;
-    width: 100%;
-    font-size: 30px;
-    line-height: 37px;
-    letter-spacing: 2px;
-  }
-  ul {
-    padding: 5px;
-    text-align: left;
-    justify-content: flex-start;
-    display: flex;
-    flex-direction: column;
-    margin-right: -74px;
-    /* width: 100%; */
-  }
-  li {
-    font-size: 30px;
-    padding: 10px;
-    text-align: left;
-    line-height: 58px;
-    border-radius: 3rem;
-    font-family: 'e2-Raleway-Semi-Bold';
-    @media only screen and (min-width: 660px) {
-      /* font-size: 35px; */
-      /* grid-column: 1 / 2; */
-    }
-    @media only screen and (min-width: 990px) {
-      margin-top: 20px;
-      margin-bottom: 20px;
-      font-size: 27px;
-      line-height: 38px;
-    }
-  }
-  .li-hovered {
-    background-image: linear-gradient(
-      90deg,
-      rgba(27, 189, 189, 0),
-      rgba(27, 189, 189, 0.08),
-      rgba(27, 189, 189, 0.65)
-    );
-  }
-  .li-selected {
-    background-image: linear-gradient(
-      90deg,
-      rgba(28, 220, 70, 0.3),
-      rgba(28, 220, 70, 0.05),
-      rgba(28, 220, 70, 0.65)
-    );
+    margin-top: calc(160px + 10vw);
+    letter-spacing: 0.5vw;
+    line-height: calc(30px + 9vw);
+    font-size: calc(16px + 8vw);
+    padding: 0 calc(10px + 2vw); 
   }
 
+  p {
+    font-family: 'e2-Raleway';
+    text-align: left;
+    padding: calc(15px + 2vw) calc(10px + 1vw); 
+    opacity: 0.8;
+    font-size: calc(6px + 2vw);
+    line-height: calc(15px + 6vw);
+    margin: calc(7px + 4vw) calc(7px + 2vw) calc(20px + 6vw);
+
+  }
 `;
 
+const EveryBusinessIsTechSection = styled.div`
+  background-color: #000032;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  padding: 60px 40px;
+  padding: 5px;
+  background-color: #000032;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  margin: 25vw 2vw;
+
+  h1 {
+    font-family: 'e2-Raleway-Extra-Bold';
+    text-align: left;
+    margin-top: calc(160px + 10vw);
+    letter-spacing: 0.5vw;
+    line-height: calc(30px + 9vw);
+    font-size: calc(16px + 7vw);
+    padding: 0 calc(10px + 2vw); 
+  }
+    
+  h2 {
+    font-family: 'e2-Raleway-Bold';
+    text-align: left;
+    margin-top: calc(15px + 5vw);
+    letter-spacing: 0.25vw;
+    line-height: calc(30px + 5vw);
+    font-size: calc(20px + 2vw);
+    padding: 0 calc(20px + 2vw); 
+  }
+
+  p {
+    font-family: 'e2-Raleway';
+    text-align: left;
+    padding: calc(15px + 2vw) calc(10px + 1vw); 
+    opacity: 0.8;
+    font-size: calc(6px + 2.5vw);
+    line-height: calc(15px + 5vw);
+    margin: calc(7px + 4vw) calc(7px + 2vw) calc(20px + 6vw);
+
+  }
+`;
 
 const keyPrinciplesData = {
   'DatabasesVsDataWareHouses': {
@@ -426,17 +260,17 @@ const DataAndAnalyticsPage = () => {
           <br />
           <br />
           <br />
-          <SectionHero>
+          <SectionHeroDataPage>
             <h1>
               Data & Analytics
           </h1>
             <p>Decisions based on facts, not assumptions.
             </p>
-          </SectionHero>
+          </SectionHeroDataPage>
           {/* <ServicePageHero title="DataAndAnalytics" description="Code crafted with care."></ServicePageHero> */}
           {/* <SecondServiceHero title="Ways we can work together" description="...to get your products built."></SecondServiceHero> */}
 
-          <WorkTogetherSection>
+          <WorkTogetherSectionData>
 
             <h1>
             Truly understand your users.
@@ -445,7 +279,7 @@ const DataAndAnalyticsPage = () => {
             By harnessing the data of how users interact with their applications, businesses can more
             confidently make calculated decisions based on historical evidence. 
               </p>
-          </WorkTogetherSection>
+          </WorkTogetherSectionData>
           <StackableColumnsContainer>
             <StackableColumn>
               <TechnicalAuditsImage />
@@ -471,20 +305,20 @@ const DataAndAnalyticsPage = () => {
             </StackableColumn>
           </StackableColumnsContainer>
 
-          <LanguagesHeaderSection>
+          <YouDataIsOutThereSection>
             <h1>The Data You Need Is Out There</h1>
             <p>
               ...are you ignoring it or capturing and analyzing it?
           </p>
-          </LanguagesHeaderSection>
+          </YouDataIsOutThereSection>
           
-          <BestStackForYouSection>
+          <EveryBusinessIsTechSection>
             <h1>It's true, these days... EVERY COMPANY is a tech company!</h1>
             <h2>...because everyone can benefit from intelligent data usage.</h2>
             <p>
               From simply understanding what your customers are asking for to predicting where the market is headed years down the road, intelligent analysis of data gives businesses a significant market advantage. Elavauates2 engineer can implement data-centric architectures and make recommendations on ways for making data more accessible to all areas of a company.
           </p>
-          </BestStackForYouSection>
+          </EveryBusinessIsTechSection>
           {/* <BuildYourOwnStackSection>
             <StackableColumn>
               <h2>Frontends</h2>
