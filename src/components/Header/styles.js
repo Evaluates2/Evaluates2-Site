@@ -3,25 +3,27 @@ import { Link } from "gatsby"
 import Image from 'gatsby-image'
 import mediaQuery from "../../utils/mediaQuery"
 import Owl from "../../assets/logo"
-import { navLinkStyle } from "../Nav"
+
 
 export const Img = styled(Image)`
-  width: 70px !important;
-  height: 70px !important;
+  width: 70px;
+  height: 70px;
   color: #0fdde8;
   transition: ease-in-out;
   margin-bottom: 0.3em;
   transform: rotate(-90deg);
   ${mediaQuery.maxNetbook} {
-    width: 40px !important;
-    height: 40px !important;
+    width: 40px;
+    height: 40px;
   }
 `
+
 export const Label = styled.div`
   color: white;
 
+  line-height: 25px;
   ${mediaQuery.maxNetbook} {
-    font-size: 20px !important;
+    font-size: 20px;
   }
 `
 
@@ -42,7 +44,7 @@ export const HeaderContainer = styled.header`
   background-color: rgba(0, 0, 0, 0);
   ${mediaQuery.minNetbook} {
     grid-template-areas: "title nav social search";
-  }
+  };
 `
 
 export const SiteTitle = styled(Link)`
@@ -50,7 +52,7 @@ export const SiteTitle = styled(Link)`
   display: grid;
   align-items: center;
   grid-auto-flow: column;
-  grid-gap: 1em;
+  gap: 19px;
   color: white;
   background-color: transparent;
   transition: ${props => props.theme.shortTrans};
@@ -59,6 +61,10 @@ export const SiteTitle = styled(Link)`
   }
   div {
     font-size: 30px;
+  }
+
+  a {
+    max-height: 250px;
   }
 `
 
