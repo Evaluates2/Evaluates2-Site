@@ -16,6 +16,8 @@ export const DesktopNavDiv = styled.nav`
 
 export const NavEntry = styled.div`
   position: relative;
+  line-height: 17px;
+  font-size: calc(12px + 1vw)
 `
 
 export const SubNav = styled.div`

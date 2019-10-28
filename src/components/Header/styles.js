@@ -33,8 +33,7 @@ export const HeaderContainer = styled.header`
   width: 100%;
   background: ${props => props.theme.darkBlue};
   display: grid;
-  grid-gap: calc(1em + 1vw);
-
+  grid-gap: calc(10px);
   align-items: center;
   justify-items: center;
   grid-template-areas: "nav title social search";
@@ -43,9 +42,6 @@ export const HeaderContainer = styled.header`
   background-color: rgba(0, 0, 0, 0);
   ${mediaQuery.minNetbook} {
     grid-template-areas: "title nav social search";
-  }
-  ${mediaQuery.maxNetbook} {
-    padding: 10px;
   }
 `
 
