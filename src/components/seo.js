@@ -4,9 +4,9 @@ import { Helmet } from "react-helmet"
 
 export default function SEO({ site, pageTitle, path = ``, ...rest }) {
   const { description, children } = rest
-  const title = pageTitle ? `${pageTitle} | ${site.title}` : site.title
-  const pageUrl = site.url + path
-  const desc = description || site.description
+  const title = pageTitle ? pageTitle : "Evaluates2"
+  const pageUrl = "www.evaluates2.com" + path
+  const desc = description
   return (
     <Helmet>
       <title>{title}</title>

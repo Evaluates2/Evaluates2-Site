@@ -214,9 +214,15 @@ const TeamMemberBackButton = styled.button`
   transition-delay: 0s;
 `;
 
-const TeamPage = location => {
-  const person =
-    personMap[location.location.pathname.slice(location.path.length - 1)];
+const TeamPage = (location = {location: "/jim"}) => {
+  
+  let person;
+  if (personMap[location.location.pathname.slice(location.path.length - 1)]) {
+    person = personMap[location.location.pathname.slice(location.path.length - 1)];
+  } else {
+    person = personMap['jim-lynch']
+  }
+    
 
   return (
     <Global pageTitle={'Terms'} path={'terms'} description={'terms'}>
@@ -286,5 +292,9 @@ const TeamPage = location => {
     </Global>
   );
 };
+
+TeamPage.defaultProps = {
+  counter: 0
+}
 
 export default TeamPage;

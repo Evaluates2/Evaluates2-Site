@@ -27,6 +27,7 @@ const StyledChangeGearsBlock = styled.div`
 
   h2 {
     display: flex;
+    flex: 1;
     width: 82vw;
     padding-right: 20px;
     padding-left: 7vw;
@@ -40,11 +41,11 @@ const StyledChangeGearsBlock = styled.div`
     align-items: center;
     color: #fff;
     margin-bottom: 0;
-    font-size: 42px;
-    line-height: 70px;
+    font-size: calc(20px + 3vw);
+    line-height: calc(35px + 3vw);;
     font-family: 'e2-Raleway-Bold';
     letter-spacing: 1px;
-    margin: 70px 0 2vw 20px;
+    margin: calc(20px + 5vw) auto calc(10px + 2vw) 20px;
   }
 
   a {
@@ -54,6 +55,7 @@ const StyledChangeGearsBlock = styled.div`
     justify-content: flex-start;
     margin: 0px 0 50px calc(14px + 9vw);
     min-height: 5vw;
+    /* position: absolute; */
 
     @keyframes rainbow_animation {
       0% {
@@ -66,6 +68,11 @@ const StyledChangeGearsBlock = styled.div`
      
     }
 
+
+    .rainbow {
+      position: absolute;
+    }
+    
     h3.rainbow_text_animated {
       background: linear-gradient(
         to left,
@@ -85,12 +92,12 @@ const StyledChangeGearsBlock = styled.div`
       background-size: 1500% 300%;
       color: #fff;
       transition: all 0.5s ease;
-      font-size: 20px;
+      font-size: calc(12px + 2vw);
       padding-left: 0px;
 
       :hover {
         /* padding: 5px 5px 5px 20px; */
-        font-size: 22px;
+        font-size: calc(14px + 2vw);
         padding-left: 20px;
         /* line-height: 28px; */
         color: rgba(0, 0, 0, 0);
@@ -129,6 +136,12 @@ const StyledChangeGearsBlock = styled.div`
 
 const RainbowBlock = styled.div`
   background-image: linear-gradient(238deg, #0ff, #f0f);
+
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+
 `;
 
 const ChangeGearsBlock = ({ headerText, linkText, linkTo }) => (

@@ -390,19 +390,7 @@ const StyledFormWithTwoBoxes = styled.div`
   }
 `;
 
-const changey = e => {
-  console.log('e is: ', e);
-};
-
 const ContactPage = () => {
-
-  const onInputBlur = (e) => {
-
-    if (formErrorText !== '') {
-      
-    }
-    console.log('on blur!')
-  }
 
   const earlySubmitClick = (
     validNameEntered,
@@ -411,12 +399,8 @@ const ContactPage = () => {
     validhumanVerified,
     errors,
   ) => {
-    console.log('submit clicked early!');
-    console.log('errors', errors);
-
     let earlySubmitErrorMessage = 'Please ';
 
-    console.log('valid? ', validNameEntered === true);
     if (
       !validNameEntered ||
       !validEmailEntered ||
@@ -425,7 +409,6 @@ const ContactPage = () => {
       errors.email ||
       errors.message
     ) {
-      console.log('here', validMessageEntered, errors.message);
       const errorFields = [
         !validNameEntered || errors.name ? 'name' : '',
         !validEmailEntered || errors.email ? 'email' : '',
@@ -467,11 +450,8 @@ const ContactPage = () => {
   };
 
   const onChange = e => {
-    console.log('e is: ', e);
     setHumanVerified(true);
   };
-
-  // const [humanVerified, setHumanVerified] = useState(false)
 
   const [humanVerified, setHumanVerified] = useState(false);
   const [formSuccessText, setFormSuccessText] = useState('');
@@ -519,7 +499,6 @@ const ContactPage = () => {
                             userAgent: {}
                           })
                           .then(res => {
-                            console.log(res.data);
 
                             resetForm({})
 

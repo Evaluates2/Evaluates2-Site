@@ -8,8 +8,7 @@ export const TextContainer = styled.div`
     flex: 1;
     flex-direction: column;
     justify-content: center;
-    max-width: 800px;
-    min-width: 200px;
+    width: 100%;
     -webkit-perspective: 608px;
     perspective: 608px;
     -webkit-transform: rotateX(.001deg) rotateY(0) rotateZ(0);
@@ -35,6 +34,7 @@ export const IntroContainer = styled.div`
     bottom: auto;
     z-index: 9;
     overflow: hidden;
+    width: 100%;
     color: white !important;
     background-image: linear-gradient(180deg,#000,#000032);
     padding: 50px;

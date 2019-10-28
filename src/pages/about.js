@@ -89,7 +89,7 @@ const PartnersSection = styled.div`
     
     img {
         object-fit: scale-down !important;
-        width: 10px;
+        width: 350px;
         /* width: 100%; */
         /* height: 100%; */
         /* display: inline; */
@@ -98,7 +98,7 @@ const PartnersSection = styled.div`
   }
 
   .gatsby-image-wrapper {
-    width: 300px;
+    width: calc(400px + 20vw);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -373,7 +373,9 @@ const AboutPage = () => (
         <div className="partner-row">
           {/* <MongoAtlasImage />
           <MozillaLogoImage /> */}
-          <KateFromHrLogoImage />
+          <a href='https://www.katefromhr.com'>
+            <KateFromHrLogoImage />
+          </a>
         </div>
       </PartnersSection>
 

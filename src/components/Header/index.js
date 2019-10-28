@@ -24,13 +24,18 @@ class Header extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      divStyle: {}
+      divStyle: {},
+      window: undefined
     };
 
-    this.window = window;
+  }
+  
+  componentWillMount() {
+
   }
 
   componentDidMount() {
+    this.setState(window)
     var prevScrollpos = window.pageYOffset;
     var fromTopPx = 250;
     var _this = this
@@ -72,7 +77,7 @@ class Header extends React.Component {
         render={data => (
           <Headroom css="z-index: 20;">
             <ColoredHeader >
-              <HeaderContainer css={this.state.divStyle} className={this.window.location.pathname === '/about' || this.window.location.pathname === '/our-work' || this.window.location.pathname.indexOf('/team') !== -1 ? 'blue-header' : ''}>
+              <HeaderContainer css={this.state.divStyle} className={this.state.window ? this.state.window.location.pathname === '/about' || this.state.window.location.pathname === '/our-work' || this.state.window.location.pathname.indexOf('/team') !== -1 ? 'blue-header' : '' : ''}>
                 <SiteTitle to="/" rel="home">
                   <StyledDImage>
                     <TheDImage />

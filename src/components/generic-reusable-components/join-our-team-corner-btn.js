@@ -62,21 +62,19 @@ class JoinOurTeamCornerBtn extends React.Component {
     super(props);
     this.state = {
       showJointButton: false,
+      window: undefined,
+      document: undefined
     };
 
-    this.window = window;
   }
   componentDidMount() {
-    this.window.addEventListener('scroll', this.handleScroll.bind(this), true);
-    // const ok = document.getElementById('join-team-btn').getBoundingClientRect()
-    //   .bottom;
+    this.setState({ showJointButton: false, window, document });
+    window.addEventListener('scroll', this.handleScroll.bind(this), true);
 
-    this.document = document;
-    // console.log('ok ', ok);
   }
 
-  UNSAFE_componentWillMount() {
-    this.window.removeEventListener(
+  componentWillUnmount() {
+    this.state.window.removeEventListener(
       'scroll',
       this.handleScroll.bind(this),
       true,
@@ -92,61 +90,19 @@ class JoinOurTeamCornerBtn extends React.Component {
         bounding.top >= 0 &&
         bounding.left >= 0 &&
         bounding.bottom <=
-          (window.innerHeight || this.document.documentElement.clientHeight) -
-            BUFFER
-        // &&
-        // bounding.right <=
-        //   (window.innerWidth || document.documentElement.clientWidth)
+        (this.state.window.innerHeight || this.state.document.documentElement.clientHeight) -
+        BUFFER
       );
     }
     return false;
   };
   handleScroll = e => {
-    // console.log('ok ', e)
-    // console.log('ok ', e.target.scrollHeight)
-    // console.log('ok ', e.target.scrollTop)
-    // console.log('ok ', e.target.clientHeight)
-
-    console.log(
-      this.isInViewport(this.document.getElementById('join-team-btn')),
-    );
-
-    const joinTeamBtnElement = this.document.getElementById('join-team-btn');
-
+    const joinTeamBtnElement = this.state.document.getElementById('join-team-btn');
     if (this.isInViewport(joinTeamBtnElement)) {
-      // var element = document.getElementById("myDIV");
-      // joinTeamBtnElement.classList.remove("off-right-position");
-      // joinTeamBtnElement.classList.add('fly-in-from-right');
-
       this.setState({
-        showJointButton: true,
+        showJointButton: true
       });
     }
-
-    const lastScrollY = this.window.scrollY;
-
-    const totalScrollableHeight = 1000;
-
-    const FROM_BOTTOM_PX_ANIMATION_THRESHOLD = 100;
-
-    if (
-      totalScrollableHeight - lastScrollY <
-      FROM_BOTTOM_PX_ANIMATION_THRESHOLD
-    ) {
-      // this.document.addClass('fly-in-from-right')
-    }
-
-    console.log(
-      'lastscroll',
-      lastScrollY,
-      ' out of ',
-      this.window.scrollHeight,
-    );
-    // if (!ticking) {
-    //   window.requestAnimationFrame(() => {
-    //     CornerDownLeft.log.
-    //   })
-    // }
   };
 
   render() {
@@ -159,7 +115,7 @@ class JoinOurTeamCornerBtn extends React.Component {
                 this.state.showJointButton
                   ? 'fly-in-from-right'
                   : 'off-right-position'
-              }`}
+                }`}
             >
               Join our team
             </button>

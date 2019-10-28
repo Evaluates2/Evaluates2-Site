@@ -43,3 +43,20 @@ npx gatsby new my-redux-starter https://github.com/caki0915/gatsby-starter-redux
 
 -  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
 
+
+## Build & Deploy (Prod Sire Hosted With S3 / Cloudfront)
+
+All builds and deployment are done manulally right now with these commands:
+```
+npm run build
+```
+```
+aws s3 cp ./public s3://aaa-evaluates2-site-production --recursive --acl public-read --cache-control max-age=1
+```
+
+
+*Also, be sure to point a "Cloudfront Distribution" at your S3 bucket with `index.html` as the error file, redirect HTTP to HTTPS, and map 403 and 404 errors to `/index.html`.*
+
+you will need aws creds as well
+
+--- 
