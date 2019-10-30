@@ -18,7 +18,7 @@ import ReadyToGetStartedSection from '../components/generic-reusable-components/
 import StackableImageAndTextDuo from '../components/generic-reusable-components/stackable-image-and-text-duo';
 import JoinOurTeamCornerBtn from '../components/generic-reusable-components/join-our-team-corner-btn';
 import DiscoveryMagnifyingGlassImage from '../components/img-components/discovery-magnifying-glass.img';
-import MvpBuildImage from '../components/img-components/mvp-build.img';
+import MvpBuildImage from '../components/img-components/mvp_build1.img';
 import Maintenance2Image from '../components/img-components/maintenance2.img';
 
 const stringWithBrackets = `We write requirements in the form of user stories using the format:

@@ -9,7 +9,6 @@ import styled from '@emotion/styled';
 import StackableImageAndTextDuo from '../components/generic-reusable-components/stackable-image-and-text-duo';
 import ChangeGearsBlock from '../components/generic-reusable-components/change-gears-block';
 import JoinOurTeamCornerBtn from './../components/generic-reusable-components/join-our-team-corner-btn';
-import 'semantic-ui-css/semantic.min.css';
 import StaffAugmentationImage from '../components/img-components/staff-augmentation.img';
 
 const StyledIndex = styled.div`

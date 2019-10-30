@@ -9,6 +9,7 @@ import theme from "../../utils/theme"
 import Scroll from "../Scroll"
 
 import { GlobalStyle } from "./styles"
+require('../../style/semantic.css')
 
 const Global = ({ children, site, ...rest }) => (
   <ThemeProvider theme={theme}>
