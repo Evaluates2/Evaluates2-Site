@@ -12,13 +12,17 @@ export const Arrow = styled(Down).attrs(props => ({
   color: white;
   transition: ${props => props.theme.shortTrans};
   position: absolute;
-  bottom: calc(70px + 2vw);
-  margin-right: 1vw;
+  bottom: calc(70px + 0.5vw);
+  margin-right: calc(10px + 1vw);
   /* right: calc(50vw - ${props => props.size} / 2); */
   opacity: ${props => (props.show ? 1 : 0)};
   visibility: ${props => (props.show ? `visible` : `hidden`)};
-  width: ${props => props.size};
-  height: ${props => props.size};
+  /* width: ${props => props.size};
+  height: ${props => props.size}; */
+
+  width: calc(30px + 2vw);
+  height: calc(30px + 2vw);
+
 
   cursor: pointer;
   :hover {

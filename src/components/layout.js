@@ -141,40 +141,32 @@ const Layout = ({ children, isDrawerOpen, toggleDrawer }) => (
             <Link to='/about'>
               About Us
             </Link>
-            <br />
             <Link to='/about#OUR_TEAM'>
               Team
             </Link>
-            <br />
           </div>
           <div className="footer-grid-block footer-services">
             <h2>Services</h2>
             <Link to='/engineering'>
               Engineering
             </Link>
-            <br />
             <Link to='/product-management'>
               Product Management
             </Link>
-            <br />
             <Link to='/startup'>
               Startup
             </Link>
-            <br />
             <Link to='/data-and-analytics'>
               Data & Analytics
             </Link>
-            <br />
           </div>
           <div className="footer-grid-block footer-resources">
             <h2>Our Work</h2>
             <Link to='/our-work'>
               Our Work
             </Link>
-            <br />
             <Link to='/our-work#OPEN_SOURCE'>
               Open Source
-              <br />
             </Link>
 
           </div>
@@ -183,7 +175,6 @@ const Layout = ({ children, isDrawerOpen, toggleDrawer }) => (
             <Link to='/contact'>
               Contact Us
             </Link>
-            <br />
           </div>
         </Footer>
 

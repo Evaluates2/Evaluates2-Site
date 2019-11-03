@@ -12,14 +12,14 @@ import KeyPrinciplesInfoBlock from './../components/generic-reusable-components/
 import ChangeGearsBlock from './../components/generic-reusable-components/change-gears-block';
 import JoinOurTeamCornerBtn from './../components/generic-reusable-components/join-our-team-corner-btn';
 import ServicePageHero from './../components/generic-reusable-components/service-page-hero';
-import StackableColumnsContainer from '../components/generic-reusable-components/stackable-columns-container';
-import StackableColumn from '../components/generic-reusable-components/stackable-column';
+import StackableDataColumnsContainer from '../components/generic-reusable-components/stackable-columns-container';
+// import StackableColumn from '../components/generic-reusable-components/stackable-column';
 import SecondServiceHero from '../components/generic-reusable-components/service-second-hero';
 import ReadyToGetStartedSection from '../components/generic-reusable-components/ready-to-get-started-section';
 import Global from "../components/Global"
 
 const DataAndAnalyticsPageContainer = styled.div`
-  font-family: 'e2-Raleway-Black';
+  /* font-family: 'e2-Raleway-Black'; */
   background-color: #000032;
   color: white;
   display: flex;
@@ -27,11 +27,11 @@ const DataAndAnalyticsPageContainer = styled.div`
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  h1 {
+  /* h1 {
     font-family: 'e2-Raleway-Black';
     font-size: 44px;
     max-width: 95vw;
-    line-height: 140px;
+    line-height: 10px;
     text-align: center;
     letter-spacing: 4px;
   }
@@ -40,34 +40,35 @@ const DataAndAnalyticsPageContainer = styled.div`
     line-height: 30px;
     letter-spacing: 2px;
     font-family: 'e2-Raleway';
-  }
+  } */
 `;
 
 const SectionHeroDataPage = styled.div`
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+line-height: 85px;
+flex: 1;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 
-  h1 {
-    font-family: 'e2-Raleway-Extra-Bold';
+h1 {
+  font-family: "e2-Raleway-Extra-Bold";
     text-align: center;
     margin-top: calc(160px + 10vw);
     letter-spacing: 0.5vw;
     line-height: calc(30px + 9vw);
     font-size: calc(16px + 8vw);
-  }
-  p {
-    font-family: 'e2-Raleway';
-    text-align: center;
-    padding: calc(15px + 2vw) calc(10px + 1vw); 
-    opacity: 0.8;
-    font-size: calc(7px + 3vw);
-    line-height: calc(15px + 6vw);
-    margin: calc(7px + 10vw) calc(7px + 2vw) calc(20px + 6vw);;
+}
+p {
+  font-family: 'e2-Raleway';
+  text-align: center;
+  padding: calc(15px + 2vw) calc(10px + 1vw); 
+  opacity: 0.7;
+  font-size: calc(7px + 3vw);
+  line-height: calc(15px + 6vw);
+  margin: calc(7px + 10vw) calc(7px + 2vw) calc(20px + 6vw);;
 
-  }
+}
 
 `;
 
@@ -94,9 +95,9 @@ const WorkTogetherSectionData = styled.div`
     font-family: 'e2-Raleway';
     text-align: center;
     padding: calc(15px + 2vw) calc(10px + 1vw); 
-    opacity: 0.8;
-    font-size: calc(2px + 2vw);
-    line-height: calc(15px + 6vw);
+    opacity: 0.7;
+    font-size: calc(14px + 1vw);
+    line-height: calc(28px + 2vw);
     margin: calc(7px + 4vw) calc(7px + 2vw) calc(20px + 6vw);
 
   }
@@ -136,9 +137,9 @@ const YouDataIsOutThereSection = styled.div`
     font-family: 'e2-Raleway';
     text-align: left;
     padding: calc(15px + 2vw) calc(10px + 1vw); 
-    opacity: 0.8;
-    font-size: calc(6px + 2vw);
-    line-height: calc(15px + 6vw);
+    opacity: 0.7;
+    font-size: calc(15px + 1vw);
+    line-height: calc(30px + 1vw);
     margin: calc(7px + 4vw) calc(7px + 2vw) calc(20px + 6vw);
 
   }
@@ -187,7 +188,7 @@ const EveryBusinessIsTechSection = styled.div`
     font-family: 'e2-Raleway';
     text-align: left;
     padding: calc(15px + 2vw) calc(10px + 1vw); 
-    opacity: 0.8;
+    opacity: 0.7;
     font-size: calc(6px + 2.5vw);
     line-height: calc(15px + 5vw);
     margin: calc(7px + 4vw) calc(7px + 2vw) calc(20px + 6vw);
@@ -200,9 +201,9 @@ const keyPrinciplesData = {
 
     header: 'A Playground For Data Engineers To Go Wild',
     paragraph1:
-    'Though engineers don\'t like to admit it, production databases can be pretty delicate and unstable. The need for the business side to have continuously fresh data can sometimes cause conflict between business and engineering.',
+      'Though engineers don\'t like to admit it, production databases can be pretty delicate and unstable. The need for the business side to have continuously fresh data can sometimes cause conflict between business and engineering.',
     paragraph2:
-    'We specializez in putting systems in place so that the data engineers can use data warehousing solutions (such as google bigtable) to go crazy and and crunch numbers in any way they see fit without risk of negatively affecting production data or performance.'
+      'We specializez in putting systems in place so that the data engineers can use data warehousing solutions (such as google bigtable) to go crazy and and crunch numbers in any way they see fit without risk of negatively affecting production data or performance.'
   },
   'Data Visualisation': {
     header: 'The Importance of Test Driven Development (TDD)',
@@ -251,15 +252,89 @@ const DataAndAnalyticsPage = () => {
 
   };
 
+
+  const StackableDataColumn = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10vw calc(3px + 2vw);
+  height: 100%;
+  width: 33%;
+
+  @media only screen and (max-width: 960px) {
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  h1 {
+    font-family: 'e2-Raleway-Bold';
+    font-size: calc(15px + 2vw);
+    max-width: 95vw;
+    line-height: calc(25px + 2vw);
+    text-align: center;
+    -webkit-letter-spacing: 4px;
+    -moz-letter-spacing: 4px;
+    -ms-letter-spacing: 4px;
+    letter-spacing: 1.5px;
+    /* margin: 20px auto; */
+    min-height: 10vw;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h3 {
+    font-family: 'e2-Raleway-Semi-Bold';
+    font-size: calc(15px + 2vw);
+    max-width: 95vw;
+    line-height: 5vw;
+    min-height: 5vw;
+    padding-top: 3vw;
+  }
+
+  p {
+    margin-bottom: 3vw;
+    line-height: calc(19px + 3vw);
+    text-align: justify;
+    font-size: calc(11px + 1vw);
+    letter-spacing: calc(0.2vw);
+    font-family: 'e2-Raleway-Light';
+    opacity: 0.7;
+  }
+
+  .gatsby-image-wrapper {
+    height: auto;
+    width: 80%;
+    text-align: center;
+    max-width: 310px;
+  }
+
+  ul {
+    font-size: 24px;
+    line-height: 37px;
+    padding-top: 20px;
+  }
+
+  li {
+    font-size: calc(15px + 2vw);
+    max-width: 95vw;
+    line-height: calc(15px + 5vw);
+    min-height: 5vw;
+    padding-top: 3vw;
+    font-family: 'e2-Raleway-Semi-Bold';
+  }
+
+`;
+
   return (
     <Global pageTitle={'Data And Analytics'} path={'dataAndAnalytics'} description={'dataAndAnalytics'}>
       <Layout>
 
         <DataAndAnalyticsPageContainer onClick={pageClicked}>
-          <br />
-          <br />
-          <br />
-          <br />
+       
           <SectionHeroDataPage>
             <h1>
               Data & Analytics
@@ -273,37 +348,37 @@ const DataAndAnalyticsPage = () => {
           <WorkTogetherSectionData>
 
             <h1>
-            Truly understand your users.
+              Truly understand your users.
             </h1>
             <p>
-            By harnessing the data of how users interact with their applications, businesses can more
-            confidently make calculated decisions based on historical evidence. 
+              By harnessing the data of how users interact with their applications, businesses can more
+              confidently make calculated decisions based on historical evidence.
               </p>
           </WorkTogetherSectionData>
-          <StackableColumnsContainer>
-            <StackableColumn>
-              <TechnicalAuditsImage />
+          <StackableDataColumnsContainer>
+            <StackableDataColumn>
+            <TechnicalAuditsImage />
               <h1>Intelligently Manage Your Data</h1>
               <p>
                 At Evaluates2 we understand that data and analytics is important for every company and every application, and we are aware of this from day 1. We will set up a practical flow of data from databases to data warehouses where it can then be easily queried against for analytics and other testing purposes.
               </p>
-              
-            </StackableColumn>
-            <StackableColumn>
+
+            </StackableDataColumn>
+            <StackableDataColumn>
               <StaffAugmentationImage />
               <h1>Custom Visualizations & Dashboards</h1>
               <p>
                 We are familiar with various frontend charting and data visualization libraries. Visual aids such as simple pies charts and bar charts can consolidate millions of rows worth of data into understandable metrics which business leaders can act upon with confidence.
               </p>
-            </StackableColumn>
-            <StackableColumn>
+            </StackableDataColumn>
+            <StackableDataColumn>
               <ResourceEfficiencyImage />
               <h1>Data-Justified Business Decisions</h1>
               <p>
                 Regardless of whether a business is a budding new startup or a centries-old tycoon, every business is continuous fighting to validate that it's business model holds up in today's every-changing economy. Evaluates2 canc help companies wrangle the chaotic, dissonant strams of data into one managable stream of consciousness.
               </p>
-            </StackableColumn>
-          </StackableColumnsContainer>
+            </StackableDataColumn>
+          </StackableDataColumnsContainer>
 
           <YouDataIsOutThereSection>
             <h1>The Data You Need Is Out There</h1>
@@ -311,7 +386,7 @@ const DataAndAnalyticsPage = () => {
               ...are you ignoring it or capturing and analyzing it?
           </p>
           </YouDataIsOutThereSection>
-          
+
           <EveryBusinessIsTechSection>
             <h1>It's true, these days... EVERY COMPANY is a tech company!</h1>
             <h2>...because everyone can benefit from intelligent data usage.</h2>
@@ -320,7 +395,7 @@ const DataAndAnalyticsPage = () => {
           </p>
           </EveryBusinessIsTechSection>
           {/* <BuildYourOwnStackSection>
-            <StackableColumn>
+            <StackableDataColumn>
               <h2>Frontends</h2>
               <ul>
                 <li>React (JavaScript or TypeScript)</li>
@@ -332,8 +407,8 @@ const DataAndAnalyticsPage = () => {
                 <li>Native Ios (Swift)</li>
                 <li>Native Android (Kotlin)</li>
               </ul>
-            </StackableColumn>
-            <StackableColumn>
+            </StackableDataColumn>
+            <StackableDataColumn>
               <h2>Backends</h2>
               <ul>
                 <li>NodeJS (Express + JavaScript)</li>
@@ -355,8 +430,8 @@ const DataAndAnalyticsPage = () => {
                 <li>C# (with NancyFx)</li>
                 <li>C# (Serverless C#)</li>
               </ul>
-            </StackableColumn>
-            <StackableColumn>
+            </StackableDataColumn>
+            <StackableDataColumn>
               <h2>Databases</h2>
               <ul>
                 <h4>(NoSQL)</h4>
@@ -372,17 +447,17 @@ const DataAndAnalyticsPage = () => {
                 <li>Amazon RDS</li>
                 <li>MySQL</li>
               </ul>
-            </StackableColumn>
+            </StackableDataColumn>
           </BuildYourOwnStackSection> */}
 
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
 
           <KeyPrinciplesHeader headerText="Databases Vs Data Warehouses"></KeyPrinciplesHeader>
           <KeyPrinciplesInfoBlock data={keyPrinciplesData['DatabasesVsDataWareHouses']}></KeyPrinciplesInfoBlock>

@@ -107,7 +107,7 @@ const ProductManagementPage = () => (
           imgName="IPMS/RETROS"
           imgOnLeft={false}
           buttonText="Learn More"
-          buttonLinkTo="/"
+          buttonLinkTo="/contact"
         ></StackableImageAndTextDuo>
         <StackableImageAndTextDuo
           title="User Stories"
@@ -118,7 +118,7 @@ const ProductManagementPage = () => (
           imgName="USER_STORIES"
           imgOnLeft={true}
           buttonText="Learn More"
-          buttonLinkTo="/"
+          buttonLinkTo="/contact"
         ></StackableImageAndTextDuo>
         <StackableImageAndTextDuo
           title="Pair Programming"
@@ -129,7 +129,7 @@ const ProductManagementPage = () => (
           imgName="PAIR_PROGRAMMING"
           imgOnLeft={false}
           buttonText="Learn More"
-          buttonLinkTo="/"
+          buttonLinkTo="/contact"
         ></StackableImageAndTextDuo>
         <StackableImageAndTextDuo
           title="Live Demos!"
@@ -140,7 +140,7 @@ const ProductManagementPage = () => (
           imgName="LIVE_DEMOS"
           imgOnLeft={true}
           buttonText="Learn More"
-          buttonLinkTo="/"
+          buttonLinkTo="/contact"
         ></StackableImageAndTextDuo>
         <ChangeGearsBlock
           headerText="Find out more about our development work..."

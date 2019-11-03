@@ -6,6 +6,7 @@ const Footer = styled.div`
   width: 100%;
   padding: 35px 13px 20px;
   display: grid;
+  gap: calc(4px + 1vw);
 
   // desktop, 4 items in a row
   grid-template-columns: auto auto auto auto auto;
@@ -32,7 +33,8 @@ const Footer = styled.div`
       }
       
       font-size: calc(14px + 0.5vw);
-      line-height: 1.3em;
+      line-height: calc(30px + 0.5vw);
+      margin: 4px 0;
 
       @media only screen and (max-width: 660px) {
         font-size: 5vw;
@@ -72,7 +74,7 @@ const Footer = styled.div`
     /* align-items: left; */
     text-align: left;
     /* flex-direction: column; */
-    padding-bottom: 15px;
+    /* padding-bottom: 15px; */
     /* width: 300px; */
 
     .e2-logo {

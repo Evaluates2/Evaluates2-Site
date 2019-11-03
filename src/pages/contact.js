@@ -34,14 +34,7 @@ const StyledContactPage = styled.div`
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  h2 {
-    font-family: 'e2-Raleway-Bold';
-    font-size: calc(px);
-    max-width: 95vw;
-    line-height: 140px;
-    text-align: center;
-    letter-spacing: 4px;
-  }
+
   .need-an-nda {
     font-size: 16px;
     line-height: 30px;
@@ -80,7 +73,6 @@ const StyledContactPage = styled.div`
   .clickable-submit {
     position: absolute;
     display: inline-block;
-    /* background-color: white; */
     cursor: pointer;
   }
 
@@ -101,15 +93,16 @@ const StyledContactForm = styled.div`
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  margin: 2vw
+  margin: calc(10px + 1vw);
 
   h2 {
+    letter-spacing: 0.5vw;
     font-family: 'e2-Raleway-Bold';
-    font-size: calc(35px + 3vw);
-    line-height: calc(5px + 3vw);
-    max-width: 95vw;
+    margin-top: calc(160px + 10vw);
+    line-height: calc(21px + 9vw);
+    font-size: calc(7px + 9vw);
     text-align: center;
-    letter-spacing: 4px;
+
   }
 
   .need-an-nda {
@@ -461,13 +454,7 @@ const ContactPage = () => {
     <Global pageTitle={'Contact Us'} path={'contact'} description={'contact'}>
       <Layout>
         <StyledContactPage>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
+         
           <StyledFormWithTwoBoxes>
             <StyledContactForm>
               <div>

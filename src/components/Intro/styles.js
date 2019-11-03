@@ -2,11 +2,7 @@ import styled from "styled-components"
 import mediaQuery from "../../utils/mediaQuery"
 
 export const TextContainer = styled.div`
-    /* position: relative; */
     z-index: 40px;
-    display: inline-flex;
-    flex: 1;
-    flex-direction: column;
     justify-content: center;
     width: 100%;
     -webkit-perspective: 608px;

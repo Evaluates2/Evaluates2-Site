@@ -6,7 +6,7 @@ export { NavLink, ParentNavLink } from ".."
 
 export const DesktopNavDiv = styled.nav`
   display: grid;
-  grid-gap: calc(1em + 1vw);
+  /* grid-gap: calc(1em + 1vw); */
   transition: ${props => props.theme.shortTrans};
   max-width: fill-available;
   grid-auto-flow: column;
@@ -16,6 +16,8 @@ export const DesktopNavDiv = styled.nav`
 
 export const NavEntry = styled.div`
   position: relative;
+  line-height: 17px;
+  font-size: calc(12px + 1vw);
 `
 
 export const SubNav = styled.div`

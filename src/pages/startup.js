@@ -85,7 +85,7 @@ const ProductManagementPage = () => (
         <br />
         <StackableImageAndTextDuo
           title="Flexible Staff Augmentation"
-          header1="One Engineer ora Whole Team"
+          header1="One Engineer Or A Whole Team"
           paragraph1="We work with all sorts of copmanies, large and small, and our services our always customized to the needs or each unique client."
           header2=""
           paragraph2=""
@@ -103,7 +103,7 @@ const ProductManagementPage = () => (
           imgName="SHORT_OR_LONG_CONTRACTS"
           imgOnLeft={false}
           buttonText="Learn More"
-          buttonLinkTo="/"
+          buttonLinkTo="/contact"
         ></StackableImageAndTextDuo>
         <StackableImageAndTextDuo
           title="We'll Work Within Your Budget"
@@ -114,7 +114,7 @@ const ProductManagementPage = () => (
           imgName="WELL_WORK_WITH_YOUR_BUDGET"
           imgOnLeft={true}
           buttonText="Learn More"
-          buttonLinkTo="/"
+          buttonLinkTo="/contact"
         ></StackableImageAndTextDuo>
         {/* <StackableImageAndTextDuo
           title="Pair Programming"

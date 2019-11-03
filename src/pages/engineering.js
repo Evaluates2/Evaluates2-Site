@@ -13,7 +13,7 @@ import ChangeGearsBlock from './../components/generic-reusable-components/change
 import JoinOurTeamCornerBtn from './../components/generic-reusable-components/join-our-team-corner-btn';
 import ServicePageHero from './../components/generic-reusable-components/service-page-hero';
 import StackableColumnsContainer from '../components/generic-reusable-components/stackable-columns-container';
-import StackableColumn from '../components/generic-reusable-components/stackable-column';
+// import EngineeringStackableColumn from '../components/generic-reusable-components/stackable-column';
 import SecondServiceHero from '../components/generic-reusable-components/service-second-hero';
 import ReadyToGetStartedSection from '../components/generic-reusable-components/ready-to-get-started-section';
 import Global from "../components/Global"
@@ -403,6 +403,81 @@ const BuildYourOwnStackSection = styled.div`
 
 `;
 
+const EngineeringStackableColumn = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10vw calc(3px + 2vw);
+  height: 100%;
+  width: 33%;
+
+  @media only screen and (max-width: 960px) {
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  h1 {
+    font-family: 'e2-Raleway-Bold';
+    font-size: calc(15px + 2vw);
+    max-width: 95vw;
+    line-height: calc(25px + 2vw);
+    text-align: center;
+    -webkit-letter-spacing: 4px;
+    -moz-letter-spacing: 4px;
+    -ms-letter-spacing: 4px;
+    letter-spacing: 1.5px;
+    /* margin: 20px auto; */
+    min-height: 10vw;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h3 {
+    font-family: 'e2-Raleway-Semi-Bold';
+    font-size: calc(15px + 2vw);
+    max-width: 95vw;
+    line-height: 5vw;
+    min-height: 5vw;
+    padding-top: 3vw;
+  }
+
+  p {
+    margin-bottom: 3vw;
+    line-height: calc(19px + 3vw);
+    text-align: justify;
+    font-size: calc(12px + 1vw);
+    letter-spacing: 1.25px;
+    font-family: 'e2-Raleway-Light';
+  }
+
+  .gatsby-image-wrapper {
+    height: auto;
+    width: 80%;
+    text-align: center;
+    max-width: 310px;
+  }
+
+  ul {
+    font-size: 24px;
+    line-height: 37px;
+    padding-top: 20px;
+  }
+
+  li {
+    font-size: calc(15px + 2vw);
+    max-width: 95vw;
+    line-height: calc(15px + 5vw);
+    min-height: 5vw;
+    padding-top: 3vw;
+    font-family: 'e2-Raleway-Semi-Bold';
+  }
+
+`;
+
 const languageDescriptionsMap = {
   JavaScript:
     "JavaScript, though mercilessly mocked by programmers across the board for years, somehow rose above and evolve to become the king of the web. Though it's interpreted, dynamically-typed nature makes for very concise code, and it supports either a Class-based or a very functional style or writing. Today, some front-end JavaScript framework is an excellent choice for any website or web application, and there are probably more servers deployed these days running node.js than anything else!",
@@ -494,10 +569,7 @@ const EngineeringPage = () => {
       <Layout>
 
         <EngineeringPageContainer onClick={pageClicked}>
-          <br />
-          <br />
-          <br />
-          <br />
+        
           <SectionHeroEngPage>
             <h1>
               Engineering
@@ -518,7 +590,7 @@ const EngineeringPage = () => {
               </p>
           </WorkTogetherSection>
           <StackableColumnsContainer>
-            <StackableColumn>
+            <EngineeringStackableColumn>
               <TechnicalAuditsImage />
               <h1>Technical Audits</h1>
               <p>
@@ -550,8 +622,8 @@ const EngineeringPage = () => {
                   Data Integrity
                 </li>
               </ul>
-            </StackableColumn>
-            <StackableColumn>
+            </EngineeringStackableColumn>
+            <EngineeringStackableColumn>
               <StaffAugmentationImage />
               <h1>Staff Augmentation</h1>
               <p>
@@ -560,8 +632,8 @@ const EngineeringPage = () => {
               <p>
                 During our initial consultantions we will work with you to determine the optimal number of Evaluates2 engineers to have on your team based on your current team and the project scope, timeline, and budget.
               </p>
-            </StackableColumn>
-            <StackableColumn>
+            </EngineeringStackableColumn>
+            <EngineeringStackableColumn>
               <ResourceEfficiencyImage />
               <h1>Resource Efficiency</h1>
               <p>
@@ -570,7 +642,7 @@ const EngineeringPage = () => {
               <p>
                 By instilling expert-level practices in things such as automated testing and deployment strategies, Evlauates2 engineers can act as an unbiased third-party to keep engineering teams honest and disciplined in their development practices.
               </p>
-            </StackableColumn>
+            </EngineeringStackableColumn>
           </StackableColumnsContainer>
 
           <LanguagesHeaderSection>
@@ -838,7 +910,7 @@ const EngineeringPage = () => {
           </p>
           </BestStackForYouSection>
           <BuildYourOwnStackSection>
-            <StackableColumn>
+            <EngineeringStackableColumn>
               <h2>Frontends</h2>
               <ul>
                 <li>React (JavaScript or TypeScript)</li>
@@ -850,8 +922,8 @@ const EngineeringPage = () => {
                 <li>Native Ios (Swift)</li>
                 <li>Native Android (Kotlin)</li>
               </ul>
-            </StackableColumn>
-            <StackableColumn>
+            </EngineeringStackableColumn>
+            <EngineeringStackableColumn>
               <h2>Backends</h2>
               <ul>
                 <li>NodeJS (Express + JavaScript)</li>
@@ -876,8 +948,8 @@ const EngineeringPage = () => {
                 <li>C# (with NancyFx)</li>
                 <li>C# (Serverless C#)</li>
               </ul>
-            </StackableColumn>
-            <StackableColumn>
+            </EngineeringStackableColumn>
+            <EngineeringStackableColumn>
               <h2>Databases</h2>
               <ul>
                 <h4>(NoSQL)</h4>
@@ -894,7 +966,7 @@ const EngineeringPage = () => {
                 <li>Amazon Aurora</li>
                 <li>MySQL</li>
               </ul>
-            </StackableColumn>
+            </EngineeringStackableColumn>
           </BuildYourOwnStackSection>
 
           <KeyPrinciplesHeader headerText="Continuous Integration & Multiple Environments"></KeyPrinciplesHeader>

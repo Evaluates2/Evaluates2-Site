@@ -290,9 +290,6 @@ const PinkBox = styled.div`
 const AboutPage = () => (
   <Global pageTitle={'About'} path={'about'} description={'about'}>
     <Layout>
-      <br />
-      <br />
-      <br />
 
       <AboutHero>
         <h1>About Us</h1>
