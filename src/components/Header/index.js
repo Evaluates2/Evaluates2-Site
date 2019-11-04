@@ -77,7 +77,7 @@ class Header extends React.Component {
         render={data => (
           <Headroom css="z-index: 20;">
             <ColoredHeader >
-              <HeaderContainer css={this.state.divStyle} className={this.state.window ? this.state.window.location.pathname === '/about' || this.state.window.location.pathname === '/our-work' || this.state.window.location.pathname.indexOf('/team') !== -1 ? 'blue-header' : '' : ''}>
+              <HeaderContainer css={this.state.divStyle} className={this.state.window ? this.state.window.location.pathname === '/' ? 'transparent' : '' : ''}>
                 <SiteTitle to="/" rel="home">
                   <StyledDImage>
                     <TheDImage />

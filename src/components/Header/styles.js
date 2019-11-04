@@ -33,7 +33,6 @@ export const HeaderContainer = styled.header`
   padding: 20px;
   position: fixed;
   width: 100%;
-  background: ${props => props.theme.darkBlue};
   display: grid;
   grid-gap: calc(10px);
   align-items: center;
@@ -41,10 +40,19 @@ export const HeaderContainer = styled.header`
   grid-template-areas: "nav title social search";
   grid-template-columns: auto 1fr auto auto;
   font-weight: bold;
-  /* background-color: rgba(0, 0, 0, 0); */
   ${mediaQuery.minNetbook} {
     grid-template-areas: "title nav social search";
   };
+  
+  :not(.transparent) {
+    background-color: ${props => props.theme.darkBlue};
+
+  }
+  .transparent {
+    background-color: rgba(0,0,0,0);
+  }
+
+
 `
 
 export const SiteTitle = styled(Link)`
