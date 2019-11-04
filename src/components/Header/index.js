@@ -8,9 +8,7 @@ import { HeaderContainer, Logo, SiteTitle, Img, Label } from "./styles"
 import TheDImage from '../img-components/the-d.img';
 
 const ColoredHeader = styled.div`
-  .blue-header {
-    background-color: #000032;
-  }
+
 `;
 
 const StyledDImage = styled.div`
