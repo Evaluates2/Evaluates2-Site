@@ -92,6 +92,11 @@ const StyledOurWorkPieceOfWork = styled.div`
     background-color: lightskyblue;
   }
 
+  li {
+    font-size: calc(20px);
+    line-height: calc(29px);
+  }
+
   .reversed {
     flex-direction: row;
 

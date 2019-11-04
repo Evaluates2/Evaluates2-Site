@@ -8,7 +8,7 @@ import { NavEntry, SubNav, NavLink, DesktopNavDiv, ParentNavLink } from "./style
 const WrappedSubnav = styled.div`
 
   .blue-bg {
-    background-color: #000032;
+    background-color: #000032 !important;
   }
   
 `;

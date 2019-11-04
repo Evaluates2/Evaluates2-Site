@@ -13,8 +13,13 @@ import ReadyToGetStartedSection from '../components/generic-reusable-components/
 
 const OurWorkHero = styled.div`
 
-h1 {
+ h1 {
     color: #000032;
+    font-size: 120px;
+    font-family: 'e2-Raleway-Extra-Bold';
+    text-align: center;
+    margin-top: 150px;
+     color: #000032;
     font-family: 'e2-Raleway-Extra-Bold';
     text-align: center;
     margin-top: calc(160px + 12vw);
@@ -32,44 +37,36 @@ h1 {
     line-height: calc(15px + 6vw);
     font-size: calc(7px + 3vw);
     margin: 15vw 7vw 15vw;
-    .about-blurb {
-      margin-top: 50px;
-      margin-bottom: 50px;
-      font-size: 30px;
-      line-height: 15vw;
-      max-width: 800px;
-      text-align: justify;
-    }
   }
-  
-  /* h1 {
-    color: #000032;
-    font-size: 120px;
-    font-family: 'e2-Raleway-Extra-Bold';
-    text-align: center;
-    margin-top: 150px;
-  }
-  p {
+  .about-blurb {
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    line-height: 15vw;
+    max-width: 800px;
+    text-align: justify;
+
     color: #000011;
     font-size: 38px;
     font-family: 'e2-Raleway';
     text-align: center;
     margin: 10px 40px 150px;
     opacity: 0.8;
+  }
 
-    .ourWork-blurb {
-      margin-top: 50px;
-      margin-bottom: 50px;
-      font-size: 30px;
-      line-height: 60px;
-      max-width: 800px;
-      line-height: 3.5vw;
-      text-align: justify;
-    }
-  } */
+  .ourWork-blurb {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    line-height: 60px;
+    max-width: 800px;
+    line-height: 3.5vw;
+    text-align: justify;
+  }
 
   div {
-    text-align: center !important ;
+    text-align: center !important;
   }
 
   .ourWork-us-video {
@@ -81,6 +78,7 @@ h1 {
     justify-content: center;
     align-items: center;
   }
+
 `;
 
 const CenteredVideo = styled.div`
@@ -201,7 +199,7 @@ const OurTeamSection = styled.div`
 const WhatWeveBuiltSection = styled.div`
   padding: 0 100px;
 
-  h1 {
+  /* h1 {
     font-family: 'e2-Raleway-Extra-Bold';
     font-size: 80px;
     line-height: 100px;
@@ -215,7 +213,7 @@ const WhatWeveBuiltSection = styled.div`
     font-family: 'e2-Raleway';
 
     padding: 20px 0;
-  }
+  } */
 `;
 
 const PinkBoxesContainer = styled.div`

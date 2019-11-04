@@ -41,7 +41,7 @@ export const HeaderContainer = styled.header`
   grid-template-areas: "nav title social search";
   grid-template-columns: auto 1fr auto auto;
   font-weight: bold;
-  background-color: rgba(0, 0, 0, 0);
+  /* background-color: rgba(0, 0, 0, 0); */
   ${mediaQuery.minNetbook} {
     grid-template-areas: "title nav social search";
   };
