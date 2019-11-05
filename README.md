@@ -51,7 +51,7 @@ All builds and deployment are done manulally right now with these commands:
 npm run build
 ```
 ```
-aws s3 cp ./public s3://aaa-evaluates2-site-production --recursive --acl public-read --cache-control max-age=1
+npm run deploy
 ```
 
 

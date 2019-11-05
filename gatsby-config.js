@@ -46,6 +46,14 @@ module.exports = {
     },
     'gatsby-plugin-emotion',
     `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: 'aaa-evaluates2-site-production',
+        protocol: "https",
+        hostname: "www.evaluates2.com",
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
