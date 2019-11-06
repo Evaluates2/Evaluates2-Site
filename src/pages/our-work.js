@@ -13,7 +13,7 @@ import ReadyToGetStartedSection from '../components/generic-reusable-components/
 
 const OurWorkHero = styled.div`
 
- h1 {
+ h1#hero-h-our-work {
     color: #000032;
     font-size: 120px;
     font-family: 'e2-Raleway-Extra-Bold';
@@ -199,21 +199,6 @@ const OurTeamSection = styled.div`
 const WhatWeveBuiltSection = styled.div`
   padding: 0 100px;
 
-  /* h1 {
-    font-family: 'e2-Raleway-Extra-Bold';
-    font-size: 80px;
-    line-height: 100px;
-    font-weight: 800;
-  }
-
-  p {
-    opacity: 0.8;
-    font-size: 30px;
-    line-height: 40px;
-    font-family: 'e2-Raleway';
-
-    padding: 20px 0;
-  } */
 `;
 
 const PinkBoxesContainer = styled.div`
@@ -270,7 +255,7 @@ const OurWorkPage = () => (
     <Layout>
 
       <OurWorkHero>
-        <h1>Our&nbsp;Work</h1>
+        <h1 id="hero-h-our-work">Our&nbsp;Work</h1>
         <p>
           We don't just say we've built awesome things- we've been doing it for
           a while...

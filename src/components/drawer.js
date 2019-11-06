@@ -18,16 +18,11 @@ const Paper = styled.aside`
   transform: translateX(${p => (p.isDrawerOpen ? 0 : `-${p.theme.size(16)}`)});
 `;
 
-const MobileHeader = styled.header`
-  display: flex;
-  align-items: center;
-  height: ${p => p.theme.size(4)};
-  background: ${p => p.theme.palette.secondary.dark};
-`;
-
 const Item = styled(Link)`
   color: ${p => p.theme.palette.secondary.contrast};
-  padding: ${p => p.theme.size(1)} ${p => p.theme.size(2)};
+  /* padding: ${p => p.theme.size(1)} ${p => p.theme.size(2)}; */
+
+  /* padding: 50px; */
   transition: background-color 0.1s ease-out;
   &:hover {
     background: ${p => p.theme.palette.secondary.dark};

@@ -27,35 +27,6 @@ export const Label = styled.div`
   }
 `
 
-export const HeaderContainer = styled.header`  
-  :not(.transparent) {
-    background-color: ${props => props.theme.darkBlue};
-
-  }
-  .transparent {
-    background-color: rgba(0,0,0,0);
-  }
-  
-  transition: top 1s linear;
-  transition: opacity 0 linear;
-  padding: 20px;
-  position: fixed;
-  width: 100%;
-  display: grid;
-  grid-gap: calc(10px);
-  align-items: center;
-  justify-items: center;
-  grid-template-areas: "nav title social search";
-  grid-template-columns: auto 1fr auto auto;
-  font-weight: bold;
-  ${mediaQuery.minNetbook} {
-    grid-template-areas: "title nav social search";
-  };
-  
-
-
-`
-
 export const SiteTitle = styled(Link)`
   grid-area: title;
   display: grid;

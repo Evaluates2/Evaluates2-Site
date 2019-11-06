@@ -95,7 +95,7 @@ const StyledContactForm = styled.div`
   overflow: hidden;
   margin: calc(10px + 1vw);
 
-  h2 {
+  h2#hero-h-contact {
     letter-spacing: 0.5vw;
     font-family: 'e2-Raleway-Bold';
     margin-top: calc(160px + 10vw);
@@ -458,9 +458,8 @@ const ContactPage = () => {
           <StyledFormWithTwoBoxes>
             <StyledContactForm>
               <div>
-                <br />
-                <br />
-                <h2>We look forward to speaking!</h2>
+            
+                <h2 id="hero-h-contact">We look forward to speaking!</h2>
                 <br />
                 <br />
 

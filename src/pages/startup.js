@@ -37,7 +37,7 @@ const ProjectManagementPageContainer = styled.div`
 `;
 
 
-const ProductManagementPage = () => (
+const StartupPage = () => (
   <Global pageTitle={'Product Management'} path={'product-management'} description={'product-management'}>
 
     <Layout>
@@ -152,4 +152,4 @@ const ProductManagementPage = () => (
     </Layout>
   </Global>
 );
-export default ProductManagementPage;
+export default StartupPage;
