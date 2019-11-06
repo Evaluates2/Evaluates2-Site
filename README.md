@@ -60,3 +60,7 @@ npm run deploy
 you will need aws creds as well
 
 --- 
+
+## Google Recaptcha
+
+Recaptcha human verification is tied to Jim's gmail account. Captcha ettings can be changed at https://www.google.com/recaptcha/admin/site/347840789/settings.

@@ -49,7 +49,7 @@
 }
 
 html {
-  font-family: sans-serif;
+  font-family: 'e2-Raleway', sans-serif;
 }
 body {
   margin: 0;
@@ -228,8 +228,7 @@ textarea {
   font: inherit;
 }
 html {
-  /* font: 112.5%/1.45em georgia, serif; */
-  font: 16px georgia, serif;
+  font-family: 'e2-Raleway', serif;
   box-sizing: border-box;
 }
 * {
@@ -243,8 +242,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
-  font-weight: normal;
+  font-family: 'e2-Raleway', serif;
   word-wrap: break-word;
   font-kerning: normal;
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";
