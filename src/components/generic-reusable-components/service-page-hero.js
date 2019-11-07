@@ -8,7 +8,7 @@ const StyledServicePageHero = styled.div`
   justify-content: center;
   align-items: center;
 
-  h1 {
+  h1#generic-hero-h {
     font-family: 'e2-Raleway-Extra-Bold';
     text-align: center;
     margin-top: calc(160px + 10vw);
@@ -33,7 +33,7 @@ const ServicePageHero = ({title, description}) => {
   
   return (
     <StyledServicePageHero>
-      <h1>{title}</h1>
+      <h1 id="generic-hero-h">{title}</h1>
       <p>{description}</p>
     </StyledServicePageHero>
   )

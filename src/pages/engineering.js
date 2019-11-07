@@ -59,7 +59,7 @@ const SectionHeroEngPage = styled.div`
   justify-content: center;
   align-items: center;
 
-  h1 {
+  h1#hero-h-eng {
     font-family: 'e2-Raleway-Extra-Bold';
     text-align: center;
     margin-top: calc(160px + 10vw);
@@ -428,7 +428,6 @@ const EngineeringStackableColumn = styled.div`
     -moz-letter-spacing: 4px;
     -ms-letter-spacing: 4px;
     letter-spacing: 1.5px;
-    /* margin: 20px auto; */
     min-height: 10vw;
     justify-content: center;
     text-align: center;
@@ -571,7 +570,7 @@ const EngineeringPage = () => {
         <EngineeringPageContainer onClick={pageClicked}>
         
           <SectionHeroEngPage>
-            <h1>
+            <h1 id="hero-h-eng">
               Engineering
           </h1>
             <p>Code crafted with care.
@@ -652,7 +651,10 @@ const EngineeringPage = () => {
               always use the best tools for the job. We specialize in functional
               programming, building beatifully interactive UIs, and putting up lean, lightning fast
               microservices all with an outside-in TDD approach.
-          </p>
+            </p>
+            <p>
+              Below we have a list of our favorite programming languages, a short description of where each one shines, and a snippet of code that solves the Fizzbuzzify String challenge, and some nice unit test cases for the function!
+            </p>
           </LanguagesHeaderSection>
           <LanguagePickerGrid>
             <LanguageOptionsColumn>

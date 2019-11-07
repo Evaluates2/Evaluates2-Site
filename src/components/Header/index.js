@@ -4,8 +4,36 @@ import Headroom from "react-headroom";
 
 import { StaticQuery } from "gatsby";
 import Nav from "../Nav";
-// import { HeaderContainer, Logo, SiteTitle, Img, Label } from "./styles"
+import { Logo, SiteTitle, Img, Label } from "./styles"
 import TheDImage from '../img-components/the-d.img';
+import mediaQuery from "../../utils/mediaQuery"
+
+export const HeaderContainer = styled.header` 
+
+  background-color: ${props => (props.path === "/about/" || props.path === "/about" || props.path === "/our-work/" || props.path === "/our-work" || props.path.toString().indexOf("/team") !== -1) ? '#000032' : "rgba(0,0,0,0)"};
+
+  transition: top 1s linear;
+  transition: opacity 0 linear;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  display: grid;
+  grid-gap: calc(10px);
+  align-items: center;
+  justify-items: center;
+  grid-template-areas: "nav title social search";
+  grid-template-columns: auto 1fr auto auto;
+  font-weight: bold;
+  ${mediaQuery.minNetbook} {
+    grid-template-areas: "title nav social search";
+  };
+  
+
+`
+
+const StyledLabel = styled(Label)`
+  font-family: 'e2-Raleway-Bold';
+`
 
 import { Link } from "gatsby"
 import Image from 'gatsby-image'
@@ -162,14 +190,14 @@ class Header extends React.Component {
         render={data => (
           <Headroom css="z-index: 20;">
             <ColoredHeader >
-              <HeaderContainer className={this.state.window ? this.state.window.location.pathname === '/' ? 'transparent' : '' : ''}>
+              <HeaderContainer path={this.state.window ? this.state.window.location.pathname : {path: ''}}>
                 <SiteTitle to="/" rel="home">
                   <StyledDImage>
                     <TheDImage />
                   </StyledDImage>
-                  <Label>
+                  <StyledLabel>
                     (evaluates2)
-                  </Label>
+                  </StyledLabel>
                 </SiteTitle>
                 <Nav />
               </HeaderContainer>

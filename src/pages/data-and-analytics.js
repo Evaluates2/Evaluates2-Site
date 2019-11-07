@@ -19,7 +19,6 @@ import ReadyToGetStartedSection from '../components/generic-reusable-components/
 import Global from "../components/Global"
 
 const DataAndAnalyticsPageContainer = styled.div`
-  /* font-family: 'e2-Raleway-Black'; */
   background-color: #000032;
   color: white;
   display: flex;
@@ -27,20 +26,7 @@ const DataAndAnalyticsPageContainer = styled.div`
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  /* h1 {
-    font-family: 'e2-Raleway-Black';
-    font-size: 44px;
-    max-width: 95vw;
-    line-height: 10px;
-    text-align: center;
-    letter-spacing: 4px;
-  }
-  p {
-    font-size: 16px;
-    line-height: 30px;
-    letter-spacing: 2px;
-    font-family: 'e2-Raleway';
-  } */
+
 `;
 
 const SectionHeroDataPage = styled.div`
@@ -51,7 +37,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 
-h1 {
+h1#hero-h-data {
   font-family: "e2-Raleway-Extra-Bold";
     text-align: center;
     margin-top: calc(160px + 10vw);
@@ -336,7 +322,7 @@ const DataAndAnalyticsPage = () => {
         <DataAndAnalyticsPageContainer onClick={pageClicked}>
        
           <SectionHeroDataPage>
-            <h1>
+            <h1 id="hero-h-data">
               Data & Analytics
           </h1>
             <p>Decisions based on facts, not assumptions.

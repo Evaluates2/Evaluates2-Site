@@ -11,7 +11,7 @@ export const TextContainer = styled.div`
     transform: rotateX(.001deg) rotateY(0) rotateZ(0);
     font-size: 45px;
     line-height: 80px;
-    font-family: Raleway,sans-serif;
+    font-family: "e2-Raleway",sans-serif;
     font-weight: 300;
     ${mediaQuery.maxTablet} {
         font-size: 20px;

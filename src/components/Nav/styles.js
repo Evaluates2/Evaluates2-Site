@@ -2,7 +2,7 @@ import styled, { css } from "styled-components"
 import { Link } from "gatsby"
 
 export const navLinkStyle = css`
-  margin: 0 30px;
+  margin: 0 18px;
   opacity: .65;
   -webkit-transition: opacity .2s ease;
   transition: opacity .2s ease;

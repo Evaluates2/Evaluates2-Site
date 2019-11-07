@@ -49,7 +49,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-s3`,
       options: {
-        bucketName: 'aaa-jimbos-bucket',
+        bucketName: 'aaa-evaluates2-site-production',
+        protocol: "https",
+        hostname: "www.evaluates2.com",
+        generateRoutingRules: true,
+        generateIndexPageForRedirect: true
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

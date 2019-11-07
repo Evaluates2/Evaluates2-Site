@@ -17,6 +17,7 @@
     "gatsby-plugin-manifest": "^2.0.17",
     "gatsby-plugin-offline": "^2.0.23",
     "gatsby-plugin-react-helmet": "^3.0.6",
+    "gatsby-plugin-s3": "^0.3.2",
     "gatsby-plugin-sharp": "^2.0.20",
     "gatsby-plugin-styled-components": "^3.1.5",
     "gatsby-remark-copy-linked-files": "^2.1.28",
@@ -54,7 +55,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
-    "format": "eslint src --fix"
+    "format": "eslint src --fix",
+    "deploy": "gatsby-plugin-s3 deploy --yes"
   },
   "repository": {
     "type": "git",

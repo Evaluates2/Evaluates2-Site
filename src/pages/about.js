@@ -11,7 +11,7 @@ import TeamMemberBlock from './../components/generic-reusable-components/team-me
 import KateFromHrLogoImage from '../components/img-components/partner-logos/kate-from-hr-logo.img';
 
 const AboutHero = styled.div`
-  h1 {
+  h1#hero-h-about-us {
     color: #000032;
     font-family: 'e2-Raleway-Extra-Bold';
     text-align: center;
@@ -20,7 +20,7 @@ const AboutHero = styled.div`
     line-height: calc(21px + 9vw);
     font-size: calc(21px + 9vw);
   }
-  p {
+  p#hero-p-about-us {
     color: #000032;
     font-family: 'e2-Raleway';
     text-align: center;
@@ -30,15 +30,18 @@ const AboutHero = styled.div`
     line-height: calc(15px + 6vw);
     margin: calc(7px + 10vw) calc(7px + 2vw) calc(20px + 6vw);;
 
-    .about-blurb {
-      margin-top: 50px;
-      margin-bottom: 50px;
-      font-size: 30px;
-      line-height: 15vw;
-      max-width: 800px;
-      text-align: justify;
-    }
   }
+
+
+  .about-blurb {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    line-height: 15vw;
+    max-width: 800px;
+    text-align: justify;
+  }
+
   
   div {
     text-align: center !important ;
@@ -292,8 +295,8 @@ const AboutPage = () => (
     <Layout>
 
       <AboutHero>
-        <h1>About Us</h1>
-        <p>When it comes to software, we're full of solutions.</p>
+        <h1 id="hero-h-about-us">About Us</h1>
+        <p id="hero-p-about-us">When it comes to software, we're full of solutions.</p>
       </AboutHero>
 
       {/* <CenteredVideo>
@@ -400,14 +403,14 @@ const AboutPage = () => (
             role="CEO / Principal Engineer"
             // img={<AnonymousSilhouetteImage />}
             img={<JimLynchHeadshotImage />}
-            ></TeamMemberBlock>
+          ></TeamMemberBlock>
           <TeamMemberBlock
             name="Nina Yang"
             linkTo="/team/nina-yang"
             role="Sales & Business Development Associate"
             // img={<AnonymousSilhouetteImage />}
             img={<NinaYangHeadshotImage />}
-            ></TeamMemberBlock>
+          ></TeamMemberBlock>
           <TeamMemberBlock
             name="Lee Daniel"
             linkTo="/team/lee-daniel"
@@ -415,7 +418,7 @@ const AboutPage = () => (
             // img={<AnonymousSilhouetteImage />}
             img={<LeeDanielHeadshotImage />}
           ></TeamMemberBlock>
-          
+
         </div>
       </OurTeamSection>
 

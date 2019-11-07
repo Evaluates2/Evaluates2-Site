@@ -95,7 +95,7 @@ const StyledContactForm = styled.div`
   overflow: hidden;
   margin: calc(10px + 1vw);
 
-  h2 {
+  h2#hero-h-contact {
     letter-spacing: 0.5vw;
     font-family: 'e2-Raleway-Bold';
     margin-top: calc(160px + 10vw);
@@ -262,11 +262,10 @@ const StyledFormWithTwoBoxes = styled.div`
     display: grid;
     grid-gap: 10px;
     grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto auto;
     align-items: center;
     justify-content: center;
 
-    // desktop, 4 items in a row
     /* grid-template-columns: auto auto auto auto auto; */
     grid-template-columns: auto auto;
 
@@ -291,7 +290,7 @@ const StyledFormWithTwoBoxes = styled.div`
     justify-content: center;
     align-items: center;
     flex: 1;
-    margin: 30px;
+    margin: 32px;
     border-radius: 7px;
     border: 1px solid #000011;
     background-color: white;
@@ -305,6 +304,16 @@ const StyledFormWithTwoBoxes = styled.div`
     @media only screen and (max-width: 990px) {
       margin: 5px;
       min-width: 225px;
+    }
+
+    h1 {
+      margin: 2px;
+      font-size: 36px;
+    }
+    
+    h3 {
+      margin: 2px;
+      font-size: 20px;
     }
   }
 
@@ -345,11 +354,13 @@ const StyledFormWithTwoBoxes = styled.div`
   .contact-us-box {
     grid-row: 2;
     grid-column: 2;
-
+    margin-top: 6px;
+    
     // tablet, 2 x 2 square items in one column
     @media only screen and (max-width: 990px) {
       grid-row: 3;
       grid-column: 2;
+      margin-top: inherit;
     }
 
     // one column on phone
@@ -362,7 +373,7 @@ const StyledFormWithTwoBoxes = styled.div`
 
   .form-container {
     grid-column: 1;
-    grid-row: 1 / span 2;
+    grid-row: 1 / span 3;
 
     // tablet, 2 x 2 square items in one column
     @media only screen and (max-width: 990px) {
@@ -374,13 +385,7 @@ const StyledFormWithTwoBoxes = styled.div`
     /* background-color: papayawhip; */
   }
 
-  h1 {
-    margin: 2px;
-  }
-
-  h3 {
-    margin: 2px;
-  }
+ 
 `;
 
 const ContactPage = () => {
@@ -458,9 +463,8 @@ const ContactPage = () => {
           <StyledFormWithTwoBoxes>
             <StyledContactForm>
               <div>
-                <br />
-                <br />
-                <h2>We look forward to speaking!</h2>
+            
+                <h2 id="hero-h-contact">We look forward to speaking!</h2>
                 <br />
                 <br />
 
@@ -618,20 +622,11 @@ const ContactPage = () => {
                   </div>
                 </div>
               </div>
-              <br />
-              <br />
-              <br />
-              <br />
-
               <div className="grid-container">
                 <div className="form-container">
                   <form action="javascript:alert(grecaptcha.getResponse(widgetId1));"></form>
-                  <br />
-                  <br />
                 </div>
               </div>
-
-              <br />
               <JoinOurTeamCornerBtn />
             </StyledContactForm>
           </StyledFormWithTwoBoxes>
