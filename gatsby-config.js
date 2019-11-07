@@ -1,13 +1,13 @@
-require("dotenv").config({
+require('dotenv').config({
   path: `.env.development`,
-})
+});
 
 module.exports = {
   siteMetadata: {
-    title: `(Evaluates2)`,
-    description: `German student-run nonprofit initiative`,
-    author: `Janosh Riebesell`,
-    url: `https://studenten-bilden-schueler.de`,
+    title: `Derp`,
+    description: `Derp`,
+    author: `Jimbo`,
+    url: `https://derpsauce.com`,
   },
   plugins: [
     `gatsby-transformer-json`,
@@ -19,8 +19,8 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `json`,
-        path: `${__dirname}/src/data`
-      }
+        path: `${__dirname}/src/data`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -46,6 +46,12 @@ module.exports = {
     },
     'gatsby-plugin-emotion',
     `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: 'aaa-jimbos-bucket',
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
