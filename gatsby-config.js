@@ -51,7 +51,9 @@ module.exports = {
       options: {
         bucketName: 'aaa-evaluates2-site-production',
         protocol: "https",
-        hostname: "evaluates2.com",
+        hostname: "www.evaluates2.com",
+        generateRoutingRules: true,
+        generateIndexPageForRedirect: true
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

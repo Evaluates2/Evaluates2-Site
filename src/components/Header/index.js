@@ -31,6 +31,10 @@ export const HeaderContainer = styled.header`
 
 `
 
+const StyledLabel = styled(Label)`
+  font-family: 'e2-Raleway-Bold';
+`
+
 const ColoredHeader = styled.div`
 
 `;
@@ -104,9 +108,9 @@ class Header extends React.Component {
                   <StyledDImage>
                     <TheDImage />
                   </StyledDImage>
-                  <Label>
+                  <StyledLabel>
                     (evaluates2)
-                  </Label>
+                  </StyledLabel>
                 </SiteTitle>
                 <Nav />
               </HeaderContainer>
