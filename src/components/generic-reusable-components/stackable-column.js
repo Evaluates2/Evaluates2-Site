@@ -25,7 +25,6 @@ const StackableColumn = styled.div`
     -moz-letter-spacing: 4px;
     -ms-letter-spacing: 4px;
     letter-spacing: 1.5px;
-    /* margin: 20px auto; */
     min-height: 10vw;
     justify-content: center;
     text-align: center;

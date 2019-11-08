@@ -1,9 +1,9 @@
-import styled from "styled-components";
+
 import { Link } from "gatsby"
 import Image from 'gatsby-image'
-import mediaQuery from "../../utils/mediaQuery"
 import Owl from "../../assets/logo"
-
+import styled from 'styled-components';
+import mediaQuery from "../../utils/mediaQuery"
 
 export const Img = styled(Image)`
   width: 70px;
@@ -25,35 +25,6 @@ export const Label = styled.div`
   ${mediaQuery.maxNetbook} {
     font-size: 20px;
   }
-`
-
-export const HeaderContainer = styled.header`  
-  :not(.transparent) {
-    background-color: ${props => props.theme.darkBlue};
-
-  }
-  .transparent {
-    background-color: rgba(0,0,0,0);
-  }
-  
-  transition: top 1s linear;
-  transition: opacity 0 linear;
-  padding: 20px;
-  position: fixed;
-  width: 100%;
-  display: grid;
-  grid-gap: calc(10px);
-  align-items: center;
-  justify-items: center;
-  grid-template-areas: "nav title social search";
-  grid-template-columns: auto 1fr auto auto;
-  font-weight: bold;
-  ${mediaQuery.minNetbook} {
-    grid-template-areas: "title nav social search";
-  };
-  
-
-
 `
 
 export const SiteTitle = styled(Link)`

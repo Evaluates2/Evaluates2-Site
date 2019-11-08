@@ -4,9 +4,36 @@ import Headroom from "react-headroom";
 
 import { StaticQuery } from "gatsby";
 import Nav from "../Nav";
-import { HeaderContainer, Logo, SiteTitle, Img, Label } from "./styles"
-import TheDImage from '../img-components/the-d.img';
+import { Logo, SiteTitle, Img, Label } from "./styles"
+// import TheDImage from '../img-components/the-d.img';
 import Evaluates2RoundedCornersImage from "../img-components/e2-rounded-corners.img";
+import mediaQuery from "../../utils/mediaQuery"
+
+export const HeaderContainer = styled.header` 
+
+  background-color: ${props => (props.path === "/about/" || props.path === "/about" || props.path === "/our-work/" || props.path === "/our-work" || props.path.toString().indexOf("/team") !== -1) ? '#000032' : "rgba(0,0,0,0)"};
+
+  transition: top 1s linear;
+  transition: opacity 0 linear;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  display: grid;
+  grid-gap: calc(20px);
+  align-items: center;
+  justify-items: center;
+  grid-template-areas: "nav title social search";
+  grid-template-columns: auto 1fr auto auto;
+  font-weight: bold;
+  ${mediaQuery.minNetbook} {
+    grid-template-areas: "title nav social search";
+  };
+  
+`
+
+const StyledLabel = styled(Label)`
+  font-family: 'e2-Raleway-Bold';
+`
 
 const ColoredHeader = styled.div`
 
@@ -27,7 +54,7 @@ class Header extends React.Component {
     };
 
   }
-  
+
   componentWillMount() {
 
   }
@@ -41,7 +68,7 @@ class Header extends React.Component {
       var scrolledFromtop = window.scrollY;
       if (scrolledFromtop > fromTopPx) {
         _this.setState({
-          divStyle: { backgroundColor: "rgb(0, 0, 50) !important" }
+          divStyle: {}
         })
       } else {
         _this.setState({
@@ -75,14 +102,14 @@ class Header extends React.Component {
         render={data => (
           <Headroom css="z-index: 20;">
             <ColoredHeader >
-              <HeaderContainer css={this.state.divStyle} className={this.state.window ? this.state.window.location.pathname === '/' ? 'transparent' : '' : ''}>
+              <HeaderContainer path={this.state.window ? this.state.window.location.pathname : { path: '' }}>
                 <SiteTitle to="/" rel="home">
                   <StyledDImage>
                     <Evaluates2RoundedCornersImage />
                   </StyledDImage>
-                  <Label>
+                  <StyledLabel>
                     (evaluates2)
-                  </Label>
+                  </StyledLabel>
                 </SiteTitle>
                 <Nav />
               </HeaderContainer>

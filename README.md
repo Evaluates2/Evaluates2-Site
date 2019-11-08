@@ -51,7 +51,7 @@ All builds and deployment are done manulally right now with these commands:
 npm run build
 ```
 ```
-aws s3 cp ./public s3://aaa-evaluates2-site-production --recursive --acl public-read --cache-control max-age=1
+npm run deploy
 ```
 
 
@@ -60,3 +60,7 @@ aws s3 cp ./public s3://aaa-evaluates2-site-production --recursive --acl public-
 you will need aws creds as well
 
 --- 
+
+## Google Recaptcha
+
+Recaptcha human verification is tied to Jim's gmail account. Captcha ettings can be changed at https://www.google.com/recaptcha/admin/site/347840789/settings.

@@ -23,18 +23,21 @@ const iconCss = css`
 export const Icons = {
   More: styled(Arrow)`
     ${iconCss};
+    height: 25px;
   `,
   Less: styled(More)`
     ${iconCss};
+    height: 25px;
   `,
   Arrow: styled(Arrow)`
     ${iconCss};
     cursor: default !important;
+    height: 25px;
   `,
 }
 
 export const Parent = styled.div`
-  margin: 0 30px;
+  margin: 0 18px;
   opacity: .65;
   -webkit-transition: opacity .2s ease;
   transition: opacity .2s ease;
@@ -50,10 +53,14 @@ export const Parent = styled.div`
 `
 
 export const MobileNavDiv = styled.nav`
+
+  div#mobile-nav {
+
   position: fixed;
   z-index: 1; /* places nav on top of search and social icon in header */
   top: 0;
-  overflow: scroll;
+  overflow-y: auto;
+  overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   height: 120vh;
   background: rgba(0, 0, 0, 0.85);
@@ -64,7 +71,6 @@ export const MobileNavDiv = styled.nav`
   color: white;
   right: 100%;
   display: grid;
-  grid-gap: 1em;
   min-width: 20vw;
   grid-auto-columns: max-content;
   grid-auto-rows: max-content;
@@ -78,18 +84,18 @@ export const MobileNavDiv = styled.nav`
     width: 100%;
     max-width: initial;
   }
+  }
 `
 
 export const Children = styled(animated.div)`
   will-change: transform, opacity, height;
-  margin-left: 0.5em;
-  padding-left: 0.5em;
+  margin-top: ${props => props.open ? `15px` : '0px'};
+  margin-left: 19px;
+  padding: 0 15px ${props => props.open ? '15px' : '0px'} 25px;
   border-left: thin dashed white;
   padding-bottom: ${props => props.open && `0.6em`};
   > div {
-    margin-top: 0.6em;
     display: grid;
-    grid-gap: 0.6em;
   }
 `
 
@@ -112,7 +118,26 @@ export const Closer = styled(Close)`
   }
 `
 
+const MenuItemRow = styled.div`
 
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+
+    margin: 15px 0;
+    /* max-height: ${props => props.open ? '1000px' : '30px'}; */
+
+`;
+
+const MenuChildrenColumn = styled.div`
+
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+
+`;
 
 
 export const useSize = (ref, quantity) => {
@@ -142,22 +167,28 @@ const Tree = memo(({ text, url, children, length }) => {
   })
   const Icon = Icons[children ? (open ? `Less` : `More`) : `Arrow`]
   return (
-    <span>
-      <Icon onClick={() => setOpen(!open)} />
-      {
-        length > 0 ?
-        <Parent onClick={() => setOpen(!open)}>{text}</Parent>
-        :
-        <NavLink to={url}>{text}</NavLink>
-      }
-      {children && (
-        <Children style={{ opacity, height }} open={open}>
-          <animated.div style={{ transform }} ref={ref}>
-            {children}
-          </animated.div>
-        </Children>
-      )}
-    </span>
+    <MenuItemRow open={open}>
+      <span>
+
+        <Icon onClick={() => setOpen(!open)} />
+
+        {
+          length > 0 ?
+            <Parent onClick={() => setOpen(!open)}>{text}</Parent>
+            :
+            // <MenuChildrenColumn>
+            <NavLink to={url}>{text}</NavLink>
+          // </MenuChildrenColumn>
+        }
+        {children && (
+          <Children style={{ opacity, height }} open={open}>
+            <animated.div style={{ transform }} ref={ref}>
+              {children}
+            </animated.div>
+          </Children>
+        )}
+      </span>
+    </MenuItemRow>
   )
 })
 
@@ -170,15 +201,18 @@ export default function MobileNav({ nav }) {
     <>
       <Menu onClick={toggleNav} />
       <MobileNavDiv ref={ref} open={open} onScroll={e => e.preventDefault()}>
-        <Closer onClick={toggleNav} />
-        {nav.map(({node: { url, title, subNav }}) => (
-          <Tree key={url} url={url || subNav[0].url} text={title} length={subNav.length}>
-            {subNav.length ?
-              subNav.map(item => (
-                <Tree key={item.url} url={item.url} text={item.title} length={0}/>
-              )): ''}
-          </Tree>
-        ))}
+        <div id="mobile-nav">
+
+          <Closer onClick={toggleNav} />
+          {nav.map(({ node: { url, title, subNav } }) => (
+            <Tree key={url} url={url || subNav[0].url} text={title} length={subNav.length}>
+              {subNav.length ?
+                subNav.map(item => (
+                  <Tree key={item.url} url={item.url} text={item.title} length={0} />
+                )) : ''}
+            </Tree>
+          ))}
+        </div>
       </MobileNavDiv>
     </>
   )
