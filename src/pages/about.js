@@ -195,8 +195,9 @@ const OurTeamSection = styled.div`
 `;
 
 const MidPageAnchor = styled.div`
-  min-height: 50px;
-  padding: 20px;
+  min-height: 100px;
+  padding: 10px + 2vw;
+  margin-bottom: (20px + 7vw);
 `;
 
 const WhatWeveBuiltSection = styled.div`
@@ -355,6 +356,10 @@ const AboutPage = () => (
         </p>
       </AboutBlurb>
 
+      <MidPageAnchor>
+        <a id="our-partners" />
+      </MidPageAnchor>
+
       <PartnersSection>
         <h1>A Few of Our Partners:</h1>
         {/* <div className="partner-row">
@@ -388,7 +393,7 @@ const AboutPage = () => (
       </NiceQuoteSection>
 
       <MidPageAnchor>
-        <a id="OUR_TEAM" />
+        <a id="our-team" />
       </MidPageAnchor>
 
       <OurTeamSection>

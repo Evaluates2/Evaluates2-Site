@@ -6,15 +6,15 @@ import { StaticQuery } from "gatsby";
 import Nav from "../Nav";
 import { HeaderContainer, Logo, SiteTitle, Img, Label } from "./styles"
 import TheDImage from '../img-components/the-d.img';
+import Evaluates2RoundedCornersImage from "../img-components/e2-rounded-corners.img";
 
 const ColoredHeader = styled.div`
 
 `;
 
 const StyledDImage = styled.div`
-  transform: rotate(-90deg);
-  min-width: 50px;
-  min-height: 50px;
+  min-width: 70px;
+  min-height: 70px;
 `
 
 class Header extends React.Component {
@@ -63,7 +63,7 @@ class Header extends React.Component {
       <StaticQuery
         query={graphql`
           query LOGO_IMAGE_QUERY {
-            file(relativePath: { eq: "the-d-rotated.png" }) {
+            file(relativePath: { eq: "e2-rounded-corners.png" }) {
               childImageSharp {
                 fixed(width: 1000) {
                   ...GatsbyImageSharpFixed_tracedSVG
@@ -78,7 +78,7 @@ class Header extends React.Component {
               <HeaderContainer css={this.state.divStyle} className={this.state.window ? this.state.window.location.pathname === '/' ? 'transparent' : '' : ''}>
                 <SiteTitle to="/" rel="home">
                   <StyledDImage>
-                    <TheDImage />
+                    <Evaluates2RoundedCornersImage />
                   </StyledDImage>
                   <Label>
                     (evaluates2)

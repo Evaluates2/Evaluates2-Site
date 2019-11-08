@@ -7,11 +7,11 @@ import { ThemeProvider } from 'emotion-theming';
 import theme from '../style/theme';
 import { toggleDrawer as toggleDrawerAction } from '../state/app';
 import Footer from './footer';
-import TheDImage from './img-components/the-d.img';
 import Link from 'gatsby-link';
 import MobileHeader from './header';
 import Drawer from './drawer';
 import './layout.css';
+import Evaluates2RoundedCornersImage from './img-components/e2-rounded-corners.img';
 
 const Container = styled.main`
   width: 100%;
@@ -44,7 +44,7 @@ const Overlay = styled.div`
 `;
 
 const StyledDImage = styled.div`
-  transform: rotate(-90deg);
+
 `
 
 const VeryBottomFooter = styled.div`
@@ -131,7 +131,7 @@ const Layout = ({ children, isDrawerOpen, toggleDrawer }) => (
             <div className="footer-img">
               <StyledDImage>
 
-                <TheDImage />
+                <Evaluates2RoundedCornersImage />
               </StyledDImage>
             </div>
             <h2>(evaluates2)</h2>
@@ -141,8 +141,11 @@ const Layout = ({ children, isDrawerOpen, toggleDrawer }) => (
             <Link to='/about'>
               About Us
             </Link>
-            <Link to='/about#OUR_TEAM'>
+            <Link to='/about#our-team'>
               Team
+            </Link>
+            <Link to='/about#our-partners'>
+              Partners
             </Link>
           </div>
           <div className="footer-grid-block footer-services">

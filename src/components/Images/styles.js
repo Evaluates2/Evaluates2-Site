@@ -27,13 +27,18 @@ export const ImageTitle = styled.div`
 `;
 
 export const Title = styled.div`
+
+
+  h1#home-h {
+
   color: white;
   font-size: 120px;
   line-height: 140px;
   font-weight: 800;
   text-align: center;
   letter-spacing: 5px;
-  margin: 15px 0;
+  font-family: 'e2-Raleway-Extra-Bold';
+  margin: 16px 0 calc(13px + 2vw);
   ${mediaQuery.maxNetbook} {
     font-size: 70px;
     line-height: 70px;
@@ -58,6 +63,7 @@ export const Title = styled.div`
     to {
       opacity: 1;
     }
+  }
   }
 `;
 

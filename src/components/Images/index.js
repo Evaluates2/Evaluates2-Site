@@ -20,7 +20,11 @@ const Images = () => (
         render={data => (
             <ImagesContainer>
                 <ImageTitle>
-                    <Title>Together,</Title>
+                    <Title>
+                        <h1 id="home-h">
+                        Together,
+                        </h1>
+                        </Title>
                     <Sub>we will build great things.</Sub>
                 </ImageTitle>
                 <Def3>

@@ -234,7 +234,7 @@ const TeamPage = (location = {location: "/jim"}) => {
           <br />
 
           <BackButtonContainer>
-            <Link to="/about#OUR_TEAM">
+            <Link to="/about#our-team">
               <TeamMemberBackButton>Back</TeamMemberBackButton>
             </Link>
           </BackButtonContainer>
