@@ -68,6 +68,7 @@ export const MobileNavDiv = styled.nav`
   box-sizing: border-box;
   font-size: calc(12px + 4vw);
   text-align: left;
+  grid-gap: 20px;
   color: white;
   right: 100%;
   display: grid;

@@ -11,7 +11,7 @@ const StyledJobDescription = styled.div`
   overflow: hidden;
 
   .non-intern-block {
-    min-height: 3000px;
+    min-height: calc(4600px - 25vw);
 
     @media only screen and (max-width: 660px) {
     min-height: 5000px;
@@ -56,8 +56,8 @@ const StyledJobDescription = styled.div`
   }
 
   p {
-    font-size: calc(12px + 1vw);
-    line-height: calc(18px + 2vw);
+    font-size: calc(13px + 0.5vw);
+    line-height: calc(25px + 0.75vw);
     letter-spacing: 0.25vw;
     font-family: 'e2-Raleway';
     color: #ddd;

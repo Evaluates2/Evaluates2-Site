@@ -19,7 +19,7 @@ export const HeaderContainer = styled.header`
   position: fixed;
   width: 100%;
   display: grid;
-  grid-gap: calc(20px);
+  grid-gap: 20px;
   align-items: center;
   justify-items: center;
   grid-template-areas: "nav title social search";

@@ -128,7 +128,7 @@ li {
 
   .small-description {
   font-size: calc(10px + 2vw);
-  line-height: calc(25px + 2vw)
+  line-height: calc(25px + 2vw);
   /* font-size: 22px; */
   /* line-height: 35px; */
   /* letter-spacing: 1.1px; */
@@ -205,7 +205,7 @@ const CareersPage = () => (
         <br />
 
         <JobDescriptionBlocks>
-          <JobDescriptionBlock isInternBlock={false} linkTo="https://www.google.com">
+          <JobDescriptionBlock isInternBlock={false} linkTo="https://indeed.com">
             {/* <JobPosting> */}
 
             <h2>Contract / Freelance Senior Software Engineer</h2>
@@ -237,10 +237,10 @@ const CareersPage = () => (
               * Experience successfully shipping many applications, either personal or at work.
               <br />
               <br />
-              * Excellent communication skills- able to effective give and receive feedback from clients and other e3 team members while being respectful of their feelings.
+              * Excellent communication skills- able to effectively give and receive feedback from clients and other e2 team members while being respectful of their feelings.
               <br />
               <br />
-              * Eagerness to participate pair programming, work with other engineers face-to-face, and answer questions of non-technical clients.
+              * Eagerness to participate in pair programming, work with other engineers face-to-face, and answer questions of non-technical clients.
               <br />
               <br />
               * Intense appreciation for automated testing and willingness to adopt disciplined TDD practices, unit testing, end-to-end testing, and BDD testing frameworks.
@@ -249,10 +249,13 @@ const CareersPage = () => (
               * 5+ years experience working with modern programming languages.
               <br />
               <br />
-              * Experience with or interest in learning our most used languages: JavaScript, TypeScript, Go, Clojure, Swift, Python, Java.
+              * Experience with or interest in learning our most used languages: JavaScript, TypeScript, Go, Clojure, Rust, Swift, and Python.
               <br />
               <br />
               * Strengths in web development or native mobile development, with a desire to expand personal skill set.
+              <br />
+              <br />
+              * Experience with server side development: building REST api's, serverless lambdas, socket servers, and interacting with various relational and nosql databases.
               </p>{' '}
             <br />
             <h4>How you'll spend your time at Evaluates2</h4>
@@ -299,6 +302,9 @@ const CareersPage = () => (
               * Flexible hours and work-from-home opportunities.
               <br />
               <br />
+              * Optional 4 day work week - take off every Monday or Wednesday! (unpaid)
+              <br />
+              <br />
               * Work in a respectful, safe place where everyone should feel comfortable and accepted.
               <br />
               <br />
@@ -316,7 +322,7 @@ const CareersPage = () => (
         <br />
         <br />
         <JobDescriptionBlocks>
-          <JobDescriptionBlock isInternBlock={false} linkTo="https://www.google.com">
+          <JobDescriptionBlock isInternBlock={false} linkTo="https://indeed.com">
             {/* <JobPosting> */}
 
             <h2>Mid-Level Software Engineer</h2>
@@ -348,10 +354,10 @@ const CareersPage = () => (
               * Experience successfully shipping many applications, either personal or at work.
               <br />
               <br />
-              * Excellent communication skills- able to effective give and receive feedback from clients and other e3 team members while being respectful of their feelings.
+              * Excellent communication skills- able to effectively give and receive feedback from clients and other e2 team members while being respectful of their feelings.
               <br />
               <br />
-              * Eagerness to participate pair programming, work with other engineers face-to-face, and answer questions of non-technical clients.
+              * Eagerness to participate in pair programming, work with other engineers face-to-face, and answer questions of non-technical clients.
               <br />
               <br />
               * Intense appreciation for automated testing and willingness to adopt disciplined TDD practices, unit testing, end-to-end testing, and BDD testing frameworks.
@@ -360,10 +366,13 @@ const CareersPage = () => (
               * 3+ years experience working with modern programming languages.
               <br />
               <br />
-              * Experience with or interest in learning our most used languages: JavaScript, TypeScript, Go, Clojure, Swift, Python, Java.
+              * Experience with or interest in learning our most used languages: JavaScript, TypeScript, Go, Clojure, Rust, Swift, and Python.
               <br />
               <br />
               * Strengths in web development or native mobile development, with a desire to expand personal skill set.
+              <br />
+              <br />
+              * Experience with server side development: building REST api's, serverless lambdas, socket servers, and interacting with various relational and nosql databases.
               </p>{' '}
             <br />
             <h4>How you'll spend your time at Evaluates2</h4>
@@ -395,6 +404,9 @@ const CareersPage = () => (
               * Flexible hours and work-from-home opportunities.
               <br />
               <br />
+              * Optional 4 day work week - take off every Monday or Wednesday! (unpaid)
+              <br />
+              <br />
               * Work in a respectful, safe place where everyone should feel comfortable and accepted.
               <br />
               <br />
@@ -411,7 +423,7 @@ const CareersPage = () => (
         <br />
         <br />
         <JobDescriptionBlocks>
-          <JobDescriptionBlock isInternBlock={false} linkTo="https://www.google.com">
+          <JobDescriptionBlock isInternBlock={false} linkTo="https://indeed.com">
             {/* <JobPosting> */}
 
             <h2>Product Manager</h2>
@@ -443,10 +455,10 @@ const CareersPage = () => (
               * Experience successfully shipping many applications, either personal or at work.
               <br />
               <br />
-              * Excellent communication skills- able to effective give and receive feedback from clients and other e3 team members while being respectful of their feelings.
+              * Excellent communication skills- able to effectively give and receive feedback from clients and other e2 team members while being respectful of their feelings.
               <br />
               <br />
-              * Eagerness to participate pair programming, work with other engineers face-to-face, and answer questions of non-technical clients.
+              * Eagerness to participate in pair programming, work with other engineers face-to-face, and answer questions of non-technical clients.
               <br />
               <br />
               * Intense appreciation for automated testing and willingness to adopt disciplined TDD practices, unit testing, end-to-end testing, and BDD testing frameworks.
@@ -455,10 +467,13 @@ const CareersPage = () => (
               * 5+ years experience working with modern programming languages.
               <br />
               <br />
-              * Experience with or interest in learning our most used languages: JavaScript, TypeScript, Go, Clojure, Swift, Python, Java.
+              * Experience with or interest in learning our most used languages: JavaScript, TypeScript, Go, Clojure, Rust, Swift, and Python.
               <br />
               <br />
               * Strengths in web development or native mobile development, with a desire to expand personal skill set.
+              <br />
+              <br />
+              * Experience with server side development: building REST api's, serverless lambdas, socket servers, and interacting with various relational and nosql databases.
               </p>{' '}
             <br />
             <h4>How you'll spend your time at Evaluates2</h4>
@@ -490,6 +505,9 @@ const CareersPage = () => (
               * Flexible hours and work-from-home opportunities.
               <br />
               <br />
+              * Optional 4 day work week - take off every Monday or Wednesday! (unpaid)
+              <br />
+              <br />
               * Work in a respectful, safe place where everyone should feel comfortable and accepted.
               <br />
               <br />
@@ -506,7 +524,7 @@ const CareersPage = () => (
         <br />
         <br />
         <JobDescriptionBlocks>
-          <JobDescriptionBlock isInternBlock={false} linkTo="https://www.google.com">
+          <JobDescriptionBlock isInternBlock={false} linkTo="https://indeed.com">
             {/* <JobPosting> */}
 
             <h2>Senior Software Engineer</h2>
@@ -538,10 +556,10 @@ const CareersPage = () => (
               * Experience successfully shipping many applications, either personal or at work.
               <br />
               <br />
-              * Excellent communication skills- able to effective give and receive feedback from clients and other e3 team members while being respectful of their feelings.
+              * Excellent communication skills- able to effectively give and receive feedback from clients and other e2 team members while being respectful of their feelings.
               <br />
               <br />
-              * Eagerness to participate pair programming, work with other engineers face-to-face, and answer questions of non-technical clients.
+              * Eagerness to participate in pair programming, work with other engineers face-to-face, and answer questions of non-technical clients.
               <br />
               <br />
               * Intense appreciation for automated testing and willingness to adopt disciplined TDD practices, unit testing, end-to-end testing, and BDD testing frameworks.
@@ -550,10 +568,13 @@ const CareersPage = () => (
               * 5+ years experience working with modern programming languages.
               <br />
               <br />
-              * Experience with or interest in learning our most used languages: JavaScript, TypeScript, Go, Clojure, Swift, Python, Java.
+              * Experience with or interest in learning our most used languages: JavaScript, TypeScript, Go, Clojure, Rust, Swift, and Python.
               <br />
               <br />
               * Strengths in web development or native mobile development, with a desire to expand personal skill set.
+              <br />
+              <br />
+              * Experience with server side development: building REST api's, serverless lambdas, socket servers, and interacting with various relational and nosql databases.
               </p>{' '}
             <br />
             <h4>How you'll spend your time at Evaluates2</h4>
@@ -585,6 +606,9 @@ const CareersPage = () => (
               * Flexible hours and work-from-home opportunities.
               <br />
               <br />
+              * Optional 4 day work week - take off every Monday or Wednesday! (unpaid)
+              <br />
+              <br />
               * Work in a respectful, safe place where everyone should feel comfortable and accepted.
               <br />
               <br />
@@ -601,7 +625,7 @@ const CareersPage = () => (
         <br />
         <br />
         <JobDescriptionBlocks>
-          <JobDescriptionBlock isInternBlock={true} linkTo="https://www.google.com">
+          <JobDescriptionBlock isInternBlock={true} linkTo="https://indeed.com">
             {/* <JobPosting> */}
             <h2>Strategy & Operations Intern</h2>
             <h3>New York, NY, United States</h3>
