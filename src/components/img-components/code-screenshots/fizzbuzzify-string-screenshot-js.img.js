@@ -13,11 +13,11 @@ import Img from 'gatsby-image';
  * - `StaticQuery`: https://gatsby.app/staticquery
  */
 
-const ClojureFizzbuzzifiedStringImage = () => (
+const JsFizzbuzzifiedStringImage = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "code-screenshots/clojure-fizzbuzzified-string-screenshot.png" }) {
+        placeholderImage: file(relativePath: { eq: "code-screenshots/fizzbuzzify-string-screenshot-js.png" }) {
           childImageSharp {
             fluid(maxWidth: 2000) {
               ...GatsbyImageSharpFluid
@@ -29,4 +29,4 @@ const ClojureFizzbuzzifiedStringImage = () => (
     render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
   />
 );
-export default ClojureFizzbuzzifiedStringImage;
+export default JsFizzbuzzifiedStringImage;

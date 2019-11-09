@@ -17,7 +17,7 @@ const TypeScriptFizzbuzzifiedStringImage = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "code-screenshots/typescript-fizzbuzzified-string-screenshot.png" }) {
+        placeholderImage: file(relativePath: { eq: "code-screenshots/fizzbuzzify-string-screenshot-ts.png" }) {
           childImageSharp {
             fluid(maxWidth: 2000) {
               ...GatsbyImageSharpFluid

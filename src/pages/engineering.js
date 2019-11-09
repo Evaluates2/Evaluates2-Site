@@ -1,25 +1,21 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
 
-import Layout from '../components/layout';
 import styled from '@emotion/styled';
+import Global from "../components/Global"
+import Layout from '../components/layout';
 import TechnicalAuditsImage from '../components/img-components/technical-audits.img.js';
 import ResourceEfficiencyImage from '../components/img-components/resource-efficiency.img';
 import StaffAugmentationImage from '../components/img-components/staff-augmentation.img';
-import JsFizzbuzzScreenshotImage from '../components/img-components/js-fizzbuzz.img';
 import KeyPrinciplesHeader from './../components/generic-reusable-components/key-principle-header';
 import KeyPrinciplesInfoBlock from './../components/generic-reusable-components/key-principles-info-block';
 import ChangeGearsBlock from './../components/generic-reusable-components/change-gears-block';
 import JoinOurTeamCornerBtn from './../components/generic-reusable-components/join-our-team-corner-btn';
-import ServicePageHero from './../components/generic-reusable-components/service-page-hero';
 import StackableColumnsContainer from '../components/generic-reusable-components/stackable-columns-container';
-// import EngineeringStackableColumn from '../components/generic-reusable-components/stackable-column';
-import SecondServiceHero from '../components/generic-reusable-components/service-second-hero';
 import ReadyToGetStartedSection from '../components/generic-reusable-components/ready-to-get-started-section';
-import Global from "../components/Global"
-import NodeJsFizzbuzzifiedStringImage from '../components/img-components/code-screenshots/node-js-fizzbuzzifies-strings-screenshot.img';
-import TypeScriptFizzbuzzifiedStringImage from '../components/img-components/code-screenshots/typscript-fizzbuzzifies-strings-screenshot.img';
-import ClojureFizzbuzzifiedStringImage from '../components/img-components/code-screenshots/clojure-fizzbuzzified-string-screenshot.img';
+import JsFizzbuzzifiedStringImage from '../components/img-components/code-screenshots/fizzbuzzify-string-screenshot-js.img';
+import TypeScriptFizzbuzzifiedStringImage from '../components/img-components/code-screenshots/fizzbuzzify-string-screenshot-ts.img';
+import ClojureFizzbuzzifiedStringImage from '../components/img-components/code-screenshots/fizzbuzzify-string-screenshot-clj.img';
 import GoFizzbuzzifiedStringImage from '../components/img-components/code-screenshots/go-fizzbuzzified-string-screenshot.img';
 import RustFizzbuzzifiedStringImage from '../components/img-components/code-screenshots/rust-fizzbuzzifies-strings-screenshot.img';
 import JavaFizzbuzzifiedStringImage from '../components/img-components/code-screenshots/java-fizzbuzzified-string-screenshot.img';
@@ -886,7 +882,7 @@ const EngineeringPage = () => {
             </LanguageInfoSection>
 
             <LanguageIdeScreenshotContainer>
-              {languageSelected === 'JavaScript' && <NodeJsFizzbuzzifiedStringImage />}
+              {languageSelected === 'JavaScript' && <JsFizzbuzzifiedStringImage />}
               {languageSelected === 'TypeScript' && <TypeScriptFizzbuzzifiedStringImage />}
               {languageSelected === 'Clojure / ClojureScript' && <ClojureFizzbuzzifiedStringImage />}
               {languageSelected === 'Go Lang' && <GoFizzbuzzifiedStringImage />}
