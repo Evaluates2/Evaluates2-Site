@@ -134,7 +134,7 @@ const Layout = ({ children, isDrawerOpen, toggleDrawer }) => (
                 <Evaluates2RoundedCornersImage />
               </StyledDImage>
             </div>
-            <h2>(evaluates2)</h2>
+            <h2 id="e2-logo">(evaluates2)</h2>
           </div>
           <div className="footer-grid-block footer-about">
             <h2>About</h2>

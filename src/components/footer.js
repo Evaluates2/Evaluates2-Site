@@ -76,10 +76,7 @@ const Footer = styled.div`
     /* flex-direction: column; */
     /* padding-bottom: 15px; */
     /* width: 300px; */
-
-    .e2-logo {
-      margin: 20px 0px 0 10px;
-    }
+    padding: 0 0 2px 4px;
 
     @media only screen and (max-width: 660px) {
         font-size: 7vw;
