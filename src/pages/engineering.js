@@ -913,12 +913,15 @@ const EngineeringPage = () => {
               <ul>
                 <li>React (JavaScript or TypeScript)</li>
                 <li>Angular (TypeScript)</li>
+                <li>Vue (JavaScript)</li>
                 <li>Reagent (ClojureScript)</li>
                 <li>Vue (JavaScript)</li>
                 <li>Elm</li>
+                <li>Rocket (Rust)</li>
                 <li>NativeScript</li>
                 <li>Native Ios (Swift)</li>
                 <li>Native Android (Kotlin)</li>
+                <li>Ruby on Rails</li>
               </ul>
             </EngineeringStackableColumn>
             <EngineeringStackableColumn>
@@ -926,19 +929,25 @@ const EngineeringPage = () => {
               <ul>
                 <li>NodeJS (Express + JavaScript)</li>
                 <li>NodeJS (Express + TypeScript)</li>
-                <li>NodeJS (Serverless JavaScript)</li>
-                <li>NodeJS (Serverless TypeScript)</li>
-                <li>NodeJS (Websocket Streams)</li>
-                <br />
-                <li>NodeJS (Serverless ClojureScript)</li>
+                <li>NodeJS (Websockets)</li>
+                <br/>
+                <li>TypeScript (Express + JavaScript)</li>
+                <li>TypeScript (Express + TypeScript)</li>
+                <li>TypeScript (Websockets)</li>
+                <br/>
                 <li>JVM Clojure (Pedastal or Ring)</li>
+                <li>JVM Clojure (Serverless)</li>
+                <br />
+                <li>ClojureScript (Serverless)</li>
+                <li>ClojureScript (Websockets)</li>
                 <br />
                 <li>Go (Revel)</li>
                 <li>Go (Serverless)</li>
+                <li>Go (Websockets)</li>
                 <br />
                 <li>Java (Spring / Spark)</li>
-                <li>NodeJS (Websocket Streams)</li>
                 <li>Java (Serverless Java)</li>
+                <li>Java (Websocket Streams)</li>
                 <br />
                 <li>Python (Python Flask / Django)</li>
                 <li>Python (Serverless Python)</li>

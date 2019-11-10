@@ -205,7 +205,7 @@ const CareersPage = () => (
         <br />
 
         <JobDescriptionBlocks>
-          <JobDescriptionBlock isInternBlock={false} linkTo="https://indeed.com">
+          <JobDescriptionBlock isInternBlock={false} linkTo="https://www.indeed.com/job/senior-software-engineer-consultant-e350bb39b82658f9">
             {/* <JobPosting> */}
 
             <h2>Contract / Freelance Senior Software Engineer</h2>
@@ -524,7 +524,7 @@ const CareersPage = () => (
         <br />
         <br />
         <JobDescriptionBlocks>
-          <JobDescriptionBlock isInternBlock={false} linkTo="https://indeed.com">
+          <JobDescriptionBlock isInternBlock={false} linkTo="https://www.indeed.com/job/senior-software-engineer-consultant-e350bb39b82658f9">
             {/* <JobPosting> */}
 
             <h2>Senior Software Engineer</h2>
