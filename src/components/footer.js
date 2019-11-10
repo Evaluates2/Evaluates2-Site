@@ -59,7 +59,7 @@ const Footer = styled.div`
     /* width: 300px; */
   }
   
-  h2 {
+  h2#e2-logo {
     
     /* display: flex;
     color: white; */
@@ -76,7 +76,8 @@ const Footer = styled.div`
     /* flex-direction: column; */
     /* padding-bottom: 15px; */
     /* width: 300px; */
-    padding: 0 0 2px 4px;
+    padding: 0 0 0 4px;
+    margin: 6px 0 0 0;
 
     @media only screen and (max-width: 660px) {
         font-size: 7vw;
