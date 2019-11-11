@@ -3,8 +3,7 @@ import mediaQuery from '../../utils/mediaQuery';
 
 export const ImagesContainer = styled.div`
   position: relative;
-  height: 90vh;
-  min-height: auto;
+  min-height: calc(430px + 40vw);
   background-image: radial-gradient(
     circle farthest-corner at 49% 83%,
     #fff,
@@ -21,11 +20,11 @@ export const ImagesContainer = styled.div`
 export const Def1 = styled.div`
   img {
     will-change: transform;
-    transform: translate3d(0px, 0vh, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    transform: translate3d(0px, 0vh, 0px) scale3d(-1.2, 1.1, 1) rotateX(0deg)
       rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
     left: 0;
-    top: 50vh;
+    top: calc(50px + 60vh);
     right: 0;
     z-index: 3;
     width: 100%;
@@ -47,7 +46,7 @@ export const Def2 = styled.div`
     transform: translate3d(0px, 0.45vh, 0px) scale3d(1, 1, 1) rotateX(0deg)
       rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
-    top: 60vh;
+    top: calc(50px + 63vh);
     z-index: 1;
     display: block;
     width: 100%;
@@ -56,7 +55,7 @@ export const Def2 = styled.div`
     right: 0;
     overflow: hidden;
     ${mediaQuery.maxTablet} {
-      top: 51vh;
+      top: 49vh;
       height: 40%;
     }
     ${mediaQuery.maxPhablet} {
@@ -68,10 +67,10 @@ export const Def2 = styled.div`
 export const Def3 = styled.div`
   img {
     will-change: transform;
-    transform: translate3d(0px, 0.75vh, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    transform: translate3d(0px, 0.75vh, 0px) scale3d(-1.1, 1, 1) rotateX(0deg)
       rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
-    top: 55vh;
+    top: calc(50px + 60vh);
     display: block;
     width: 100%;
     position: absolute;

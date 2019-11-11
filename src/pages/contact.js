@@ -11,6 +11,8 @@ import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
 import ReactDOM from 'react-dom'
 
+const BACKEND_URL = 'https://d30y56yd99.execute-api.us-east-1.amazonaws.com/dev/contactSubmission';
+
 const SignupSchema = Yup.object().shape({
   name: Yup.string()
     .min(2, 'Please enter your name!')
@@ -467,8 +469,6 @@ const ContactPage = () => {
                 <h2 id="hero-h-contact">We look forward to speaking!</h2>
                 <br />
                 <br />
-
-                {/* <h2> backend {process.env.BACKEND_URL}</h2> */}
                 <div className="grid-container">
                   <div className="form-container">
                     <Formik
@@ -482,7 +482,7 @@ const ContactPage = () => {
                         setFormErrorText('');
 
                         axios
-                          .post(`${process.env.BACKEND_URL}/contactSubmission`, {
+                          .post(`${BACKEND_URL}/contactSubmission`, {
                             name: values.name,
                             email: values.email,
                             message: values.message,
