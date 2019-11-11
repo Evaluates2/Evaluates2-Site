@@ -1,9 +1,12 @@
 import React from "react"
-import { ImagesContainer, Def1, Def2, Def3} from "./styles"
+import { ImagesContainer, 
+  BlackFrontCityOutline, 
+  DarkMiddleCityOutline, 
+  LightLibertyCityOutline} from "./styles"
 import {StaticQuery} from "gatsby"
-import def1 from "../../data/def1.png"
-import def2 from "../../data/def2.png"
-import def3 from "../../data/def3.png"
+import lightLibertyCityOutline from "../../data/lightLibertyCityOutline.png"
+import darkMiddleCityOutline from "../../data/darkMiddleCityOutline.png"
+import blackFrontCityOutline from "../../data/blackFrontCityOutline.png"
 
 import styled from 'styled-components';
 import mediaQuery from '../../utils/mediaQuery';
@@ -121,15 +124,15 @@ const Images = () => (
                         </Title>
                     <Sub>we will build great things.</Sub>
                 </ImageTitle>
-                <Def3>
-                    <img src={def1} alt="def1" />
-                </Def3>
-                <Def2>
-                    <img src={def2} alt="def2" />
-                </Def2>
-                <Def1>
-                    <img src={def3} alt="def3" />
-                </Def1>
+                <LightLibertyCityOutline>
+                    <img src={lightLibertyCityOutline} alt="lightLibertyCityOutline" />
+                </LightLibertyCityOutline>
+                <DarkMiddleCityOutline>
+                    <img src={darkMiddleCityOutline} alt="darkMiddleCityOutline" />
+                </DarkMiddleCityOutline>
+                <BlackFrontCityOutline>
+                    <img src={blackFrontCityOutline} alt="blackFrontCityOutline" />
+                </BlackFrontCityOutline>
             </ImagesContainer>
         )}
     />

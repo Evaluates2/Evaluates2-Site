@@ -17,11 +17,10 @@ export const ImagesContainer = styled.div`
 `;
 
 
-export const Def1 = styled.div`
+export const BlackFrontCityOutline = styled.div`
   img {
     will-change: transform;
-    transform: translate3d(0px, 0vh, 0px) scale3d(-1.2, 1.1, 1) rotateX(0deg)
-      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform: translate3d(-15vw, 0vh, 0px) scale3d(1.5, 1.1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
     left: 0;
     top: calc(50px + 60vh);
@@ -40,7 +39,7 @@ export const Def1 = styled.div`
   }
 `;
 
-export const Def2 = styled.div`
+export const DarkMiddleCityOutline = styled.div`
   img {
     will-change: transform;
     transform: translate3d(0px, 0.45vh, 0px) scale3d(1, 1, 1) rotateX(0deg)
@@ -64,7 +63,7 @@ export const Def2 = styled.div`
   }
 `;
 
-export const Def3 = styled.div`
+export const LightLibertyCityOutline = styled.div`
   img {
     will-change: transform;
     transform: translate3d(0px, 0.75vh, 0px) scale3d(-1.1, 1, 1) rotateX(0deg)
