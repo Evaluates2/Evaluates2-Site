@@ -11,7 +11,7 @@ import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
 import ReactDOM from 'react-dom'
 
-const BACKEND_URL = 'https://d30y56yd99.execute-api.us-east-1.amazonaws.com/dev/contactSubmission';
+const BACKEND_URL = 'https://d30y56yd99.execute-api.us-east-1.amazonaws.com/dev';
 
 const SignupSchema = Yup.object().shape({
   name: Yup.string()
