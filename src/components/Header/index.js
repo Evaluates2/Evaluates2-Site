@@ -15,7 +15,7 @@ export const HeaderContainer = styled.header`
 
   transition: top 1s linear;
   transition: opacity 0 linear;
-  padding: 20px;
+  padding: calc(15px + 1vw);
   position: fixed;
   width: 100%;
   display: grid;
@@ -40,8 +40,8 @@ const ColoredHeader = styled.div`
 `;
 
 const StyledDImage = styled.div`
-  min-width: 70px;
-  min-height: 70px;
+  min-width: calc(45px + 1vw);
+  min-height: calc(45px + 1vw);
 `
 
 class Header extends React.Component {
