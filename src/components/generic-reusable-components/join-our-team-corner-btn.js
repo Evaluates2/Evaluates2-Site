@@ -1,6 +1,49 @@
 import React from 'react';
-import styled from '@emotion/styled';
+// import styled from '@emotion/styled';
+import styled, { keyframes } from 'styled-components';
 import Link from 'gatsby-link';
+
+const randomBetween = (min, max) => Math.random() * (max - min + 1) + min;
+
+const generateParticleAnimation = () => {
+  const opacityDelta = randomBetween(.2, 1);
+  const xDelta0 = randomBetween(0, 0);
+  const yDelta0 = randomBetween(0, 40);
+  const xDelta20 = randomBetween(-40, 40);
+  const yDelta20 = randomBetween(-40, -20);
+
+  return keyframes`
+    0% {
+      opacity: ${opacityDelta};
+      transform: translate3d(${xDelta0}px, ${yDelta0}px, 0) scale(1);
+    }
+    20% {
+      opacity: ${opacityDelta};
+      transform: translate3d(${xDelta20}px, ${yDelta20}px, 0) scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: translate3d(${xDelta20 * 2.5}px, ${yDelta20 * -5}px, 0) scale(.5);
+    }
+  `
+}
+
+const Particle = styled.div`
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  border-radius: 100%;
+  animation-duration: ${props => randomBetween(1.7, 2)}s;
+  opacity: 0;
+  /* animation-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1); */
+  animation-delay: .9s;
+  animation-iteration-count: 1;
+
+  &.particle {
+    animation-name: ${props => generateParticleAnimation()};
+  }
+`
 
 const StyledJoinOurTeamCornerBtn = styled.div`
   /* background-image: linear-gradient(90deg,#000032,#0ff); */
@@ -25,15 +68,17 @@ const StyledJoinOurTeamCornerBtn = styled.div`
     /* position: absolute; */
 
     .off-right-position {
-      transition: all 1s ease-out;
+      /* transition: all 1s ease-out; */
       transform: translate3d(170%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
         rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+      transition: all 1s cubic-bezier(0.6, -0.28, 0.74, 0.05);
     }
 
     .fly-in-from-right {
-      transition: all 1s ease-out;
+      /* transition: all 1s ease-out; */
       transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
         rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+      transition: all 1s cubic-bezier(0.6, -0.28, 0.74, 0.05);
     }
   }
 
@@ -63,10 +108,11 @@ class JoinOurTeamCornerBtn extends React.Component {
     this.state = {
       showJointButton: false,
       window: undefined,
-      document: undefined
+      document: undefined,
+      particles: [],
     };
-
   }
+
   componentDidMount() {
     this.setState({ showJointButton: false, window, document });
     window.addEventListener('scroll', this.handleScroll.bind(this), true);
@@ -96,6 +142,7 @@ class JoinOurTeamCornerBtn extends React.Component {
     }
     return false;
   };
+
   handleScroll = e => {
     const joinTeamBtnElement = this.state.document.getElementById('join-team-btn');
     if (this.isInViewport(joinTeamBtnElement)) {
@@ -110,6 +157,11 @@ class JoinOurTeamCornerBtn extends React.Component {
       <StyledJoinOurTeamCornerBtn>
         <Link to="/careers">
           <div id="join-team-btn">
+            <div className="particles" style={{ position: 'absolute', zIndex: '1' }}>
+              {new Array(25).fill(null).map((_, i) => (
+                <Particle key={i} className={this.state.showJointButton ? 'particle' : ''} />
+              ))}
+            </div>
             <button
               className={`off-right-position ${
                 this.state.showJointButton
