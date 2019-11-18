@@ -48,7 +48,7 @@ export const IntroContainer = styled.div`
     }
      ${mediaQuery.maxTablet} {
         min-height: auto;
-        /* padding: calc(40px + 10vw) calc(20px + 5vw); */
+        padding: calc(10px + 5vw) calc(5px + 8vw);
     } 
 
     
