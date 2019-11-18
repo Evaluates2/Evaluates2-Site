@@ -59,6 +59,7 @@ export const Clouds = styled.div`
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 1;
+    
   }
 
   .cloud1 {
@@ -72,7 +73,16 @@ export const Clouds = styled.div`
     transform: scale(0.5);
     top: 500px;
     opacity: 40%;
+
+    ${mediaQuery.maxTablet} {
+      top: 35vh;
+      height: 25%;
+    }
+    ${mediaQuery.maxPhablet} {
+      top: 45vh;
+    }
   }
+
 
   .cloud3 {
     background-image: url(${cloud3});
@@ -83,6 +93,14 @@ export const Clouds = styled.div`
     height: 400px;
     width: 750px;
     top: 400px;
+
+    ${mediaQuery.maxTablet} {
+      top: 35vh;
+      height: 25%;
+    }
+    ${mediaQuery.maxPhablet} {
+      top: 40vh;
+    }
   }
 
 `
@@ -100,18 +118,31 @@ const birdFlipbook = keyframes`
 `
 
 export const Birds = styled.div`
-  z-index: 1;
+  z-index: 2;
   position: absolute;
   width: 100%;
   height: 500px;
   top: 50vh;
+
+  ${mediaQuery.maxTablet} {
+    top: 45vh;
+    height: 20%;
+    transform: scale(1);
+  }
+  ${mediaQuery.maxPhablet} {
+    top: 50vh;
+  }
 
   & > div {
     animation-name: ${birdFlying};
     position: absolute;
     animation-iteration-count: infinite; 
     animation-timing-function: linear;
-    z-index: 2;
+
+    ${mediaQuery.maxTablet} {
+      left: -60px;
+    }
+  }
 
     figure {
       background-image: url(${bird});
@@ -124,26 +155,31 @@ export const Birds = styled.div`
       height: 41.7px;
       width: 29.4px;
       background-size: auto 100%;
-    }
   }
   
   & > div:nth-child(1) {
     top: 10%;
-    z-index: 2;
-    animation-duration: 28s;
-    animation-delay: -28s;
+    animation-duration: 38s;
+    animation-delay: -48s;
 
+    ${mediaQuery.maxTablet} {
+      animation-duration: 25s;
+    }
 
     figure {
       transform: scale(.6);
-      animation-delay: -2s;
+      animation-delay: -9s;
     }
   }
 
   & > div:nth-child(2) {
     top: 20%;
-    animation-duration: 25s;
-    animation-delay: -30s;
+    animation-duration: 35s;
+    animation-delay: -40s;
+
+    ${mediaQuery.maxTablet} {
+      animation-duration: 25s;
+    }
 
     figure {
       animation-delay: -8s;
@@ -153,8 +189,12 @@ export const Birds = styled.div`
 
   & > div:nth-child(3) {
     top: 30%;
-    animation-duration: 27s;
-    animation-delay: -37s;
+    animation-duration: 37s;
+    animation-delay: -47s;
+
+    ${mediaQuery.maxTablet} {
+      animation-duration: 25s;
+    }
 
     figure {
       animation-delay: -18s;
@@ -164,8 +204,12 @@ export const Birds = styled.div`
 
   & > div:nth-child(4) {
     top: 22%;
-    animation-duration: 27s;
-    animation-delay: -36s;
+    animation-duration: 47s;
+    animation-delay: -56s;
+
+    ${mediaQuery.maxTablet} {
+      animation-duration: 25s;
+    }
     
     figure {
       transform: scale(.5);
@@ -175,21 +219,27 @@ export const Birds = styled.div`
 
   & > div:nth-child(5) {
     top: 20%;
-    animation-duration: 48s;
-    animation-delay: -36s;
-    
+    animation-duration: 56s;
+    animation-delay: -66s;
+
+    ${mediaQuery.maxTablet} {
+      animation-duration: 25s;
+    }
 
     figure {
       transform: scale(.4);
-      animation-delay: -13s;
+      animation-delay: -3s;
     }
   }
 
   & > div:nth-child(6) {
     top: 25%;
-    animation-duration: 47s;
-    animation-delay: -38s;
+    animation-duration: 57s;
+    animation-delay: -48s;
 
+    ${mediaQuery.maxTablet} {
+      animation-duration: 25s;
+    }
 
     figure {
       transform: scale(.4);
@@ -199,8 +249,12 @@ export const Birds = styled.div`
 
   & > div:nth-child(7) {
     top: 27%;
-    animation-duration: 48s;
-    animation-delay: -58s;
+    animation-duration: 58s;
+    animation-delay: -68s;
+
+    ${mediaQuery.maxTablet} {
+      animation-duration: 25s;
+    }
 
     figure {
       transform: scale(.4);
@@ -210,19 +264,27 @@ export const Birds = styled.div`
 
   & > div:nth-child(8) {
     top: 28%;
-    animation-duration: 47s;
-    animation-delay: -56s;
+    animation-duration: 57s;
+    animation-delay: -66s;
+
+    ${mediaQuery.maxTablet} {
+      animation-duration: 25s;
+    }
 
     figure {
       transform: scale(.4);
-      animation-delay: -11s;
+      animation-delay: -10s;
     }
   }
 
   & > div:nth-child(9) {
     top: 29%;
-    animation-duration: 49s;
-    animation-delay: -59s;
+    animation-duration: 59s;
+    animation-delay: -67s;
+
+    ${mediaQuery.maxTablet} {
+      animation-duration: 25s;
+    }
     
     figure {
       transform: scale(.4);
@@ -232,9 +294,12 @@ export const Birds = styled.div`
 
   & > div:nth-child(10) {
     top: 39%;
-    animation-duration: 36s;
-    animation-delay: -45s;
+    animation-duration: 46s;
+    animation-delay: -55s;
 
+    ${mediaQuery.maxTablet} {
+      animation-duration: 25s;
+    }
 
     figure {
       transform: scale(.5);
@@ -244,8 +309,12 @@ export const Birds = styled.div`
 
   & > div:nth-child(11) {
     top: 39%;
-    animation-duration: 35s;
-    animation-delay: -45s;
+    animation-duration: 45s;
+    animation-delay: -55s;
+
+    ${mediaQuery.maxTablet} {
+      animation-duration: 25s;
+    }
 
     figure {
       transform: scale(.5);
@@ -255,8 +324,12 @@ export const Birds = styled.div`
 
   & > div:nth-child(12) {
     top: 50%;
-    animation-duration: 25s;
-    animation-delay: -45s;
+    animation-duration: 45s;
+    animation-delay: -65s;
+
+    ${mediaQuery.maxTablet} {
+      animation-duration: 25s;
+    }
 
     figure {
       transform: scale(.5);
@@ -266,8 +339,12 @@ export const Birds = styled.div`
 
   & > div:nth-child(13) {
     top: 50%;
-    animation-duration: 21s;
-    animation-delay: -45s;
+    animation-duration: 41s;
+    animation-delay: -65s;
+
+    ${mediaQuery.maxTablet} {
+      animation-duration: 25s;
+    }
 
     figure {
       transform: scale(.5);
@@ -277,8 +354,12 @@ export const Birds = styled.div`
 
   & > div:nth-child(14) {
     top: 50%;
-    animation-duration: 23s;
-    animation-delay: -45s;
+    animation-duration: 43s;
+    animation-delay: -65s;
+
+    ${mediaQuery.maxTablet} {
+      animation-duration: 20s;
+    }
 
     figure {
       transform: scale(.5);

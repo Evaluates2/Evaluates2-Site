@@ -3,13 +3,15 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import Link from 'gatsby-link';
 
+import mediaQuery from '../../utils/mediaQuery';
+
 const randomBetween = (min, max) => Math.random() * (max - min + 1) + min;
 
 const generateParticleAnimation = () => {
   const opacityDelta = randomBetween(.2, 1);
-  const xDelta0 = randomBetween(0, 0);
+  const xDelta0 = randomBetween(-75, 75);
   const yDelta0 = randomBetween(0, 40);
-  const xDelta20 = randomBetween(-40, 40);
+  const xDelta20 = randomBetween(-80, 80);
   const yDelta20 = randomBetween(-40, -20);
 
   return keyframes`
@@ -19,11 +21,11 @@ const generateParticleAnimation = () => {
     }
     40% {
       opacity: ${opacityDelta};
-      transform: translate3d(${xDelta20}px, ${yDelta20}px, 0) scale(1);
+      transform: translate3d(${xDelta20}px, ${yDelta20 * 1.5}px, 0) scale(1);
     }
     100% {
       opacity: 0;
-      transform: translate3d(${xDelta20 * 2.5}px, ${yDelta20 * -5}px, 0) scale(.5);
+      transform: translate3d(${xDelta20 * 1.5}px, ${yDelta20 * -5}px, 0) scale(.5);
     }
   `
 }
@@ -32,13 +34,14 @@ const Particle = styled.div`
   position: absolute;
   width: 3px;
   height: 3px;
-  left: 20px;
+  left: 75px;
+  z-index: 1;
   background: #fff;
   border-radius: 100%;
   animation-duration: ${props => randomBetween(1.7, 2)}s;
   opacity: 0;
   /* animation-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1); */
-  animation-delay: 1.1s;
+  animation-delay: 1s;
   animation-iteration-count: 1;
 
   &.particle {
@@ -56,8 +59,13 @@ const StyledJoinOurTeamCornerBtn = styled.div`
   flex-direction: row;
   justify-content: flex-end;
   width: 100%;
-  padding: 6vh 6vw;
+  padding: 7vh 6vw;
   background: transparent;
+  overflow: hidden;
+
+  #join-team-btn {
+    position: relative;
+  }
 
   a {
     /* display: inline-block; */
@@ -110,7 +118,6 @@ class JoinOurTeamCornerBtn extends React.Component {
       showJointButton: false,
       window: undefined,
       document: undefined,
-      particles: [],
     };
   }
 
@@ -153,16 +160,22 @@ class JoinOurTeamCornerBtn extends React.Component {
     }
   };
 
+  shouldComponentUpdate(nextProps, nextState) {
+    if (nextState.window == this.state.window && nextState.document == this.state.document && nextState.showJointButton == this.state.showJointButton)
+      return false
+    return true
+  }
+
   render() {
     return (
       <StyledJoinOurTeamCornerBtn>
         <Link to="/careers">
           <div id="join-team-btn">
-            <div className="particles" style={{ position: 'absolute', zIndex: '1', right: '190px'}}>
+            {this.state.showJointButton && <div className="particles" >
               {new Array(25).fill(null).map((_, i) => (
-                <Particle key={i} className={this.state.showJointButton ? 'particle' : ''} />
+                <Particle key={i} className='particle' />
               ))}
-            </div>
+            </div>}
             <button
               className={`off-right-position ${
                 this.state.showJointButton
