@@ -1,9 +1,6 @@
 import React from 'react';
-// import styled from '@emotion/styled';
 import styled, { keyframes } from 'styled-components';
 import Link from 'gatsby-link';
-
-import mediaQuery from '../../utils/mediaQuery';
 
 const randomBetween = (min, max) => Math.random() * (max - min + 1) + min;
 
