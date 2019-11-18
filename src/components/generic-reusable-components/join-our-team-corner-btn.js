@@ -17,7 +17,7 @@ const generateParticleAnimation = () => {
       opacity: ${opacityDelta};
       transform: translate3d(${xDelta0}px, ${yDelta0}px, 0) scale(1);
     }
-    20% {
+    40% {
       opacity: ${opacityDelta};
       transform: translate3d(${xDelta20}px, ${yDelta20}px, 0) scale(1);
     }
@@ -30,14 +30,15 @@ const generateParticleAnimation = () => {
 
 const Particle = styled.div`
   position: absolute;
-  width: 8px;
-  height: 8px;
+  width: 3px;
+  height: 3px;
+  left: 20px;
   background: #fff;
   border-radius: 100%;
   animation-duration: ${props => randomBetween(1.7, 2)}s;
   opacity: 0;
   /* animation-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1); */
-  animation-delay: .9s;
+  animation-delay: 1.1s;
   animation-iteration-count: 1;
 
   &.particle {
@@ -157,7 +158,7 @@ class JoinOurTeamCornerBtn extends React.Component {
       <StyledJoinOurTeamCornerBtn>
         <Link to="/careers">
           <div id="join-team-btn">
-            <div className="particles" style={{ position: 'absolute', zIndex: '1' }}>
+            <div className="particles" style={{ position: 'absolute', zIndex: '1', right: '190px'}}>
               {new Array(25).fill(null).map((_, i) => (
                 <Particle key={i} className={this.state.showJointButton ? 'particle' : ''} />
               ))}

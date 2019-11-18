@@ -89,7 +89,7 @@ export const Clouds = styled.div`
 
 
 export const birdFlying = keyframes`
-  0% { transform: translate(-50vw); }
+  0% { transform: translate(-5vw); }
   100% { transform: translate(105vw); }
 `
 
@@ -119,7 +119,7 @@ export const Birds = styled.div`
       will-change: background-position;
       animation-name: ${birdFlipbook};
       animation-timing-function: steps(10);
-      animation-duration: 1s;
+      animation-duration: 1.5s;
       animation-iteration-count: infinite;
       height: 41.7px;
       width: 29.4px;
