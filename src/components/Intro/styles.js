@@ -33,12 +33,12 @@ export const IntroContainer = styled.div`
     width: 100%;
     color: white !important;
     background-image: linear-gradient(180deg,#000,#000032);
-    padding: 50px;
+    padding: calc(10px + 5vw) calc(20px + 10vw);
     font-size: 27px;
     line-height: 45px;
     display: inline-flex;
     min-height: 175vh;
-    padding: 90px 100px;
+
     justify-content: center;
     a {
         color: #0fdde8;
@@ -46,9 +46,10 @@ export const IntroContainer = styled.div`
             color: yellowgreen;
         }
     }
-    ${mediaQuery.maxTablet} {
+     ${mediaQuery.maxTablet} {
         min-height: auto;
-        padding: 60px 20px;
-    }
+        /* padding: calc(40px + 10vw) calc(20px + 5vw); */
+    } 
+
     
 `

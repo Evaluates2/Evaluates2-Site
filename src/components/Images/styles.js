@@ -3,7 +3,7 @@ import mediaQuery from '../../utils/mediaQuery';
 
 export const ImagesContainer = styled.div`
   position: relative;
-  min-height: calc(430px + 40vw);
+  height: calc(430px + 40vw);
   background-image: radial-gradient(
     circle farthest-corner at 49% 83%,
     #fff,
@@ -12,7 +12,7 @@ export const ImagesContainer = styled.div`
     #040438
   );
   ${mediaQuery.maxTablet} {
-    height: 70vh;
+    max-height: 100vh;
   }
 `;
 
@@ -29,10 +29,10 @@ export const BlackFrontCityOutline = styled.div`
     width: 100%;
     position: absolute;
     overflow: hidden;
-    ${mediaQuery.maxTablet} {
+    /* ${mediaQuery.maxTablet} {
       top: 54vh;
       height: 40%;
-    }
+    } */
     ${mediaQuery.maxPhablet} {
       top: 57vh;
     }
