@@ -16,13 +16,15 @@ const generateParticleAnimation = () => {
       opacity: ${opacityDelta};
       transform: translate3d(${xDelta0}px, ${yDelta0}px, 0) scale(1);
     }
-    40% {
+
+    30% {
       opacity: ${opacityDelta};
-      transform: translate3d(${xDelta20}px, ${yDelta20 * 1.5}px, 0) scale(1);
+      transform: translate3d(${xDelta20}px, ${yDelta20 * 1.7}px, 0) scale(1);
     }
+
     100% {
       opacity: 0;
-      transform: translate3d(${xDelta20 * 1.5}px, ${yDelta20 * -5}px, 0) scale(.5);
+      transform: translate3d(${xDelta20 * 1.5}px, ${yDelta20 * -4}px, 0) scale(.5);
     }
   `
 }
@@ -35,9 +37,10 @@ const Particle = styled.div`
   z-index: 1;
   background: #fff;
   border-radius: 100%;
-  animation-duration: ${props => randomBetween(1.7, 2)}s;
+  animation-duration: ${props => randomBetween(0.7, 1)}s;
+  animation-timing-function: ease-in-out;
   opacity: 0;
-  /* animation-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1); */
+  /* animation-timing-function: cubic-bezier(0.22, 0.4, 0.12, 1.26); */
   animation-delay: 1s;
   animation-iteration-count: 1;
 
