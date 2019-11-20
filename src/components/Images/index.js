@@ -2,7 +2,10 @@ import React from "react"
 import { ImagesContainer, 
   BlackFrontCityOutline, 
   DarkMiddleCityOutline, 
-  LightLibertyCityOutline} from "./styles"
+  LightLibertyCityOutline,
+  Clouds,
+  Birds,
+  } from "./styles"
 import {StaticQuery} from "gatsby"
 import lightLibertyCityOutline from "../../data/lightLibertyCityOutline.png"
 import darkMiddleCityOutline from "../../data/darkMiddleCityOutline.png"
@@ -133,6 +136,23 @@ const Images = () => (
                 <BlackFrontCityOutline>
                     <img src={blackFrontCityOutline} alt="blackFrontCityOutline" />
                 </BlackFrontCityOutline>
+
+                <Birds>
+                  {[1,2,3,4,5,6,7,8,9,10,11,12,13,14].map((i) => (
+                    <div key={i}>
+                      <figure />
+                    </div>
+                  ))}
+                </Birds>
+                  
+                <Clouds>
+                  <div className='cloud cloud1' />
+                  <div className='cloud cloud2' />
+                  <div className='cloud cloud3' />
+                  <div className='cloud cloud4' />
+                </Clouds>
+                
+                
             </ImagesContainer>
         )}
     />
