@@ -11,7 +11,7 @@ import mediaQuery from "../../utils/mediaQuery"
 
 export const HeaderContainer = styled.header` 
 
-  background-color: ${props => (props.path === "/about/" || props.path === "/about" || props.path === "/our-work/" || props.path === "/our-work" || props.path.toString().indexOf("/team") !== -1) ? '#000032' : "rgba(0,0,0,0)"};
+  background-color: ${props => props.path === '/' ? "rgba(0,0,0,0)" : '#000032'};
 
   transition: top 1s linear;
   transition: opacity 0 linear;

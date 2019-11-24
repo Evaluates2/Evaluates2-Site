@@ -42,8 +42,9 @@ class Desktop extends React.Component {
         }
         
         <WrappedSubnav>
+          {'is it?' + this.window.location.pathname === '/'}
         {subNav.length > 0 && (
-          <SubNav className={this.window.location.pathname.indexOf('/about') !== -1 || this.window.location.pathname.indexOf('/our-work') !== -1 || this.window.location.pathname.indexOf('/team') !== -1 ? 'blue-bg' : ''}>
+          <SubNav className={this.window.location.pathname === '/' ? '' : 'blue-bg'}>
             {subNav.map(item => (
               <NavLink
               key={item.url}
