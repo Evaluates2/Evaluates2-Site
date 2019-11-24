@@ -399,8 +399,8 @@ const ContactPage = () => {
     validhumanVerified,
     errors,
   ) => {
-    let earlySubmitErrorMessage = 'Please ';
-
+    let earlySubmitErrorMessage = '';
+    
     if (
       !validNameEntered ||
       !validEmailEntered ||
@@ -408,7 +408,8 @@ const ContactPage = () => {
       errors.name ||
       errors.email ||
       errors.message
-    ) {
+      ) {
+      earlySubmitErrorMessage = earlySubmitErrorMessage + 'Please ';
       const errorFields = [
         !validNameEntered || errors.name ? 'name' : '',
         !validEmailEntered || errors.email ? 'email' : '',
@@ -456,6 +457,7 @@ const ContactPage = () => {
   const [humanVerified, setHumanVerified] = useState(false);
   const [formSuccessText, setFormSuccessText] = useState('');
   const [formErrorText, setFormErrorText] = useState('');
+  const [fetching, setFetching] = useState(false);
 
   return (
     <Global pageTitle={'Contact Us'} path={'contact'} description={'contact'}>
@@ -481,28 +483,35 @@ const ContactPage = () => {
                       onSubmit={(values, {resetForm, setFieldValue})=> {
                         setFormErrorText('');
 
+                        setFormSuccessText(
+                          'Saving your information...',
+                        );
+                        setFetching(true);
+                        
                         axios
-                          .post(`${BACKEND_URL}/contactSubmission`, {
-                            name: values.name,
-                            email: values.email,
-                            message: values.message,
-                            dateSubmitted: new Date(),
-                            userAgent: {}
-                          })
-                          .then(res => {
-
+                        .post(`${BACKEND_URL}/contactSubmission`, {
+                          name: values.name,
+                          email: values.email,
+                          message: values.message,
+                          dateSubmitted: new Date(),
+                          userAgent: {}
+                        })
+                        .then(res => {
+                          
+                            setFetching(false);
                             resetForm({})
-
+                            
                             setFieldValue('name', '')
                             setFieldValue('email', '')
                             setFieldValue('message', '')
-
+                            
                             setFormSuccessText(
                               'Thanks! An Evaluates2 representative will reach out soon!',
                               );
                             })
                             .catch(err => {
-
+                              
+                            setFetching(false);
                             setFormErrorText(
                               'Hmm, there was an error saving your contact submission: ' +
                                 JSON.stringify(err),
@@ -580,6 +589,7 @@ const ContactPage = () => {
                                   disabled={
                                     !humanVerified ||
                                     JSON.stringify(errors) !== '{}' ||
+                                    fetching ||
                                     !(
                                       touched['email'] === true &&
                                       touched['name'] === true &&
