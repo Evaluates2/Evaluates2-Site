@@ -15,9 +15,15 @@ export const ImagesContainer = styled.div`
     #2c0277 79%,
     #040438
   );
+    
+    min-height: 621px;
+    
   ${mediaQuery.maxTablet} {
     max-height: 100vh;
   }
+  /* ${mediaQuery.maxPhablet} {
+    min-height: 621px;
+  } */
 `;
 
 
@@ -27,18 +33,27 @@ export const BlackFrontCityOutline = styled.div`
     transform: translate3d(-15vw, 0vh, 0px) scale3d(1.5, 1.1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
     left: 0;
-    top: calc(50px + 60vh);
+    /* top: calc(50px + 60vh); */
     right: 0;
     z-index: 3;
     width: 100%;
     position: absolute;
     overflow: hidden;
     /* ${mediaQuery.maxTablet} {
-      top: 54vh;
       height: 40%;
     } */
+    /* ${mediaQuery.maxPhablet} { */
+      /* top: 57vh; */
+    /* } */
+      
+      top: 65vh;
+
+    ${mediaQuery.maxTablet} {
+      top: 51vh;
+      /* height: 40%; */
+    }
     ${mediaQuery.maxPhablet} {
-      top: 57vh;
+      top: 55vh;
     }
   }
 `;
@@ -384,7 +399,7 @@ export const DarkMiddleCityOutline = styled.div`
     right: 0;
     overflow: hidden;
     ${mediaQuery.maxTablet} {
-      top: 49vh;
+      top: 50vh;
       height: 40%;
     }
     ${mediaQuery.maxPhablet} {
