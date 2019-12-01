@@ -9,6 +9,7 @@ import LeeDanielHeadshotImage from '../components/img-components/headshots/lee-d
 import Link from 'gatsby-link';
 import TeamMemberBlock from './../components/generic-reusable-components/team-member-block';
 import KateFromHrLogoImage from '../components/img-components/partner-logos/kate-from-hr-logo.img';
+import LumigoLogoImage from '../components/img-components/partner-logos/lumigo-logo.img';
 
 const AboutHero = styled.div`
   h1#hero-h-about-us {
@@ -375,12 +376,24 @@ const AboutPage = () => (
           <ServerlessLogoImage />
           <GithubLogoImage />
         </div> */}
+        <a>
+          <div></div>
+        </a>
         <div className="partner-row">
           {/* <MongoAtlasImage />
           <MozillaLogoImage /> */}
           <a href='https://www.katefromhr.com'>
             <KateFromHrLogoImage />
           </a>
+
+          <a href='https://lumigo.io'>
+            <LumigoLogoImage />
+          </a>
+
+          <a>
+            <div></div>
+          </a>
+
         </div>
       </PartnersSection>
 
