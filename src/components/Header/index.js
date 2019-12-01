@@ -4,8 +4,7 @@ import Headroom from "react-headroom";
 
 import { StaticQuery } from "gatsby";
 import Nav from "../Nav";
-import { Logo, SiteTitle, Img, Label } from "./styles"
-// import TheDImage from '../img-components/the-d.img';
+import { SiteTitle, Label } from "./styles"
 import Evaluates2RoundedCornersImage from "../img-components/e2-rounded-corners.img";
 import mediaQuery from "../../utils/mediaQuery"
 
@@ -14,6 +13,7 @@ export const HeaderContainer = styled.header`
   background-color: ${props => props.path === '/' ? "rgba(0,0,0,0)" : '#000032'};
 
   transition: top 1s linear;
+  transition: opacity 0 linear;
   transition: opacity 0 linear;
   padding: calc(15px + 1vw);
   position: fixed;
