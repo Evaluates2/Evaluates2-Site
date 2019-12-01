@@ -55,12 +55,8 @@ class Header extends React.Component {
 
   }
 
-  componentWillMount() {
-
-  }
-
   componentDidMount() {
-    this.setState(window)
+    this.setState({window: window, divStyle: this.state.divStyle})
     var prevScrollpos = window.pageYOffset;
     var fromTopPx = 250;
     var _this = this
@@ -68,11 +64,13 @@ class Header extends React.Component {
       var scrolledFromtop = window.scrollY;
       if (scrolledFromtop > fromTopPx) {
         _this.setState({
-          divStyle: {}
+          divStyle: {},
+          window: this.state.window
         })
       } else {
         _this.setState({
-          divStyle: {}
+          divStyle: {},
+          window: this.state.window
         })
       }
       var currentScrollPos = window.pageYOffset;
