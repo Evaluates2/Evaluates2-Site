@@ -14,7 +14,7 @@ export const HeaderContainer = styled.header`
 
   transition: top 1s linear;
   transition: opacity 0 linear;
-  transition: opacity 0 linear;
+  top: 0;
   padding: calc(15px + 1vw);
   position: fixed;
   width: 100%;
@@ -28,6 +28,10 @@ export const HeaderContainer = styled.header`
   ${mediaQuery.minNetbook} {
     grid-template-areas: "title nav social search";
   };
+
+  header {
+    transition: ${props => props.theme.shortTrans};
+  }
   
 `
 
