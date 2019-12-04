@@ -98,8 +98,8 @@ class Header extends React.Component {
         `}
         render={data => (
           <Headroom css="z-index: 20;">
-            <ColoredHeader >
-              <HeaderContainer path={this.state.window ? this.state.window.location.pathname : { path: '' }}>
+            <ColoredHeader>
+              <HeaderContainer path={this.props.path}>
                 <SiteTitle to="/" rel="home">
                   <StyledDImage>
                     <Evaluates2RoundedCornersImage />

@@ -10,12 +10,12 @@ import Scroll from "../Scroll"
 
 import { GlobalStyle } from "./styles"
 
-const Global = ({ children, site, ...rest }) => (
+const Global = ({ children, site, path, ...rest }) => (
   <ThemeProvider theme={theme}>
     <>
       <SEO site={site.meta} {...rest} />
       <GlobalStyle />
-        <Header site={site.meta} />
+        <Header site={site.meta} path={path} />
       {children}
       <Scroll showBelow={1500} css="position: fixed; right: 1em;" />
     </>
