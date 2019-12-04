@@ -12,7 +12,12 @@ install dependencies
 npm i
 ```
 
-start local ev server
+ya also need to run yarn install for some reason
+```
+npx yarn install
+```
+
+start local dev server
 ```
 npm start
 ```
