@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from "gatsby"
 import { ThemeProvider } from "styled-components"
 import PropTypes from "prop-types"
 
-import SEO from "../Seo"
+import SEO from "../seo"
 import Header from "../Header"
 import theme from "../../utils/theme"
 import Scroll from "../Scroll"
