@@ -6,7 +6,7 @@ import { ImagesContainer,
   Clouds,
   Birds,
   } from "./styles"
-import {StaticQuery} from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 import lightLibertyCityOutline from "../../data/lightLibertyCityOutline.png"
 import darkMiddleCityOutline from "../../data/darkMiddleCityOutline.png"
 import blackFrontCityOutline from "../../data/blackFrontCityOutline.png"

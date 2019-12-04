@@ -2,7 +2,7 @@ import React from "react";
 import styled from '@emotion/styled';
 import Headroom from "react-headroom";
 
-import { StaticQuery } from "gatsby";
+import { StaticQuery, graphql } from "gatsby";
 import Nav from "../Nav";
 import { SiteTitle, Label } from "./styles"
 import Evaluates2RoundedCornersImage from "../img-components/e2-rounded-corners.img";
