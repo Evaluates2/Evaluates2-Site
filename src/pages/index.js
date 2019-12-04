@@ -16,9 +16,9 @@ const StyledIndex = styled.div`
   background-color: #000032;
 `;
 
-export default function IndexPage({ data, location }) {
+export default function IndexPage({ data }) {
   return (
-    <Global pageTitle={''} path={''} description={''}>
+    <Global pageTitle={''} path={'/'} description={''}>
       <StyledIndex>
         <Layout>
           <Images />

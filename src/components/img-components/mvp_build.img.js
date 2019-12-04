@@ -16,7 +16,7 @@ import Img from 'gatsby-image';
 const MvpBuildImage = () => (
   <StaticQuery
     query={graphql`
-      query {
+      {
         placeholderImage: file(relativePath: { eq: "mvp_build.png" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {

@@ -2,7 +2,7 @@ import React from "react";
 import styled from '@emotion/styled';
 import Headroom from "react-headroom";
 
-import { StaticQuery } from "gatsby";
+import { StaticQuery, graphql } from "gatsby";
 import Nav from "../Nav";
 import { SiteTitle, Label } from "./styles"
 import Evaluates2RoundedCornersImage from "../img-components/e2-rounded-corners.img";
@@ -14,7 +14,7 @@ export const HeaderContainer = styled.header`
 
   transition: top 1s linear;
   transition: opacity 0 linear;
-  transition: opacity 0 linear;
+  top: 0;
   padding: calc(15px + 1vw);
   position: fixed;
   width: 100%;
@@ -28,6 +28,10 @@ export const HeaderContainer = styled.header`
   ${mediaQuery.minNetbook} {
     grid-template-areas: "title nav social search";
   };
+
+  header {
+    transition: ${props => props.theme.shortTrans};
+  }
   
 `
 
@@ -59,16 +63,15 @@ class Header extends React.Component {
     this.setState({window: window, divStyle: this.state.divStyle})
     var prevScrollpos = window.pageYOffset;
     var fromTopPx = 250;
-    var _this = this
     window.onscroll = function () {
       var scrolledFromtop = window.scrollY;
       if (scrolledFromtop > fromTopPx) {
-        _this.setState({
+        this.setState({
           divStyle: {},
           window: this.state.window
         })
       } else {
-        _this.setState({
+        this.setState({
           divStyle: {},
           window: this.state.window
         })
@@ -80,7 +83,7 @@ class Header extends React.Component {
         document.getElementsByTagName("header")[0].style.top = "-300px"
       }
       prevScrollpos = currentScrollPos;
-    }
+    }.bind(this);
   }
 
   render() {
@@ -99,8 +102,8 @@ class Header extends React.Component {
         `}
         render={data => (
           <Headroom css="z-index: 20;">
-            <ColoredHeader >
-              <HeaderContainer path={this.state.window ? this.state.window.location.pathname : { path: '' }}>
+            <ColoredHeader>
+              <HeaderContainer path={this.props.path}>
                 <SiteTitle to="/" rel="home">
                   <StyledDImage>
                     <Evaluates2RoundedCornersImage />

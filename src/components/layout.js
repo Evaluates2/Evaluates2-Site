@@ -8,7 +8,7 @@ import theme from '../style/theme';
 import { toggleDrawer as toggleDrawerAction } from '../state/app';
 import Footer from './footer';
 import Link from 'gatsby-link';
-import MobileHeader from './header';
+import MobileHeader from './Header';
 import Drawer from './drawer';
 import './layout.css';
 import Evaluates2RoundedCornersImage from './img-components/e2-rounded-corners.img';
