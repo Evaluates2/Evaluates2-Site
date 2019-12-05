@@ -19,7 +19,7 @@ const MvpBuildImage = () => (
       query {
         placeholderImage: file(relativePath: { eq: "mvp-build.png" }) {
           childImageSharp {
-            fluid(maxWidth: 300) {
+            fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
             }
           }

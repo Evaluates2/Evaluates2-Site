@@ -15,7 +15,7 @@ import ProjectManagementImage from '../img-components/project_management.img';
 import DiscoverHomeImage from '../img-components/discover_home.img';
 import HomeStartupImage from '../img-components/rf/home-startup-royalty-free.img';
 import DesignSprintImage from '../img-components/design_sprint.img';
-import MvpBuildImage from '../img-components/mvp_build.img';
+import MvpBuildImage from '../img-components/mvp-build.img';
 import MaintenanceImage from '../img-components/maintenance.img';
 
 import Link from 'gatsby-link';
