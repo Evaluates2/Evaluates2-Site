@@ -27,7 +27,7 @@ formatting and linting
 npm run format
 ```
 
-## Scaffodling
+## Scaffolding
 
 Scaffolded with "react-starter-redux"
 
