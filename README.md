@@ -49,7 +49,7 @@ npx gatsby new my-redux-starter https://github.com/caki0915/gatsby-starter-redux
 -  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
 
 
-## Build & Deploy (Prod Sire Hosted With S3 / Cloudfront)
+## Build & Deploy (Prod Site Hosted With S3 / Cloudfront)
 
 All builds and deployment are done manulally right now with these commands:
 ```
