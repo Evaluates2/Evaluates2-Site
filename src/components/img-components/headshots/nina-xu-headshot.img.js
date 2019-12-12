@@ -13,11 +13,11 @@ import Img from 'gatsby-image';
  * - `StaticQuery`: https://gatsby.app/staticquery
  */
 
-const NinaYangHeadshotImage = () => (
+const NinaXuHeadshotImage = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "headshots/nina-yang-headshot.jpg" }) {
+        placeholderImage: file(relativePath: { eq: "headshots/nina-xu-headshot.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
@@ -29,4 +29,4 @@ const NinaYangHeadshotImage = () => (
     render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
   />
 );
-export default NinaYangHeadshotImage;
+export default NinaXuHeadshotImage;

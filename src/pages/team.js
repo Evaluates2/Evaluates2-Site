@@ -7,7 +7,7 @@ import PersonImage from '../components/img-components/person-img.img';
 import JoinOurTeamCornerBtn from './../components/generic-reusable-components/join-our-team-corner-btn';
 import JimLynchHeadshotImage from '../components/img-components/headshots/jim-lynch-headshot.img';
 import LeeDanielHeadshotImage from '../components/img-components/headshots/lee-daniel-headshot.img';
-import NinaYangHeadshotImage from '../components/img-components/headshots/nina-yang-headshot.img';
+import NinaXuHeadshotImage from '../components/img-components/headshots/nina-xu-headshot.img';
 
 const personMap = {
   'jim-lynch': {
@@ -16,7 +16,8 @@ const personMap = {
     role: 'Founder & Principal Engineer',
     hometown: 'Egg Harbor Township, New Jersey',
     currentLocation: 'Manhattan, New York',
-    education: 'Rutgers University - BA in Mathematics, minor in Economics, NYC Code & Design Academy, Free Code Camp',
+    education:
+      'Rutgers University - BA in Mathematics, minor in Economics, NYC Code & Design Academy, Free Code Camp',
     githubProfile: 'https://github.com/jimtheman',
     linkedInProfile: 'https://linkedin.com/in/jimtheman',
     twitterProfile: 'https://twitter.com/webWhizJim',
@@ -36,30 +37,40 @@ const personMap = {
         <p>
           As the CEO and Founder of Evaluates2 he emulates the brand values of
           transparency in business operations, trust among the team and
-          partners, and excellence in code. Jim currently acts as the Principal Engineer, signing off on ADRs (architectural decision records), and being hands-on in the architural decisions throughout the development of the project.
+          partners, and excellence in code. Jim currently acts as the Principal
+          Engineer, signing off on ADRs (architectural decision records), and
+          being hands-on in the architural decisions throughout the development
+          of the project.
         </p>
 
         <br />
         <p>
-          Jim coined the Term "Titanium Lambda" and created the <a href="https://github.com/JimTheMan/Titanium-Lambda">corresponding github repo</a> in early 2018.
+          Jim coined the Term "Titanium Lambda" and created the{' '}
+          <a href="https://github.com/JimTheMan/Titanium-Lambda">
+            corresponding github repo
+          </a>{' '}
+          in early 2018.
         </p>
 
         <br />
         <p>
-          He blogs about software and life at <a href="http://www.wisdomofjim.com">www.wisdomofjim.com</a>.
+          He blogs about software and life at{' '}
+          <a href="http://www.wisdomofjim.com">www.wisdomofjim.com</a>.
         </p>
 
         <br />
         <p>
-          When he's not busy thinking about software devlopment in some way, Jim enjoy playing sports (such as golf, tennis, and snowboarding), socializing with friends and colleagues, and spending time with his family.
+          When he's not busy thinking about software devlopment in some way, Jim
+          enjoy playing sports (such as golf, tennis, and snowboarding),
+          socializing with friends and colleagues, and spending time with his
+          family.
         </p>
-
       </>
     ),
   },
-  'nina-yang': {
+  'nina-xu': {
     firstName: 'Nina',
-    lastName: 'Yang',
+    lastName: 'Xu',
     role: 'Sales & Business Development Associate',
     hometown: 'Fort Lee, New Jersey',
     currentLocation: 'Manhattan, New York',
@@ -67,22 +78,28 @@ const personMap = {
     githubProfile: '',
     linkedInProfile: '',
     twitterProfile: '',
-    personImg: <NinaYangHeadshotImage />,
+    personImg: <NinaXuHeadshotImage />,
     moreStuff: (
       <>
-      <br/>
+        <br />
         <p>
-          Nina brings a charisma and charm that allows her to becomes friends with anyone. With years of work in tech retail and sales, Nina can understand and explain concepts in both the raw technical form and the high-level, non-techy version.
+          Nina brings a charisma and charm that allows her to connect with anyone. With years of work in tech retail and sales, Nina can
+          understand and explain concepts in both the raw technical form and the
+          high-level, layman's terms.
         </p>
 
-      <br/>
+        <br />
         <p>
-          As the first business development manager, Nina is spearheading the effort to increase our partners and client engagements and signing on awesome, new projects for the engineers to create!
+          As Evalutes2's primary business development manager, Nina is
+          spearheading the efforts to increase our partners and client
+          engagements by signing on many awesome new projects in 2020 and
+          beyond!
         </p>
 
-      <br/>
+        <br />
         <p>
-          In her spare time Nina enjoys listening to relaxing music, playing tennis, and playing board games with her husband and children.
+          In her spare time Nina enjoys listening to relaxing music, playing
+          tennis, and playing board games with her husband and children.
         </p>
       </>
     ),
@@ -100,23 +117,31 @@ const personMap = {
     personImg: <LeeDanielHeadshotImage />,
     moreStuff: (
       <>
-      <br/>
+        <br />
         <p>
-          Lee is a passionate software engineer with over a decade of experience working on browser, destop, and mobile applications. He also has an interest in cryptocurrency and experience with smart contract development.
+          Lee is a passionate software engineer with over a decade of experience
+          working on browser, destop, and mobile applications. He also has an
+          interest in cryptocurrency and experience with smart contract
+          development.
         </p>
 
-      <br/>
+        <br />
         <p>
-          Lee is a great developer and can be an asset to any team in need of JavaScript expertise. He has aided in development of this website and has been very much enjoying his recently developments with React, React Native, and Nodejs.
+          Lee is a great developer and can be an asset to any team in need of
+          JavaScript expertise. He has aided in development of this website and
+          has been very much enjoying his recently developments with React,
+          React Native, and Nodejs.
         </p>
 
-      <br/>
+        <br />
         <p>
-          Based in Beijing, China, Lee can provide remote programming expertise, joining on calls, submitting pull requests, and participating in remote pair proramming.  
+          Based in Beijing, China, Lee can provide remote programming expertise,
+          joining on calls, submitting pull requests, and participating in
+          remote pair proramming.
         </p>
       </>
     ),
-  }
+  },
 };
 
 const StyledTeamPage = styled.div`
@@ -214,15 +239,14 @@ const TeamMemberBackButton = styled.button`
   transition-delay: 0s;
 `;
 
-const TeamPage = (location = {location: "/jim"}) => {
-  
+const TeamPage = (location = { location: '/jim' }) => {
   let person;
   if (personMap[location.location.pathname.slice(location.path.length - 1)]) {
-    person = personMap[location.location.pathname.slice(location.path.length - 1)];
+    person =
+      personMap[location.location.pathname.slice(location.path.length - 1)];
   } else {
-    person = personMap['jim-lynch']
+    person = personMap['jim-lynch'];
   }
-    
 
   return (
     <Global pageTitle={'Terms'} path={'terms'} description={'terms'}>
@@ -294,7 +318,7 @@ const TeamPage = (location = {location: "/jim"}) => {
 };
 
 TeamPage.defaultProps = {
-  counter: 0
-}
+  counter: 0,
+};
 
 export default TeamPage;

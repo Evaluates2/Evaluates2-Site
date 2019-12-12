@@ -4,7 +4,7 @@ import Layout from '../components/layout';
 import styled from '@emotion/styled';
 import JoinOurTeamCornerBtn from './../components/generic-reusable-components/join-our-team-corner-btn';
 import JimLynchHeadshotImage from './../components/img-components/headshots/jim-lynch-headshot.img';
-import NinaYangHeadshotImage from '../components/img-components/headshots/nina-yang-headshot.img';
+import NinaXuHeadshotImage from '../components/img-components/headshots/nina-xu-headshot.img';
 import LeeDanielHeadshotImage from '../components/img-components/headshots/lee-daniel-headshot.img';
 import Link from 'gatsby-link';
 import TeamMemberBlock from './../components/generic-reusable-components/team-member-block';
@@ -25,14 +25,12 @@ const AboutHero = styled.div`
     color: #000032;
     font-family: 'e2-Raleway';
     text-align: center;
-    padding: calc(15px + 2vw) calc(10px + 1vw); 
+    padding: calc(15px + 2vw) calc(10px + 1vw);
     opacity: 0.8;
     font-size: calc(7px + 3vw);
     line-height: calc(15px + 6vw);
-    margin: calc(7px + 10vw) calc(7px + 2vw) calc(20px + 6vw);;
-
+    margin: calc(7px + 10vw) calc(7px + 2vw) calc(20px + 6vw);
   }
-
 
   .about-blurb {
     margin-top: 50px;
@@ -43,7 +41,6 @@ const AboutHero = styled.div`
     text-align: justify;
   }
 
-  
   div {
     text-align: center !important ;
   }
@@ -57,7 +54,6 @@ const AboutHero = styled.div`
     justify-content: center;
     align-items: center;
   }
-
 `;
 
 const CenteredVideo = styled.div`
@@ -71,7 +67,6 @@ const CenteredVideo = styled.div`
 `;
 
 const PartnersSection = styled.div`
-
   h1 {
     font-size: calc(30px + 5vw);
     line-height: calc(60px + 5vw);
@@ -81,7 +76,7 @@ const PartnersSection = styled.div`
   }
 
   div.partner-row {
-    display: flex; 
+    display: flex;
     flex: 1;
     flex-direction: row;
     justify-content: space-evenly;
@@ -90,19 +85,17 @@ const PartnersSection = styled.div`
     position: relative;
     padding: 30px 0;
 
-    
+    @media only screen and (max-width: 990px) {
+      flex-direction: column;
+    }
+
     img {
-        object-fit: scale-down !important;
-        width: 350px;
-        /* width: 100%; */
-        /* height: 100%; */
-        /* display: inline; */
-        /* position: relative; */
-      }
+      object-fit: scale-down !important;
+      width: 350px;
+    }
   }
 
   .gatsby-image-wrapper {
-    width: calc(400px + 20vw);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,11 +103,12 @@ const PartnersSection = styled.div`
     /* display: inline; */
     position: relative;
     flex-direction: column;
-      
-  }
+    width: calc(400px + 20vw);
 
-  
-  
+    @media only screen and (max-width: 990px) {
+      width: 100%;
+    }
+  }
 
   min-height: 500px;
 `;
@@ -150,7 +144,6 @@ const AboutBlurb = styled.div`
     /* margin: 0 10vw;  */
     color: #333333;
     text-align: justify;
-    
   }
 `;
 
@@ -194,7 +187,6 @@ const OurTeamSection = styled.div`
     @media only screen and (max-width: 430px) {
       grid-template-columns: auto;
     }
-
   }
 `;
 
@@ -267,38 +259,38 @@ const PinkBox = styled.div`
     text-align: left;
     min-height: 85px;
     min-height: 85px;
-    
-    
+
     @media only screen and (max-width: 990px) {
       font-size: 30px;
       min-height: 65px;
     }
-    
+
     @media only screen and (max-width: 660px) {
       min-height: 55px;
       font-size: 25px;
     }
   }
-  
+
   p {
     font-size: 24px;
-      @media only screen and (max-width: 990px) {
-        font-size: 22px;
-      }
-      
-      @media only screen and (max-width: 660px) {
-        font-size: 20px;
-      }
+    @media only screen and (max-width: 990px) {
+      font-size: 22px;
+    }
+
+    @media only screen and (max-width: 660px) {
+      font-size: 20px;
+    }
   }
 `;
 
 const AboutPage = () => (
   <Global pageTitle={'About'} path={'about'} description={'about'}>
     <Layout>
-
       <AboutHero>
         <h1 id="hero-h-about-us">About Us</h1>
-        <p id="hero-p-about-us">When it comes to software, we're full of solutions.</p>
+        <p id="hero-p-about-us">
+          When it comes to software, we're full of solutions.
+        </p>
       </AboutHero>
 
       {/* <CenteredVideo>
@@ -321,41 +313,43 @@ const AboutPage = () => (
           our passion."
         </p> */}
         <p>
-          Evaluates2 is SO MUCH MORE than just another New York City software consulting agency.
+          Evaluates2 is SO MUCH MORE than just another New York City software
+          consulting agency.
           <br />
           <br />
           At Evaluates2, we look at things differently.
           <br />
           <br />
-
           We are architecting and building the systems of tomorrow.
           <br />
           <br />
-
-          We write the code that is not only ABLE to be maintained and understood by other engineers but that is actually EASY to be changed and deployed with confidence.
+          We write the code that is not only ABLE to be maintained and
+          understood by other engineers but that is actually EASY to be changed
+          and deployed with confidence.
           <br />
           <br />
-
-          We approach troubleshooting the scariest of issues with reason and curiosity.
+          We approach troubleshooting the scariest of issues with reason and
+          curiosity.
           <br />
           <br />
-
-          We code in pairs, lean heavily on automated testing, and quickly build stuff that works.
+          We code in pairs, lean heavily on automated testing, and quickly build
+          stuff that works.
           <br />
           <br />
-
-          We have spent our lives sharpening these legendary coding skills, and despite this we try to stay humble, respectful, open-minded, and eager to show others how fun and awesome software development can be when it's well done.
+          We have spent our lives sharpening these legendary coding skills, and
+          despite this we try to stay humble, respectful, open-minded, and eager
+          to show others how fun and awesome software development can be when
+          it's well done.
           <br />
           <br />
-
-          At Evaluates2 we are not just engineers, product managers, and data scientists… we are the agents of change that can transform and enlighten ANY company's tech department.
+          At Evaluates2 we are not just engineers, product managers, and data
+          scientists… we are the agents of change that can transform and
+          enlighten ANY company's tech department.
           <br />
           <br />
-
           So let us help you, and together… we will build great things.
           <br />
           <br />
-
           <br />
         </p>
       </AboutBlurb>
@@ -382,18 +376,17 @@ const AboutPage = () => (
         <div className="partner-row">
           {/* <MongoAtlasImage />
           <MozillaLogoImage /> */}
-          <a href='https://www.katefromhr.com'>
+          <a href="https://www.katefromhr.com">
             <KateFromHrLogoImage />
           </a>
 
-          <a href='https://lumigo.io'>
+          <a href="https://lumigo.io">
             <LumigoLogoImage />
           </a>
 
           <a>
             <div></div>
           </a>
-
         </div>
       </PartnersSection>
 
@@ -423,11 +416,11 @@ const AboutPage = () => (
             img={<JimLynchHeadshotImage />}
           ></TeamMemberBlock>
           <TeamMemberBlock
-            name="Nina Yang"
-            linkTo="/team/nina-yang"
+            name="Nina Xu"
+            linkTo="/team/nina-xu"
             role="Sales & Business Development Associate"
             // img={<AnonymousSilhouetteImage />}
-            img={<NinaYangHeadshotImage />}
+            img={<NinaXuHeadshotImage />}
           ></TeamMemberBlock>
           <TeamMemberBlock
             name="Lee Daniel"
@@ -436,7 +429,6 @@ const AboutPage = () => (
             // img={<AnonymousSilhouetteImage />}
             img={<LeeDanielHeadshotImage />}
           ></TeamMemberBlock>
-
         </div>
       </OurTeamSection>
 
