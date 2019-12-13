@@ -99,7 +99,7 @@ const personMap = {
         <br />
         <p>
           In her spare time Nina enjoys listening to relaxing music, playing
-          tennis, and playing board games with her husband and children.
+          tennis, and feeding fish to her pet penguins.
         </p>
       </>
     ),
