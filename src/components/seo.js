@@ -11,15 +11,20 @@ export default function SEO({ site, pageTitle, path = ``, ...rest }) {
     <Helmet>
       <title>{title}</title>
       <meta property="og:type" name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-      
-      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-      <html lang="en" />
-      {pageTitle && <meta property="og:title" content={pageTitle} />}
-      <meta property="og:url" content={pageUrl} />
-      <meta property="og:description" content={desc} />
-      <meta name="description" content={desc} />
-      {children}
-    </Helmet>
-  )
-}
+      <meta name="theme-color" content="#0A0741"></meta>
+        {/* <!-- Windows Phone --> */}
+      <meta name="msapplication-navbutton-color" content="#0A0741"></meta>
+        {/* <!-- iOS Safari --> */}
+        <meta name="apple-mobile-web-app-status-bar-style" content="#0A0741"></meta>
 
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <html lang="en" />
+        {pageTitle && <meta property="og:title" content={pageTitle} />}
+        <meta property="og:url" content={pageUrl} />
+        <meta property="og:description" content={desc} />
+        <meta name="description" content={desc} />
+        {children}
+    </Helmet>
+      )
+    }
+    

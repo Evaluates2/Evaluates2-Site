@@ -4,10 +4,10 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `Derp`,
-    description: `Derp`,
-    author: `Jimbo`,
-    url: `https://derpsauce.com`,
+    title: `Evaluates2`,
+    description: `Official Site for the software consultancy, Evaluates2.`,
+    author: `Jim Lynch (jim.lynch@evaluates2.com)`,
+    url: `https://evaluates2.com`,
   },
   plugins: [
     `gatsby-transformer-json`,
