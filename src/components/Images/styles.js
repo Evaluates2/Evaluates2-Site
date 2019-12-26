@@ -8,6 +8,7 @@ import mediaQuery from '../../utils/mediaQuery';
 export const ImagesContainer = styled.div`
   position: relative;
   height: calc(430px + 40vw);
+  /* min-height: 400px; */
   background-image: radial-gradient(
     circle farthest-corner at 49% 83%,
     #fff,
@@ -16,14 +17,11 @@ export const ImagesContainer = styled.div`
     #040438
   );
     
-    min-height: 621px;
     
-  ${mediaQuery.maxTablet} {
-    max-height: 100vh;
+${mediaQuery.maxPhablet} { 
+    height: 77vh;
+    /* min-height: 621px; */
   }
-  /* ${mediaQuery.maxPhablet} {
-    min-height: 621px;
-  } */
 `;
 
 
