@@ -56,7 +56,6 @@
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
     "format": "eslint src --fix",
-    "deploy-gh": "git push origin :gh-pages && git subtree push --prefix public/ origin gh-pages",
     "deploy-s3": "gatsby-plugin-s3 deploy --yes"
   },
   "repository": {
