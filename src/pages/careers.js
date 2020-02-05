@@ -208,10 +208,10 @@ const CareersPage = () => (
           <JobDescriptionBlock isInternBlock={false} linkTo="https://www.indeed.com/job/senior-software-engineer-consultant-e350bb39b82658f9">
             {/* <JobPosting> */}
 
-            <h2>Contract / Freelance Senior Software Engineer</h2>
+            <h2>Software Engineering Contractor</h2>
             <h3>New York, NY, United States</h3>
             <br />
-            <h4>Contract / Freelance Senior Software Engineer at Evaluates2</h4>
+            <h4>Software Engineering Contractor at Evaluates2</h4>
             <p>New York, NY</p>
             <br />
             <br />

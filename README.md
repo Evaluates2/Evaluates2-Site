@@ -3,18 +3,15 @@ Frontend React Site For Evaluates2.com
 
 ## Node Verison
 
-use node v11.15.0
+~~use node vv12.14.1~~
+
+use node v12
 
 ## Usage
 
-install dependencies
+install dependencies with `yarn`:
 ```
-npm i
-```
-
-ya also need to run yarn install for some reason
-```
-npx yarn install
+yarn install
 ```
 
 start local dev server
@@ -56,7 +53,7 @@ All builds and deployment are done manulally right now with these commands:
 npm run build
 ```
 ```
-npm run deploy
+npm run deploy-s3
 ```
 
 

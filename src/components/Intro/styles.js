@@ -52,3 +52,11 @@ export const IntroContainer = styled.div`
 
     
 `
+
+
+export const CenteredH1 = styled.h1`
+    text-align: center;
+    font-size: calc(8px + 5vw);
+    margin: calc(30px + 4vw) 0;
+
+`

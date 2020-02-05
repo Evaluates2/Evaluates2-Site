@@ -18,8 +18,8 @@ const personMap = {
     currentLocation: 'Manhattan, New York',
     education:
       'Rutgers University - BA in Mathematics, minor in Economics, NYC Code & Design Academy, Free Code Camp',
-    githubProfile: 'https://github.com/jimtheman',
-    linkedInProfile: 'https://linkedin.com/in/jimtheman',
+    githubProfile: 'https://github.com/jimlynchcodes',
+    linkedInProfile: 'https://linkedin.com/in/jimlynchcodes',
     twitterProfile: 'https://twitter.com/webWhizJim',
     personImg: <JimLynchHeadshotImage />,
     moreStuff: (
@@ -46,7 +46,7 @@ const personMap = {
         <br />
         <p>
           Jim coined the Term "Titanium Lambda" and created the{' '}
-          <a href="https://github.com/JimTheMan/Titanium-Lambda">
+          <a href="https://github.com/JimLynchCodes/Titanium-Lambda">
             corresponding github repo
           </a>{' '}
           in early 2018.
@@ -55,7 +55,7 @@ const personMap = {
         <br />
         <p>
           He blogs about software and life at{' '}
-          <a href="http://www.wisdomofjim.com">www.wisdomofjim.com</a>.
+          <a href="http://www.jimlynchcodes.com">www.jimlynchcodes.com</a>.
         </p>
 
         <br />

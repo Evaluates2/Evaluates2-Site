@@ -318,15 +318,15 @@ const OurWorkPage = () => (
 
       <OurWorkPieceOfWork
         title="WoJ Blog"
-        header1="www.wisdomofjim.com"
-        header1link="https://www.wisdomofjim.com"
+        header1="www.jimlynchcodes.com"
+        header1link="https://www.jimlynchcodes.com"
         paragraph1="Kate from HR is a tool for making teams better. A fun and easy-to-use Slack-integrated chatbot collected anonymous feedback that can be public or private (specified by the user). This is then aggregated and visualized in a web dashboard."
         header2=""
         paragraph2=""
         imgName="WOJ_BLOG"
         imgOnLeft={true}
         buttonText="Visit site"
-        buttonLinkTo="https://www.wisdomofjim.com"
+        buttonLinkTo="https://www.jimlynchcodes.com"
       >
         <ul>
           <li>Extremely Cheap & Quick to Run & Maintain.</li>
@@ -385,15 +385,15 @@ const OurWorkPage = () => (
 
       <OurWorkPieceOfWork
         title="Titanium Lambda"
-        header1="www.github.com/jimtheman/titanium-lambda"
-        header1link="https://www.github.com/jimtheman/titanium-lambda"
+        header1="www.github.com/jimlynchcodes/titanium-lambda"
+        header1link="https://www.github.com/jimlynchcodes/titanium-lambda"
         paragraph1="Kate from HR is a tool for making teams better. A fun and easy-to-use Slack-integrated chatbot collected anonymous feedback that can be public or private (specified by the user). This is then aggregated and visualized in a web dashboard."
         header2=""
         paragraph2=""
         imgName="TITANIUM_LAMBDA"
         imgOnLeft={true}
         buttonText="Explore..."
-        buttonLinkTo="https://www.github.com/jimtheman/titanium-lambda"
+        buttonLinkTo="https://www.github.com/jimlynchcodes/titanium-lambda"
       >
         <ul>
           <li>Extremely Cheap & Quick to Run & Maintain.</li>
@@ -404,6 +404,52 @@ const OurWorkPage = () => (
           <li>
             Written for AWS Lambda Twice Using Both Es6 JavaScript and
             ClojureScript.
+          </li>
+        </ul>
+      </OurWorkPieceOfWork>
+
+      <OurWorkPieceOfWork
+        title="Gatsby Starter TypeScript Redux TDD BDD"
+        header1="gatsbyjs.org/starters/Evaluates2/Gatsby-Starter-TypeScript-Redux-TDD-BDD/"
+        header1link="https://www.gatsbyjs.org/starters/Evaluates2/Gatsby-Starter-TypeScript-Redux-TDD-BDD/"
+        paragraph1="In early 2020 we released this exciting open-source project, an awesome Gatsby starter template that takes care of the tooling setup, allowing you and your team to dive right into building ultra-fast React applications quickly and deploy them with confidence!"
+        header2=""
+        paragraph2=""
+        imgName="GATSBY_STARTER_TDD_BDD"
+        imgOnLeft={false}
+        buttonText="Explore..."
+        buttonLinkTo="https://www.gatsbyjs.org/starters/Evaluates2/Gatsby-Starter-TypeScript-Redux-TDD-BDD/"
+      >
+        <ul>
+          <li>Already setup with Jest for TDD unit testing and Cypress + Cucumber.js for BDD end-to-end testing.</li>
+          <li>
+            Has TypeScript preconfigured and Redux with configurable localstorage syncing of slices of state pre-installed.
+          </li>
+          <li>
+            Excellent choice for building extremely performant React applications while leveraging automated testing to iterate quickly and accurately!
+          </li>
+        </ul>
+      </OurWorkPieceOfWork>
+
+      <OurWorkPieceOfWork
+        title="Free Talks!"
+        header1="evaluates2.com/contact"
+        header1link="https://evaluates2.com/contact/"
+        paragraph1="The engineers and leadership at Evaluates love talking about software develpment, and we be honored to speak at any events Please contact us for more information!"
+        header2=""
+        paragraph2=""
+        imgName="FREE_TALKS"
+        imgOnLeft={true}
+        buttonText="Contact Us..."
+        buttonLinkTo="https://evaluates2.com/contact/"
+      >
+        <ul>
+          <li>Let us show you how we have been building software quickly, accurately, and happily!</li>
+          <li>
+            These talks are for you! We're willing to present on anything your audience would like to learn more about, from the very technical implementation details to the managing a portfolio of software products in a large organization.
+          </li>
+          <li>
+            Choose your favorite speaker(s) from our team of incredible engineers, data scientists, and product managers, many of whom have a history of presenting great talks.
           </li>
         </ul>
       </OurWorkPieceOfWork>
@@ -461,7 +507,7 @@ const OurWorkPage = () => (
       <br />
       <NiceQuoteSection>
         <h1>
-          "Although we've already<span className="empashized"> accomplished </span> a lot, I still wake
+          "Although we've already<span className="empashized"> accomplished </span> so much, I still wake
           up every day <span className="empashized">hungry</span> for new{' '}
           <span className="empashized">exciting</span> software development{' '}
           <span className="empashized">challenges</span>."

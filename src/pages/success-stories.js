@@ -25,7 +25,7 @@ const SuccessStoriesPage = () => (
     {/* <img src="./assets/images/gatsby-astronaut.png"></img> */}
     {/* <Img fluid="../../components/images/gatsby-astronaut.png"></Img> */}
     <h1>Wisdom of Jim Blog</h1>
-    <h3>www.wisdomofjim.com</h3>
+    <h3>www.jimlynchcodes.com</h3>
     <br />
     <br />
     <br />

@@ -10,6 +10,8 @@ import WojScreenshot from './img-components/woj-blog-screenshot.img';
 import Evaluates2ScreenshotImage from './img-components/evaluates-2-screenshot.img';
 import E2GithubScreenshotImage from './img-components/e2-github-page.img';
 import TitaniumLambdaImage from './img-components/titanium-lambda.img';
+import GatsyStarterTddBddImage from './img-components/gatsby-starter-tdd-bdd.img';
+import FreeTalksImage from './img-components/free-talks.img';
 
 const StyledOurWorkPieceOfWork = styled.div`
   .container {
@@ -61,6 +63,7 @@ const StyledOurWorkPieceOfWork = styled.div`
 
     a {
       font-size: 22px;
+      line-height: 37px;
       margin: 10px 0 10px;
       display: block;
     }
@@ -169,6 +172,16 @@ const OurWorkPieceOfWork = ({
       case 'TITANIUM_LAMBDA':
           return (<a href={header1link}>
             <TitaniumLambdaImage/>
+         </a>);
+
+      case 'GATSBY_STARTER_TDD_BDD':
+          return (<a href={header1link}>
+            <GatsyStarterTddBddImage/>
+         </a>);
+
+      case 'FREE_TALKS':
+          return (<a href={header1link}>
+            <FreeTalksImage/>
          </a>);
     }
   };
