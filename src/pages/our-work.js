@@ -512,7 +512,7 @@ const OurWorkPage = () => (
           <span className="empashized">exciting</span> software development{' '}
           <span className="empashized">challenges</span>."
         </h1>
-        <p>- Founder & Principal Engineer Jim Lynch</p>
+        <p>- Cofounder & Principal Engineer Jim Lynch</p>
       </NiceQuoteSection>
 
       <br />
@@ -575,7 +575,7 @@ const OurWorkPage = () => (
       <br /> */}
       {/* 
       <h1>Our Team</h1> */}
-      {/* Jim Lynch Founder & Principal Engineer */}
+      {/* Jim Lynch Cofounder & Principal Engineer */}
       {/* <Link to="/page-p/"><- Back to </Link>
     <h1>Hi from the second page</h1>
     <p>Welcome to page 2</p>

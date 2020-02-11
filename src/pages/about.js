@@ -411,7 +411,7 @@ const AboutPage = () => (
           <TeamMemberBlock
             name="Jim Lynch"
             linkTo="/team/jim-lynch"
-            role="CEO / Principal Engineer"
+            role="Cofounder & Principal Engineer"
             // img={<AnonymousSilhouetteImage />}
             img={<JimLynchHeadshotImage />}
           ></TeamMemberBlock>
@@ -480,7 +480,7 @@ const AboutPage = () => (
       <br /> */}
       {/* 
       <h1>Our Team</h1> */}
-      {/* Jim Lynch Founder & Principal Engineer */}
+      {/* Jim Lynch Cofounder & Principal Engineer */}
       {/* <Link to="/page-p/"><- Back to </Link>
     <h1>Hi from the second page</h1>
     <p>Welcome to page 2</p>

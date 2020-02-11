@@ -44,7 +44,7 @@ const SuccessStoriesPage = () => (
     <br />
     <br />
     <p>
-      Developed by Founder & Principle Architect Jim Lynch, Titanium Lambda is a
+      Developed by Cofounder & Principle Architect Jim Lynch, Titanium Lambda is a
       guide for developing bulletproof enterprise-level serverless backend
       microservices on AWS Lambda (and can be applied to other serverless
       providers as well).

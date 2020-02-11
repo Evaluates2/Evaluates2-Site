@@ -193,32 +193,19 @@ const CareersPage = () => (
             </p>
           </StackableColumn>
         </StackableColumnsContainer>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
 
-        <br />
         <h1 className="join-us">Join us</h1>
         <br />
         <br />
 
         <JobDescriptionBlocks>
-          <JobDescriptionBlock isInternBlock={false} linkTo="https://www.indeed.com/job/senior-software-engineer-consultant-e350bb39b82658f9">
-            {/* <JobPosting> */}
-
-            <h2>Software Engineering Contractor</h2>
+          <JobDescriptionBlock isInternBlock={false} linkTo="https://www.postjobfree.com/job/h44hyf/ui-generalist-native-new-york-city-ny">
+            <h2>Senior Software Engineering Consultant</h2>
             <h3>New York, NY, United States</h3>
-            <br />
-            <h4>Software Engineering Contractor at Evaluates2</h4>
-            <p>New York, NY</p>
             <br />
             <br />
             <h4>About Evalues2</h4>
-            <p>
-              We are a team of adept and exuberant polyglot engineers, product managers, and consultants committed to building the best software we can. We apply beautiful, user-tested UI design principles, disciplined test-driven engineering practices, and agile project management oversight to create real business value and delight our customers.
-              </p>
+            <p>We are a team of adept and exuberant polyglot engineers, product managers, and consultants committed to building the best software we can. We apply beautiful, user-tested UI design principles, disciplined test-driven engineering practices, and agile project management oversight to create real business value and delight our customers.</p>
             <br />
             <br />
             <h4>Why Work At Evaluates2?</h4>
@@ -261,28 +248,16 @@ const CareersPage = () => (
             <h4>How you'll spend your time at Evaluates2</h4>
 
             <p>
-
-              * Practice - be an advocate for the product by instilling revising and reinforcing the product vision across all stakeholders. Gather user feedback and data to inform product decisions and drive product prioritization. Communicate product requirements and strategy across design, engineering and client teams.
+              * Creating software in small teams with active customer involvement.
               <br />
               <br />
-
-              * Project Management - monitor, track and evaluate client projects and reiterate on the process as needed. Communicate project status and deliverables to stakeholders.
-              <br />
-              <br />
-
-              * Tactical - facilitate product discovery and development on client projects, act as PM advisor to our customers and consultants, lead workshops, provide additional project support as needed
-              <br />
-              <br />
-
-              * Operations - represent product management in sales conversations and scoping work
-              <br />
-              <br />
-              What you’ll bring
-
               * Collaborating with engineers, product managers, designers, and any involved stakeholders.
               <br />
               <br />
               * Helping team members and the company as a whole improve through your input and innovative ideas.
+              <br />
+              <br />
+              * Learning from other colleagues and sharing your on discoveries as we proceed to make the best software we can.
               <br />
               <br />
             </p>
@@ -317,41 +292,37 @@ const CareersPage = () => (
             </p>
             {/* </JobPosting> */}
           </JobDescriptionBlock>
-
         </JobDescriptionBlocks>
         <br />
         <br />
         <JobDescriptionBlocks>
-          <JobDescriptionBlock isInternBlock={false} linkTo="https://indeed.com">
-            {/* <JobPosting> */}
-
-            <h2>Mid-Level Software Engineer</h2>
+          <JobDescriptionBlock isInternBlock={false} linkTo="https://www.postjobfree.com/job/h44m72/agile-coach-project-ui-new-york-city-ny">
+            <h2>Agile Coach / Project Management Consultant</h2>
             <h3>New York, NY, United States</h3>
-            <br />
-            <h4>Mid-Level Software Engineer at Evaluates2</h4>
-            <p>New York, NY</p>
             <br />
             <br />
             <h4>About Evalues2</h4>
             <p>
-              We are a team of adept and exuberant polyglot engineers, product managers, and consultants committed to building the best software we can. We apply beautiful, user-tested UI design principles, disciplined test-driven engineering practices, and agile project management oversight to create real business value and delight our customers.
+              We are a team of adept and exuberant polyglot engineers, product managers, and consultants committed to building the best software we can. We apply beautiful, user-tested UI design principles, disciplined test-driven engineering practices, and agile project management oversight to create real business value and delight our customers.
               </p>
             <br />
             <br />
             <h4>Why Work At Evaluates2?</h4>
             <p>
               {' '}
-              At e2, you get to work on a variety or projects, solve interesting coding challenges, and work with a team of language-agnostic experts who love building awesome software. At Evaluates2 you'll be treated with respect, given lots of praise, and be granted the freedom and flexibility you need to get the job done right in a way that is enjoyable, and possibly even... fun!
+              At e2, you get to work on a variety of projects, solve interesting coding challenges, and work with a team of language-agnostic experts who love building awesome software. At Evaluates2 you'll be treated with respect, given lots of praise, and be granted the freedom and flexibility you need to get the job done right in a way that is enjoyable, and possibly even... fun!
               </p>
             <br />
             <br />
             <h4>What You'll Bring to Evaluates2</h4>
             <p>
               {' '}
-              * Flexible generalist engineer able to adapt quickly to new projects and platforms.
+              * Flexible problem-solving skills able to adapt quickly to new projects and platforms.
               <br />
               <br />
-              * Experience successfully shipping many applications, either personal or at work.
+              * Experience working within teams who have successfully shipped applications.
+
+
               <br />
               <br />
               * Excellent communication skills- able to effectively give and receive feedback from clients and other e2 team members while being respectful of their feelings.
@@ -360,19 +331,13 @@ const CareersPage = () => (
               * Eagerness to participate in pair programming, work with other engineers face-to-face, and answer questions of non-technical clients.
               <br />
               <br />
-              * Intense appreciation for automated testing and willingness to adopt disciplined TDD practices, unit testing, end-to-end testing, and BDD testing frameworks.
+              * Intense appreciation for automated testing and willingness to adopt disciplined eXtreme programming and TDD practices, pair programming, unit testing, end-to-end testing, and BDD testing frameworks.
               <br />
               <br />
-              * 3+ years experience working with modern programming languages.
+              * 5+ years experience working within a software development team.
               <br />
               <br />
-              * Experience with or interest in learning our most used languages: JavaScript, TypeScript, Go, Clojure, Rust, Swift, and Python.
-              <br />
-              <br />
-              * Strengths in web development or native mobile development, with a desire to expand personal skill set.
-              <br />
-              <br />
-              * Experience with server side development: building REST api's, serverless lambdas, socket servers, and interacting with various relational and nosql databases.
+              * Knowledgable of technical details of computer programming, platforms and language types, and tradeoffs of various technologies.
               </p>{' '}
             <br />
             <h4>How you'll spend your time at Evaluates2</h4>
@@ -381,7 +346,7 @@ const CareersPage = () => (
               * Creating software in small teams with active customer involvement.
               <br />
               <br />
-              * Collaborating with engineers, product managers, designers, and any involved stakeholders.
+              * Collaborating with engineers, other product managers, designers, and any involved stakeholders.
               <br />
               <br />
               * Helping team members and the company as a whole improve through your input and innovative ideas.
@@ -423,209 +388,7 @@ const CareersPage = () => (
         <br />
         <br />
         <JobDescriptionBlocks>
-          <JobDescriptionBlock isInternBlock={false} linkTo="https://indeed.com">
-            {/* <JobPosting> */}
-
-            <h2>Product Manager</h2>
-            <h3>New York, NY, United States</h3>
-            <br />
-            <h4>Product Manager</h4>
-            <p>New York, NY</p>
-            <br />
-            <br />
-            <h4>About Evalues2</h4>
-            <p>
-              We are a team of adept and exuberant polyglot engineers, product managers, and consultants committed to building the best software we can. We apply beautiful, user-tested UI design principles, disciplined test-driven engineering practices, and agile project management oversight to create real business value and delight our customers.
-              </p>
-            <br />
-            <br />
-            <h4>Why Work At Evaluates2?</h4>
-            <p>
-              {' '}
-              At e2, you get to work on a variety or projects, solve interesting coding challenges, and work with a team of language-agnostic experts who love building awesome software. At Evaluates2 you'll be treated with respect, given lots of praise, and be granted the freedom and flexibility you need to get the job done right in a way that is enjoyable, and possibly even... fun!
-              </p>
-            <br />
-            <br />
-            <h4>What You'll Bring to Evaluates2</h4>
-            <p>
-              {' '}
-              * Flexible generalist engineer able to adapt quickly to new projects and platforms.
-              <br />
-              <br />
-              * Experience successfully shipping many applications, either personal or at work.
-              <br />
-              <br />
-              * Excellent communication skills- able to effectively give and receive feedback from clients and other e2 team members while being respectful of their feelings.
-              <br />
-              <br />
-              * Eagerness to participate in pair programming, work with other engineers face-to-face, and answer questions of non-technical clients.
-              <br />
-              <br />
-              * Intense appreciation for automated testing and willingness to adopt disciplined TDD practices, unit testing, end-to-end testing, and BDD testing frameworks.
-              <br />
-              <br />
-              * 5+ years experience working with modern programming languages.
-              <br />
-              <br />
-              * Experience with or interest in learning our most used languages: JavaScript, TypeScript, Go, Clojure, Rust, Swift, and Python.
-              <br />
-              <br />
-              * Strengths in web development or native mobile development, with a desire to expand personal skill set.
-              <br />
-              <br />
-              * Experience with server side development: building REST api's, serverless lambdas, socket servers, and interacting with various relational and nosql databases.
-              </p>{' '}
-            <br />
-            <h4>How you'll spend your time at Evaluates2</h4>
-            <p>
-              {' '}
-              * Creating software in small teams with active customer involvement.
-              <br />
-              <br />
-              * Collaborating with engineers, product managers, designers, and any involved stakeholders.
-              <br />
-              <br />
-              * Helping team members and the company as a whole improve through your input and innovative ideas.
-              <br />
-              <br />
-              * Learning from other colleagues and sharing your on discoveries as we proceed to make the best software we can.
-              </p>
-            <br />
-            <h4>Why we love working here at Evaluates2</h4>
-            <p>
-              * Great pay!
-              <br />
-              <br />
-              * Ability to touch a variety of platforms and languages and a heavy investment from the company in the learning and development of its engineers.
-              <br />
-              <br />
-              * Generous vacation time and minimal travel (if at all)
-              <br />
-              <br />
-              * Flexible hours and work-from-home opportunities.
-              <br />
-              <br />
-              * Optional 4 day work week - take off every Monday or Wednesday! (unpaid)
-              <br />
-              <br />
-              * Work in a respectful, safe place where everyone should feel comfortable and accepted.
-              <br />
-              <br />
-              * Awesome, incredibly smart colleagues and leadership who treat every employee and consultant as a meaningful member of the Evaluates2 family.
-              <br />
-              <br />
-              * Opportunity to join at the very beginning startup phase and be among the first few hires.
-            <br />
-              <br />
-            </p>
-            {/* </JobPosting> */}
-          </JobDescriptionBlock>
-        </JobDescriptionBlocks>
-        <br />
-        <br />
-        <JobDescriptionBlocks>
-          <JobDescriptionBlock isInternBlock={false} linkTo="https://www.indeed.com/job/senior-software-engineer-consultant-e350bb39b82658f9">
-            {/* <JobPosting> */}
-
-            <h2>Senior Software Engineer</h2>
-            <h3>New York, NY, United States</h3>
-            <br />
-            <h4>Senior Software Engineer</h4>
-            <p>New York, NY</p>
-            <br />
-            <br />
-            <h4>About Evalues2</h4>
-            <p>
-              We are a team of adept and exuberant polyglot engineers, product managers, and consultants committed to building the best software we can. We apply beautiful, user-tested UI design principles, disciplined test-driven engineering practices, and agile project management oversight to create real business value and delight our customers.
-              </p>
-            <br />
-            <br />
-            <h4>Why Work At Evaluates2?</h4>
-            <p>
-              {' '}
-              At e2, you get to work on a variety or projects, solve interesting coding challenges, and work with a team of language-agnostic experts who love building awesome software. At Evaluates2 you'll be treated with respect, given lots of praise, and be granted the freedom and flexibility you need to get the job done right in a way that is enjoyable, and possibly even... fun!
-              </p>
-            <br />
-            <br />
-            <h4>What You'll Bring to Evaluates2</h4>
-            <p>
-              {' '}
-              * Flexible generalist engineer able to adapt quickly to new projects and platforms.
-              <br />
-              <br />
-              * Experience successfully shipping many applications, either personal or at work.
-              <br />
-              <br />
-              * Excellent communication skills- able to effectively give and receive feedback from clients and other e2 team members while being respectful of their feelings.
-              <br />
-              <br />
-              * Eagerness to participate in pair programming, work with other engineers face-to-face, and answer questions of non-technical clients.
-              <br />
-              <br />
-              * Intense appreciation for automated testing and willingness to adopt disciplined TDD practices, unit testing, end-to-end testing, and BDD testing frameworks.
-              <br />
-              <br />
-              * 5+ years experience working with modern programming languages.
-              <br />
-              <br />
-              * Experience with or interest in learning our most used languages: JavaScript, TypeScript, Go, Clojure, Rust, Swift, and Python.
-              <br />
-              <br />
-              * Strengths in web development or native mobile development, with a desire to expand personal skill set.
-              <br />
-              <br />
-              * Experience with server side development: building REST api's, serverless lambdas, socket servers, and interacting with various relational and nosql databases.
-              </p>{' '}
-            <br />
-            <h4>How you'll spend your time at Evaluates2</h4>
-            <p>
-              {' '}
-              * Creating software in small teams with active customer involvement.
-              <br />
-              <br />
-              * Collaborating with engineers, product managers, designers, and any involved stakeholders.
-              <br />
-              <br />
-              * Helping team members and the company as a whole improve through your input and innovative ideas.
-              <br />
-              <br />
-              * Learning from other colleagues and sharing your on discoveries as we proceed to make the best software we can.
-              </p>
-            <br />
-            <h4>Why we love working here at Evaluates2</h4>
-            <p>
-              * Great pay!
-              <br />
-              <br />
-              * Ability to touch a variety of platforms and languages and a heavy investment from the company in the learning and development of its engineers.
-              <br />
-              <br />
-              * Generous vacation time and minimal travel (if at all)
-              <br />
-              <br />
-              * Flexible hours and work-from-home opportunities.
-              <br />
-              <br />
-              * Optional 4 day work week - take off every Monday or Wednesday! (unpaid)
-              <br />
-              <br />
-              * Work in a respectful, safe place where everyone should feel comfortable and accepted.
-              <br />
-              <br />
-              * Awesome, incredibly smart colleagues and leadership who treat every employee and consultant as a meaningful member of the Evaluates2 family.
-              <br />
-              <br />
-              * Opportunity to join at the very beginning startup phase and be among the first few hires.
-            <br />
-              <br />
-            </p>
-            {/* </JobPosting> */}
-          </JobDescriptionBlock>
-        </JobDescriptionBlocks>
-        <br />
-        <br />
-        <JobDescriptionBlocks>
-          <JobDescriptionBlock isInternBlock={true} linkTo="https://indeed.com">
+          <JobDescriptionBlock isInternBlock={true} linkTo="https://www.postjobfree.com/job/h44nxn/strategy-ui-intern-new-york-city-ny">
             {/* <JobPosting> */}
             <h2>Strategy & Operations Intern</h2>
             <h3>New York, NY, United States</h3>
@@ -651,10 +414,7 @@ const CareersPage = () => (
             </ul>
             {/* </JobPosting> */}
           </JobDescriptionBlock>
-
         </JobDescriptionBlocks>
-
-
 
         <br />
         <br />
@@ -709,16 +469,3 @@ const CareersPage = () => (
 );
 export default CareersPage;
 
-/**
- *
- *  <JoinOurTeamHeader>
- *  <JoinOurTeamBlurb>
- *  <InterviewProcessSection>
- *  <JobDescriptionBlocks>
- *  <JobDescriptionBlock/>
- *  <JobDescriptionBlock/>
- *  <JobDescriptionBlock/>
- *  </JobDescriptionBlocks>
- *  </GetStartedCallToAction>
- *
- */

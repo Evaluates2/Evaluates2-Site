@@ -13,14 +13,14 @@ const personMap = {
   'jim-lynch': {
     firstName: 'Jim',
     lastName: 'Lynch',
-    role: 'Founder & Principal Engineer',
+    role: 'Cofounder & Principal Engineer',
     hometown: 'Egg Harbor Township, New Jersey',
     currentLocation: 'Manhattan, New York',
     education:
       'Rutgers University - BA in Mathematics, minor in Economics, NYC Code & Design Academy, Free Code Camp',
     githubProfile: 'https://github.com/jimlynchcodes',
     linkedInProfile: 'https://linkedin.com/in/jimlynchcodes',
-    twitterProfile: 'https://twitter.com/webWhizJim',
+    twitterProfile: 'https://twitter.com/jimlynchcodes',
     personImg: <JimLynchHeadshotImage />,
     moreStuff: (
       <>
@@ -35,7 +35,7 @@ const personMap = {
 
         <br />
         <p>
-          As the CEO and Founder of Evaluates2 he emulates the brand values of
+          As the Cofounder and Principal Engineer of Evaluates2 he emulates the brand values of
           transparency in business operations, trust among the team and
           partners, and excellence in code. Jim currently acts as the Principal
           Engineer, signing off on ADRs (architectural decision records), and
