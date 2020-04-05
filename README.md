@@ -59,7 +59,7 @@ npm run deploy-s3
 
 *Also, be sure to point a "Cloudfront Distribution" at your S3 bucket with `index.html` as the error file, redirect HTTP to HTTPS, and map 403 and 404 errors to `/index.html`.*
 
-you will need aws creds as well
+you will need to input aws creds as well, after running `aws configure`.
 
 --- 
 
