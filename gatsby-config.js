@@ -3,7 +3,7 @@ require('dotenv').config({
 });
 
 module.exports = {
-  pathPrefix: 'Evaluates2-Site',
+  pathPrefix: '/Evaluates2-Site',
   siteMetadata: {
     title: `Evaluates2`,
     description: `Official Site for the software consultancy, Evaluates2.`,
