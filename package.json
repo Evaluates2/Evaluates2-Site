@@ -55,7 +55,8 @@
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
     "format": "eslint src --fix",
-    "deploy-s3": "gatsby-plugin-s3 deploy --yes"
+    "deploy-s3": "gatsby-plugin-s3 deploy --yes",
+    "deploy-gh": "gh-pages -d public"
   },
   "repository": {
     "type": "git",
