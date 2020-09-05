@@ -3,8 +3,6 @@ Frontend React Site For Evaluates2.com
 
 ## Node Verison
 
-~~use node vv12.14.1~~
-
 use node v12
 
 ## Usage
