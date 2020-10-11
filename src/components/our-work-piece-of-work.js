@@ -4,8 +4,9 @@ import StaffAugmentationImage from './img-components/staff-augmentation.img';
 import ProjectKickoffImage from './img-components/project-kickoff.img';
 import Link from 'gatsby-link';
 import KateFromHrScreenshotImage from './img-components/kate-from-hr-screenshot.img';
+import TripleGainersEmailImage from './img-components/triple-gainers-email.img';
 import JimTwitterScreenshotImage from './img-components/jim-twitter-screenshot.img';
-// import WojBlogScreenshotImage from './img-components/woj-blog-screenshot.img';
+import EverybodyCodesScreenshotImage from './img-components/everybody-codes.img';
 import WojScreenshot from './img-components/woj-blog-screenshot.img';
 import Evaluates2ScreenshotImage from './img-components/evaluates-2-screenshot.img';
 import E2GithubScreenshotImage from './img-components/e2-github-page.img';
@@ -142,6 +143,14 @@ const OurWorkPieceOfWork = ({
 }) => {
   const getImage = imgName => {
     switch (imgName) {
+      
+      case 'TRIPLE_GAINERS_EMAIL':
+        return (
+          <a href={header1link}>
+            <TripleGainersEmailImage />
+          </a>
+        );
+
       case 'KATE_FROM_HR':
         return (
           <a href={header1link}>
@@ -182,6 +191,11 @@ const OurWorkPieceOfWork = ({
       case 'FREE_TALKS':
           return (<a href={header1link}>
             <FreeTalksImage/>
+         </a>);
+
+      case 'EVERYBODY_CODES':
+          return (<a href={header1link}>
+            <EverybodyCodesScreenshotImage/>
          </a>);
     }
   };

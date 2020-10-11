@@ -52,9 +52,21 @@ All builds and deployment are done manulally right now with these commands:
 ```
 npm run build
 ```
+
+Deploy to Amazon S3:
 ```
 npm run deploy-s3
 ```
+
+Deploy to GH-Pages (new host):
+```
+npm run deploy-gh
+```
+
+(May need to go into Github repo settings -> Custom domain: evaluates2.com)
+
+
+See it live at: https://evaluates2.com
 
 
 *Also, be sure to point a "Cloudfront Distribution" at your S3 bucket with `index.html` as the error file, redirect HTTP to HTTPS, and map 403 and 404 errors to `/index.html`.*
