@@ -24,7 +24,7 @@ export default function HTML(props) {
         } />
 
         {/* Google Analytics Setup Stuff */}
-        {/* <script dangerouslySetInnerHTML={{
+        <script dangerouslySetInnerHTML={{
           __html: `<!-- Global site tag (gtag.js) - Google Analytics -->
                   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-189709809-1"></script>
                   <script>
@@ -34,7 +34,7 @@ export default function HTML(props) {
                     gtag('config', 'UA-189709809-1');
                   </script>
                   `}
-        } /> */}
+        } />
 
       </head>
       <body {...props.bodyAttributes}>
