@@ -48,12 +48,15 @@ npx gatsby new my-redux-starter https://github.com/caki0915/gatsby-starter-redux
 
 ## Build & Deploy (Prod Site Hosted With S3 / Cloudfront)
 
-All builds and deployment are done manulally right now with these commands:
+All builds and deployment are done manually right now with these commands:
 ```
 npm run build
 ```
 ```
 npm run deploy-s3
+```
+```
+npm run deploy-gh
 ```
 
 

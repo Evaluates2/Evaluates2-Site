@@ -432,10 +432,10 @@ const OurWorkPage = () => (
       </OurWorkPieceOfWork>
 
       <OurWorkPieceOfWork
-        title="Free Talks!"
+        title="Talks & Workshops!"
         header1="evaluates2.com/contact"
         header1link="https://evaluates2.com/contact/"
-        paragraph1="The engineers and leadership at Evaluates love talking about software develpment, and we be honored to speak at any events Please contact us for more information!"
+        paragraph1="Here at Evaluates2 we have many employees and engineers who love speaking about software develpment, and we would be honored to speak at your local event! Please contact us for more information!"
         header2=""
         paragraph2=""
         imgName="FREE_TALKS"
@@ -446,10 +446,10 @@ const OurWorkPage = () => (
         <ul>
           <li>Let us show you how we have been building software quickly, accurately, and happily!</li>
           <li>
-            These talks are for you! We're willing to present on anything your audience would like to learn more about, from the very technical implementation details to the managing a portfolio of software products in a large organization.
+            These talks are for you! We'll tailor our talks to your specific audience's interests!
           </li>
           <li>
-            Choose your favorite speaker(s) from our team of incredible engineers, data scientists, and product managers, many of whom have a history of presenting great talks.
+            We love giving back and helping out those who are disadvantaged with FREE workshops and consulting advice. Reach out to learn more!
           </li>
         </ul>
       </OurWorkPieceOfWork>
