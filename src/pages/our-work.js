@@ -257,35 +257,34 @@ const OurWorkPage = () => (
       <OurWorkHero>
         <h1 id="hero-h-our-work">Our&nbsp;Work</h1>
         <p>
-          We don't just say we've built awesome things- we've been doing it for
-          a while...
+          We don't just say we build awesome things- we've been doing it for a while...
         </p>
       </OurWorkHero>
 
       <BigSectionTitle>
         <h1>Success Stories</h1>
         <p>
-          A few of the previous projecs we've succesfully helped clients launch.
+          A few of the previous projecs we've succesfully launched.
         </p>
       </BigSectionTitle>
 
       {/* <StackableColumnsContainer> */}
       <OurWorkPieceOfWork
-        title="Kate From HR"
-        header1="www.katefromhr.com"
-        header1link="https://www.katefromhr.com"
-        paragraph1="Kate from HR is a tool for making teams better. A fun and easy-to-use Slack-integrated chatbot collected anonymous feedback that can be public or private (specified by the user). This is then aggregated and visualized in a web dashboard."
+        title="The Triple Gainers"
+        header1="sign up form"
+        header1link="https://cdn.forms-content.sg-form.com/f034a73f-a80f-11ea-8e17-928c85d443c0"
+        paragraph1='The "Triple Gainers" is a daily email sent out on weekdays at 5:30pm EST that analyzes all of the US large cap stocks and displays them in a nice html table with relevant percentages and calculations.'
         header2=""
         paragraph2=""
-        imgName="KATE_FROM_HR"
+        imgName="TRIPLE_GAINERS_EMAIL"
         imgOnLeft={true}
-        buttonText="Learn More"
-        buttonLinkTo="https://www.katefromhr.com/why-kate"
+        buttonText="Sign Up"
+        buttonLinkTo="https://cdn.forms-content.sg-form.com/f034a73f-a80f-11ea-8e17-928c85d443c0"
       >
         <ul>
-          <li>Monthly Pricing Based on Company Size.</li>
-          <li>Live & In Production Since Sept. 2019!</li>
-          <li>Built with Node.js, Angular 7, AWS Lambda, MongoDB...</li>
+          <li>Implemented as series of cron-scheduled NodeJS microservices that scrape stock information, crunch numbers, sift through large arrays, and send html emails.</li>
+          <li>Utilizes MongoDB for data storage with an efficient "dataframe-like" structure for scraped data.</li>
+          <li>Leverages Sengrid for managing the sending of emails, subscription web form, and unsubscribe options pages.</li>
         </ul>
       </OurWorkPieceOfWork>
 
@@ -293,34 +292,30 @@ const OurWorkPage = () => (
 
       <OurWorkPieceOfWork
         title="Social Engagement Serverless Functions"
-        header1="www.twitter.com/WebWhizJim"
-        header1link="https://www.twitter.com/WebWhizJim"
-        paragraph1="Kate from HR is a tool for making teams better. A fun and easy-to-use Slack-integrated chatbot collected anonymous feedback that can be public or private (specified by the user). This is then aggregated and visualized in a web dashboard."
+        header1="www.twitter.com/JimLynchCodes"
+        header1link="https://www.twitter.com/JimLynchCodes"
+        paragraph1="This is a parameterized NodeJS script that runs every few minutes on a cron schedule. It takes keywords, searches for recent twees containing those keywords, and automatically likes the tweet, retweets the tweet, and follows the user who posted it (all configurable via command line flags)."
         header2=""
         paragraph2=""
         imgName="JIM_TWITTER"
         imgOnLeft={false}
-        buttonText="Tweet Jim!"
-        buttonLinkTo="https://www.twitter.com/WebWhizJim"
+        buttonText="See the code!"
+        buttonLinkTo="https://github.com/JimLynchCodes/Plug-N-Play-Twitter-Engager"
       >
         <ul>
-          <li>Extremely Cheap & Quick to Run & Maintain.</li>
-          <li>
-            Aquired Thousands of Total Likes & Followers for @WebWhizJim and
-            other private client accounts.
-          </li>
-          <li>
-            Written for AWS Lambda Twice Using Both Es6 JavaScript and
-            ClojureScript.
-          </li>
+          <li>Runs via cron-jobs every few minutes on the small Digital Ocean ubuntu server.</li>
+          <li>Has aquired thousands of likes & followers for @JimLynchCodes and
+          other private client accounts.</li>
+          <li>Many iterations including versions for AWS Lambda written in once Es6 JavaScript and
+          again later with ClojureScript.</li>
         </ul>
       </OurWorkPieceOfWork>
 
       <OurWorkPieceOfWork
-        title="WoJ Blog"
+        title="The JimLynchCodes Blog"
         header1="www.jimlynchcodes.com"
         header1link="https://www.jimlynchcodes.com"
-        paragraph1="Kate from HR is a tool for making teams better. A fun and easy-to-use Slack-integrated chatbot collected anonymous feedback that can be public or private (specified by the user). This is then aggregated and visualized in a web dashboard."
+        paragraph1="This is a CMS-based blog site where Jim posts his musings and experiences related to coding, software development, and random life lessons."
         header2=""
         paragraph2=""
         imgName="WOJ_BLOG"
@@ -329,22 +324,16 @@ const OurWorkPage = () => (
         buttonLinkTo="https://www.jimlynchcodes.com"
       >
         <ul>
-          <li>Extremely Cheap & Quick to Run & Maintain.</li>
-          <li>
-            Aquired Thousands of Total Likes & Followers for @WebWhizJim and
-            other private client accounts.
-          </li>
-          <li>
-            Written for AWS Lambda Twice Using Both Es6 JavaScript and
-            ClojureScript.
-          </li>
+          <li>A public place on the web for others to see what Jim's into at any given time, learn about key things he has figured out, and engage with him by leaving comments and questions. </li>
+          <li>Over 200 posts by Jim from as far back as 2015.</li>
+          <li>Easy to maintain and deploy website with a fun, interactive CMS editor.</li>
         </ul>
       </OurWorkPieceOfWork>
 
       <OurWorkPieceOfWork
         title="This Website!"
-        header1="www.evaluates2.com"
-        header1link="https://www.evaluates2.com"
+        header1="https://evaluates2.com"
+        header1link="https://evaluates2.com"
         paragraph1='The core of this website is a modern, fuctinonal React.js frontend. The contact form uses an AWS Lambda function and was the first ever live deployed instance of our "E2-Super-Contact-Form!" project.'
         header2=""
         paragraph2=""
@@ -387,7 +376,7 @@ const OurWorkPage = () => (
         title="Titanium Lambda"
         header1="www.github.com/jimlynchcodes/titanium-lambda"
         header1link="https://www.github.com/jimlynchcodes/titanium-lambda"
-        paragraph1="Kate from HR is a tool for making teams better. A fun and easy-to-use Slack-integrated chatbot collected anonymous feedback that can be public or private (specified by the user). This is then aggregated and visualized in a web dashboard."
+        paragraph1="Titanium Lambda is more of a philosophical way of develop REST apis that runs on serverless technology and is border-line bulletproof because of great automated test coverage."
         header2=""
         paragraph2=""
         imgName="TITANIUM_LAMBDA"
@@ -396,14 +385,12 @@ const OurWorkPage = () => (
         buttonLinkTo="https://www.github.com/jimlynchcodes/titanium-lambda"
       >
         <ul>
-          <li>Extremely Cheap & Quick to Run & Maintain.</li>
+          <li>Massive README with information, images, lessons, and useful tools.</li>
           <li>
-            Aquired Thousands of Total Likes & Followers for @WebWhizJim and
-            other private client accounts.
+            Based on real world experience developing and managing applications with fully serverless backends with high traffic.
           </li>
           <li>
-            Written for AWS Lambda Twice Using Both Es6 JavaScript and
-            ClojureScript.
+            Barebones NodesJS serverless boilerplate code.
           </li>
         </ul>
       </OurWorkPieceOfWork>
@@ -426,7 +413,7 @@ const OurWorkPage = () => (
             Has TypeScript preconfigured and Redux with configurable localstorage syncing of slices of state pre-installed.
           </li>
           <li>
-            Excellent choice for building extremely performant React applications while leveraging automated testing to iterate quickly and accurately!
+            Excellent choice for building performant React applications while leveraging automated testing to iterate quickly and accurately!
           </li>
         </ul>
       </OurWorkPieceOfWork>
@@ -491,12 +478,35 @@ const OurWorkPage = () => (
         buttonLinkTo="https://www.github.com/evaluates2"
       >
         <ul>
-          <li>Many example projects and small isolated, demonstration projects across various languages.</li>
+          <li>Many example projects and small isolated demos illustrating key concepts, useful development tools, and interviewing materials across various languages.</li>
           <li>
             Examples of automated testing across all the languages we use.
           </li>
           <li>
-            Anyone can get involved! Feel free to open issues or pull requests of you'd like to join the (e2) movement!
+            Anyone can get involved! Feel free to open issues and pull requests and find us on Twitter if you'd like to join the e2 movement!
+          </li>
+        </ul>
+      </OurWorkPieceOfWork>
+
+      <OurWorkPieceOfWork
+        title="Everybody Codes!"
+        header1="https://everybodycodes.github.io/Official-Website/"
+        header1link="https://everybodycodes.github.io/Official-Website/"
+        paragraph1="Awesome people helping EVERYBODY learn to code!"
+        header2=""
+        paragraph2=""
+        imgName="EVERYBODY_CODES"
+        imgOnLeft={true}
+        buttonText="Check out our Github org..."
+        buttonLinkTo="https://github.com/EverybodyCodes"
+      >
+        <ul>
+          <li>Troubled by the disproportionately low number of black, brown, and female coders, Everybody Codes aims to help everyone realize he or she can become a successful software engineer.</li>
+          <li>
+            Helping seniors and "non software developer" adults dabble with coding because, as Steve Jobs once said, "Everybody should learn to program a computer... because it teaches you how to think".
+          </li>
+          <li>
+            Runs the "30-minute-mentor program" that matches up a disadvantaged child with a successful creative professional for a 30-minute 1-on-1 video call, giving the child a personal connection with a positive role model, allowing them to ask questions / discover key insights, and learn more about his or her specific interests and their respective industies.
           </li>
         </ul>
       </OurWorkPieceOfWork>

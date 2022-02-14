@@ -10,6 +10,7 @@ import Link from 'gatsby-link';
 import TeamMemberBlock from './../components/generic-reusable-components/team-member-block';
 import KateFromHrLogoImage from '../components/img-components/partner-logos/kate-from-hr-logo.img';
 import LumigoLogoImage from '../components/img-components/partner-logos/lumigo-logo.img';
+import AnonymousSilhouetteImage from '../components/img-components/headshots/anonymous-silhouette.img.js';
 
 const AboutHero = styled.div`
   h1#hero-h-about-us {
@@ -165,6 +166,7 @@ const OurTeamSection = styled.div`
     justify-content: space-around;
     align-items: center;
     margin-bottom: 100px;
+    margin-top: 50px;
     grid-template-columns: auto auto auto auto auto auto auto;
 
     @media only screen and (max-width: 1350px) {
@@ -407,29 +409,85 @@ const AboutPage = () => (
 
       <OurTeamSection>
         <h1>Our Team</h1>
-        <div className="our-team-grid">
+
+        <h2>Please excuse the anonymous profiles. We're currently in "stealth mode" right now!</h2>
+        {/* NON Anonymous Team*/}
+        {/*<div className="our-team-grid">
           <TeamMemberBlock
             name="Jim Lynch"
             linkTo="/team/jim-lynch"
             role="Cofounder & Principal Engineer"
-            // img={<AnonymousSilhouetteImage />}
             img={<JimLynchHeadshotImage />}
           ></TeamMemberBlock>
+          
           <TeamMemberBlock
             name="Nina Xu"
             linkTo="/team/nina-xu"
             role="Sales & Business Development Associate"
-            // img={<AnonymousSilhouetteImage />}
             img={<NinaXuHeadshotImage />}
           ></TeamMemberBlock>
+          
           <TeamMemberBlock
             name="Lee Daniel"
             linkTo="/team/lee-daniel"
             role="Sr. Software Engineer"
-            // img={<AnonymousSilhouetteImage />}
             img={<LeeDanielHeadshotImage />}
           ></TeamMemberBlock>
-        </div>
+        </div>*/}
+
+        {/* Anonymous Team*/}
+        {<div className="our-team-grid">
+          <TeamMemberBlock
+            name=""
+            linkTo="/about#our-team"
+            role=""
+            img={<AnonymousSilhouetteImage />}
+          ></TeamMemberBlock>
+
+          <TeamMemberBlock
+            name=""
+            linkTo="/about#our-team"
+            role=""
+            img={<AnonymousSilhouetteImage />}
+          ></TeamMemberBlock>
+
+          <TeamMemberBlock
+            name=""
+            linkTo="/about#our-team"
+            role=""
+            img={<AnonymousSilhouetteImage />}
+          ></TeamMemberBlock>
+
+          <TeamMemberBlock
+            name=""
+            linkTo="/about#our-team"
+            role=""
+            img={<AnonymousSilhouetteImage />}
+          ></TeamMemberBlock>
+
+          <TeamMemberBlock
+            name=""
+            linkTo="/about#our-team"
+            role=""
+            img={<AnonymousSilhouetteImage />}
+          ></TeamMemberBlock>
+
+          <TeamMemberBlock
+            name=""
+            linkTo="/about#our-team"
+            role=""
+            img={<AnonymousSilhouetteImage />}
+          ></TeamMemberBlock>
+
+          <TeamMemberBlock
+            name=""
+            linkTo="/about#our-team"
+            role=""
+            img={<AnonymousSilhouetteImage />}
+          ></TeamMemberBlock>
+
+        </div>}
+
       </OurTeamSection>
 
       <WhatWeveBuiltSection>

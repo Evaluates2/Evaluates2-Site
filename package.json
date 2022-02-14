@@ -52,6 +52,7 @@
   "scripts": {
     "start": "gatsby develop",
     "build": "gatsby build",
+    "build-gh": "gatsby build",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
     "format": "eslint src --fix",
