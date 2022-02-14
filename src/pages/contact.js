@@ -13,17 +13,19 @@ import ReactDOM from 'react-dom'
 
 const BACKEND_URL = 'https://2hm5kc0sw7.execute-api.us-east-1.amazonaws.com/dev';
 
+const MAX_NAME_LENGTH = 100;
+const MAX_EMAIL_LENGTH = 75;
+const MAX_MESSAGE_LENGTH = 600;
+
 const SignupSchema = Yup.object().shape({
   name: Yup.string()
     .min(2, 'Please enter your name!')
-    .max(100, 'Please enter a shorter name!')
     .required('Required'),
   email: Yup.string()
     .email('Please enter a valid email')
     .required('Required'),
   message: Yup.string()
     .min(5, 'Please enter a message!')
-    .max(1000, 'Sorry, please enter a shorter message!')
     .required('Required'),
 });
 
@@ -500,7 +502,7 @@ const ContactPage = () => {
                           
                             setFetching(false);
                             resetForm({})
-                            
+                          
                             setFieldValue('name', '')
                             setFieldValue('email', '')
                             setFieldValue('message', '')
@@ -524,7 +526,7 @@ const ContactPage = () => {
                           <FlexRow>
                             <InputAndLabel >
                               <label htmlFor="name">Name</label>
-                              <Field name="name" value={values.name}/>
+                              <Field name="name" value={values.name} maxLength={MAX_NAME_LENGTH}/>
                               <p className="signup-error-text">
                                 {errors.name && touched.name ? (
                                   <div>{errors.name}</div>
@@ -535,7 +537,7 @@ const ContactPage = () => {
                           <FlexRow>
                             <InputAndLabel>
                               <label htmlFor="email">Email</label>
-                              <Field name="email"/>
+                              <Field name="email" maxLength={MAX_EMAIL_LENGTH}/>
                               <p className="signup-error-text">
                                 {errors.email && touched.email ? (
                                   <div>{errors.email}</div>
@@ -550,9 +552,7 @@ const ContactPage = () => {
                                 name="message"
                                 type="message"
                                 component="textarea"
-                                // onMouseLeave={e => { if (formErrorText !== '') { e.target.blur(); setTimeout(() => {
-                                //   earlySubmitClick(touched['name'], touched['email'], touched['message'], humanVerified, errors)}
-                                // )}}}
+                                maxLength={MAX_MESSAGE_LENGTH}
                               />
                               <p className="signup-error-text">
                                 {errors.message && touched.message ? (
@@ -570,7 +570,6 @@ const ContactPage = () => {
                           </FlexRow>
 
                           <FlexRow>
-                            {/* <h1>hi</h1> */}
 
                             <div className="submit-btn-container">
                               <div
@@ -599,9 +598,6 @@ const ContactPage = () => {
                                 >
                                   Submit
                                 </button>
-                                {/* {JSON.stringify(touched)} */}
-                                {/* {JSON.stringify(}))} */}
-                                {/* {JSON.stringify(errors)} */}
                               </div>
                             </div>
                           </FlexRow>

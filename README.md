@@ -78,4 +78,9 @@ you will need to input aws creds as well, after running `aws configure`.
 
 ## Google Recaptcha
 
-Recaptcha human verification is tied to Jim's gmail account. Captcha ettings can be changed at https://www.google.com/recaptcha/admin/site/347840789/settings.
+Recaptcha human verification is tied to Jim's gmail account. Captcha settings can be changed at https://www.google.com/recaptcha/admin/site/347840789/settings.
+
+Note: if the domain gets disconnected when deploying to gh-pages then you may need to add a file in the `public` directory named `CNAME`. In this file put the domain you want to use- in this case:
+```
+evaluates2.com
+```
