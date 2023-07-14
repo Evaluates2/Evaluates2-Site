@@ -46,7 +46,7 @@ const ProductManagementPage = () => (
         ></ServicePageHero>
         <SecondServiceHero
           title="Our Development Process"
-          description="We'll show you how to get the most of agile development methodologies such as SCRUM and XP to get work done quickly and effectively."
+          description="We'll show you how to get the most out of agile development methodologies such as SCRUM and XP to get work done quickly and effectively."
         ></SecondServiceHero>
         <StackableColumnsContainer>
           <StackableColumn>
