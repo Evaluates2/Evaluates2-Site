@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[21],{LDCi:function(e,t,b){"use strict";b.r(t);b("q1tI");var o=b("Wbzz"),a=b("Bl7J"),c=b("vrFN"),n=b("qKvR");t.default=()=>Object(n.b)(a.a,null,Object(n.b)(c.a,{title:"P Page"}),Object(n.b)("h1",null,"Hi from the second page"),Object(n.b)("p",null,"Welcome to page 2"),Object(n.b)(o.Link,{to:"/"},"Go back to the homepage"),Object(n.b)(o.Link,{to:"/page-p/"},"Go back to the homepage"))}}]);
+//# sourceMappingURL=component---src-pages-page-p-js-a50f73abbd929db1940b.js.map
