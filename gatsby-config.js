@@ -8,6 +8,7 @@ module.exports = {
     description: `Official Site for the software consultancy, Evaluates2.`,
     author: `Jim Lynch (jim.lynch@evaluates2.com)`,
     url: `https://evaluates2.com`,
+    siteUrl: 'https://evaluates2.com',
   },
   plugins: [
     `gatsby-transformer-json`,
@@ -59,5 +60,6 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
+    'gatsby-plugin-cname',
   ],
 };
