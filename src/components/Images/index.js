@@ -125,7 +125,7 @@ const Images = () => (
                         Together,
                         </h1>
                         </Title>
-                    <Sub>we might build great things.</Sub>
+                    <Sub>we will build great things.</Sub>
                 </ImageTitle>
                 <LightLibertyCityOutline>
                     <img src={lightLibertyCityOutline} alt="lightLibertyCityOutline" />
